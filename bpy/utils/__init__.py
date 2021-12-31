@@ -1,10 +1,10 @@
-import sys
+# import sys
 import typing
 import bpy.types
 import bpy.context
 
-from . import units
-from . import previews
+# from . import units
+# from . import previews
 
 
 def app_template_paths(subdir: str = None):
@@ -157,7 +157,7 @@ def refresh_script_paths():
     pass
 
 
-def register_class(cls):
+def register_class(cls: type):
     ''' Register a subclass of a Blender type class. :raises ValueError: if the class is not a subclass of a registerable blender class.
 
     :param cls: bpy.types.Panel , bpy.types.UIList , bpy.types.Menu , bpy.types.Header , bpy.types.Operator , bpy.types.KeyingSetInfo , bpy.types.RenderEngine
@@ -166,7 +166,7 @@ def register_class(cls):
     pass
 
 
-def register_classes_factory(classes):
+def register_classes_factory(classes: typing.List[type]):
     ''' Utility function to create register and unregister functions which simply registers and unregisters a sequence of classes.
 
     '''
@@ -319,7 +319,7 @@ def unescape_identifier(string: str) -> str:
     pass
 
 
-def unregister_class(cls):
+def unregister_class(cls: type):
     ''' Unload the Python class from blender. If the class has an *unregister* class method it will be called before unregistering.
 
     '''

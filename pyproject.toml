@@ -1,0 +1,32 @@
+[tool.autopep8]
+max_line_length = 96
+
+ignore = [
+    "E302", # not enough blank lines (sometimes useful)
+    "E303", # too many blank lines (sometimes useful!)
+    "E402", # "module level import not at top of file"
+]
+
+
+[tool.mypy]
+python_version = 3.9
+
+mypy_path = "."
+# exclude = "^(typings/|typings-orig/|vendor/|kaitai/|tests/|wowbjectimport_updater/|addon_updater.*\\.py)"
+
+follow_imports = "silent"
+ignore_missing_imports = true
+explicit_package_bases = true
+namespace_packages = true
+
+strict_optional = true
+disallow_subclassing_any = false
+disallow_any_generics = true
+disallow_untyped_calls = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_return_any = true

@@ -1,4 +1,4 @@
-import sys
+# import sys
 import typing
 import bpy.context
 import mathutils
@@ -81,10 +81,30 @@ import bl_ui.properties_output
 import bl_ui.properties_workspace
 import bl_ui.properties_data_metaball
 
+K = typing.TypeVar('K')
+T = typing.TypeVar('T')
 
-class bpy_prop_collection:
+class bpy_prop_collection(typing.Generic[K, T]):
     ''' built-in class used for all collections.
     '''
+
+    def __len__(self) -> int:
+        pass
+
+    def __iter__(self) -> typing.Iterator[T]:
+        pass
+
+    def __next__(self) -> T:
+        pass
+
+    def __getitem__(self, key: K) -> T:
+        pass
+
+    # Should we allow a different type to be specified for the key here, since
+    # you might have getitem that takes Union[int,str], but contains that only
+    # accepts str?  (...I think, at least?)
+    def __contains__(self, key: K) -> bool:
+        pass
 
     def find(self, key: str) -> int:
         ''' Returns the index of a key in a collection or -1 when not found (matches Python's string find function of the same name).
@@ -742,6 +762,9 @@ class Addons(bpy_struct):
     ''' Collection of add-ons
     '''
 
+    def __getitem__(self, key) -> 'Addon':
+        pass
+
     @classmethod
     def new(cls) -> 'Addon':
         ''' Add a new add-on
@@ -1132,6 +1155,7 @@ class AnimVizMotionPaths(bpy_struct):
         :return: The class or default when not found.
         '''
         pass
+
 
 
 class AnyType(bpy_struct):
@@ -1942,53 +1966,60 @@ class BlendData(bpy_struct):
     ''' Main data structure representing a .blend file and all its data-blocks
     '''
 
-    actions: typing.Union[typing.Dict[str, 'Action'], typing.List['Action'],
-                          'bpy_prop_collection', 'BlendDataActions'] = None
+    # actions: typing.Union[typing.Dict[str, 'Action'], typing.List['Action'],
+    #                       'bpy_prop_collection', 'BlendDataActions'] = None
+    actions: 'BlendDataActions' = None
     ''' Action data-blocks
 
     :type: typing.Union[typing.Dict[str, 'Action'], typing.List['Action'], 'bpy_prop_collection', 'BlendDataActions']
     '''
 
-    armatures: typing.Union[typing.Dict[str, 'Armature'], typing.
-                            List['Armature'], 'bpy_prop_collection',
-                            'BlendDataArmatures'] = None
+    # armatures: typing.Union[typing.Dict[str, 'Armature'], typing.
+    #                         List['Armature'], 'bpy_prop_collection',
+    #                         'BlendDataArmatures'] = None
+    armatures: 'BlendDataArmatures' = None
     ''' Armature data-blocks
 
     :type: typing.Union[typing.Dict[str, 'Armature'], typing.List['Armature'], 'bpy_prop_collection', 'BlendDataArmatures']
     '''
 
-    brushes: typing.Union[typing.Dict[str, 'Brush'], typing.List['Brush'],
-                          'bpy_prop_collection', 'BlendDataBrushes'] = None
+    # brushes: typing.Union[typing.Dict[str, 'Brush'], typing.List['Brush'],
+    #                       'bpy_prop_collection', 'BlendDataBrushes'] = None
+    brushes: 'BlendDataBrushes' = None
     ''' Brush data-blocks
 
     :type: typing.Union[typing.Dict[str, 'Brush'], typing.List['Brush'], 'bpy_prop_collection', 'BlendDataBrushes']
     '''
 
-    cache_files: typing.Union[typing.Dict[str, 'CacheFile'], typing.
-                              List['CacheFile'], 'bpy_prop_collection',
-                              'BlendDataCacheFiles'] = None
+    # cache_files: typing.Union[typing.Dict[str, 'CacheFile'], typing.
+    #                           List['CacheFile'], 'bpy_prop_collection',
+    #                           'BlendDataCacheFiles'] = None
+    cache_files: 'BlendDataCacheFiles' = None
     ''' Cache Files data-blocks
 
     :type: typing.Union[typing.Dict[str, 'CacheFile'], typing.List['CacheFile'], 'bpy_prop_collection', 'BlendDataCacheFiles']
     '''
 
-    cameras: typing.Union[typing.Dict[str, 'Camera'], typing.List['Camera'],
-                          'bpy_prop_collection', 'BlendDataCameras'] = None
+    # cameras: typing.Union[typing.Dict[str, 'Camera'], typing.List['Camera'],
+    #                       'bpy_prop_collection', 'BlendDataCameras'] = None
+    cameras: 'BlendDataCameras' = None
     ''' Camera data-blocks
 
     :type: typing.Union[typing.Dict[str, 'Camera'], typing.List['Camera'], 'bpy_prop_collection', 'BlendDataCameras']
     '''
 
-    collections: typing.Union[typing.Dict[str, 'Collection'], typing.
-                              List['Collection'], 'bpy_prop_collection',
-                              'BlendDataCollections'] = None
+    # collections: typing.Union[typing.Dict[str, 'Collection'], typing.
+    #                           List['Collection'], 'bpy_prop_collection',
+    #                           'BlendDataCollections'] = None
+    collections: 'BlendDataCollections' = None
     ''' Collection data-blocks
 
     :type: typing.Union[typing.Dict[str, 'Collection'], typing.List['Collection'], 'bpy_prop_collection', 'BlendDataCollections']
     '''
 
-    curves: typing.Union[typing.Dict[str, 'Curve'], typing.List['Curve'],
-                         'bpy_prop_collection', 'BlendDataCurves'] = None
+    # curves: typing.Union[typing.Dict[str, 'Curve'], typing.List['Curve'],
+    #                      'bpy_prop_collection', 'BlendDataCurves'] = None
+    curves: 'BlendDataCurves' = None
     ''' Curve data-blocks
 
     :type: typing.Union[typing.Dict[str, 'Curve'], typing.List['Curve'], 'bpy_prop_collection', 'BlendDataCurves']
@@ -2000,24 +2031,27 @@ class BlendData(bpy_struct):
     :type: str
     '''
 
-    fonts: typing.Union[typing.Dict[str, 'VectorFont'], typing.
-                        List['VectorFont'], 'bpy_prop_collection',
-                        'BlendDataFonts'] = None
+    # fonts: typing.Union[typing.Dict[str, 'VectorFont'], typing.
+    #                     List['VectorFont'], 'bpy_prop_collection',
+    #                     'BlendDataFonts'] = None
+    fonts: 'BlendDataFonts' = None
     ''' Vector font data-blocks
 
     :type: typing.Union[typing.Dict[str, 'VectorFont'], typing.List['VectorFont'], 'bpy_prop_collection', 'BlendDataFonts']
     '''
 
-    grease_pencils: typing.Union[typing.Dict[str, 'GreasePencil'], typing.
-                                 List['GreasePencil'], 'bpy_prop_collection',
-                                 'BlendDataGreasePencils'] = None
+    # grease_pencils: typing.Union[typing.Dict[str, 'GreasePencil'], typing.
+    #                              List['GreasePencil'], 'bpy_prop_collection',
+    #                              'BlendDataGreasePencils'] = None
+    grease_pencils: 'BlendDataGreasePencils' = None
     ''' Grease Pencil data-blocks
 
     :type: typing.Union[typing.Dict[str, 'GreasePencil'], typing.List['GreasePencil'], 'bpy_prop_collection', 'BlendDataGreasePencils']
     '''
 
-    images: typing.Union[typing.Dict[str, 'Image'], typing.List['Image'],
-                         'bpy_prop_collection', 'BlendDataImages'] = None
+    # images: typing.Union[typing.Dict[str, 'Image'], typing.List['Image'],
+    #                      'bpy_prop_collection', 'BlendDataImages'] = None
+    images: 'BlendDataImages' = None
     ''' Image data-blocks
 
     :type: typing.Union[typing.Dict[str, 'Image'], typing.List['Image'], 'bpy_prop_collection', 'BlendDataImages']
@@ -2035,129 +2069,145 @@ class BlendData(bpy_struct):
     :type: bool
     '''
 
-    lattices: typing.Union[typing.Dict[str, 'Lattice'], typing.List['Lattice'],
-                           'bpy_prop_collection', 'BlendDataLattices'] = None
+    # lattices: typing.Union[typing.Dict[str, 'Lattice'], typing.List['Lattice'],
+    #                        'bpy_prop_collection', 'BlendDataLattices'] = None
+    lattices: 'BlendDataLattices' = None
     ''' Lattice data-blocks
 
     :type: typing.Union[typing.Dict[str, 'Lattice'], typing.List['Lattice'], 'bpy_prop_collection', 'BlendDataLattices']
     '''
 
-    libraries: typing.Union[typing.Dict[str, 'Library'], typing.
-                            List['Library'], 'bpy_prop_collection',
-                            'BlendDataLibraries'] = None
+    # libraries: typing.Union[typing.Dict[str, 'Library'], typing.
+    #                         List['Library'], 'bpy_prop_collection',
+    #                         'BlendDataLibraries'] = None
+    libraries: 'BlendDataLibraries' = None
     ''' Library data-blocks
 
     :type: typing.Union[typing.Dict[str, 'Library'], typing.List['Library'], 'bpy_prop_collection', 'BlendDataLibraries']
     '''
 
-    lightprobes: typing.Union[typing.Dict[str, 'LightProbe'], typing.
-                              List['LightProbe'], 'bpy_prop_collection',
-                              'BlendDataProbes'] = None
+    # lightprobes: typing.Union[typing.Dict[str, 'LightProbe'], typing.
+    #                           List['LightProbe'], 'bpy_prop_collection',
+    #                           'BlendDataProbes'] = None
+    lightprobes: 'BlendDataProbes' = None
     ''' Light Probe data-blocks
 
     :type: typing.Union[typing.Dict[str, 'LightProbe'], typing.List['LightProbe'], 'bpy_prop_collection', 'BlendDataProbes']
     '''
 
-    lights: typing.Union[typing.Dict[str, 'Light'], typing.List['Light'],
-                         'bpy_prop_collection', 'BlendDataLights'] = None
+    # lights: typing.Union[typing.Dict[str, 'Light'], typing.List['Light'],
+    #                      'bpy_prop_collection', 'BlendDataLights'] = None
+    lights: 'BlendDataLights' = None
     ''' Light data-blocks
 
     :type: typing.Union[typing.Dict[str, 'Light'], typing.List['Light'], 'bpy_prop_collection', 'BlendDataLights']
     '''
 
-    linestyles: typing.Union[typing.Dict[str, 'FreestyleLineStyle'], typing.
-                             List['FreestyleLineStyle'], 'bpy_prop_collection',
-                             'BlendDataLineStyles'] = None
+    # linestyles: typing.Union[typing.Dict[str, 'FreestyleLineStyle'], typing.
+    #                          List['FreestyleLineStyle'], 'bpy_prop_collection',
+    #                          'BlendDataLineStyles'] = None
+    linestyles: 'BlendDataLineStyles' = None
     ''' Line Style data-blocks
 
     :type: typing.Union[typing.Dict[str, 'FreestyleLineStyle'], typing.List['FreestyleLineStyle'], 'bpy_prop_collection', 'BlendDataLineStyles']
     '''
 
-    masks: typing.Union[typing.Dict[str, 'Mask'], typing.List['Mask'],
-                        'bpy_prop_collection', 'BlendDataMasks'] = None
+    # masks: typing.Union[typing.Dict[str, 'Mask'], typing.List['Mask'],
+    #                     'bpy_prop_collection', 'BlendDataMasks'] = None
+    masks: 'BlendDataMasks' = None
     ''' Masks data-blocks
 
     :type: typing.Union[typing.Dict[str, 'Mask'], typing.List['Mask'], 'bpy_prop_collection', 'BlendDataMasks']
     '''
 
-    materials: typing.Union[typing.Dict[str, 'Material'], typing.
-                            List['Material'], 'bpy_prop_collection',
-                            'BlendDataMaterials'] = None
+    # materials: typing.Union[typing.Dict[str, 'Material'], typing.
+    #                         List['Material'], 'bpy_prop_collection',
+    #                         'BlendDataMaterials'] = None
+    materials: 'BlendDataMaterials' = None
     ''' Material data-blocks
 
     :type: typing.Union[typing.Dict[str, 'Material'], typing.List['Material'], 'bpy_prop_collection', 'BlendDataMaterials']
     '''
 
-    meshes: typing.Union[typing.Dict[str, 'Mesh'], typing.List['Mesh'],
-                         'bpy_prop_collection', 'BlendDataMeshes'] = None
+    meshes: 'BlendDataMeshes' = None
     ''' Mesh data-blocks
 
     :type: typing.Union[typing.Dict[str, 'Mesh'], typing.List['Mesh'], 'bpy_prop_collection', 'BlendDataMeshes']
     '''
 
-    metaballs: typing.Union[typing.Dict[str, 'MetaBall'], typing.
-                            List['MetaBall'], 'bpy_prop_collection',
-                            'BlendDataMetaBalls'] = None
+    # metaballs: typing.Union[typing.Dict[str, 'MetaBall'], typing.
+    #                         List['MetaBall'], 'bpy_prop_collection',
+    #                         'BlendDataMetaBalls'] = None
+    metaballs: 'BlendDataMetaBalls' = None
     ''' Metaball data-blocks
 
     :type: typing.Union[typing.Dict[str, 'MetaBall'], typing.List['MetaBall'], 'bpy_prop_collection', 'BlendDataMetaBalls']
     '''
 
-    movieclips: typing.Union[typing.Dict[str, 'MovieClip'], typing.
-                             List['MovieClip'], 'bpy_prop_collection',
-                             'BlendDataMovieClips'] = None
+    # movieclips: typing.Union[typing.Dict[str, 'MovieClip'], typing.
+    #                          List['MovieClip'], 'bpy_prop_collection',
+    #                          'BlendDataMovieClips'] = None
+    movieclips: 'BlendDataMovieClips' = None
     ''' Movie Clip data-blocks
 
     :type: typing.Union[typing.Dict[str, 'MovieClip'], typing.List['MovieClip'], 'bpy_prop_collection', 'BlendDataMovieClips']
     '''
 
-    node_groups: typing.Union[typing.Dict[str, 'NodeTree'], typing.
-                              List['NodeTree'], 'bpy_prop_collection',
-                              'BlendDataNodeTrees'] = None
+
+    # node_groups: typing.Union[typing.Dict[str, 'NodeTree'], typing.
+    #                           List['NodeTree'], 'bpy_prop_collection',
+    #                           'BlendDataNodeTrees'] = None
+    node_groups: 'BlendDataNodeTrees' = None
     ''' Node group data-blocks
 
     :type: typing.Union[typing.Dict[str, 'NodeTree'], typing.List['NodeTree'], 'bpy_prop_collection', 'BlendDataNodeTrees']
     '''
 
-    objects: typing.Union[typing.Dict[str, 'Object'], typing.List['Object'],
-                          'bpy_prop_collection', 'BlendDataObjects'] = None
+    # objects: typing.Union[typing.Dict[str, 'Object'], typing.List['Object'],
+    #                       'bpy_prop_collection', 'BlendDataObjects'] = None
+    objects: 'BlendDataObjects' = None
     ''' Object data-blocks
 
     :type: typing.Union[typing.Dict[str, 'Object'], typing.List['Object'], 'bpy_prop_collection', 'BlendDataObjects']
     '''
 
-    paint_curves: typing.Union[typing.Dict[str, 'PaintCurve'], typing.
-                               List['PaintCurve'], 'bpy_prop_collection',
-                               'BlendDataPaintCurves'] = None
+    # paint_curves: typing.Union[typing.Dict[str, 'PaintCurve'], typing.
+    #                            List['PaintCurve'], 'bpy_prop_collection',
+    #                            'BlendDataPaintCurves'] = None
+    paint_curves: 'BlendDataPaintCurves' = None
     ''' Paint Curves data-blocks
 
     :type: typing.Union[typing.Dict[str, 'PaintCurve'], typing.List['PaintCurve'], 'bpy_prop_collection', 'BlendDataPaintCurves']
     '''
 
-    palettes: typing.Union[typing.Dict[str, 'Palette'], typing.List['Palette'],
-                           'bpy_prop_collection', 'BlendDataPalettes'] = None
+    # palettes: typing.Union[typing.Dict[str, 'Palette'], typing.List['Palette'],
+    #                        'bpy_prop_collection', 'BlendDataPalettes'] = None
+    palettes: 'BlendDataPalettes' = None
     ''' Palette data-blocks
 
     :type: typing.Union[typing.Dict[str, 'Palette'], typing.List['Palette'], 'bpy_prop_collection', 'BlendDataPalettes']
     '''
 
-    particles: typing.Union[typing.Dict[str, 'ParticleSettings'], typing.
-                            List['ParticleSettings'], 'bpy_prop_collection',
-                            'BlendDataParticles'] = None
+    # particles: typing.Union[typing.Dict[str, 'ParticleSettings'], typing.
+    #                         List['ParticleSettings'], 'bpy_prop_collection',
+    #                         'BlendDataParticles'] = None
+    particles: 'BlendDataParticles' = None
     ''' Particle data-blocks
 
     :type: typing.Union[typing.Dict[str, 'ParticleSettings'], typing.List['ParticleSettings'], 'bpy_prop_collection', 'BlendDataParticles']
     '''
 
-    scenes: typing.Union[typing.Dict[str, 'Scene'], typing.List['Scene'],
-                         'bpy_prop_collection', 'BlendDataScenes'] = None
+    # scenes: typing.Union[typing.Dict[str, 'Scene'], typing.List['Scene'],
+    #                      'bpy_prop_collection', 'BlendDataScenes'] = None
+    scenes: 'BlendDataScenes' = None
     ''' Scene data-blocks
 
     :type: typing.Union[typing.Dict[str, 'Scene'], typing.List['Scene'], 'bpy_prop_collection', 'BlendDataScenes']
     '''
 
-    screens: typing.Union[typing.Dict[str, 'Screen'], typing.List['Screen'],
-                          'bpy_prop_collection', 'BlendDataScreens'] = None
+    # screens: typing.Union[typing.Dict[str, 'Screen'], typing.List['Screen'],
+    #                       'bpy_prop_collection', 'BlendDataScreens'] = None
+    screens: 'BlendDataScreens' = None
     ''' Screen data-blocks
 
     :type: typing.Union[typing.Dict[str, 'Screen'], typing.List['Screen'], 'bpy_prop_collection', 'BlendDataScreens']
@@ -2170,29 +2220,33 @@ class BlendData(bpy_struct):
     :type: typing.Union[typing.Dict[str, 'Key'], typing.List['Key'], 'bpy_prop_collection']
     '''
 
-    sounds: typing.Union[typing.Dict[str, 'Sound'], typing.List['Sound'],
-                         'bpy_prop_collection', 'BlendDataSounds'] = None
+    # sounds: typing.Union[typing.Dict[str, 'Sound'], typing.List['Sound'],
+    #                      'bpy_prop_collection', 'BlendDataSounds'] = None
+    sounds: 'BlendDataSounds' = None
     ''' Sound data-blocks
 
     :type: typing.Union[typing.Dict[str, 'Sound'], typing.List['Sound'], 'bpy_prop_collection', 'BlendDataSounds']
     '''
 
-    speakers: typing.Union[typing.Dict[str, 'Speaker'], typing.List['Speaker'],
-                           'bpy_prop_collection', 'BlendDataSpeakers'] = None
+    # speakers: typing.Union[typing.Dict[str, 'Speaker'], typing.List['Speaker'],
+    #                        'bpy_prop_collection', 'BlendDataSpeakers'] = None
+    speakers: 'BlendDataSpeakers' = None
     ''' Speaker data-blocks
 
     :type: typing.Union[typing.Dict[str, 'Speaker'], typing.List['Speaker'], 'bpy_prop_collection', 'BlendDataSpeakers']
     '''
 
-    texts: typing.Union[typing.Dict[str, 'Text'], typing.List['Text'],
-                        'bpy_prop_collection', 'BlendDataTexts'] = None
+    # texts: typing.Union[typing.Dict[str, 'Text'], typing.List['Text'],
+    #                     'bpy_prop_collection', 'BlendDataTexts'] = None
+    texts: 'BlendDataTexts' = None
     ''' Text data-blocks
 
     :type: typing.Union[typing.Dict[str, 'Text'], typing.List['Text'], 'bpy_prop_collection', 'BlendDataTexts']
     '''
 
-    textures: typing.Union[typing.Dict[str, 'Texture'], typing.List['Texture'],
-                           'bpy_prop_collection', 'BlendDataTextures'] = None
+    # textures: typing.Union[typing.Dict[str, 'Texture'], typing.List['Texture'],
+    #                        'bpy_prop_collection', 'BlendDataTextures'] = None
+    textures: 'BlendDataTextures' = None
     ''' Texture data-blocks
 
     :type: typing.Union[typing.Dict[str, 'Texture'], typing.List['Texture'], 'bpy_prop_collection', 'BlendDataTextures']
@@ -2210,31 +2264,35 @@ class BlendData(bpy_struct):
     :type: typing.List[int]
     '''
 
-    volumes: typing.Union[typing.Dict[str, 'Volume'], typing.List['Volume'],
-                          'bpy_prop_collection', 'BlendDataVolumes'] = None
+    # volumes: typing.Union[typing.Dict[str, 'Volume'], typing.List['Volume'],
+    #                       'bpy_prop_collection', 'BlendDataVolumes'] = None
+    volumes: 'BlendDataVolumes' = None
     ''' Volume data-blocks
 
     :type: typing.Union[typing.Dict[str, 'Volume'], typing.List['Volume'], 'bpy_prop_collection', 'BlendDataVolumes']
     '''
 
-    window_managers: typing.Union[typing.Dict[str, 'WindowManager'], typing.
-                                  List['WindowManager'], 'bpy_prop_collection',
-                                  'BlendDataWindowManagers'] = None
+    # window_managers: typing.Union[typing.Dict[str, 'WindowManager'], typing.
+    #                               List['WindowManager'], 'bpy_prop_collection',
+    #                               'BlendDataWindowManagers'] = None
+    window_managers: 'BlendDataWindowManagers' = None
     ''' Window manager data-blocks
 
     :type: typing.Union[typing.Dict[str, 'WindowManager'], typing.List['WindowManager'], 'bpy_prop_collection', 'BlendDataWindowManagers']
     '''
 
-    workspaces: typing.Union[typing.Dict[str, 'WorkSpace'], typing.
-                             List['WorkSpace'], 'bpy_prop_collection',
-                             'BlendDataWorkSpaces'] = None
+    # workspaces: typing.Union[typing.Dict[str, 'WorkSpace'], typing.
+    #                          List['WorkSpace'], 'bpy_prop_collection',
+    #                          'BlendDataWorkSpaces'] = None
+    workspaces: 'BlendDataWorkSpaces' = None
     ''' Workspace data-blocks
 
     :type: typing.Union[typing.Dict[str, 'WorkSpace'], typing.List['WorkSpace'], 'bpy_prop_collection', 'BlendDataWorkSpaces']
     '''
 
-    worlds: typing.Union[typing.Dict[str, 'World'], typing.List['World'],
-                         'bpy_prop_collection', 'BlendDataWorlds'] = None
+    # worlds: typing.Union[typing.Dict[str, 'World'], typing.List['World'],
+    #                      'bpy_prop_collection', 'BlendDataWorlds'] = None
+    worlds: 'BlendDataWorlds' = None
     ''' World data-blocks
 
     :type: typing.Union[typing.Dict[str, 'World'], typing.List['World'], 'bpy_prop_collection', 'BlendDataWorlds']
@@ -2601,7 +2659,7 @@ class BlendDataCameras(bpy_struct):
         pass
 
 
-class BlendDataCollections(bpy_struct):
+class BlendDataCollections(bpy_struct, bpy_prop_collection[typing.Union[int, str], 'Collection']):
     ''' Collection of collections
     '''
 
@@ -2857,6 +2915,12 @@ class BlendDataGreasePencils(bpy_struct):
 class BlendDataImages(bpy_struct):
     ''' Collection of images
     '''
+
+    def __getitem__(self, key: typing.Union[str, int]) -> 'Image':
+        pass
+
+    def __contains__(self, key: str) -> bool:
+        pass
 
     def new(self,
             name: str,
@@ -3538,6 +3602,16 @@ class BlendDataMovieClips(bpy_struct):
 class BlendDataNodeTrees(bpy_struct):
     ''' Collection of node trees
     '''
+
+    @typing.overload
+    def __getitem__(self, key: typing.Union[int, str]) -> 'NodeTree':
+        pass
+
+    def __getitem__(self, key) -> 'NodeTree':
+        pass
+
+    def __contains__(self, key: str) -> bool:
+        pass
 
     def new(self, name: str, type: typing.Union[str, int]) -> 'NodeTree':
         ''' Add a new node tree to the main database
@@ -8097,6 +8171,8 @@ class Context(bpy_struct):
     :type: 'LayerCollection'
     '''
 
+    material: 'Material' = None
+
     mode: typing.Union[str, int] = None
     '''
 
@@ -10909,10 +10985,7 @@ class Event(bpy_struct):
     '''
 
     type: typing.Union[str, int] = None
-    ''' * NONE Undocumented. * LEFTMOUSE Left Mouse, LMB. * MIDDLEMOUSE Middle Mouse, MMB. * RIGHTMOUSE Right Mouse, RMB. * BUTTON4MOUSE Button4 Mouse, MB4. * BUTTON5MOUSE Button5 Mouse, MB5. * BUTTON6MOUSE Button6 Mouse, MB6. * BUTTON7MOUSE Button7 Mouse, MB7. * PEN Pen. * ERASER Eraser. * MOUSEMOVE Mouse Move, MsMov. * INBETWEEN_MOUSEMOVE In-between Move, MsSubMov. * TRACKPADPAN Mouse/Trackpad Pan, MsPan. * TRACKPADZOOM Mouse/Trackpad Zoom, MsZoom. * MOUSEROTATE Mouse/Trackpad Rotate, MsRot. * MOUSESMARTZOOM Mouse/Trackpad Smart Zoom, MsSmartZoom. * WHEELUPMOUSE Wheel Up, WhUp. * WHEELDOWNMOUSE Wheel Down, WhDown. * WHEELINMOUSE Wheel In, WhIn. * WHEELOUTMOUSE Wheel Out, WhOut. * EVT_TWEAK_L Tweak Left, TwkL. * EVT_TWEAK_M Tweak Middle, TwkM. * EVT_TWEAK_R Tweak Right, TwkR. * A A. * B B. * C C. * D D. * E E. * F F. * G G. * H H. * I I. * J J. * K K. * L L. * M M. * N N. * O O. * P P. * Q Q. * R R. * S S. * T T. * U U. * V V. * W W. * X X. * Y Y. * Z Z. * ZERO 0. * ONE 1. * TWO 2. * THREE 3. * FOUR 4. * FIVE 5. * SIX 6. * SEVEN 7. * EIGHT 8. * NINE 9. * LEFT_CTRL Left Ctrl, CtrlL. * LEFT_ALT Left Alt, AltL. * LEFT_SHIFT Left Shift, ShiftL. * RIGHT_ALT Right Alt, AltR. * RIGHT_CTRL Right Ctrl, CtrlR. * RIGHT_SHIFT Right Shift, ShiftR. * OSKEY OS Key, Cmd. * APP Application, App. * GRLESS Grless. * ESC Esc. * TAB Tab. * RET Return, Enter. * SPACE Spacebar, Space. * LINE_FEED Line Feed. * BACK_SPACE Backspace, BkSpace. * DEL Delete, Del. * SEMI_COLON ;. * PERIOD .. * COMMA ,. * QUOTE ". * ACCENT_GRAVE \ . * MINUS -. * PLUS +. * SLASH /. * BACK_SLASH \\. * EQUAL =. * LEFT_BRACKET [. * RIGHT_BRACKET ]. * LEFT_ARROW Left Arrow, ←. * DOWN_ARROW Down Arrow, ↓. * RIGHT_ARROW Right Arrow, →. * UP_ARROW Up Arrow, ↑. * NUMPAD_2 Numpad 2, Pad2. * NUMPAD_4 Numpad 4, Pad4. * NUMPAD_6 Numpad 6, Pad6. * NUMPAD_8 Numpad 8, Pad8. * NUMPAD_1 Numpad 1, Pad1. * NUMPAD_3 Numpad 3, Pad3. * NUMPAD_5 Numpad 5, Pad5. * NUMPAD_7 Numpad 7, Pad7. * NUMPAD_9 Numpad 9, Pad9. * NUMPAD_PERIOD Numpad ., Pad.. * NUMPAD_SLASH Numpad /, Pad/. * NUMPAD_ASTERIX Numpad \*, Pad\*. * NUMPAD_0 Numpad 0, Pad0. * NUMPAD_MINUS Numpad -, Pad-. * NUMPAD_ENTER Numpad Enter, PadEnter. * NUMPAD_PLUS Numpad +, Pad+. * F1 F1. * F2 F2. * F3 F3. * F4 F4. * F5 F5. * F6 F6. * F7 F7. * F8 F8. * F9 F9. * F10 F10. * F11 F11. * F12 F12. * F13 F13. * F14 F14. * F15 F15. * F16 F16. * F17 F17. * F18 F18. * F19 F19. * F20 F20. * F21 F21. * F22 F22. * F23 F23. * F24 F24. * PAUSE Pause. * INSERT Insert, Ins. * HOME Home. * PAGE_UP Page Up, PgUp. * PAGE_DOWN Page Down, PgDown. * END End. * MEDIA_PLAY Media Play/Pause, >/\|\|. * MEDIA_STOP Media Stop, Stop. * MEDIA_FIRST Media First, \|<<. * MEDIA_LAST Media Last, >>\|. * TEXTINPUT Text Input, TxtIn. * WINDOW_DEACTIVATE Window Deactivate. * TIMER Timer, Tmr. * TIMER0 Timer 0, Tmr0. * TIMER1 Timer 1, Tmr1. * TIMER2 Timer 2, Tmr2. * TIMER_JOBS Timer Jobs, TmrJob. * TIMER_AUTOSAVE Timer Autosave, TmrSave. * TIMER_REPORT Timer Report, TmrReport. * TIMERREGION Timer Region, TmrReg. * NDOF_MOTION NDOF Motion, NdofMov. * NDOF_BUTTON_MENU NDOF Menu, NdofMenu. * NDOF_BUTTON_FIT NDOF Fit, NdofFit. * NDOF_BUTTON_TOP NDOF Top, Ndof↑. * NDOF_BUTTON_BOTTOM NDOF Bottom, Ndof↓. * NDOF_BUTTON_LEFT NDOF Left, Ndof←. * NDOF_BUTTON_RIGHT NDOF Right, Ndof→. * NDOF_BUTTON_FRONT NDOF Front, NdofFront. * NDOF_BUTTON_BACK NDOF Back, NdofBack. * NDOF_BUTTON_ISO1 NDOF Isometric 1, NdofIso1. * NDOF_BUTTON_ISO2 NDOF Isometric 2, NdofIso2. * NDOF_BUTTON_ROLL_CW NDOF Roll CW, NdofRCW. * NDOF_BUTTON_ROLL_CCW NDOF Roll CCW, NdofRCCW. * NDOF_BUTTON_SPIN_CW NDOF Spin CW, NdofSCW. * NDOF_BUTTON_SPIN_CCW NDOF Spin CCW, NdofSCCW. * NDOF_BUTTON_TILT_CW NDOF Tilt CW, NdofTCW. * NDOF_BUTTON_TILT_CCW NDOF Tilt CCW, NdofTCCW. * NDOF_BUTTON_ROTATE NDOF Rotate, NdofRot. * NDOF_BUTTON_PANZOOM NDOF Pan/Zoom, NdofPanZoom. * NDOF_BUTTON_DOMINANT NDOF Dominant, NdofDom. * NDOF_BUTTON_PLUS NDOF Plus, Ndof+. * NDOF_BUTTON_MINUS NDOF Minus, Ndof-. * NDOF_BUTTON_ESC NDOF Esc, NdofEsc. * NDOF_BUTTON_ALT NDOF Alt, NdofAlt. * NDOF_BUTTON_SHIFT NDOF Shift, NdofShift. * NDOF_BUTTON_CTRL NDOF Ctrl, NdofCtrl. * NDOF_BUTTON_1 NDOF Button 1, NdofB1. * NDOF_BUTTON_2 NDOF Button 2, NdofB2. * NDOF_BUTTON_3 NDOF Button 3, NdofB3. * NDOF_BUTTON_4 NDOF Button 4, NdofB4. * NDOF_BUTTON_5 NDOF Button 5, NdofB5. * NDOF_BUTTON_6 NDOF Button 6, NdofB6. * NDOF_BUTTON_7 NDOF Button 7, NdofB7. * NDOF_BUTTON_8 NDOF Button 8, NdofB8. * NDOF_BUTTON_9 NDOF Button 9, NdofB9. * NDOF_BUTTON_10 NDOF Button 10, NdofB10. * NDOF_BUTTON_A NDOF Button A, NdofBA. * NDOF_BUTTON_B NDOF Button B, NdofBB. * NDOF_BUTTON_C NDOF Button C, NdofBC. * ACTIONZONE_AREA ActionZone Area, AZone Area. * ACTIONZONE_REGION ActionZone Region, AZone Region. * ACTIONZONE_FULLSCREEN ActionZone Fullscreen, AZone FullScr.
 
-    :type: typing.Union[str, int]
-    '''
 
     unicode: str = None
     ''' Single unicode character for this event
@@ -17011,7 +17084,7 @@ class ID(bpy_struct):
         pass
 
 
-class IDMaterials(bpy_struct):
+class IDMaterials(bpy_struct, bpy_prop_collection[typing.Union[int, str], 'Material']):
     ''' Collection of materials
     '''
 
@@ -17102,7 +17175,7 @@ class IDOverrideLibrary(bpy_struct):
         pass
 
 
-class IDOverrideLibraryProperties(bpy_struct):
+class IDOverrideLibraryProperties(bpy_struct, bpy_prop_collection[typing.Union[int, str], 'IDOverrideLibraryProperty']):
     ''' Collection of override properties
     '''
 
@@ -17241,7 +17314,7 @@ class IDOverrideLibraryPropertyOperation(bpy_struct):
         pass
 
 
-class IDOverrideLibraryPropertyOperations(bpy_struct):
+class IDOverrideLibraryPropertyOperations(bpy_struct, bpy_prop_collection[typing.Union[int, str], 'IDOverrideLibraryPropertyOperation']):
     ''' Collection of override operations
     '''
 
@@ -17823,7 +17896,7 @@ class KeyConfigPreferences(bpy_struct):
         pass
 
 
-class KeyConfigurations(bpy_struct):
+class KeyConfigurations(bpy_struct, bpy_prop_collection[typing.Union[int, str], 'KeyConfig']):
     ''' Collection of KeyConfigs
     '''
 
@@ -18078,10 +18151,6 @@ class KeyMapItem(bpy_struct):
     '''
 
     key_modifier: typing.Union[str, int] = None
-    ''' Regular key pressed as a modifier * NONE Undocumented. * LEFTMOUSE Left Mouse, LMB. * MIDDLEMOUSE Middle Mouse, MMB. * RIGHTMOUSE Right Mouse, RMB. * BUTTON4MOUSE Button4 Mouse, MB4. * BUTTON5MOUSE Button5 Mouse, MB5. * BUTTON6MOUSE Button6 Mouse, MB6. * BUTTON7MOUSE Button7 Mouse, MB7. * PEN Pen. * ERASER Eraser. * MOUSEMOVE Mouse Move, MsMov. * INBETWEEN_MOUSEMOVE In-between Move, MsSubMov. * TRACKPADPAN Mouse/Trackpad Pan, MsPan. * TRACKPADZOOM Mouse/Trackpad Zoom, MsZoom. * MOUSEROTATE Mouse/Trackpad Rotate, MsRot. * MOUSESMARTZOOM Mouse/Trackpad Smart Zoom, MsSmartZoom. * WHEELUPMOUSE Wheel Up, WhUp. * WHEELDOWNMOUSE Wheel Down, WhDown. * WHEELINMOUSE Wheel In, WhIn. * WHEELOUTMOUSE Wheel Out, WhOut. * EVT_TWEAK_L Tweak Left, TwkL. * EVT_TWEAK_M Tweak Middle, TwkM. * EVT_TWEAK_R Tweak Right, TwkR. * A A. * B B. * C C. * D D. * E E. * F F. * G G. * H H. * I I. * J J. * K K. * L L. * M M. * N N. * O O. * P P. * Q Q. * R R. * S S. * T T. * U U. * V V. * W W. * X X. * Y Y. * Z Z. * ZERO 0. * ONE 1. * TWO 2. * THREE 3. * FOUR 4. * FIVE 5. * SIX 6. * SEVEN 7. * EIGHT 8. * NINE 9. * LEFT_CTRL Left Ctrl, CtrlL. * LEFT_ALT Left Alt, AltL. * LEFT_SHIFT Left Shift, ShiftL. * RIGHT_ALT Right Alt, AltR. * RIGHT_CTRL Right Ctrl, CtrlR. * RIGHT_SHIFT Right Shift, ShiftR. * OSKEY OS Key, Cmd. * APP Application, App. * GRLESS Grless. * ESC Esc. * TAB Tab. * RET Return, Enter. * SPACE Spacebar, Space. * LINE_FEED Line Feed. * BACK_SPACE Backspace, BkSpace. * DEL Delete, Del. * SEMI_COLON ;. * PERIOD .. * COMMA ,. * QUOTE ". * ACCENT_GRAVE \ . * MINUS -. * PLUS +. * SLASH /. * BACK_SLASH \\. * EQUAL =. * LEFT_BRACKET [. * RIGHT_BRACKET ]. * LEFT_ARROW Left Arrow, ←. * DOWN_ARROW Down Arrow, ↓. * RIGHT_ARROW Right Arrow, →. * UP_ARROW Up Arrow, ↑. * NUMPAD_2 Numpad 2, Pad2. * NUMPAD_4 Numpad 4, Pad4. * NUMPAD_6 Numpad 6, Pad6. * NUMPAD_8 Numpad 8, Pad8. * NUMPAD_1 Numpad 1, Pad1. * NUMPAD_3 Numpad 3, Pad3. * NUMPAD_5 Numpad 5, Pad5. * NUMPAD_7 Numpad 7, Pad7. * NUMPAD_9 Numpad 9, Pad9. * NUMPAD_PERIOD Numpad ., Pad.. * NUMPAD_SLASH Numpad /, Pad/. * NUMPAD_ASTERIX Numpad \*, Pad\*. * NUMPAD_0 Numpad 0, Pad0. * NUMPAD_MINUS Numpad -, Pad-. * NUMPAD_ENTER Numpad Enter, PadEnter. * NUMPAD_PLUS Numpad +, Pad+. * F1 F1. * F2 F2. * F3 F3. * F4 F4. * F5 F5. * F6 F6. * F7 F7. * F8 F8. * F9 F9. * F10 F10. * F11 F11. * F12 F12. * F13 F13. * F14 F14. * F15 F15. * F16 F16. * F17 F17. * F18 F18. * F19 F19. * F20 F20. * F21 F21. * F22 F22. * F23 F23. * F24 F24. * PAUSE Pause. * INSERT Insert, Ins. * HOME Home. * PAGE_UP Page Up, PgUp. * PAGE_DOWN Page Down, PgDown. * END End. * MEDIA_PLAY Media Play/Pause, >/\|\|. * MEDIA_STOP Media Stop, Stop. * MEDIA_FIRST Media First, \|<<. * MEDIA_LAST Media Last, >>\|. * TEXTINPUT Text Input, TxtIn. * WINDOW_DEACTIVATE Window Deactivate. * TIMER Timer, Tmr. * TIMER0 Timer 0, Tmr0. * TIMER1 Timer 1, Tmr1. * TIMER2 Timer 2, Tmr2. * TIMER_JOBS Timer Jobs, TmrJob. * TIMER_AUTOSAVE Timer Autosave, TmrSave. * TIMER_REPORT Timer Report, TmrReport. * TIMERREGION Timer Region, TmrReg. * NDOF_MOTION NDOF Motion, NdofMov. * NDOF_BUTTON_MENU NDOF Menu, NdofMenu. * NDOF_BUTTON_FIT NDOF Fit, NdofFit. * NDOF_BUTTON_TOP NDOF Top, Ndof↑. * NDOF_BUTTON_BOTTOM NDOF Bottom, Ndof↓. * NDOF_BUTTON_LEFT NDOF Left, Ndof←. * NDOF_BUTTON_RIGHT NDOF Right, Ndof→. * NDOF_BUTTON_FRONT NDOF Front, NdofFront. * NDOF_BUTTON_BACK NDOF Back, NdofBack. * NDOF_BUTTON_ISO1 NDOF Isometric 1, NdofIso1. * NDOF_BUTTON_ISO2 NDOF Isometric 2, NdofIso2. * NDOF_BUTTON_ROLL_CW NDOF Roll CW, NdofRCW. * NDOF_BUTTON_ROLL_CCW NDOF Roll CCW, NdofRCCW. * NDOF_BUTTON_SPIN_CW NDOF Spin CW, NdofSCW. * NDOF_BUTTON_SPIN_CCW NDOF Spin CCW, NdofSCCW. * NDOF_BUTTON_TILT_CW NDOF Tilt CW, NdofTCW. * NDOF_BUTTON_TILT_CCW NDOF Tilt CCW, NdofTCCW. * NDOF_BUTTON_ROTATE NDOF Rotate, NdofRot. * NDOF_BUTTON_PANZOOM NDOF Pan/Zoom, NdofPanZoom. * NDOF_BUTTON_DOMINANT NDOF Dominant, NdofDom. * NDOF_BUTTON_PLUS NDOF Plus, Ndof+. * NDOF_BUTTON_MINUS NDOF Minus, Ndof-. * NDOF_BUTTON_ESC NDOF Esc, NdofEsc. * NDOF_BUTTON_ALT NDOF Alt, NdofAlt. * NDOF_BUTTON_SHIFT NDOF Shift, NdofShift. * NDOF_BUTTON_CTRL NDOF Ctrl, NdofCtrl. * NDOF_BUTTON_1 NDOF Button 1, NdofB1. * NDOF_BUTTON_2 NDOF Button 2, NdofB2. * NDOF_BUTTON_3 NDOF Button 3, NdofB3. * NDOF_BUTTON_4 NDOF Button 4, NdofB4. * NDOF_BUTTON_5 NDOF Button 5, NdofB5. * NDOF_BUTTON_6 NDOF Button 6, NdofB6. * NDOF_BUTTON_7 NDOF Button 7, NdofB7. * NDOF_BUTTON_8 NDOF Button 8, NdofB8. * NDOF_BUTTON_9 NDOF Button 9, NdofB9. * NDOF_BUTTON_10 NDOF Button 10, NdofB10. * NDOF_BUTTON_A NDOF Button A, NdofBA. * NDOF_BUTTON_B NDOF Button B, NdofBB. * NDOF_BUTTON_C NDOF Button C, NdofBC. * ACTIONZONE_AREA ActionZone Area, AZone Area. * ACTIONZONE_REGION ActionZone Region, AZone Region. * ACTIONZONE_FULLSCREEN ActionZone Fullscreen, AZone FullScr.
-
-    :type: typing.Union[str, int]
-    '''
 
     map_type: typing.Union[str, int] = None
     ''' Type of event mapping
@@ -18132,10 +18201,6 @@ class KeyMapItem(bpy_struct):
     '''
 
     type: typing.Union[str, int] = None
-    ''' Type of event * NONE Undocumented. * LEFTMOUSE Left Mouse, LMB. * MIDDLEMOUSE Middle Mouse, MMB. * RIGHTMOUSE Right Mouse, RMB. * BUTTON4MOUSE Button4 Mouse, MB4. * BUTTON5MOUSE Button5 Mouse, MB5. * BUTTON6MOUSE Button6 Mouse, MB6. * BUTTON7MOUSE Button7 Mouse, MB7. * PEN Pen. * ERASER Eraser. * MOUSEMOVE Mouse Move, MsMov. * INBETWEEN_MOUSEMOVE In-between Move, MsSubMov. * TRACKPADPAN Mouse/Trackpad Pan, MsPan. * TRACKPADZOOM Mouse/Trackpad Zoom, MsZoom. * MOUSEROTATE Mouse/Trackpad Rotate, MsRot. * MOUSESMARTZOOM Mouse/Trackpad Smart Zoom, MsSmartZoom. * WHEELUPMOUSE Wheel Up, WhUp. * WHEELDOWNMOUSE Wheel Down, WhDown. * WHEELINMOUSE Wheel In, WhIn. * WHEELOUTMOUSE Wheel Out, WhOut. * EVT_TWEAK_L Tweak Left, TwkL. * EVT_TWEAK_M Tweak Middle, TwkM. * EVT_TWEAK_R Tweak Right, TwkR. * A A. * B B. * C C. * D D. * E E. * F F. * G G. * H H. * I I. * J J. * K K. * L L. * M M. * N N. * O O. * P P. * Q Q. * R R. * S S. * T T. * U U. * V V. * W W. * X X. * Y Y. * Z Z. * ZERO 0. * ONE 1. * TWO 2. * THREE 3. * FOUR 4. * FIVE 5. * SIX 6. * SEVEN 7. * EIGHT 8. * NINE 9. * LEFT_CTRL Left Ctrl, CtrlL. * LEFT_ALT Left Alt, AltL. * LEFT_SHIFT Left Shift, ShiftL. * RIGHT_ALT Right Alt, AltR. * RIGHT_CTRL Right Ctrl, CtrlR. * RIGHT_SHIFT Right Shift, ShiftR. * OSKEY OS Key, Cmd. * APP Application, App. * GRLESS Grless. * ESC Esc. * TAB Tab. * RET Return, Enter. * SPACE Spacebar, Space. * LINE_FEED Line Feed. * BACK_SPACE Backspace, BkSpace. * DEL Delete, Del. * SEMI_COLON ;. * PERIOD .. * COMMA ,. * QUOTE ". * ACCENT_GRAVE \ . * MINUS -. * PLUS +. * SLASH /. * BACK_SLASH \\. * EQUAL =. * LEFT_BRACKET [. * RIGHT_BRACKET ]. * LEFT_ARROW Left Arrow, ←. * DOWN_ARROW Down Arrow, ↓. * RIGHT_ARROW Right Arrow, →. * UP_ARROW Up Arrow, ↑. * NUMPAD_2 Numpad 2, Pad2. * NUMPAD_4 Numpad 4, Pad4. * NUMPAD_6 Numpad 6, Pad6. * NUMPAD_8 Numpad 8, Pad8. * NUMPAD_1 Numpad 1, Pad1. * NUMPAD_3 Numpad 3, Pad3. * NUMPAD_5 Numpad 5, Pad5. * NUMPAD_7 Numpad 7, Pad7. * NUMPAD_9 Numpad 9, Pad9. * NUMPAD_PERIOD Numpad ., Pad.. * NUMPAD_SLASH Numpad /, Pad/. * NUMPAD_ASTERIX Numpad \*, Pad\*. * NUMPAD_0 Numpad 0, Pad0. * NUMPAD_MINUS Numpad -, Pad-. * NUMPAD_ENTER Numpad Enter, PadEnter. * NUMPAD_PLUS Numpad +, Pad+. * F1 F1. * F2 F2. * F3 F3. * F4 F4. * F5 F5. * F6 F6. * F7 F7. * F8 F8. * F9 F9. * F10 F10. * F11 F11. * F12 F12. * F13 F13. * F14 F14. * F15 F15. * F16 F16. * F17 F17. * F18 F18. * F19 F19. * F20 F20. * F21 F21. * F22 F22. * F23 F23. * F24 F24. * PAUSE Pause. * INSERT Insert, Ins. * HOME Home. * PAGE_UP Page Up, PgUp. * PAGE_DOWN Page Down, PgDown. * END End. * MEDIA_PLAY Media Play/Pause, >/\|\|. * MEDIA_STOP Media Stop, Stop. * MEDIA_FIRST Media First, \|<<. * MEDIA_LAST Media Last, >>\|. * TEXTINPUT Text Input, TxtIn. * WINDOW_DEACTIVATE Window Deactivate. * TIMER Timer, Tmr. * TIMER0 Timer 0, Tmr0. * TIMER1 Timer 1, Tmr1. * TIMER2 Timer 2, Tmr2. * TIMER_JOBS Timer Jobs, TmrJob. * TIMER_AUTOSAVE Timer Autosave, TmrSave. * TIMER_REPORT Timer Report, TmrReport. * TIMERREGION Timer Region, TmrReg. * NDOF_MOTION NDOF Motion, NdofMov. * NDOF_BUTTON_MENU NDOF Menu, NdofMenu. * NDOF_BUTTON_FIT NDOF Fit, NdofFit. * NDOF_BUTTON_TOP NDOF Top, Ndof↑. * NDOF_BUTTON_BOTTOM NDOF Bottom, Ndof↓. * NDOF_BUTTON_LEFT NDOF Left, Ndof←. * NDOF_BUTTON_RIGHT NDOF Right, Ndof→. * NDOF_BUTTON_FRONT NDOF Front, NdofFront. * NDOF_BUTTON_BACK NDOF Back, NdofBack. * NDOF_BUTTON_ISO1 NDOF Isometric 1, NdofIso1. * NDOF_BUTTON_ISO2 NDOF Isometric 2, NdofIso2. * NDOF_BUTTON_ROLL_CW NDOF Roll CW, NdofRCW. * NDOF_BUTTON_ROLL_CCW NDOF Roll CCW, NdofRCCW. * NDOF_BUTTON_SPIN_CW NDOF Spin CW, NdofSCW. * NDOF_BUTTON_SPIN_CCW NDOF Spin CCW, NdofSCCW. * NDOF_BUTTON_TILT_CW NDOF Tilt CW, NdofTCW. * NDOF_BUTTON_TILT_CCW NDOF Tilt CCW, NdofTCCW. * NDOF_BUTTON_ROTATE NDOF Rotate, NdofRot. * NDOF_BUTTON_PANZOOM NDOF Pan/Zoom, NdofPanZoom. * NDOF_BUTTON_DOMINANT NDOF Dominant, NdofDom. * NDOF_BUTTON_PLUS NDOF Plus, Ndof+. * NDOF_BUTTON_MINUS NDOF Minus, Ndof-. * NDOF_BUTTON_ESC NDOF Esc, NdofEsc. * NDOF_BUTTON_ALT NDOF Alt, NdofAlt. * NDOF_BUTTON_SHIFT NDOF Shift, NdofShift. * NDOF_BUTTON_CTRL NDOF Ctrl, NdofCtrl. * NDOF_BUTTON_1 NDOF Button 1, NdofB1. * NDOF_BUTTON_2 NDOF Button 2, NdofB2. * NDOF_BUTTON_3 NDOF Button 3, NdofB3. * NDOF_BUTTON_4 NDOF Button 4, NdofB4. * NDOF_BUTTON_5 NDOF Button 5, NdofB5. * NDOF_BUTTON_6 NDOF Button 6, NdofB6. * NDOF_BUTTON_7 NDOF Button 7, NdofB7. * NDOF_BUTTON_8 NDOF Button 8, NdofB8. * NDOF_BUTTON_9 NDOF Button 9, NdofB9. * NDOF_BUTTON_10 NDOF Button 10, NdofB10. * NDOF_BUTTON_A NDOF Button A, NdofBA. * NDOF_BUTTON_B NDOF Button B, NdofBB. * NDOF_BUTTON_C NDOF Button C, NdofBC. * ACTIONZONE_AREA ActionZone Area, AZone Area. * ACTIONZONE_REGION ActionZone Region, AZone Region. * ACTIONZONE_FULLSCREEN ActionZone Fullscreen, AZone FullScr.
-
-    :type: typing.Union[str, int]
-    '''
 
     value: typing.Union[str, int] = None
     '''
@@ -18185,7 +18250,7 @@ class KeyMapItem(bpy_struct):
         pass
 
 
-class KeyMapItems(bpy_struct):
+class KeyMapItems(bpy_struct, bpy_prop_collection[typing.Union[int, str], 'KeyMapItem']):
     ''' Collection of keymap items
     '''
 
@@ -18205,7 +18270,7 @@ class KeyMapItems(bpy_struct):
 
         :param idname: Operator Identifier
         :type idname: str
-        :param type: Type * NONE Undocumented. * LEFTMOUSE Left Mouse, LMB. * MIDDLEMOUSE Middle Mouse, MMB. * RIGHTMOUSE Right Mouse, RMB. * BUTTON4MOUSE Button4 Mouse, MB4. * BUTTON5MOUSE Button5 Mouse, MB5. * BUTTON6MOUSE Button6 Mouse, MB6. * BUTTON7MOUSE Button7 Mouse, MB7. * PEN Pen. * ERASER Eraser. * MOUSEMOVE Mouse Move, MsMov. * INBETWEEN_MOUSEMOVE In-between Move, MsSubMov. * TRACKPADPAN Mouse/Trackpad Pan, MsPan. * TRACKPADZOOM Mouse/Trackpad Zoom, MsZoom. * MOUSEROTATE Mouse/Trackpad Rotate, MsRot. * MOUSESMARTZOOM Mouse/Trackpad Smart Zoom, MsSmartZoom. * WHEELUPMOUSE Wheel Up, WhUp. * WHEELDOWNMOUSE Wheel Down, WhDown. * WHEELINMOUSE Wheel In, WhIn. * WHEELOUTMOUSE Wheel Out, WhOut. * EVT_TWEAK_L Tweak Left, TwkL. * EVT_TWEAK_M Tweak Middle, TwkM. * EVT_TWEAK_R Tweak Right, TwkR. * A A. * B B. * C C. * D D. * E E. * F F. * G G. * H H. * I I. * J J. * K K. * L L. * M M. * N N. * O O. * P P. * Q Q. * R R. * S S. * T T. * U U. * V V. * W W. * X X. * Y Y. * Z Z. * ZERO 0. * ONE 1. * TWO 2. * THREE 3. * FOUR 4. * FIVE 5. * SIX 6. * SEVEN 7. * EIGHT 8. * NINE 9. * LEFT_CTRL Left Ctrl, CtrlL. * LEFT_ALT Left Alt, AltL. * LEFT_SHIFT Left Shift, ShiftL. * RIGHT_ALT Right Alt, AltR. * RIGHT_CTRL Right Ctrl, CtrlR. * RIGHT_SHIFT Right Shift, ShiftR. * OSKEY OS Key, Cmd. * APP Application, App. * GRLESS Grless. * ESC Esc. * TAB Tab. * RET Return, Enter. * SPACE Spacebar, Space. * LINE_FEED Line Feed. * BACK_SPACE Backspace, BkSpace. * DEL Delete, Del. * SEMI_COLON ;. * PERIOD .. * COMMA ,. * QUOTE ". * ACCENT_GRAVE \ . * MINUS -. * PLUS +. * SLASH /. * BACK_SLASH \\. * EQUAL =. * LEFT_BRACKET [. * RIGHT_BRACKET ]. * LEFT_ARROW Left Arrow, ←. * DOWN_ARROW Down Arrow, ↓. * RIGHT_ARROW Right Arrow, →. * UP_ARROW Up Arrow, ↑. * NUMPAD_2 Numpad 2, Pad2. * NUMPAD_4 Numpad 4, Pad4. * NUMPAD_6 Numpad 6, Pad6. * NUMPAD_8 Numpad 8, Pad8. * NUMPAD_1 Numpad 1, Pad1. * NUMPAD_3 Numpad 3, Pad3. * NUMPAD_5 Numpad 5, Pad5. * NUMPAD_7 Numpad 7, Pad7. * NUMPAD_9 Numpad 9, Pad9. * NUMPAD_PERIOD Numpad ., Pad.. * NUMPAD_SLASH Numpad /, Pad/. * NUMPAD_ASTERIX Numpad \*, Pad\*. * NUMPAD_0 Numpad 0, Pad0. * NUMPAD_MINUS Numpad -, Pad-. * NUMPAD_ENTER Numpad Enter, PadEnter. * NUMPAD_PLUS Numpad +, Pad+. * F1 F1. * F2 F2. * F3 F3. * F4 F4. * F5 F5. * F6 F6. * F7 F7. * F8 F8. * F9 F9. * F10 F10. * F11 F11. * F12 F12. * F13 F13. * F14 F14. * F15 F15. * F16 F16. * F17 F17. * F18 F18. * F19 F19. * F20 F20. * F21 F21. * F22 F22. * F23 F23. * F24 F24. * PAUSE Pause. * INSERT Insert, Ins. * HOME Home. * PAGE_UP Page Up, PgUp. * PAGE_DOWN Page Down, PgDown. * END End. * MEDIA_PLAY Media Play/Pause, >/\|\|. * MEDIA_STOP Media Stop, Stop. * MEDIA_FIRST Media First, \|<<. * MEDIA_LAST Media Last, >>\|. * TEXTINPUT Text Input, TxtIn. * WINDOW_DEACTIVATE Window Deactivate. * TIMER Timer, Tmr. * TIMER0 Timer 0, Tmr0. * TIMER1 Timer 1, Tmr1. * TIMER2 Timer 2, Tmr2. * TIMER_JOBS Timer Jobs, TmrJob. * TIMER_AUTOSAVE Timer Autosave, TmrSave. * TIMER_REPORT Timer Report, TmrReport. * TIMERREGION Timer Region, TmrReg. * NDOF_MOTION NDOF Motion, NdofMov. * NDOF_BUTTON_MENU NDOF Menu, NdofMenu. * NDOF_BUTTON_FIT NDOF Fit, NdofFit. * NDOF_BUTTON_TOP NDOF Top, Ndof↑. * NDOF_BUTTON_BOTTOM NDOF Bottom, Ndof↓. * NDOF_BUTTON_LEFT NDOF Left, Ndof←. * NDOF_BUTTON_RIGHT NDOF Right, Ndof→. * NDOF_BUTTON_FRONT NDOF Front, NdofFront. * NDOF_BUTTON_BACK NDOF Back, NdofBack. * NDOF_BUTTON_ISO1 NDOF Isometric 1, NdofIso1. * NDOF_BUTTON_ISO2 NDOF Isometric 2, NdofIso2. * NDOF_BUTTON_ROLL_CW NDOF Roll CW, NdofRCW. * NDOF_BUTTON_ROLL_CCW NDOF Roll CCW, NdofRCCW. * NDOF_BUTTON_SPIN_CW NDOF Spin CW, NdofSCW. * NDOF_BUTTON_SPIN_CCW NDOF Spin CCW, NdofSCCW. * NDOF_BUTTON_TILT_CW NDOF Tilt CW, NdofTCW. * NDOF_BUTTON_TILT_CCW NDOF Tilt CCW, NdofTCCW. * NDOF_BUTTON_ROTATE NDOF Rotate, NdofRot. * NDOF_BUTTON_PANZOOM NDOF Pan/Zoom, NdofPanZoom. * NDOF_BUTTON_DOMINANT NDOF Dominant, NdofDom. * NDOF_BUTTON_PLUS NDOF Plus, Ndof+. * NDOF_BUTTON_MINUS NDOF Minus, Ndof-. * NDOF_BUTTON_ESC NDOF Esc, NdofEsc. * NDOF_BUTTON_ALT NDOF Alt, NdofAlt. * NDOF_BUTTON_SHIFT NDOF Shift, NdofShift. * NDOF_BUTTON_CTRL NDOF Ctrl, NdofCtrl. * NDOF_BUTTON_1 NDOF Button 1, NdofB1. * NDOF_BUTTON_2 NDOF Button 2, NdofB2. * NDOF_BUTTON_3 NDOF Button 3, NdofB3. * NDOF_BUTTON_4 NDOF Button 4, NdofB4. * NDOF_BUTTON_5 NDOF Button 5, NdofB5. * NDOF_BUTTON_6 NDOF Button 6, NdofB6. * NDOF_BUTTON_7 NDOF Button 7, NdofB7. * NDOF_BUTTON_8 NDOF Button 8, NdofB8. * NDOF_BUTTON_9 NDOF Button 9, NdofB9. * NDOF_BUTTON_10 NDOF Button 10, NdofB10. * NDOF_BUTTON_A NDOF Button A, NdofBA. * NDOF_BUTTON_B NDOF Button B, NdofBB. * NDOF_BUTTON_C NDOF Button C, NdofBC. * ACTIONZONE_AREA ActionZone Area, AZone Area. * ACTIONZONE_REGION ActionZone Region, AZone Region. * ACTIONZONE_FULLSCREEN ActionZone Fullscreen, AZone FullScr.
+        :param type: Type
         :type type: typing.Union[str, int]
         :param value: Value
         :type value: typing.Union[str, int]
@@ -18219,7 +18284,7 @@ class KeyMapItems(bpy_struct):
         :type alt: bool
         :param oskey: OS Key
         :type oskey: bool
-        :param key_modifier: Key Modifier * NONE Undocumented. * LEFTMOUSE Left Mouse, LMB. * MIDDLEMOUSE Middle Mouse, MMB. * RIGHTMOUSE Right Mouse, RMB. * BUTTON4MOUSE Button4 Mouse, MB4. * BUTTON5MOUSE Button5 Mouse, MB5. * BUTTON6MOUSE Button6 Mouse, MB6. * BUTTON7MOUSE Button7 Mouse, MB7. * PEN Pen. * ERASER Eraser. * MOUSEMOVE Mouse Move, MsMov. * INBETWEEN_MOUSEMOVE In-between Move, MsSubMov. * TRACKPADPAN Mouse/Trackpad Pan, MsPan. * TRACKPADZOOM Mouse/Trackpad Zoom, MsZoom. * MOUSEROTATE Mouse/Trackpad Rotate, MsRot. * MOUSESMARTZOOM Mouse/Trackpad Smart Zoom, MsSmartZoom. * WHEELUPMOUSE Wheel Up, WhUp. * WHEELDOWNMOUSE Wheel Down, WhDown. * WHEELINMOUSE Wheel In, WhIn. * WHEELOUTMOUSE Wheel Out, WhOut. * EVT_TWEAK_L Tweak Left, TwkL. * EVT_TWEAK_M Tweak Middle, TwkM. * EVT_TWEAK_R Tweak Right, TwkR. * A A. * B B. * C C. * D D. * E E. * F F. * G G. * H H. * I I. * J J. * K K. * L L. * M M. * N N. * O O. * P P. * Q Q. * R R. * S S. * T T. * U U. * V V. * W W. * X X. * Y Y. * Z Z. * ZERO 0. * ONE 1. * TWO 2. * THREE 3. * FOUR 4. * FIVE 5. * SIX 6. * SEVEN 7. * EIGHT 8. * NINE 9. * LEFT_CTRL Left Ctrl, CtrlL. * LEFT_ALT Left Alt, AltL. * LEFT_SHIFT Left Shift, ShiftL. * RIGHT_ALT Right Alt, AltR. * RIGHT_CTRL Right Ctrl, CtrlR. * RIGHT_SHIFT Right Shift, ShiftR. * OSKEY OS Key, Cmd. * APP Application, App. * GRLESS Grless. * ESC Esc. * TAB Tab. * RET Return, Enter. * SPACE Spacebar, Space. * LINE_FEED Line Feed. * BACK_SPACE Backspace, BkSpace. * DEL Delete, Del. * SEMI_COLON ;. * PERIOD .. * COMMA ,. * QUOTE ". * ACCENT_GRAVE \ . * MINUS -. * PLUS +. * SLASH /. * BACK_SLASH \\. * EQUAL =. * LEFT_BRACKET [. * RIGHT_BRACKET ]. * LEFT_ARROW Left Arrow, ←. * DOWN_ARROW Down Arrow, ↓. * RIGHT_ARROW Right Arrow, →. * UP_ARROW Up Arrow, ↑. * NUMPAD_2 Numpad 2, Pad2. * NUMPAD_4 Numpad 4, Pad4. * NUMPAD_6 Numpad 6, Pad6. * NUMPAD_8 Numpad 8, Pad8. * NUMPAD_1 Numpad 1, Pad1. * NUMPAD_3 Numpad 3, Pad3. * NUMPAD_5 Numpad 5, Pad5. * NUMPAD_7 Numpad 7, Pad7. * NUMPAD_9 Numpad 9, Pad9. * NUMPAD_PERIOD Numpad ., Pad.. * NUMPAD_SLASH Numpad /, Pad/. * NUMPAD_ASTERIX Numpad \*, Pad\*. * NUMPAD_0 Numpad 0, Pad0. * NUMPAD_MINUS Numpad -, Pad-. * NUMPAD_ENTER Numpad Enter, PadEnter. * NUMPAD_PLUS Numpad +, Pad+. * F1 F1. * F2 F2. * F3 F3. * F4 F4. * F5 F5. * F6 F6. * F7 F7. * F8 F8. * F9 F9. * F10 F10. * F11 F11. * F12 F12. * F13 F13. * F14 F14. * F15 F15. * F16 F16. * F17 F17. * F18 F18. * F19 F19. * F20 F20. * F21 F21. * F22 F22. * F23 F23. * F24 F24. * PAUSE Pause. * INSERT Insert, Ins. * HOME Home. * PAGE_UP Page Up, PgUp. * PAGE_DOWN Page Down, PgDown. * END End. * MEDIA_PLAY Media Play/Pause, >/\|\|. * MEDIA_STOP Media Stop, Stop. * MEDIA_FIRST Media First, \|<<. * MEDIA_LAST Media Last, >>\|. * TEXTINPUT Text Input, TxtIn. * WINDOW_DEACTIVATE Window Deactivate. * TIMER Timer, Tmr. * TIMER0 Timer 0, Tmr0. * TIMER1 Timer 1, Tmr1. * TIMER2 Timer 2, Tmr2. * TIMER_JOBS Timer Jobs, TmrJob. * TIMER_AUTOSAVE Timer Autosave, TmrSave. * TIMER_REPORT Timer Report, TmrReport. * TIMERREGION Timer Region, TmrReg. * NDOF_MOTION NDOF Motion, NdofMov. * NDOF_BUTTON_MENU NDOF Menu, NdofMenu. * NDOF_BUTTON_FIT NDOF Fit, NdofFit. * NDOF_BUTTON_TOP NDOF Top, Ndof↑. * NDOF_BUTTON_BOTTOM NDOF Bottom, Ndof↓. * NDOF_BUTTON_LEFT NDOF Left, Ndof←. * NDOF_BUTTON_RIGHT NDOF Right, Ndof→. * NDOF_BUTTON_FRONT NDOF Front, NdofFront. * NDOF_BUTTON_BACK NDOF Back, NdofBack. * NDOF_BUTTON_ISO1 NDOF Isometric 1, NdofIso1. * NDOF_BUTTON_ISO2 NDOF Isometric 2, NdofIso2. * NDOF_BUTTON_ROLL_CW NDOF Roll CW, NdofRCW. * NDOF_BUTTON_ROLL_CCW NDOF Roll CCW, NdofRCCW. * NDOF_BUTTON_SPIN_CW NDOF Spin CW, NdofSCW. * NDOF_BUTTON_SPIN_CCW NDOF Spin CCW, NdofSCCW. * NDOF_BUTTON_TILT_CW NDOF Tilt CW, NdofTCW. * NDOF_BUTTON_TILT_CCW NDOF Tilt CCW, NdofTCCW. * NDOF_BUTTON_ROTATE NDOF Rotate, NdofRot. * NDOF_BUTTON_PANZOOM NDOF Pan/Zoom, NdofPanZoom. * NDOF_BUTTON_DOMINANT NDOF Dominant, NdofDom. * NDOF_BUTTON_PLUS NDOF Plus, Ndof+. * NDOF_BUTTON_MINUS NDOF Minus, Ndof-. * NDOF_BUTTON_ESC NDOF Esc, NdofEsc. * NDOF_BUTTON_ALT NDOF Alt, NdofAlt. * NDOF_BUTTON_SHIFT NDOF Shift, NdofShift. * NDOF_BUTTON_CTRL NDOF Ctrl, NdofCtrl. * NDOF_BUTTON_1 NDOF Button 1, NdofB1. * NDOF_BUTTON_2 NDOF Button 2, NdofB2. * NDOF_BUTTON_3 NDOF Button 3, NdofB3. * NDOF_BUTTON_4 NDOF Button 4, NdofB4. * NDOF_BUTTON_5 NDOF Button 5, NdofB5. * NDOF_BUTTON_6 NDOF Button 6, NdofB6. * NDOF_BUTTON_7 NDOF Button 7, NdofB7. * NDOF_BUTTON_8 NDOF Button 8, NdofB8. * NDOF_BUTTON_9 NDOF Button 9, NdofB9. * NDOF_BUTTON_10 NDOF Button 10, NdofB10. * NDOF_BUTTON_A NDOF Button A, NdofBA. * NDOF_BUTTON_B NDOF Button B, NdofBB. * NDOF_BUTTON_C NDOF Button C, NdofBC. * ACTIONZONE_AREA ActionZone Area, AZone Area. * ACTIONZONE_REGION ActionZone Region, AZone Region. * ACTIONZONE_FULLSCREEN ActionZone Fullscreen, AZone FullScr.
+        :param key_modifier: Key Modifier
         :type key_modifier: typing.Union[str, int]
         :param repeat: Repeat, When set, accept key-repeat events
         :type repeat: bool
@@ -18245,7 +18310,7 @@ class KeyMapItems(bpy_struct):
 
         :param propvalue: Property Value
         :type propvalue: str
-        :param type: Type * NONE Undocumented. * LEFTMOUSE Left Mouse, LMB. * MIDDLEMOUSE Middle Mouse, MMB. * RIGHTMOUSE Right Mouse, RMB. * BUTTON4MOUSE Button4 Mouse, MB4. * BUTTON5MOUSE Button5 Mouse, MB5. * BUTTON6MOUSE Button6 Mouse, MB6. * BUTTON7MOUSE Button7 Mouse, MB7. * PEN Pen. * ERASER Eraser. * MOUSEMOVE Mouse Move, MsMov. * INBETWEEN_MOUSEMOVE In-between Move, MsSubMov. * TRACKPADPAN Mouse/Trackpad Pan, MsPan. * TRACKPADZOOM Mouse/Trackpad Zoom, MsZoom. * MOUSEROTATE Mouse/Trackpad Rotate, MsRot. * MOUSESMARTZOOM Mouse/Trackpad Smart Zoom, MsSmartZoom. * WHEELUPMOUSE Wheel Up, WhUp. * WHEELDOWNMOUSE Wheel Down, WhDown. * WHEELINMOUSE Wheel In, WhIn. * WHEELOUTMOUSE Wheel Out, WhOut. * EVT_TWEAK_L Tweak Left, TwkL. * EVT_TWEAK_M Tweak Middle, TwkM. * EVT_TWEAK_R Tweak Right, TwkR. * A A. * B B. * C C. * D D. * E E. * F F. * G G. * H H. * I I. * J J. * K K. * L L. * M M. * N N. * O O. * P P. * Q Q. * R R. * S S. * T T. * U U. * V V. * W W. * X X. * Y Y. * Z Z. * ZERO 0. * ONE 1. * TWO 2. * THREE 3. * FOUR 4. * FIVE 5. * SIX 6. * SEVEN 7. * EIGHT 8. * NINE 9. * LEFT_CTRL Left Ctrl, CtrlL. * LEFT_ALT Left Alt, AltL. * LEFT_SHIFT Left Shift, ShiftL. * RIGHT_ALT Right Alt, AltR. * RIGHT_CTRL Right Ctrl, CtrlR. * RIGHT_SHIFT Right Shift, ShiftR. * OSKEY OS Key, Cmd. * APP Application, App. * GRLESS Grless. * ESC Esc. * TAB Tab. * RET Return, Enter. * SPACE Spacebar, Space. * LINE_FEED Line Feed. * BACK_SPACE Backspace, BkSpace. * DEL Delete, Del. * SEMI_COLON ;. * PERIOD .. * COMMA ,. * QUOTE ". * ACCENT_GRAVE \ . * MINUS -. * PLUS +. * SLASH /. * BACK_SLASH \\. * EQUAL =. * LEFT_BRACKET [. * RIGHT_BRACKET ]. * LEFT_ARROW Left Arrow, ←. * DOWN_ARROW Down Arrow, ↓. * RIGHT_ARROW Right Arrow, →. * UP_ARROW Up Arrow, ↑. * NUMPAD_2 Numpad 2, Pad2. * NUMPAD_4 Numpad 4, Pad4. * NUMPAD_6 Numpad 6, Pad6. * NUMPAD_8 Numpad 8, Pad8. * NUMPAD_1 Numpad 1, Pad1. * NUMPAD_3 Numpad 3, Pad3. * NUMPAD_5 Numpad 5, Pad5. * NUMPAD_7 Numpad 7, Pad7. * NUMPAD_9 Numpad 9, Pad9. * NUMPAD_PERIOD Numpad ., Pad.. * NUMPAD_SLASH Numpad /, Pad/. * NUMPAD_ASTERIX Numpad \*, Pad\*. * NUMPAD_0 Numpad 0, Pad0. * NUMPAD_MINUS Numpad -, Pad-. * NUMPAD_ENTER Numpad Enter, PadEnter. * NUMPAD_PLUS Numpad +, Pad+. * F1 F1. * F2 F2. * F3 F3. * F4 F4. * F5 F5. * F6 F6. * F7 F7. * F8 F8. * F9 F9. * F10 F10. * F11 F11. * F12 F12. * F13 F13. * F14 F14. * F15 F15. * F16 F16. * F17 F17. * F18 F18. * F19 F19. * F20 F20. * F21 F21. * F22 F22. * F23 F23. * F24 F24. * PAUSE Pause. * INSERT Insert, Ins. * HOME Home. * PAGE_UP Page Up, PgUp. * PAGE_DOWN Page Down, PgDown. * END End. * MEDIA_PLAY Media Play/Pause, >/\|\|. * MEDIA_STOP Media Stop, Stop. * MEDIA_FIRST Media First, \|<<. * MEDIA_LAST Media Last, >>\|. * TEXTINPUT Text Input, TxtIn. * WINDOW_DEACTIVATE Window Deactivate. * TIMER Timer, Tmr. * TIMER0 Timer 0, Tmr0. * TIMER1 Timer 1, Tmr1. * TIMER2 Timer 2, Tmr2. * TIMER_JOBS Timer Jobs, TmrJob. * TIMER_AUTOSAVE Timer Autosave, TmrSave. * TIMER_REPORT Timer Report, TmrReport. * TIMERREGION Timer Region, TmrReg. * NDOF_MOTION NDOF Motion, NdofMov. * NDOF_BUTTON_MENU NDOF Menu, NdofMenu. * NDOF_BUTTON_FIT NDOF Fit, NdofFit. * NDOF_BUTTON_TOP NDOF Top, Ndof↑. * NDOF_BUTTON_BOTTOM NDOF Bottom, Ndof↓. * NDOF_BUTTON_LEFT NDOF Left, Ndof←. * NDOF_BUTTON_RIGHT NDOF Right, Ndof→. * NDOF_BUTTON_FRONT NDOF Front, NdofFront. * NDOF_BUTTON_BACK NDOF Back, NdofBack. * NDOF_BUTTON_ISO1 NDOF Isometric 1, NdofIso1. * NDOF_BUTTON_ISO2 NDOF Isometric 2, NdofIso2. * NDOF_BUTTON_ROLL_CW NDOF Roll CW, NdofRCW. * NDOF_BUTTON_ROLL_CCW NDOF Roll CCW, NdofRCCW. * NDOF_BUTTON_SPIN_CW NDOF Spin CW, NdofSCW. * NDOF_BUTTON_SPIN_CCW NDOF Spin CCW, NdofSCCW. * NDOF_BUTTON_TILT_CW NDOF Tilt CW, NdofTCW. * NDOF_BUTTON_TILT_CCW NDOF Tilt CCW, NdofTCCW. * NDOF_BUTTON_ROTATE NDOF Rotate, NdofRot. * NDOF_BUTTON_PANZOOM NDOF Pan/Zoom, NdofPanZoom. * NDOF_BUTTON_DOMINANT NDOF Dominant, NdofDom. * NDOF_BUTTON_PLUS NDOF Plus, Ndof+. * NDOF_BUTTON_MINUS NDOF Minus, Ndof-. * NDOF_BUTTON_ESC NDOF Esc, NdofEsc. * NDOF_BUTTON_ALT NDOF Alt, NdofAlt. * NDOF_BUTTON_SHIFT NDOF Shift, NdofShift. * NDOF_BUTTON_CTRL NDOF Ctrl, NdofCtrl. * NDOF_BUTTON_1 NDOF Button 1, NdofB1. * NDOF_BUTTON_2 NDOF Button 2, NdofB2. * NDOF_BUTTON_3 NDOF Button 3, NdofB3. * NDOF_BUTTON_4 NDOF Button 4, NdofB4. * NDOF_BUTTON_5 NDOF Button 5, NdofB5. * NDOF_BUTTON_6 NDOF Button 6, NdofB6. * NDOF_BUTTON_7 NDOF Button 7, NdofB7. * NDOF_BUTTON_8 NDOF Button 8, NdofB8. * NDOF_BUTTON_9 NDOF Button 9, NdofB9. * NDOF_BUTTON_10 NDOF Button 10, NdofB10. * NDOF_BUTTON_A NDOF Button A, NdofBA. * NDOF_BUTTON_B NDOF Button B, NdofBB. * NDOF_BUTTON_C NDOF Button C, NdofBC. * ACTIONZONE_AREA ActionZone Area, AZone Area. * ACTIONZONE_REGION ActionZone Region, AZone Region. * ACTIONZONE_FULLSCREEN ActionZone Fullscreen, AZone FullScr.
+        :param type: Type
         :type type: typing.Union[str, int]
         :param value: Value
         :type value: typing.Union[str, int]
@@ -18259,7 +18324,7 @@ class KeyMapItems(bpy_struct):
         :type alt: bool
         :param oskey: OS Key
         :type oskey: bool
-        :param key_modifier: Key Modifier * NONE Undocumented. * LEFTMOUSE Left Mouse, LMB. * MIDDLEMOUSE Middle Mouse, MMB. * RIGHTMOUSE Right Mouse, RMB. * BUTTON4MOUSE Button4 Mouse, MB4. * BUTTON5MOUSE Button5 Mouse, MB5. * BUTTON6MOUSE Button6 Mouse, MB6. * BUTTON7MOUSE Button7 Mouse, MB7. * PEN Pen. * ERASER Eraser. * MOUSEMOVE Mouse Move, MsMov. * INBETWEEN_MOUSEMOVE In-between Move, MsSubMov. * TRACKPADPAN Mouse/Trackpad Pan, MsPan. * TRACKPADZOOM Mouse/Trackpad Zoom, MsZoom. * MOUSEROTATE Mouse/Trackpad Rotate, MsRot. * MOUSESMARTZOOM Mouse/Trackpad Smart Zoom, MsSmartZoom. * WHEELUPMOUSE Wheel Up, WhUp. * WHEELDOWNMOUSE Wheel Down, WhDown. * WHEELINMOUSE Wheel In, WhIn. * WHEELOUTMOUSE Wheel Out, WhOut. * EVT_TWEAK_L Tweak Left, TwkL. * EVT_TWEAK_M Tweak Middle, TwkM. * EVT_TWEAK_R Tweak Right, TwkR. * A A. * B B. * C C. * D D. * E E. * F F. * G G. * H H. * I I. * J J. * K K. * L L. * M M. * N N. * O O. * P P. * Q Q. * R R. * S S. * T T. * U U. * V V. * W W. * X X. * Y Y. * Z Z. * ZERO 0. * ONE 1. * TWO 2. * THREE 3. * FOUR 4. * FIVE 5. * SIX 6. * SEVEN 7. * EIGHT 8. * NINE 9. * LEFT_CTRL Left Ctrl, CtrlL. * LEFT_ALT Left Alt, AltL. * LEFT_SHIFT Left Shift, ShiftL. * RIGHT_ALT Right Alt, AltR. * RIGHT_CTRL Right Ctrl, CtrlR. * RIGHT_SHIFT Right Shift, ShiftR. * OSKEY OS Key, Cmd. * APP Application, App. * GRLESS Grless. * ESC Esc. * TAB Tab. * RET Return, Enter. * SPACE Spacebar, Space. * LINE_FEED Line Feed. * BACK_SPACE Backspace, BkSpace. * DEL Delete, Del. * SEMI_COLON ;. * PERIOD .. * COMMA ,. * QUOTE ". * ACCENT_GRAVE \ . * MINUS -. * PLUS +. * SLASH /. * BACK_SLASH \\. * EQUAL =. * LEFT_BRACKET [. * RIGHT_BRACKET ]. * LEFT_ARROW Left Arrow, ←. * DOWN_ARROW Down Arrow, ↓. * RIGHT_ARROW Right Arrow, →. * UP_ARROW Up Arrow, ↑. * NUMPAD_2 Numpad 2, Pad2. * NUMPAD_4 Numpad 4, Pad4. * NUMPAD_6 Numpad 6, Pad6. * NUMPAD_8 Numpad 8, Pad8. * NUMPAD_1 Numpad 1, Pad1. * NUMPAD_3 Numpad 3, Pad3. * NUMPAD_5 Numpad 5, Pad5. * NUMPAD_7 Numpad 7, Pad7. * NUMPAD_9 Numpad 9, Pad9. * NUMPAD_PERIOD Numpad ., Pad.. * NUMPAD_SLASH Numpad /, Pad/. * NUMPAD_ASTERIX Numpad \*, Pad\*. * NUMPAD_0 Numpad 0, Pad0. * NUMPAD_MINUS Numpad -, Pad-. * NUMPAD_ENTER Numpad Enter, PadEnter. * NUMPAD_PLUS Numpad +, Pad+. * F1 F1. * F2 F2. * F3 F3. * F4 F4. * F5 F5. * F6 F6. * F7 F7. * F8 F8. * F9 F9. * F10 F10. * F11 F11. * F12 F12. * F13 F13. * F14 F14. * F15 F15. * F16 F16. * F17 F17. * F18 F18. * F19 F19. * F20 F20. * F21 F21. * F22 F22. * F23 F23. * F24 F24. * PAUSE Pause. * INSERT Insert, Ins. * HOME Home. * PAGE_UP Page Up, PgUp. * PAGE_DOWN Page Down, PgDown. * END End. * MEDIA_PLAY Media Play/Pause, >/\|\|. * MEDIA_STOP Media Stop, Stop. * MEDIA_FIRST Media First, \|<<. * MEDIA_LAST Media Last, >>\|. * TEXTINPUT Text Input, TxtIn. * WINDOW_DEACTIVATE Window Deactivate. * TIMER Timer, Tmr. * TIMER0 Timer 0, Tmr0. * TIMER1 Timer 1, Tmr1. * TIMER2 Timer 2, Tmr2. * TIMER_JOBS Timer Jobs, TmrJob. * TIMER_AUTOSAVE Timer Autosave, TmrSave. * TIMER_REPORT Timer Report, TmrReport. * TIMERREGION Timer Region, TmrReg. * NDOF_MOTION NDOF Motion, NdofMov. * NDOF_BUTTON_MENU NDOF Menu, NdofMenu. * NDOF_BUTTON_FIT NDOF Fit, NdofFit. * NDOF_BUTTON_TOP NDOF Top, Ndof↑. * NDOF_BUTTON_BOTTOM NDOF Bottom, Ndof↓. * NDOF_BUTTON_LEFT NDOF Left, Ndof←. * NDOF_BUTTON_RIGHT NDOF Right, Ndof→. * NDOF_BUTTON_FRONT NDOF Front, NdofFront. * NDOF_BUTTON_BACK NDOF Back, NdofBack. * NDOF_BUTTON_ISO1 NDOF Isometric 1, NdofIso1. * NDOF_BUTTON_ISO2 NDOF Isometric 2, NdofIso2. * NDOF_BUTTON_ROLL_CW NDOF Roll CW, NdofRCW. * NDOF_BUTTON_ROLL_CCW NDOF Roll CCW, NdofRCCW. * NDOF_BUTTON_SPIN_CW NDOF Spin CW, NdofSCW. * NDOF_BUTTON_SPIN_CCW NDOF Spin CCW, NdofSCCW. * NDOF_BUTTON_TILT_CW NDOF Tilt CW, NdofTCW. * NDOF_BUTTON_TILT_CCW NDOF Tilt CCW, NdofTCCW. * NDOF_BUTTON_ROTATE NDOF Rotate, NdofRot. * NDOF_BUTTON_PANZOOM NDOF Pan/Zoom, NdofPanZoom. * NDOF_BUTTON_DOMINANT NDOF Dominant, NdofDom. * NDOF_BUTTON_PLUS NDOF Plus, Ndof+. * NDOF_BUTTON_MINUS NDOF Minus, Ndof-. * NDOF_BUTTON_ESC NDOF Esc, NdofEsc. * NDOF_BUTTON_ALT NDOF Alt, NdofAlt. * NDOF_BUTTON_SHIFT NDOF Shift, NdofShift. * NDOF_BUTTON_CTRL NDOF Ctrl, NdofCtrl. * NDOF_BUTTON_1 NDOF Button 1, NdofB1. * NDOF_BUTTON_2 NDOF Button 2, NdofB2. * NDOF_BUTTON_3 NDOF Button 3, NdofB3. * NDOF_BUTTON_4 NDOF Button 4, NdofB4. * NDOF_BUTTON_5 NDOF Button 5, NdofB5. * NDOF_BUTTON_6 NDOF Button 6, NdofB6. * NDOF_BUTTON_7 NDOF Button 7, NdofB7. * NDOF_BUTTON_8 NDOF Button 8, NdofB8. * NDOF_BUTTON_9 NDOF Button 9, NdofB9. * NDOF_BUTTON_10 NDOF Button 10, NdofB10. * NDOF_BUTTON_A NDOF Button A, NdofBA. * NDOF_BUTTON_B NDOF Button B, NdofBB. * NDOF_BUTTON_C NDOF Button C, NdofBC. * ACTIONZONE_AREA ActionZone Area, AZone Area. * ACTIONZONE_REGION ActionZone Region, AZone Region. * ACTIONZONE_FULLSCREEN ActionZone Fullscreen, AZone FullScr.
+        :param key_modifier: Key Modifier
         :type key_modifier: typing.Union[str, int]
         :param repeat: Repeat, When set, accept key-repeat events
         :type repeat: bool
@@ -18350,7 +18415,7 @@ class KeyMapItems(bpy_struct):
         pass
 
 
-class KeyMaps(bpy_struct):
+class KeyMaps(bpy_struct, bpy_prop_collection[typing.Union[int, str], 'KeyMap']):
     ''' Collection of keymaps
     '''
 
@@ -18840,7 +18905,7 @@ class KeyingSetPath(bpy_struct):
         pass
 
 
-class KeyingSetPaths(bpy_struct):
+class KeyingSetPaths(bpy_struct, bpy_prop_collection[typing.Union[int, str], 'KeyingSetPath']):
     ''' Collection of keying set paths
     '''
 
@@ -19158,7 +19223,7 @@ class LayerCollection(bpy_struct):
         pass
 
 
-class LayerObjects(bpy_struct):
+class LayerObjects(bpy_struct, bpy_prop_collection[typing.Union[int, str], 'Object']):
     ''' Collections of objects
     '''
 
@@ -24824,9 +24889,10 @@ class Node(bpy_struct):
     :type: bool
     '''
 
-    inputs: typing.Union[typing.Dict[str, 'NodeSocket'], typing.
-                         List['NodeSocket'], 'bpy_prop_collection',
-                         'NodeInputs'] = None
+    # inputs: typing.Union[typing.Dict[str, 'NodeSocket'], typing.
+    #                      List['NodeSocket'], 'bpy_prop_collection',
+    #                      'NodeInputs'] = None
+    inputs: 'NodeInputs' = None
     '''
 
     :type: typing.Union[typing.Dict[str, 'NodeSocket'], typing.List['NodeSocket'], 'bpy_prop_collection', 'NodeInputs']
@@ -24846,7 +24912,7 @@ class Node(bpy_struct):
     :type: str
     '''
 
-    location: typing.List[float] = None
+    location: 'mathutils.Vector' = None
     '''
 
     :type: typing.List[float]
@@ -24864,9 +24930,10 @@ class Node(bpy_struct):
     :type: str
     '''
 
-    outputs: typing.Union[typing.Dict[str, 'NodeSocket'], typing.
-                          List['NodeSocket'], 'bpy_prop_collection',
-                          'NodeOutputs'] = None
+    # outputs: typing.Union[typing.Dict[str, 'NodeSocket'], typing.
+    #                       List['NodeSocket'], 'bpy_prop_collection',
+    #                       'NodeOutputs'] = None
+    outputs: 'NodeOutputs' = None
     '''
 
     :type: typing.Union[typing.Dict[str, 'NodeSocket'], typing.List['NodeSocket'], 'bpy_prop_collection', 'NodeOutputs']
@@ -25049,6 +25116,37 @@ class Node(bpy_struct):
 class NodeInputs(bpy_struct):
     ''' Collection of Node Sockets
     '''
+
+    # FIXME: Do these overloads actually work the way we hope they do?
+    # In python 3.10 we can probably fix this using type narrowing (TypeGuard-ing).
+    # Maybe.
+    @typing.overload
+    def __getitem__(self, key: typing.Literal["Roughness"]) -> 'NodeSocketFloatFactor':
+        pass
+
+    @typing.overload
+    def __getitem__(self, key: typing.Literal["Fac"]) -> 'NodeSocketFloatFactor':
+        pass
+
+    @typing.overload
+    def __getitem__(self, key: typing.Literal["Vector"]) -> 'NodeSocketVector':
+        pass
+
+    @typing.overload
+    def __getitem__(self, key: typing.Union[int, str]) -> 'NodeSocket':
+        pass
+
+    def __getitem__(self, key) -> 'NodeSocket':
+        pass
+
+    def __iter__(self) -> typing.Iterator['NodeSocket']:
+        pass
+
+    def __next__(self) -> 'NodeSocket':
+        pass
+
+    def __len__(self) -> int:
+        pass
 
     def new(self, type: str, name: str, identifier: str = "") -> 'NodeSocket':
         ''' Add a socket to this node
@@ -25390,6 +25488,26 @@ class NodeOutputFileSlotLayer(bpy_struct):
 class NodeOutputs(bpy_struct):
     ''' Collection of Node Sockets
     '''
+
+    @typing.overload
+    def __getitem__(self, key: typing.Literal["Color"]) -> 'NodeSocketColor ':
+        pass
+
+    @typing.overload
+    def __getitem__(self, key: typing.Union[int, str]) -> 'NodeSocket':
+        pass
+
+    def __getitem__(self, key) -> 'NodeSocket':
+        pass
+
+    def __iter__(self) -> typing.Iterator['NodeSocket']:
+        pass
+
+    def __next__(self) -> 'NodeSocket':
+        pass
+
+    def __len__(self) -> int:
+        pass
 
     def new(self, type: str, name: str, identifier: str = "") -> 'NodeSocket':
         ''' Add a socket to this node
@@ -25872,7 +25990,7 @@ class NodeTreePath(bpy_struct):
         pass
 
 
-class Nodes(bpy_struct):
+class Nodes(bpy_struct, bpy_prop_collection[typing.Union[int, str], 'Node']):
     ''' Collection of Nodes
     '''
 
@@ -25881,6 +25999,398 @@ class Nodes(bpy_struct):
 
     :type: 'Node'
     '''
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeAddShader"]) -> 'ShaderNodeAddShader':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeAmbientOcclusion"]) -> 'ShaderNodeAmbientOcclusion':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeAttribute"]) -> 'ShaderNodeAttribute':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeBackground"]) -> 'ShaderNodeBackground':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeBevel"]) -> 'ShaderNodeBevel':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeBlackbody"]) -> 'ShaderNodeBlackbody':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeBrightContrast"]) -> 'ShaderNodeBrightContrast':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeBsdfAnisotropic"]) -> 'ShaderNodeBsdfAnisotropic':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeBsdfDiffuse"]) -> 'ShaderNodeBsdfDiffuse':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeBsdfGlass"]) -> 'ShaderNodeBsdfGlass':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeBsdfGlossy"]) -> 'ShaderNodeBsdfGlossy':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeBsdfHair"]) -> 'ShaderNodeBsdfHair':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeBsdfHairPrincipled"]) -> 'ShaderNodeBsdfHairPrincipled':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeBsdfPrincipled"]) -> 'ShaderNodeBsdfPrincipled':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeBsdfRefraction"]) -> 'ShaderNodeBsdfRefraction':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeBsdfToon"]) -> 'ShaderNodeBsdfToon':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeBsdfTranslucent"]) -> 'ShaderNodeBsdfTranslucent':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeBsdfTransparent"]) -> 'ShaderNodeBsdfTransparent':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeBsdfVelvet"]) -> 'ShaderNodeBsdfVelvet':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeBump"]) -> 'ShaderNodeBump':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeCameraData"]) -> 'ShaderNodeCameraData':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeClamp"]) -> 'ShaderNodeClamp':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeCombineHSV"]) -> 'ShaderNodeCombineHSV':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeCombineRGB"]) -> 'ShaderNodeCombineRGB':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeCombineXYZ"]) -> 'ShaderNodeCombineXYZ':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeCustomGroup"]) -> 'ShaderNodeCustomGroup':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeDisplacement"]) -> 'ShaderNodeDisplacement':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeEeveeSpecular"]) -> 'ShaderNodeEeveeSpecular':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeEmission"]) -> 'ShaderNodeEmission':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeFloatCurve"]) -> 'ShaderNodeFloatCurve':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeFresnel"]) -> 'ShaderNodeFresnel':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeGamma"]) -> 'ShaderNodeGamma':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeGroup"]) -> 'ShaderNodeGroup':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeHairInfo"]) -> 'ShaderNodeHairInfo':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeHoldout"]) -> 'ShaderNodeHoldout':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeHueSaturation"]) -> 'ShaderNodeHueSaturation':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeInvert"]) -> 'ShaderNodeInvert':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeLayerWeight"]) -> 'ShaderNodeLayerWeight':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeLightFalloff"]) -> 'ShaderNodeLightFalloff':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeLightPath"]) -> 'ShaderNodeLightPath':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeMapRange"]) -> 'ShaderNodeMapRange':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeMapping"]) -> 'ShaderNodeMapping':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeMath"]) -> 'ShaderNodeMath':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeMixRGB"]) -> 'ShaderNodeMixRGB':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeMixShader"]) -> 'ShaderNodeMixShader':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeNewGeometry"]) -> 'ShaderNodeNewGeometry':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeNormal"]) -> 'ShaderNodeNormal':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeNormalMap"]) -> 'ShaderNodeNormalMap':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeObjectInfo"]) -> 'ShaderNodeObjectInfo':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeOutputAOV"]) -> 'ShaderNodeOutputAOV':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeOutputLight"]) -> 'ShaderNodeOutputLight':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeOutputLineStyle"]) -> 'ShaderNodeOutputLineStyle':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeOutputMaterial"]) -> 'ShaderNodeOutputMaterial':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeOutputWorld"]) -> 'ShaderNodeOutputWorld':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeParticleInfo"]) -> 'ShaderNodeParticleInfo':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeRGB"]) -> 'ShaderNodeRGB':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeRGBCurve"]) -> 'ShaderNodeRGBCurve':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeRGBToBW"]) -> 'ShaderNodeRGBToBW':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeScript"]) -> 'ShaderNodeScript':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeSeparateHSV"]) -> 'ShaderNodeSeparateHSV':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeSeparateRGB"]) -> 'ShaderNodeSeparateRGB':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeSeparateXYZ"]) -> 'ShaderNodeSeparateXYZ':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeShaderToRGB"]) -> 'ShaderNodeShaderToRGB':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeSqueeze"]) -> 'ShaderNodeSqueeze':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeSubsurfaceScattering"]) -> 'ShaderNodeSubsurfaceScattering':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeTangent"]) -> 'ShaderNodeTangent':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeTexBrick"]) -> 'ShaderNodeTexBrick':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeTexChecker"]) -> 'ShaderNodeTexChecker':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeTexCoord"]) -> 'ShaderNodeTexCoord':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeTexEnvironment"]) -> 'ShaderNodeTexEnvironment':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeTexGradient"]) -> 'ShaderNodeTexGradient':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeTexIES"]) -> 'ShaderNodeTexIES':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeTexImage"]) -> 'ShaderNodeTexImage':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeTexMagic"]) -> 'ShaderNodeTexMagic':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeTexMusgrave"]) -> 'ShaderNodeTexMusgrave':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeTexNoise"]) -> 'ShaderNodeTexNoise':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeTexPointDensity"]) -> 'ShaderNodeTexPointDensity':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeTexSky"]) -> 'ShaderNodeTexSky':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeTexVoronoi"]) -> 'ShaderNodeTexVoronoi':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeTexWave"]) -> 'ShaderNodeTexWave':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeTexWhiteNoise"]) -> 'ShaderNodeTexWhiteNoise':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeUVAlongStroke"]) -> 'ShaderNodeUVAlongStroke':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeUVMap"]) -> 'ShaderNodeUVMap':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeValToRGB"]) -> 'ShaderNodeValToRGB':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeValue"]) -> 'ShaderNodeValue':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeVectorCurve"]) -> 'ShaderNodeVectorCurve':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeVectorDisplacement"]) -> 'ShaderNodeVectorDisplacement':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeVectorMath"]) -> 'ShaderNodeVectorMath':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeVectorRotate"]) -> 'ShaderNodeVectorRotate':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeVectorTransform"]) -> 'ShaderNodeVectorTransform':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeVertexColor"]) -> 'ShaderNodeVertexColor':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeVolumeAbsorption"]) -> 'ShaderNodeVolumeAbsorption':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeVolumeInfo"]) -> 'ShaderNodeVolumeInfo':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeVolumePrincipled"]) -> 'ShaderNodeVolumePrincipled':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeVolumeScatter"]) -> 'ShaderNodeVolumeScatter':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeWavelength"]) -> 'ShaderNodeWavelength':
+        pass
+
+    @typing.overload
+    def new(self, type: typing.Literal["ShaderNodeWireframe"]) -> 'ShaderNodeWireframe':
+        pass
+
+    @typing.overload
+    def new(self, type: str) -> 'Node':
+        pass
 
     def new(self, type: str) -> 'Node':
         ''' Add a node to this node tree
@@ -26445,7 +26955,7 @@ class Operator(bpy_struct):
         '''
         pass
 
-    def draw(self, context: 'Context'):
+    def draw(self, context: 'Context') -> None:
         ''' Draw function for the operator
 
         :param context:
@@ -26453,7 +26963,7 @@ class Operator(bpy_struct):
         '''
         pass
 
-    def cancel(self, context: 'Context'):
+    def cancel(self, context: 'Context') -> None:
         ''' Called when the operator is canceled
 
         :param context:
@@ -26475,7 +26985,7 @@ class Operator(bpy_struct):
         '''
         pass
 
-    def as_keywords(self, ignore=()):
+    def as_keywords(self, ignore) -> typing.Dict[str, typing.Any]:
         ''' Return a copy of the properties as a dictionary
 
         '''
@@ -29262,8 +29772,9 @@ class Preferences(bpy_struct):
     :type: typing.Union[str, int]
     '''
 
-    addons: typing.Union[typing.Dict[str, 'Addon'], typing.
-                         List['Addon'], 'bpy_prop_collection', 'Addons'] = None
+    # addons: typing.Union[typing.Dict[str, 'Addon'], typing.
+    #                      List['Addon'], 'bpy_prop_collection', 'Addons'] = None
+    addons: 'Addons' = None
     '''
 
     :type: typing.Union[typing.Dict[str, 'Addon'], typing.List['Addon'], 'bpy_prop_collection', 'Addons']
@@ -30982,7 +31493,7 @@ class Property(bpy_struct):
     '''
 
     subtype: typing.Union[str, int] = None
-    ''' Semantic interpretation of the property * NONE None. * FILEPATH File Path. * DIRPATH Directory Path. * FILENAME File Name. * BYTESTRING Byte String. * PASSWORD Password, A string that is displayed hidden ('\*\*\*\*\*\*\*\*'). * PIXEL Pixel. * UNSIGNED Unsigned. * PERCENTAGE Percentage. * FACTOR Factor. * ANGLE Angle. * TIME Time. * DISTANCE Distance. * DISTANCE_CAMERA Camera Distance. * POWER Power. * TEMPERATURE Temperature. * COLOR Color. * TRANSLATION Translation. * DIRECTION Direction. * VELOCITY Velocity. * ACCELERATION Acceleration. * MATRIX Matrix. * EULER Euler Angles. * QUATERNION Quaternion. * AXISANGLE Axis-Angle. * XYZ XYZ. * XYZ_LENGTH XYZ Length. * COLOR_GAMMA Color. * COORDS Coordinates. * LAYER Layer. * LAYER_MEMBER Layer Member.
+    ''' Semantic interpretation of the property * NONE None. * FILEPATH File Path. * DIRPATH Directory Path. * FILENAME File Name. * BYTESTRING Byte String. * PASSWORD Password, A string that is displayed hidden ('********'). * PIXEL Pixel. * UNSIGNED Unsigned. * PERCENTAGE Percentage. * FACTOR Factor. * ANGLE Angle. * TIME Time. * DISTANCE Distance. * DISTANCE_CAMERA Camera Distance. * POWER Power. * TEMPERATURE Temperature. * COLOR Color. * TRANSLATION Translation. * DIRECTION Direction. * VELOCITY Velocity. * ACCELERATION Acceleration. * MATRIX Matrix. * EULER Euler Angles. * QUATERNION Quaternion. * AXISANGLE Axis-Angle. * XYZ XYZ. * XYZ_LENGTH XYZ Length. * COLOR_GAMMA Color. * COORDS Coordinates. * LAYER Layer. * LAYER_MEMBER Layer Member.
 
     :type: typing.Union[str, int]
     '''
@@ -36190,7 +36701,7 @@ class SoftBodySettings(bpy_struct):
     '''
 
     collision_type: typing.Union[str, int] = None
-    ''' Choose Collision Type * MANUAL Manual, Manual adjust. * AVERAGE Average, Average Spring length \* Ball Size. * MINIMAL Minimal, Minimal Spring length \* Ball Size. * MAXIMAL Maximal, Maximal Spring length \* Ball Size. * MINMAX AvMinMax, (Min+Max)/2 \* Ball Size.
+    ''' Choose Collision Type * MANUAL Manual, Manual adjust. * AVERAGE Average, Average Spring length * Ball Size. * MINIMAL Minimal, Minimal Spring length * Ball Size. * MAXIMAL Maximal, Maximal Spring length * Ball Size. * MINMAX AvMinMax, (Min+Max)/2 * Ball Size.
 
     :type: typing.Union[str, int]
     '''
@@ -42801,7 +43312,8 @@ class UILayout(bpy_struct):
         pass
 
     def prop(self,
-             data: 'AnyType',
+             #  data: 'AnyType',
+             data: bpy_struct,
              property: str,
              text: str = "",
              text_ctxt: str = "",
@@ -45936,8 +46448,9 @@ class ViewLayer(bpy_struct):
     :type: str
     '''
 
-    objects: typing.Union[typing.Dict[str, 'Object'], typing.List['Object'],
-                          'bpy_prop_collection', 'LayerObjects'] = None
+    # objects: typing.Union[typing.Dict[str, 'Object'], typing.List['Object'],
+    #                       'bpy_prop_collection', 'LayerObjects'] = None
+    objects: 'LayerObjects' = None
     ''' All the objects in this layer
 
     :type: typing.Union[typing.Dict[str, 'Object'], typing.List['Object'], 'bpy_prop_collection', 'LayerObjects']
@@ -46762,7 +47275,7 @@ class Window(bpy_struct):
                        oskey: bool = False) -> 'Event':
         ''' event_simulate
 
-        :param type: Type * NONE Undocumented. * LEFTMOUSE Left Mouse, LMB. * MIDDLEMOUSE Middle Mouse, MMB. * RIGHTMOUSE Right Mouse, RMB. * BUTTON4MOUSE Button4 Mouse, MB4. * BUTTON5MOUSE Button5 Mouse, MB5. * BUTTON6MOUSE Button6 Mouse, MB6. * BUTTON7MOUSE Button7 Mouse, MB7. * PEN Pen. * ERASER Eraser. * MOUSEMOVE Mouse Move, MsMov. * INBETWEEN_MOUSEMOVE In-between Move, MsSubMov. * TRACKPADPAN Mouse/Trackpad Pan, MsPan. * TRACKPADZOOM Mouse/Trackpad Zoom, MsZoom. * MOUSEROTATE Mouse/Trackpad Rotate, MsRot. * MOUSESMARTZOOM Mouse/Trackpad Smart Zoom, MsSmartZoom. * WHEELUPMOUSE Wheel Up, WhUp. * WHEELDOWNMOUSE Wheel Down, WhDown. * WHEELINMOUSE Wheel In, WhIn. * WHEELOUTMOUSE Wheel Out, WhOut. * EVT_TWEAK_L Tweak Left, TwkL. * EVT_TWEAK_M Tweak Middle, TwkM. * EVT_TWEAK_R Tweak Right, TwkR. * A A. * B B. * C C. * D D. * E E. * F F. * G G. * H H. * I I. * J J. * K K. * L L. * M M. * N N. * O O. * P P. * Q Q. * R R. * S S. * T T. * U U. * V V. * W W. * X X. * Y Y. * Z Z. * ZERO 0. * ONE 1. * TWO 2. * THREE 3. * FOUR 4. * FIVE 5. * SIX 6. * SEVEN 7. * EIGHT 8. * NINE 9. * LEFT_CTRL Left Ctrl, CtrlL. * LEFT_ALT Left Alt, AltL. * LEFT_SHIFT Left Shift, ShiftL. * RIGHT_ALT Right Alt, AltR. * RIGHT_CTRL Right Ctrl, CtrlR. * RIGHT_SHIFT Right Shift, ShiftR. * OSKEY OS Key, Cmd. * APP Application, App. * GRLESS Grless. * ESC Esc. * TAB Tab. * RET Return, Enter. * SPACE Spacebar, Space. * LINE_FEED Line Feed. * BACK_SPACE Backspace, BkSpace. * DEL Delete, Del. * SEMI_COLON ;. * PERIOD .. * COMMA ,. * QUOTE ". * ACCENT_GRAVE \ . * MINUS -. * PLUS +. * SLASH /. * BACK_SLASH \\. * EQUAL =. * LEFT_BRACKET [. * RIGHT_BRACKET ]. * LEFT_ARROW Left Arrow, ←. * DOWN_ARROW Down Arrow, ↓. * RIGHT_ARROW Right Arrow, →. * UP_ARROW Up Arrow, ↑. * NUMPAD_2 Numpad 2, Pad2. * NUMPAD_4 Numpad 4, Pad4. * NUMPAD_6 Numpad 6, Pad6. * NUMPAD_8 Numpad 8, Pad8. * NUMPAD_1 Numpad 1, Pad1. * NUMPAD_3 Numpad 3, Pad3. * NUMPAD_5 Numpad 5, Pad5. * NUMPAD_7 Numpad 7, Pad7. * NUMPAD_9 Numpad 9, Pad9. * NUMPAD_PERIOD Numpad ., Pad.. * NUMPAD_SLASH Numpad /, Pad/. * NUMPAD_ASTERIX Numpad \*, Pad\*. * NUMPAD_0 Numpad 0, Pad0. * NUMPAD_MINUS Numpad -, Pad-. * NUMPAD_ENTER Numpad Enter, PadEnter. * NUMPAD_PLUS Numpad +, Pad+. * F1 F1. * F2 F2. * F3 F3. * F4 F4. * F5 F5. * F6 F6. * F7 F7. * F8 F8. * F9 F9. * F10 F10. * F11 F11. * F12 F12. * F13 F13. * F14 F14. * F15 F15. * F16 F16. * F17 F17. * F18 F18. * F19 F19. * F20 F20. * F21 F21. * F22 F22. * F23 F23. * F24 F24. * PAUSE Pause. * INSERT Insert, Ins. * HOME Home. * PAGE_UP Page Up, PgUp. * PAGE_DOWN Page Down, PgDown. * END End. * MEDIA_PLAY Media Play/Pause, >/\|\|. * MEDIA_STOP Media Stop, Stop. * MEDIA_FIRST Media First, \|<<. * MEDIA_LAST Media Last, >>\|. * TEXTINPUT Text Input, TxtIn. * WINDOW_DEACTIVATE Window Deactivate. * TIMER Timer, Tmr. * TIMER0 Timer 0, Tmr0. * TIMER1 Timer 1, Tmr1. * TIMER2 Timer 2, Tmr2. * TIMER_JOBS Timer Jobs, TmrJob. * TIMER_AUTOSAVE Timer Autosave, TmrSave. * TIMER_REPORT Timer Report, TmrReport. * TIMERREGION Timer Region, TmrReg. * NDOF_MOTION NDOF Motion, NdofMov. * NDOF_BUTTON_MENU NDOF Menu, NdofMenu. * NDOF_BUTTON_FIT NDOF Fit, NdofFit. * NDOF_BUTTON_TOP NDOF Top, Ndof↑. * NDOF_BUTTON_BOTTOM NDOF Bottom, Ndof↓. * NDOF_BUTTON_LEFT NDOF Left, Ndof←. * NDOF_BUTTON_RIGHT NDOF Right, Ndof→. * NDOF_BUTTON_FRONT NDOF Front, NdofFront. * NDOF_BUTTON_BACK NDOF Back, NdofBack. * NDOF_BUTTON_ISO1 NDOF Isometric 1, NdofIso1. * NDOF_BUTTON_ISO2 NDOF Isometric 2, NdofIso2. * NDOF_BUTTON_ROLL_CW NDOF Roll CW, NdofRCW. * NDOF_BUTTON_ROLL_CCW NDOF Roll CCW, NdofRCCW. * NDOF_BUTTON_SPIN_CW NDOF Spin CW, NdofSCW. * NDOF_BUTTON_SPIN_CCW NDOF Spin CCW, NdofSCCW. * NDOF_BUTTON_TILT_CW NDOF Tilt CW, NdofTCW. * NDOF_BUTTON_TILT_CCW NDOF Tilt CCW, NdofTCCW. * NDOF_BUTTON_ROTATE NDOF Rotate, NdofRot. * NDOF_BUTTON_PANZOOM NDOF Pan/Zoom, NdofPanZoom. * NDOF_BUTTON_DOMINANT NDOF Dominant, NdofDom. * NDOF_BUTTON_PLUS NDOF Plus, Ndof+. * NDOF_BUTTON_MINUS NDOF Minus, Ndof-. * NDOF_BUTTON_ESC NDOF Esc, NdofEsc. * NDOF_BUTTON_ALT NDOF Alt, NdofAlt. * NDOF_BUTTON_SHIFT NDOF Shift, NdofShift. * NDOF_BUTTON_CTRL NDOF Ctrl, NdofCtrl. * NDOF_BUTTON_1 NDOF Button 1, NdofB1. * NDOF_BUTTON_2 NDOF Button 2, NdofB2. * NDOF_BUTTON_3 NDOF Button 3, NdofB3. * NDOF_BUTTON_4 NDOF Button 4, NdofB4. * NDOF_BUTTON_5 NDOF Button 5, NdofB5. * NDOF_BUTTON_6 NDOF Button 6, NdofB6. * NDOF_BUTTON_7 NDOF Button 7, NdofB7. * NDOF_BUTTON_8 NDOF Button 8, NdofB8. * NDOF_BUTTON_9 NDOF Button 9, NdofB9. * NDOF_BUTTON_10 NDOF Button 10, NdofB10. * NDOF_BUTTON_A NDOF Button A, NdofBA. * NDOF_BUTTON_B NDOF Button B, NdofBB. * NDOF_BUTTON_C NDOF Button C, NdofBC. * ACTIONZONE_AREA ActionZone Area, AZone Area. * ACTIONZONE_REGION ActionZone Region, AZone Region. * ACTIONZONE_FULLSCREEN ActionZone Fullscreen, AZone FullScr.
+        :param type: type
         :type type: typing.Union[str, int]
         :param value: Value
         :type value: typing.Union[str, int]
@@ -54743,6 +55256,15 @@ class Collection(ID, bpy_struct):
     ''' Collection of Object data-blocks
     '''
 
+    def __len__(self) -> int:
+        pass
+
+    def __iter__(self) -> typing.Iterator['Object']:
+        pass
+
+    def __next__(self) -> 'Object':
+        pass
+
     all_objects: typing.Union[typing.Dict[str, 'Object'], typing.
                               List['Object'], 'bpy_prop_collection'] = None
     ''' Objects that are in this collection and its child collections
@@ -54750,9 +55272,10 @@ class Collection(ID, bpy_struct):
     :type: typing.Union[typing.Dict[str, 'Object'], typing.List['Object'], 'bpy_prop_collection']
     '''
 
-    children: typing.Union[typing.Dict[str, 'Collection'], typing.
-                           List['Collection'], 'bpy_prop_collection',
-                           'CollectionChildren'] = None
+    # children: typing.Union[typing.Dict[str, 'Collection'], typing.
+    #                        List['Collection'], 'bpy_prop_collection',
+    #                        'CollectionChildren'] = None
+    children: 'CollectionChildren' = None
     ''' Collections that are immediate children of this collection
 
     :type: typing.Union[typing.Dict[str, 'Collection'], typing.List['Collection'], 'bpy_prop_collection', 'CollectionChildren']
@@ -54794,8 +55317,9 @@ class Collection(ID, bpy_struct):
     :type: typing.Union[str, int]
     '''
 
-    objects: typing.Union[typing.Dict[str, 'Object'], typing.List['Object'],
-                          'bpy_prop_collection', 'CollectionObjects'] = None
+    # objects: typing.Union[typing.Dict[str, 'Object'], typing.List['Object'],
+    #                       'bpy_prop_collection', 'CollectionObjects'] = None
+    objects: 'CollectionObjects' = None
     ''' Objects that are directly in this collection
 
     :type: typing.Union[typing.Dict[str, 'Object'], typing.List['Object'], 'bpy_prop_collection', 'CollectionObjects']
@@ -56896,9 +57420,10 @@ class Mesh(ID, bpy_struct):
     :type: typing.Union[typing.Dict[str, 'MeshLoop'], typing.List['MeshLoop'], 'bpy_prop_collection', 'MeshLoops']
     '''
 
-    materials: typing.Union[typing.Dict[str, 'Material'], typing.
-                            List['Material'], 'bpy_prop_collection',
-                            'IDMaterials'] = None
+    # materials: typing.Union[typing.Dict[str, 'Material'], typing.
+    #                         List['Material'], 'bpy_prop_collection',
+    #                         'IDMaterials'] = None
+    materials: IDMaterials = None
     '''
 
     :type: typing.Union[typing.Dict[str, 'Material'], typing.List['Material'], 'bpy_prop_collection', 'IDMaterials']
@@ -57697,31 +58222,35 @@ class NodeTree(ID, bpy_struct):
     :type: 'GreasePencil'
     '''
 
-    inputs: typing.Union[typing.Dict[str, 'NodeSocketInterface'], typing.
-                         List['NodeSocketInterface'], 'bpy_prop_collection',
-                         'NodeTreeInputs'] = None
+    # inputs: typing.Union[typing.Dict[str, 'NodeSocketInterface'], typing.
+    #                      List['NodeSocketInterface'], 'bpy_prop_collection',
+    #                      'NodeTreeInputs'] = None
+    inputs: 'NodeTreeInputs' = None
     ''' Node tree inputs
 
     :type: typing.Union[typing.Dict[str, 'NodeSocketInterface'], typing.List['NodeSocketInterface'], 'bpy_prop_collection', 'NodeTreeInputs']
     '''
 
-    links: typing.Union[typing.Dict[str, 'NodeLink'], typing.List['NodeLink'],
-                        'bpy_prop_collection', 'NodeLinks'] = None
+    # links: typing.Union[typing.Dict[str, 'NodeLink'], typing.List['NodeLink'],
+    #                     'bpy_prop_collection', 'NodeLinks'] = None
+    links: 'NodeLinks' = None
     '''
 
     :type: typing.Union[typing.Dict[str, 'NodeLink'], typing.List['NodeLink'], 'bpy_prop_collection', 'NodeLinks']
     '''
 
-    nodes: typing.Union[typing.Dict[str, 'Node'], typing.
-                        List['Node'], 'bpy_prop_collection', 'Nodes'] = None
+    # nodes: typing.Union[typing.Dict[str, 'Node'], typing.
+    #                     List['Node'], 'bpy_prop_collection', 'Nodes'] = None
+    nodes: 'Nodes' = None
     '''
 
     :type: typing.Union[typing.Dict[str, 'Node'], typing.List['Node'], 'bpy_prop_collection', 'Nodes']
     '''
 
-    outputs: typing.Union[typing.Dict[str, 'NodeSocketInterface'], typing.
-                          List['NodeSocketInterface'], 'bpy_prop_collection',
-                          'NodeTreeOutputs'] = None
+    # outputs: typing.Union[typing.Dict[str, 'NodeSocketInterface'], typing.
+    #                       List['NodeSocketInterface'], 'bpy_prop_collection',
+    #                       'NodeTreeOutputs'] = None
+    outputs: 'NodeTreeOutputs' = None
     ''' Node tree outputs
 
     :type: typing.Union[typing.Dict[str, 'NodeSocketInterface'], typing.List['NodeSocketInterface'], 'bpy_prop_collection', 'NodeTreeOutputs']
@@ -57851,9 +58380,10 @@ class Object(ID, bpy_struct):
     :type: typing.List[float]
     '''
 
-    constraints: typing.Union[typing.Dict[str, 'Constraint'], typing.
-                              List['Constraint'], 'bpy_prop_collection',
-                              'ObjectConstraints'] = None
+    # constraints: typing.Union[typing.Dict[str, 'Constraint'], typing.
+    #                           List['Constraint'], 'bpy_prop_collection',
+    #                           'ObjectConstraints'] = None
+    constraints: 'ObjectConstraints' = None
     ''' Constraints affecting the transformation of the object
 
     :type: typing.Union[typing.Dict[str, 'Constraint'], typing.List['Constraint'], 'bpy_prop_collection', 'ObjectConstraints']
@@ -57949,9 +58479,10 @@ class Object(ID, bpy_struct):
     :type: typing.Union[str, int]
     '''
 
-    face_maps: typing.Union[typing.Dict[str, 'FaceMap'], typing.
-                            List['FaceMap'], 'bpy_prop_collection',
-                            'FaceMaps'] = None
+    # face_maps: typing.Union[typing.Dict[str, 'FaceMap'], typing.
+    #                         List['FaceMap'], 'bpy_prop_collection',
+    #                         'FaceMaps'] = None
+    face_maps: 'FaceMaps' = None
     ''' Maps of faces of the object
 
     :type: typing.Union[typing.Dict[str, 'FaceMap'], typing.List['FaceMap'], 'bpy_prop_collection', 'FaceMaps']
@@ -57963,9 +58494,10 @@ class Object(ID, bpy_struct):
     :type: 'FieldSettings'
     '''
 
-    grease_pencil_modifiers: typing.Union[
-        typing.Dict[str, 'GpencilModifier'], typing.List['GpencilModifier'],
-        'bpy_prop_collection', 'ObjectGpencilModifiers'] = None
+    # grease_pencil_modifiers: typing.Union[
+    #     typing.Dict[str, 'GpencilModifier'], typing.List['GpencilModifier'],
+    #     'bpy_prop_collection', 'ObjectGpencilModifiers'] = None
+    grease_pencil_modifiers: 'ObjectGpencilModifiers' = None
     ''' Modifiers affecting the data of the grease pencil object
 
     :type: typing.Union[typing.Dict[str, 'GpencilModifier'], typing.List['GpencilModifier'], 'bpy_prop_collection', 'ObjectGpencilModifiers']
@@ -58073,9 +58605,10 @@ class Object(ID, bpy_struct):
     :type: typing.List[bool]
     '''
 
-    material_slots: typing.Union[typing.Dict[str, 'MaterialSlot'], typing.
-                                 List['MaterialSlot'],
-                                 'bpy_prop_collection'] = None
+    # material_slots: typing.Union[typing.Dict[str, 'MaterialSlot'], typing.
+    #                              List['MaterialSlot'],
+    #                              'bpy_prop_collection'] = None
+    material_slots: typing.List['MaterialSlot']
     ''' Material slots in the object
 
     :type: typing.Union[typing.Dict[str, 'MaterialSlot'], typing.List['MaterialSlot'], 'bpy_prop_collection']
@@ -58111,9 +58644,10 @@ class Object(ID, bpy_struct):
     :type: typing.Union[str, int]
     '''
 
-    modifiers: typing.Union[typing.Dict[str, 'Modifier'], typing.
-                            List['Modifier'], 'bpy_prop_collection',
-                            'ObjectModifiers'] = None
+    # modifiers: typing.Union[typing.Dict[str, 'Modifier'], typing.
+    #                         List['Modifier'], 'bpy_prop_collection',
+    #                         'ObjectModifiers'] = None
+    modifiers: 'ObjectModifiers' = None
     ''' Modifiers affecting the geometric data of the object
 
     :type: typing.Union[typing.Dict[str, 'Modifier'], typing.List['Modifier'], 'bpy_prop_collection', 'ObjectModifiers']
@@ -58149,9 +58683,10 @@ class Object(ID, bpy_struct):
     :type: typing.List[int]
     '''
 
-    particle_systems: typing.Union[
-        typing.Dict[str, 'ParticleSystem'], typing.List['ParticleSystem'],
-        'bpy_prop_collection', 'ParticleSystems'] = None
+    # particle_systems: typing.Union[
+    #     typing.Dict[str, 'ParticleSystem'], typing.List['ParticleSystem'],
+    #     'bpy_prop_collection', 'ParticleSystems'] = None
+    particle_systems: 'ParticleSystems' = None
     ''' Particle systems emitted from the object
 
     :type: typing.Union[typing.Dict[str, 'ParticleSystem'], typing.List['ParticleSystem'], 'bpy_prop_collection', 'ParticleSystems']
@@ -58205,7 +58740,9 @@ class Object(ID, bpy_struct):
     :type: typing.List[float]
     '''
 
-    rotation_euler: typing.List[float] = None
+    # rotation_euler: typing.List[float] = None
+    rotation_euler: 'mathutils.Euler' = None
+
     ''' Rotation in Eulers
 
     :type: typing.List[float]
@@ -58229,9 +58766,10 @@ class Object(ID, bpy_struct):
     :type: typing.List[float]
     '''
 
-    shader_effects: typing.Union[typing.Dict[str, 'ShaderFx'], typing.
-                                 List['ShaderFx'], 'bpy_prop_collection',
-                                 'ObjectShaderFx'] = None
+    # shader_effects: typing.Union[typing.Dict[str, 'ShaderFx'], typing.
+    #                              List['ShaderFx'], 'bpy_prop_collection',
+    #                              'ObjectShaderFx'] = None
+    shader_effects: 'ObjectShaderFx' = None
     ''' Effects affecting display of object
 
     :type: typing.Union[typing.Dict[str, 'ShaderFx'], typing.List['ShaderFx'], 'bpy_prop_collection', 'ObjectShaderFx']
@@ -58405,9 +58943,10 @@ class Object(ID, bpy_struct):
     :type: bool
     '''
 
-    vertex_groups: typing.Union[typing.Dict[str, 'VertexGroup'], typing.
-                                List['VertexGroup'], 'bpy_prop_collection',
-                                'VertexGroups'] = None
+    # vertex_groups: typing.Union[typing.Dict[str, 'VertexGroup'], typing.
+    #                             List['VertexGroup'], 'bpy_prop_collection',
+    #                             'VertexGroups'] = None
+    vertex_groups: 'VertexGroups' = None
     ''' Vertex groups of the object
 
     :type: typing.Union[typing.Dict[str, 'VertexGroup'], typing.List['VertexGroup'], 'bpy_prop_collection', 'VertexGroups']
@@ -67651,6 +68190,12 @@ class EnumProperty(Property, bpy_struct):
     :type: typing.Union[typing.Dict[str, 'EnumPropertyItem'], typing.List['EnumPropertyItem'], 'bpy_prop_collection']
     '''
 
+    def __str__(self) -> str:
+        pass
+
+    def __eq__(self, other: str) -> bool:
+        pass
+
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
         '''
@@ -67829,6 +68374,9 @@ class IntProperty(Property, bpy_struct):
     :type: int
     '''
 
+    def __int__(self) -> int:
+        pass
+
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
         '''
@@ -67898,6 +68446,12 @@ class StringProperty(Property, bpy_struct):
 
     :type: int
     '''
+
+    def __str__(self) -> str:
+        pass
+
+    def __eq__(self, other: str) -> bool:
+        pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
@@ -76005,7 +76559,7 @@ class VoronoiTexture(Texture, ID, bpy_struct):
     '''
 
     distance_metric: typing.Union[str, int] = None
-    ''' Algorithm used to calculate distance of sample points to feature points * DISTANCE Actual Distance, sqrt(x\*x+y\*y+z\*z). * DISTANCE_SQUARED Distance Squared, (x\*x+y\*y+z\*z). * MANHATTAN Manhattan, The length of the distance in axial directions. * CHEBYCHEV Chebychev, The length of the longest Axial journey. * MINKOVSKY_HALF Minkowski 1/2, Set Minkowski variable to 0.5. * MINKOVSKY_FOUR Minkowski 4, Set Minkowski variable to 4. * MINKOVSKY Minkowski, Use the Minkowski function to calculate distance (exponent value determines the shape of the boundaries).
+    ''' Algorithm used to calculate distance of sample points to feature points * DISTANCE Actual Distance, sqrt(x*x+y*y+z*z). * DISTANCE_SQUARED Distance Squared, (x*x+y*y+z*z). * MANHATTAN Manhattan, The length of the distance in axial directions. * CHEBYCHEV Chebychev, The length of the longest Axial journey. * MINKOVSKY_HALF Minkowski 1/2, Set Minkowski variable to 0.5. * MINKOVSKY_FOUR Minkowski 4, Set Minkowski variable to 4. * MINKOVSKY Minkowski, Use the Minkowski function to calculate distance (exponent value determines the shape of the boundaries).
 
     :type: typing.Union[str, int]
     '''
@@ -79889,7 +80443,7 @@ class NodeSocketColor(NodeSocketStandard, NodeSocket, bpy_struct):
     ''' RGBA color socket of a node
     '''
 
-    default_value: typing.List[float] = None
+    default_value: typing.Tuple[float, float, float, float] = None
     ''' Input value used for unconnected socket
 
     :type: typing.List[float]
@@ -87609,7 +88163,7 @@ class CompositorNodeMask(CompositorNode, NodeInternal, Node, bpy_struct):
 
 class CompositorNodeMath(CompositorNode, NodeInternal, Node, bpy_struct):
     operation: typing.Union[str, int] = None
-    ''' * ADD Add, A + B. * SUBTRACT Subtract, A - B. * MULTIPLY Multiply, A \* B. * DIVIDE Divide, A / B. * MULTIPLY_ADD Multiply Add, A \* B + C. * POWER Power, A power B. * LOGARITHM Logarithm, Logarithm A base B. * SQRT Square Root, Square root of A. * INVERSE_SQRT Inverse Square Root, 1 / Square root of A. * ABSOLUTE Absolute, Magnitude of A. * EXPONENT Exponent, exp(A). * MINIMUM Minimum, The minimum from A and B. * MAXIMUM Maximum, The maximum from A and B. * LESS_THAN Less Than, 1 if A < B else 0. * GREATER_THAN Greater Than, 1 if A > B else 0. * SIGN Sign, Returns the sign of A. * COMPARE Compare, 1 if (A == B) within tolerance C else 0. * SMOOTH_MIN Smooth Minimum, The minimum from A and B with smoothing C. * SMOOTH_MAX Smooth Maximum, The maximum from A and B with smoothing C. * ROUND Round, Round A to the nearest integer. Round upward if the fraction part is 0.5. * FLOOR Floor, The largest integer smaller than or equal A. * CEIL Ceil, The smallest integer greater than or equal A. * TRUNC Truncate, The integer part of A, removing fractional digits. * FRACT Fraction, The fraction part of A. * MODULO Modulo, Modulo using fmod(A,B). * WRAP Wrap, Wrap value to range, wrap(A,B). * SNAP Snap, Snap to increment, snap(A,B). * PINGPONG Ping-Pong, Wraps a value and reverses every other cycle (A,B). * SINE Sine, sin(A). * COSINE Cosine, cos(A). * TANGENT Tangent, tan(A). * ARCSINE Arcsine, arcsin(A). * ARCCOSINE Arccosine, arccos(A). * ARCTANGENT Arctangent, arctan(A). * ARCTAN2 Arctan2, The signed angle arctan(A / B). * SINH Hyperbolic Sine, sinh(A). * COSH Hyperbolic Cosine, cosh(A). * TANH Hyperbolic Tangent, tanh(A). * RADIANS To Radians, Convert from degrees to radians. * DEGREES To Degrees, Convert from radians to degrees.
+    ''' * ADD Add, A + B. * SUBTRACT Subtract, A - B. * MULTIPLY Multiply, A * B. * DIVIDE Divide, A / B. * MULTIPLY_ADD Multiply Add, A * B + C. * POWER Power, A power B. * LOGARITHM Logarithm, Logarithm A base B. * SQRT Square Root, Square root of A. * INVERSE_SQRT Inverse Square Root, 1 / Square root of A. * ABSOLUTE Absolute, Magnitude of A. * EXPONENT Exponent, exp(A). * MINIMUM Minimum, The minimum from A and B. * MAXIMUM Maximum, The maximum from A and B. * LESS_THAN Less Than, 1 if A < B else 0. * GREATER_THAN Greater Than, 1 if A > B else 0. * SIGN Sign, Returns the sign of A. * COMPARE Compare, 1 if (A == B) within tolerance C else 0. * SMOOTH_MIN Smooth Minimum, The minimum from A and B with smoothing C. * SMOOTH_MAX Smooth Maximum, The maximum from A and B with smoothing C. * ROUND Round, Round A to the nearest integer. Round upward if the fraction part is 0.5. * FLOOR Floor, The largest integer smaller than or equal A. * CEIL Ceil, The smallest integer greater than or equal A. * TRUNC Truncate, The integer part of A, removing fractional digits. * FRACT Fraction, The fraction part of A. * MODULO Modulo, Modulo using fmod(A,B). * WRAP Wrap, Wrap value to range, wrap(A,B). * SNAP Snap, Snap to increment, snap(A,B). * PINGPONG Ping-Pong, Wraps a value and reverses every other cycle (A,B). * SINE Sine, sin(A). * COSINE Cosine, cos(A). * TANGENT Tangent, tan(A). * ARCSINE Arcsine, arcsin(A). * ARCCOSINE Arccosine, arccos(A). * ARCTANGENT Arctangent, arctan(A). * ARCTAN2 Arctan2, The signed angle arctan(A / B). * SINH Hyperbolic Sine, sinh(A). * COSH Hyperbolic Cosine, cosh(A). * TANH Hyperbolic Tangent, tanh(A). * RADIANS To Radians, Convert from degrees to radians. * DEGREES To Degrees, Convert from radians to degrees.
 
     :type: typing.Union[str, int]
     '''
@@ -91062,7 +91616,7 @@ class GeometryNodeAttributeMath(GeometryNode, NodeInternal, Node, bpy_struct):
     '''
 
     operation: typing.Union[str, int] = None
-    ''' * ADD Add, A + B. * SUBTRACT Subtract, A - B. * MULTIPLY Multiply, A \* B. * DIVIDE Divide, A / B. * MULTIPLY_ADD Multiply Add, A \* B + C. * POWER Power, A power B. * LOGARITHM Logarithm, Logarithm A base B. * SQRT Square Root, Square root of A. * INVERSE_SQRT Inverse Square Root, 1 / Square root of A. * ABSOLUTE Absolute, Magnitude of A. * EXPONENT Exponent, exp(A). * MINIMUM Minimum, The minimum from A and B. * MAXIMUM Maximum, The maximum from A and B. * LESS_THAN Less Than, 1 if A < B else 0. * GREATER_THAN Greater Than, 1 if A > B else 0. * SIGN Sign, Returns the sign of A. * COMPARE Compare, 1 if (A == B) within tolerance C else 0. * SMOOTH_MIN Smooth Minimum, The minimum from A and B with smoothing C. * SMOOTH_MAX Smooth Maximum, The maximum from A and B with smoothing C. * ROUND Round, Round A to the nearest integer. Round upward if the fraction part is 0.5. * FLOOR Floor, The largest integer smaller than or equal A. * CEIL Ceil, The smallest integer greater than or equal A. * TRUNC Truncate, The integer part of A, removing fractional digits. * FRACT Fraction, The fraction part of A. * MODULO Modulo, Modulo using fmod(A,B). * WRAP Wrap, Wrap value to range, wrap(A,B). * SNAP Snap, Snap to increment, snap(A,B). * PINGPONG Ping-Pong, Wraps a value and reverses every other cycle (A,B). * SINE Sine, sin(A). * COSINE Cosine, cos(A). * TANGENT Tangent, tan(A). * ARCSINE Arcsine, arcsin(A). * ARCCOSINE Arccosine, arccos(A). * ARCTANGENT Arctangent, arctan(A). * ARCTAN2 Arctan2, The signed angle arctan(A / B). * SINH Hyperbolic Sine, sinh(A). * COSH Hyperbolic Cosine, cosh(A). * TANH Hyperbolic Tangent, tanh(A). * RADIANS To Radians, Convert from degrees to radians. * DEGREES To Degrees, Convert from radians to degrees.
+    ''' * ADD Add, A + B. * SUBTRACT Subtract, A - B. * MULTIPLY Multiply, A * B. * DIVIDE Divide, A / B. * MULTIPLY_ADD Multiply Add, A * B + C. * POWER Power, A power B. * LOGARITHM Logarithm, Logarithm A base B. * SQRT Square Root, Square root of A. * INVERSE_SQRT Inverse Square Root, 1 / Square root of A. * ABSOLUTE Absolute, Magnitude of A. * EXPONENT Exponent, exp(A). * MINIMUM Minimum, The minimum from A and B. * MAXIMUM Maximum, The maximum from A and B. * LESS_THAN Less Than, 1 if A < B else 0. * GREATER_THAN Greater Than, 1 if A > B else 0. * SIGN Sign, Returns the sign of A. * COMPARE Compare, 1 if (A == B) within tolerance C else 0. * SMOOTH_MIN Smooth Minimum, The minimum from A and B with smoothing C. * SMOOTH_MAX Smooth Maximum, The maximum from A and B with smoothing C. * ROUND Round, Round A to the nearest integer. Round upward if the fraction part is 0.5. * FLOOR Floor, The largest integer smaller than or equal A. * CEIL Ceil, The smallest integer greater than or equal A. * TRUNC Truncate, The integer part of A, removing fractional digits. * FRACT Fraction, The fraction part of A. * MODULO Modulo, Modulo using fmod(A,B). * WRAP Wrap, Wrap value to range, wrap(A,B). * SNAP Snap, Snap to increment, snap(A,B). * PINGPONG Ping-Pong, Wraps a value and reverses every other cycle (A,B). * SINE Sine, sin(A). * COSINE Cosine, cos(A). * TANGENT Tangent, tan(A). * ARCSINE Arcsine, arcsin(A). * ARCCOSINE Arccosine, arccos(A). * ARCTANGENT Arctangent, arctan(A). * ARCTAN2 Arctan2, The signed angle arctan(A / B). * SINH Hyperbolic Sine, sinh(A). * COSH Hyperbolic Cosine, cosh(A). * TANH Hyperbolic Tangent, tanh(A). * RADIANS To Radians, Convert from degrees to radians. * DEGREES To Degrees, Convert from radians to degrees.
 
     :type: typing.Union[str, int]
     '''
@@ -94942,6 +95496,60 @@ class ShaderNodeEmission(ShaderNode, NodeInternal, Node, bpy_struct):
         pass
 
 
+class ShaderNodeFloatCurve(ShaderNode, NodeInternal, Node, bpy_struct):
+    @classmethod
+    def is_registered_node_type(cls) -> bool:
+        ''' True if a registered node type
+
+        :rtype: bool
+        :return: Result
+        '''
+        pass
+
+    @classmethod
+    def input_template(cls, index: int) -> 'NodeInternalSocketTemplate':
+        ''' Input socket template
+
+        :param index: Index
+        :type index: int
+        :rtype: 'NodeInternalSocketTemplate'
+        :return: result
+        '''
+        pass
+
+    @classmethod
+    def output_template(cls, index: int) -> 'NodeInternalSocketTemplate':
+        ''' Output socket template
+
+        :param index: Index
+        :type index: int
+        :rtype: 'NodeInternalSocketTemplate'
+        :return: result
+        '''
+        pass
+
+    @classmethod
+    def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
+        '''
+
+        :param id: The RNA type identifier.
+        :type id: str
+        :rtype: 'Struct'
+        :return: The RNA type or default when not found.
+        '''
+        pass
+
+    @classmethod
+    def bl_rna_get_subclass_py(cls, id: str, default=None):
+        '''
+
+        :param id: The RNA type identifier.
+        :type id: str
+        :return: The class or default when not found.
+        '''
+        pass
+
+
 class ShaderNodeFresnel(ShaderNode, NodeInternal, Node, bpy_struct):
     @classmethod
     def is_registered_node_type(cls) -> bool:
@@ -95622,7 +96230,7 @@ class ShaderNodeMapping(ShaderNode, NodeInternal, Node, bpy_struct):
 
 class ShaderNodeMath(ShaderNode, NodeInternal, Node, bpy_struct):
     operation: typing.Union[str, int] = None
-    ''' * ADD Add, A + B. * SUBTRACT Subtract, A - B. * MULTIPLY Multiply, A \* B. * DIVIDE Divide, A / B. * MULTIPLY_ADD Multiply Add, A \* B + C. * POWER Power, A power B. * LOGARITHM Logarithm, Logarithm A base B. * SQRT Square Root, Square root of A. * INVERSE_SQRT Inverse Square Root, 1 / Square root of A. * ABSOLUTE Absolute, Magnitude of A. * EXPONENT Exponent, exp(A). * MINIMUM Minimum, The minimum from A and B. * MAXIMUM Maximum, The maximum from A and B. * LESS_THAN Less Than, 1 if A < B else 0. * GREATER_THAN Greater Than, 1 if A > B else 0. * SIGN Sign, Returns the sign of A. * COMPARE Compare, 1 if (A == B) within tolerance C else 0. * SMOOTH_MIN Smooth Minimum, The minimum from A and B with smoothing C. * SMOOTH_MAX Smooth Maximum, The maximum from A and B with smoothing C. * ROUND Round, Round A to the nearest integer. Round upward if the fraction part is 0.5. * FLOOR Floor, The largest integer smaller than or equal A. * CEIL Ceil, The smallest integer greater than or equal A. * TRUNC Truncate, The integer part of A, removing fractional digits. * FRACT Fraction, The fraction part of A. * MODULO Modulo, Modulo using fmod(A,B). * WRAP Wrap, Wrap value to range, wrap(A,B). * SNAP Snap, Snap to increment, snap(A,B). * PINGPONG Ping-Pong, Wraps a value and reverses every other cycle (A,B). * SINE Sine, sin(A). * COSINE Cosine, cos(A). * TANGENT Tangent, tan(A). * ARCSINE Arcsine, arcsin(A). * ARCCOSINE Arccosine, arccos(A). * ARCTANGENT Arctangent, arctan(A). * ARCTAN2 Arctan2, The signed angle arctan(A / B). * SINH Hyperbolic Sine, sinh(A). * COSH Hyperbolic Cosine, cosh(A). * TANH Hyperbolic Tangent, tanh(A). * RADIANS To Radians, Convert from degrees to radians. * DEGREES To Degrees, Convert from radians to degrees.
+    ''' * ADD Add, A + B. * SUBTRACT Subtract, A - B. * MULTIPLY Multiply, A * B. * DIVIDE Divide, A / B. * MULTIPLY_ADD Multiply Add, A * B + C. * POWER Power, A power B. * LOGARITHM Logarithm, Logarithm A base B. * SQRT Square Root, Square root of A. * INVERSE_SQRT Inverse Square Root, 1 / Square root of A. * ABSOLUTE Absolute, Magnitude of A. * EXPONENT Exponent, exp(A). * MINIMUM Minimum, The minimum from A and B. * MAXIMUM Maximum, The maximum from A and B. * LESS_THAN Less Than, 1 if A < B else 0. * GREATER_THAN Greater Than, 1 if A > B else 0. * SIGN Sign, Returns the sign of A. * COMPARE Compare, 1 if (A == B) within tolerance C else 0. * SMOOTH_MIN Smooth Minimum, The minimum from A and B with smoothing C. * SMOOTH_MAX Smooth Maximum, The maximum from A and B with smoothing C. * ROUND Round, Round A to the nearest integer. Round upward if the fraction part is 0.5. * FLOOR Floor, The largest integer smaller than or equal A. * CEIL Ceil, The smallest integer greater than or equal A. * TRUNC Truncate, The integer part of A, removing fractional digits. * FRACT Fraction, The fraction part of A. * MODULO Modulo, Modulo using fmod(A,B). * WRAP Wrap, Wrap value to range, wrap(A,B). * SNAP Snap, Snap to increment, snap(A,B). * PINGPONG Ping-Pong, Wraps a value and reverses every other cycle (A,B). * SINE Sine, sin(A). * COSINE Cosine, cos(A). * TANGENT Tangent, tan(A). * ARCSINE Arcsine, arcsin(A). * ARCCOSINE Arccosine, arccos(A). * ARCTANGENT Arctangent, arctan(A). * ARCTAN2 Arctan2, The signed angle arctan(A / B). * SINH Hyperbolic Sine, sinh(A). * COSH Hyperbolic Cosine, cosh(A). * TANH Hyperbolic Tangent, tanh(A). * RADIANS To Radians, Convert from degrees to radians. * DEGREES To Degrees, Convert from radians to degrees.
 
     :type: typing.Union[str, int]
     '''
@@ -100120,7 +100728,7 @@ class TextureNodeInvert(TextureNode, NodeInternal, Node, bpy_struct):
 
 class TextureNodeMath(TextureNode, NodeInternal, Node, bpy_struct):
     operation: typing.Union[str, int] = None
-    ''' * ADD Add, A + B. * SUBTRACT Subtract, A - B. * MULTIPLY Multiply, A \* B. * DIVIDE Divide, A / B. * MULTIPLY_ADD Multiply Add, A \* B + C. * POWER Power, A power B. * LOGARITHM Logarithm, Logarithm A base B. * SQRT Square Root, Square root of A. * INVERSE_SQRT Inverse Square Root, 1 / Square root of A. * ABSOLUTE Absolute, Magnitude of A. * EXPONENT Exponent, exp(A). * MINIMUM Minimum, The minimum from A and B. * MAXIMUM Maximum, The maximum from A and B. * LESS_THAN Less Than, 1 if A < B else 0. * GREATER_THAN Greater Than, 1 if A > B else 0. * SIGN Sign, Returns the sign of A. * COMPARE Compare, 1 if (A == B) within tolerance C else 0. * SMOOTH_MIN Smooth Minimum, The minimum from A and B with smoothing C. * SMOOTH_MAX Smooth Maximum, The maximum from A and B with smoothing C. * ROUND Round, Round A to the nearest integer. Round upward if the fraction part is 0.5. * FLOOR Floor, The largest integer smaller than or equal A. * CEIL Ceil, The smallest integer greater than or equal A. * TRUNC Truncate, The integer part of A, removing fractional digits. * FRACT Fraction, The fraction part of A. * MODULO Modulo, Modulo using fmod(A,B). * WRAP Wrap, Wrap value to range, wrap(A,B). * SNAP Snap, Snap to increment, snap(A,B). * PINGPONG Ping-Pong, Wraps a value and reverses every other cycle (A,B). * SINE Sine, sin(A). * COSINE Cosine, cos(A). * TANGENT Tangent, tan(A). * ARCSINE Arcsine, arcsin(A). * ARCCOSINE Arccosine, arccos(A). * ARCTANGENT Arctangent, arctan(A). * ARCTAN2 Arctan2, The signed angle arctan(A / B). * SINH Hyperbolic Sine, sinh(A). * COSH Hyperbolic Cosine, cosh(A). * TANH Hyperbolic Tangent, tanh(A). * RADIANS To Radians, Convert from degrees to radians. * DEGREES To Degrees, Convert from radians to degrees.
+    ''' * ADD Add, A + B. * SUBTRACT Subtract, A - B. * MULTIPLY Multiply, A * B. * DIVIDE Divide, A / B. * MULTIPLY_ADD Multiply Add, A * B + C. * POWER Power, A power B. * LOGARITHM Logarithm, Logarithm A base B. * SQRT Square Root, Square root of A. * INVERSE_SQRT Inverse Square Root, 1 / Square root of A. * ABSOLUTE Absolute, Magnitude of A. * EXPONENT Exponent, exp(A). * MINIMUM Minimum, The minimum from A and B. * MAXIMUM Maximum, The maximum from A and B. * LESS_THAN Less Than, 1 if A < B else 0. * GREATER_THAN Greater Than, 1 if A > B else 0. * SIGN Sign, Returns the sign of A. * COMPARE Compare, 1 if (A == B) within tolerance C else 0. * SMOOTH_MIN Smooth Minimum, The minimum from A and B with smoothing C. * SMOOTH_MAX Smooth Maximum, The maximum from A and B with smoothing C. * ROUND Round, Round A to the nearest integer. Round upward if the fraction part is 0.5. * FLOOR Floor, The largest integer smaller than or equal A. * CEIL Ceil, The smallest integer greater than or equal A. * TRUNC Truncate, The integer part of A, removing fractional digits. * FRACT Fraction, The fraction part of A. * MODULO Modulo, Modulo using fmod(A,B). * WRAP Wrap, Wrap value to range, wrap(A,B). * SNAP Snap, Snap to increment, snap(A,B). * PINGPONG Ping-Pong, Wraps a value and reverses every other cycle (A,B). * SINE Sine, sin(A). * COSINE Cosine, cos(A). * TANGENT Tangent, tan(A). * ARCSINE Arcsine, arcsin(A). * ARCCOSINE Arccosine, arccos(A). * ARCTANGENT Arctangent, arctan(A). * ARCTAN2 Arctan2, The signed angle arctan(A / B). * SINH Hyperbolic Sine, sinh(A). * COSH Hyperbolic Cosine, cosh(A). * TANH Hyperbolic Tangent, tanh(A). * RADIANS To Radians, Convert from degrees to radians. * DEGREES To Degrees, Convert from radians to degrees.
 
     :type: typing.Union[str, int]
     '''
@@ -101318,8 +101926,6 @@ ASSETBROWSER_PT_metadata_tags: 'bl_ui.space_filebrowser.ASSETBROWSER_PT_metadata
 
 ASSETBROWSER_PT_navigation_bar: 'bl_ui.space_filebrowser.ASSETBROWSER_PT_navigation_bar' = None
 
-ASSETBROWSER_UL_metadata_tags: 'bl_ui.space_filebrowser.ASSETBROWSER_UL_metadata_tags' = None
-
 ASSET_OT_tag_add: 'bl_operators.assets.ASSET_OT_tag_add' = None
 
 ASSET_OT_tag_remove: 'bl_operators.assets.ASSET_OT_tag_remove' = None
@@ -101565,8 +102171,6 @@ CLIP_PT_tracking_settings: 'bl_ui.space_clip.CLIP_PT_tracking_settings' = None
 CLIP_PT_tracking_settings_extras: 'bl_ui.space_clip.CLIP_PT_tracking_settings_extras' = None
 
 CLIP_PT_tracking_settings_presets: 'bl_ui.space_clip.CLIP_PT_tracking_settings_presets' = None
-
-CLIP_UL_tracking_objects: 'bl_ui.space_clip.CLIP_UL_tracking_objects' = None
 
 CLOTH_PT_presets: 'bl_ui.properties_physics_cloth.CLOTH_PT_presets' = None
 
@@ -101908,8 +102512,6 @@ FILEBROWSER_PT_display: 'bl_ui.space_filebrowser.FILEBROWSER_PT_display' = None
 
 FILEBROWSER_PT_filter: 'bl_ui.space_filebrowser.FILEBROWSER_PT_filter' = None
 
-FILEBROWSER_UL_dir: 'bl_ui.space_filebrowser.FILEBROWSER_UL_dir' = None
-
 FLUID_PT_presets: 'bl_ui.properties_physics_fluid.FLUID_PT_presets' = None
 
 GPENCIL_MT_cleanup: 'bl_ui.properties_grease_pencil_common.GPENCIL_MT_cleanup' = None
@@ -101933,16 +102535,6 @@ GPENCIL_MT_move_to_layer: 'bl_ui.properties_grease_pencil_common.GPENCIL_MT_move
 GPENCIL_MT_snap: 'bl_ui.properties_grease_pencil_common.GPENCIL_MT_snap' = None
 
 GPENCIL_MT_snap_pie: 'bl_ui.properties_grease_pencil_common.GPENCIL_MT_snap_pie' = None
-
-GPENCIL_UL_annotation_layer: 'bl_ui.properties_grease_pencil_common.GPENCIL_UL_annotation_layer' = None
-
-GPENCIL_UL_layer: 'bl_ui.properties_grease_pencil_common.GPENCIL_UL_layer' = None
-
-GPENCIL_UL_masks: 'bl_ui.properties_grease_pencil_common.GPENCIL_UL_masks' = None
-
-GPENCIL_UL_matslots: 'bl_ui.properties_material_gpencil.GPENCIL_UL_matslots' = None
-
-GPENCIL_UL_vgroups: 'bl_ui.properties_data_gpencil.GPENCIL_UL_vgroups' = None
 
 GRAPH_HT_header: 'bl_ui.space_graph.GRAPH_HT_header' = None
 
@@ -101975,8 +102567,6 @@ GRAPH_MT_view: 'bl_ui.space_graph.GRAPH_MT_view' = None
 GRAPH_PT_filters: 'bl_ui.space_graph.GRAPH_PT_filters' = None
 
 HAIR_MT_add_attribute: 'bl_ui.properties_data_hair.HAIR_MT_add_attribute' = None
-
-HAIR_UL_attributes: 'bl_ui.properties_data_hair.HAIR_UL_attributes' = None
 
 IMAGE_HT_header: 'bl_ui.space_image.IMAGE_HT_header' = None
 
@@ -102112,10 +102702,6 @@ IMAGE_PT_view_vectorscope: 'bl_ui.space_image.IMAGE_PT_view_vectorscope' = None
 
 IMAGE_PT_view_waveform: 'bl_ui.space_image.IMAGE_PT_view_waveform' = None
 
-IMAGE_UL_render_slots: 'bl_ui.space_image.IMAGE_UL_render_slots' = None
-
-IMAGE_UL_udim_tiles: 'bl_ui.space_image.IMAGE_UL_udim_tiles' = None
-
 INFO_HT_header: 'bl_ui.space_info.INFO_HT_header' = None
 
 INFO_MT_area: 'bl_ui.space_info.INFO_MT_area' = None
@@ -102139,8 +102725,6 @@ MASK_MT_select: 'bl_ui.properties_mask_common.MASK_MT_select' = None
 MASK_MT_transform: 'bl_ui.properties_mask_common.MASK_MT_transform' = None
 
 MASK_MT_visibility: 'bl_ui.properties_mask_common.MASK_MT_visibility' = None
-
-MASK_UL_layers: 'bl_ui.properties_mask_common.MASK_UL_layers' = None
 
 MATERIAL_MT_context_menu: 'bl_ui.properties_material.MATERIAL_MT_context_menu' = None
 
@@ -102170,21 +102754,9 @@ MATERIAL_PT_preview: 'bl_ui.properties_material.MATERIAL_PT_preview' = None
 
 MATERIAL_PT_viewport: 'bl_ui.properties_material.MATERIAL_PT_viewport' = None
 
-MATERIAL_UL_matslots: 'bl_ui.properties_material.MATERIAL_UL_matslots' = None
-
 MESH_MT_shape_key_context_menu: 'bl_ui.properties_data_mesh.MESH_MT_shape_key_context_menu' = None
 
 MESH_MT_vertex_group_context_menu: 'bl_ui.properties_data_mesh.MESH_MT_vertex_group_context_menu' = None
-
-MESH_UL_fmaps: 'bl_ui.properties_data_mesh.MESH_UL_fmaps' = None
-
-MESH_UL_shape_keys: 'bl_ui.properties_data_mesh.MESH_UL_shape_keys' = None
-
-MESH_UL_uvmaps: 'bl_ui.properties_data_mesh.MESH_UL_uvmaps' = None
-
-MESH_UL_vcols: 'bl_ui.properties_data_mesh.MESH_UL_vcols' = None
-
-MESH_UL_vgroups: 'bl_ui.properties_data_mesh.MESH_UL_vgroups' = None
 
 NLA_HT_header: 'bl_ui.space_nla.NLA_HT_header' = None
 
@@ -102261,8 +102833,6 @@ NODE_PT_quality: 'bl_ui.space_node.NODE_PT_quality' = None
 NODE_PT_texture_mapping: 'bl_ui.space_node.NODE_PT_texture_mapping' = None
 
 NODE_PT_tools_active: 'bl_ui.space_toolsystem_toolbar.NODE_PT_tools_active' = None
-
-NODE_UL_interface_sockets: 'bl_ui.space_node.NODE_UL_interface_sockets' = None
 
 OBJECT_OT_assign_property_defaults: 'bl_operators.object.OBJECT_OT_assign_property_defaults' = None
 
@@ -102484,8 +103054,6 @@ PARTICLE_PT_velocity: 'bl_ui.properties_particle.PARTICLE_PT_velocity' = None
 
 PARTICLE_PT_vertexgroups: 'bl_ui.properties_particle.PARTICLE_PT_vertexgroups' = None
 
-PARTICLE_UL_particle_systems: 'bl_ui.properties_particle.PARTICLE_UL_particle_systems' = None
-
 PHYSICS_PT_adaptive_domain: 'bl_ui.properties_physics_fluid.PHYSICS_PT_adaptive_domain' = None
 
 PHYSICS_PT_add: 'bl_ui.properties_physics_common.PHYSICS_PT_add' = None
@@ -102700,11 +103268,7 @@ PHYSICS_PT_viewport_display_slicing: 'bl_ui.properties_physics_fluid.PHYSICS_PT_
 
 PHYSICS_PT_viscosity: 'bl_ui.properties_physics_fluid.PHYSICS_PT_viscosity' = None
 
-PHYSICS_UL_dynapaint_surfaces: 'bl_ui.properties_physics_dynamicpaint.PHYSICS_UL_dynapaint_surfaces' = None
-
 POINTCLOUD_MT_add_attribute: 'bl_ui.properties_data_pointcloud.POINTCLOUD_MT_add_attribute' = None
-
-POINTCLOUD_UL_attributes: 'bl_ui.properties_data_pointcloud.POINTCLOUD_UL_attributes' = None
 
 PREFERENCES_OT_addon_disable: 'bl_operators.userpref.PREFERENCES_OT_addon_disable' = None
 
@@ -102852,8 +103416,6 @@ RENDER_PT_stamp_note: 'bl_ui.properties_output.RENDER_PT_stamp_note' = None
 
 RENDER_PT_stereoscopy: 'bl_ui.properties_output.RENDER_PT_stereoscopy' = None
 
-RENDER_UL_renderviews: 'bl_ui.properties_output.RENDER_UL_renderviews' = None
-
 SAFE_AREAS_PT_presets: 'bl_ui.properties_data_camera.SAFE_AREAS_PT_presets' = None
 
 SCENE_OT_freestyle_add_edge_marks_to_keying_set: 'bl_operators.freestyle.SCENE_OT_freestyle_add_edge_marks_to_keying_set' = None
@@ -102887,8 +103449,6 @@ SCENE_PT_rigid_body_world_settings: 'bl_ui.properties_scene.SCENE_PT_rigid_body_
 SCENE_PT_scene: 'bl_ui.properties_scene.SCENE_PT_scene' = None
 
 SCENE_PT_unit: 'bl_ui.properties_scene.SCENE_PT_unit' = None
-
-SCENE_UL_keying_set_paths: 'bl_ui.properties_scene.SCENE_UL_keying_set_paths' = None
 
 SEQUENCER_HT_header: 'bl_ui.space_sequencer.SEQUENCER_HT_header' = None
 
@@ -103064,10 +103624,6 @@ TEXTURE_PT_voronoi_feature_weights: 'bl_ui.properties_texture.TEXTURE_PT_voronoi
 
 TEXTURE_PT_wood: 'bl_ui.properties_texture.TEXTURE_PT_wood' = None
 
-TEXTURE_UL_texpaintslots: 'bl_ui.space_view3d_toolbar.TEXTURE_UL_texpaintslots' = None
-
-TEXTURE_UL_texslots: 'bl_ui.properties_texture.TEXTURE_UL_texslots' = None
-
 TEXT_HT_footer: 'bl_ui.space_text.TEXT_HT_footer' = None
 
 TEXT_HT_header: 'bl_ui.space_text.TEXT_HT_header' = None
@@ -103173,8 +103729,6 @@ TOPBAR_PT_name: 'bl_ui.space_topbar.TOPBAR_PT_name' = None
 TOPBAR_PT_tool_fallback: 'bl_ui.space_topbar.TOPBAR_PT_tool_fallback' = None
 
 TOPBAR_PT_tool_settings_extra: 'bl_ui.space_topbar.TOPBAR_PT_tool_settings_extra' = None
-
-UI_UL_list: 'bl_ui.UI_UL_list' = None
 
 USERPREF_HT_header: 'bl_ui.space_userpref.USERPREF_HT_header' = None
 
@@ -103951,12 +104505,6 @@ VIEWLAYER_PT_layer_passes: 'bl_ui.properties_view_layer.VIEWLAYER_PT_layer_passe
 VIEWLAYER_PT_layer_passes_aov: 'bl_ui.properties_view_layer.VIEWLAYER_PT_layer_passes_aov' = None
 
 VIEWLAYER_PT_layer_passes_cryptomatte: 'bl_ui.properties_view_layer.VIEWLAYER_PT_layer_passes_cryptomatte' = None
-
-VIEWLAYER_UL_aov: 'bl_ui.properties_view_layer.VIEWLAYER_UL_aov' = None
-
-VIEWLAYER_UL_linesets: 'bl_ui.properties_freestyle.VIEWLAYER_UL_linesets' = None
-
-VOLUME_UL_grids: 'bl_ui.properties_data_volume.VOLUME_UL_grids' = None
 
 WM_MT_operator_presets: 'bl_operators.presets.WM_MT_operator_presets' = None
 

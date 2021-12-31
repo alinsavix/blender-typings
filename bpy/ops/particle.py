@@ -6,7 +6,7 @@ import bpy.types
 def brush_edit(stroke: typing.Union[
         typing.Dict[str, 'bpy.types.OperatorStrokeElement'], typing.
         List['bpy.types.OperatorStrokeElement'], 'bpy_prop_collection'] = None
-):
+               ):
     ''' Apply a stroke of brush to the particles
 
     :param stroke: Stroke

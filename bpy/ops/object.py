@@ -1675,9 +1675,51 @@ def origin_clear():
 
     pass
 
+# no obj stuff
+@typing.overload
+def origin_set(
+        type: typing.Union[str, int] = 'GEOMETRY_ORIGIN', center: typing.Union[str, int] = 'MEDIAN'):
+    pass
 
-def origin_set(type: typing.Union[str, int] = 'GEOMETRY_ORIGIN',
-               center: typing.Union[str, int] = 'MEDIAN'):
+# context override & execution context
+@typing.overload
+def origin_set(override_context: typing.Dict[str, typing.Any], execution_context: str,
+               type: typing.Union[str, int] = 'GEOMETRY_ORIGIN', center: typing.Union[str, int] = 'MEDIAN'):
+    pass
+
+# context override & undo
+@typing.overload
+def origin_set(override_context: typing.Dict[str, typing.Any], undo: bool,
+               type: typing.Union[str, int] = 'GEOMETRY_ORIGIN', center: typing.Union[str, int] = 'MEDIAN'):
+    pass
+
+# context override
+@typing.overload
+def origin_set(override_context: typing.Dict[str, typing.Any],
+               type: typing.Union[str, int] = 'GEOMETRY_ORIGIN', center: typing.Union[str, int] = 'MEDIAN'):
+    pass
+
+# execution context
+@typing.overload
+def origin_set(execution_context: str,
+               type: typing.Union[str, int] = 'GEOMETRY_ORIGIN', center: typing.Union[str, int] = 'MEDIAN'):
+    pass
+
+# execution context & undo
+@typing.overload
+def origin_set(execution_context: str, undo: bool,
+               type: typing.Union[str, int] = 'GEOMETRY_ORIGIN', center: typing.Union[str, int] = 'MEDIAN'):
+    pass
+
+# undo
+@typing.overload
+def origin_set(undo: bool,
+               type: typing.Union[str, int] = 'GEOMETRY_ORIGIN', center: typing.Union[str, int] = 'MEDIAN'):
+    pass
+
+
+def origin_set(override_context: typing.Dict[str, typing.Any], execution_context: str, undo: bool,
+               type: typing.Union[str, int] = 'GEOMETRY_ORIGIN', center: typing.Union[str, int] = 'MEDIAN'):
     ''' Set the object's origin, by either moving the data, or set to center of data, or use 3D cursor
 
     :param type: Type * GEOMETRY_ORIGIN Geometry to Origin, Move object geometry to object origin. * ORIGIN_GEOMETRY Origin to Geometry, Calculate the center of geometry based on the current pivot point (median, otherwise bounding box). * ORIGIN_CURSOR Origin to 3D Cursor, Move object origin to position of the 3D cursor. * ORIGIN_CENTER_OF_MASS Origin to Center of Mass (Surface), Calculate the center of mass from the surface area. * ORIGIN_CENTER_OF_VOLUME Origin to Center of Mass (Volume), Calculate the center of mass from the volume (must be manifold geometry with consistent normals).
@@ -1975,7 +2017,33 @@ def scale_clear(clear_delta: bool = False):
     pass
 
 
-def select_all(action: typing.Union[str, int] = 'TOGGLE'):
+@typing.overload
+def select_all(action: typing.Union[str, int] = 'TOGGLE'): ...
+
+@typing.overload
+def select_all(override_context: typing.Dict[str, typing.Any], execution_context: str,
+               action: typing.Union[str, int] = 'TOGGLE'): ...
+
+@typing.overload
+def select_all(override_context: typing.Dict[str, typing.Any],
+               undo: bool, action: typing.Union[str, int] = 'TOGGLE'): ...
+
+@typing.overload
+def select_all(override_context: typing.Dict[str, typing.Any],
+               action: typing.Union[str, int] = 'TOGGLE'): ...
+
+@typing.overload
+def select_all(execution_context: str, undo: bool,
+               action: typing.Union[str, int] = 'TOGGLE'): ...
+
+@typing.overload
+def select_all(execution_context: str, action: typing.Union[str, int] = 'TOGGLE'): ...
+
+@typing.overload
+def select_all(undo: bool, action: typing.Union[str, int] = 'TOGGLE'): ...
+
+def select_all(override_context: typing.Dict[str, typing.Any], execution_context: str,
+               undo: bool, action: typing.Union[str, int] = 'TOGGLE'):
     ''' Change selection of all visible objects in scene
 
     :param action: Action, Selection action to execute * TOGGLE Toggle, Toggle selection for all elements. * SELECT Select, Select all elements. * DESELECT Deselect, Deselect all elements. * INVERT Invert, Invert selection of all elements.
@@ -2123,7 +2191,42 @@ def shade_flat():
     pass
 
 
+# no override stuff
+@typing.overload
 def shade_smooth():
+    pass
+
+# context override & execution context
+@typing.overload
+def shade_smooth(override_context: typing.Dict[str, typing.Any], execution_context: str):
+    pass
+
+# context override & undo
+@typing.overload
+def shade_smooth(override_context: typing.Dict[str, typing.Any], undo: bool):
+    pass
+
+# context override
+@typing.overload
+def shade_smooth(override_context: typing.Dict[str, typing.Any]):
+    pass
+
+# execution context
+@typing.overload
+def shade_smooth(execution_context: str):
+    pass
+
+# execution context & undo
+@typing.overload
+def shade_smooth(execution_context: str, undo: bool):
+    pass
+
+# undo
+@typing.overload
+def shade_smooth(undo: bool):
+    pass
+
+def shade_smooth(override_context: typing.Dict[str, typing.Any], execution_context: str, undo: bool):
     ''' Render and display faces smooth, using interpolated Vertex Normals
 
     '''

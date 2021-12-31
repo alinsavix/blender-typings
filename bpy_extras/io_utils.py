@@ -19,13 +19,15 @@ class ExportHelper:
 
 
 class ImportHelper:
-    def check(self, _context):
+    filepath: str = None
+
+    def check(self, context: 'bpy.types.Context') -> bool:
         '''
 
         '''
         pass
 
-    def invoke(self, context, _event):
+    def invoke(self, context: 'bpy.types.Context', event: 'bpy.types.Event') -> typing.Union[typing.Set[str], typing.Set[int]]:
         '''
 
         '''

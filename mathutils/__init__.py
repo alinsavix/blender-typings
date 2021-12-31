@@ -150,7 +150,7 @@ class Euler:
         '''
         pass
 
-    def make_compatible(self, other):
+    def make_compatible(self, other: 'Euler'):
         ''' Make this euler compatible with another, so interpolating between them works as intended.
 
         '''
@@ -196,7 +196,7 @@ class Euler:
         '''
         pass
 
-    def __init__(self, angles=(0.0, 0.0, 0.0), order='XYZ'):
+    def __init__(self, angles: typing.Tuple[float, float, float] = (0.0, 0.0, 0.0), order: str = 'XYZ'):
         '''
 
         '''
@@ -2180,8 +2180,26 @@ class Vector:
         '''
         pass
 
-    def __init__(self, seq=(0.0, 0.0, 0.0)):
-        '''
+    def __init__(self, seq: typing.Tuple[float, ...]):
+        pass
 
-        '''
+    def __eq__(self, other: 'Vector') -> bool:
+        pass
+
+    def __add__(self, other: 'Vector') -> 'Vector':
+        pass
+
+    def __iadd__(self, other: 'Vector') -> 'Vector':
+        pass
+
+    def __sub__(self, other: 'Vector') -> 'Vector':
+        pass
+
+    def __isub__(self, other: 'Vector') -> 'Vector':
+        pass
+
+    def __copy__(self) -> 'Vector':
+        pass
+
+    def __div__(self, other: 'Vector') -> 'Vector':
         pass

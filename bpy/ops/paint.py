@@ -184,9 +184,9 @@ def image_from_view(filepath: str = ""):
 
 
 def image_paint(stroke: typing.Union[
-    typing.Dict[str, 'bpy.types.OperatorStrokeElement'], typing.
-    List['bpy.types.OperatorStrokeElement'], 'bpy_prop_collection'] = None,
-        mode: typing.Union[str, int] = 'NORMAL'):
+        typing.Dict[str, 'bpy.types.OperatorStrokeElement'], typing.
+        List['bpy.types.OperatorStrokeElement'], 'bpy_prop_collection'] = None,
+                mode: typing.Union[str, int] = 'NORMAL'):
     ''' Paint a stroke into the image
 
     :param stroke: Stroke
@@ -246,12 +246,12 @@ def mask_flood_fill(mode: typing.Union[str, int] = 'VALUE',
 
 
 def mask_lasso_gesture(path: typing.Union[
-    typing.Dict[str, 'bpy.types.OperatorMousePath'], typing.
-    List['bpy.types.OperatorMousePath'], 'bpy_prop_collection'] = None,
-        use_front_faces_only: bool = False,
-        use_limit_to_segment: bool = False,
-        mode: typing.Union[str, int] = 'VALUE',
-        value: float = 1.0):
+        typing.Dict[str, 'bpy.types.OperatorMousePath'], typing.
+        List['bpy.types.OperatorMousePath'], 'bpy_prop_collection'] = None,
+                       use_front_faces_only: bool = False,
+                       use_limit_to_segment: bool = False,
+                       mode: typing.Union[str, int] = 'VALUE',
+                       value: float = 1.0):
     ''' Add mask within the lasso as you move the brush
 
     :param path: Path
@@ -457,9 +457,9 @@ def vertex_color_smooth():
 
 
 def vertex_paint(stroke: typing.Union[
-    typing.Dict[str, 'bpy.types.OperatorStrokeElement'], typing.
-    List['bpy.types.OperatorStrokeElement'], 'bpy_prop_collection'] = None,
-        mode: typing.Union[str, int] = 'NORMAL'):
+        typing.Dict[str, 'bpy.types.OperatorStrokeElement'], typing.
+        List['bpy.types.OperatorStrokeElement'], 'bpy_prop_collection'] = None,
+                 mode: typing.Union[str, int] = 'NORMAL'):
     ''' Paint a stroke in the active vertex color layer
 
     :param stroke: Stroke
@@ -518,9 +518,9 @@ def weight_gradient(type: typing.Union[str, int] = 'LINEAR',
 
 
 def weight_paint(stroke: typing.Union[
-    typing.Dict[str, 'bpy.types.OperatorStrokeElement'], typing.
-    List['bpy.types.OperatorStrokeElement'], 'bpy_prop_collection'] = None,
-        mode: typing.Union[str, int] = 'NORMAL'):
+        typing.Dict[str, 'bpy.types.OperatorStrokeElement'], typing.
+        List['bpy.types.OperatorStrokeElement'], 'bpy_prop_collection'] = None,
+                 mode: typing.Union[str, int] = 'NORMAL'):
     ''' Paint a stroke in the current vertex group's weights
 
     :param stroke: Stroke

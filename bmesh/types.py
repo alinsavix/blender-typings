@@ -1,4 +1,3 @@
-import sys
 import typing
 import bpy.types
 import mathutils
@@ -358,7 +357,8 @@ class BMFace:
     :type: bool
     '''
 
-    loops: typing.Union[typing.List['BMLoop'], 'BMElemSeq'] = None
+    # loops: typing.Union[typing.List['BMLoop'], 'BMElemSeq'] = None
+    loops: typing.List['BMLoop'] = None
     ''' Loops of this face, (read-only).
 
     :type: typing.Union[typing.List['BMLoop'], 'BMElemSeq']
@@ -530,6 +530,18 @@ class BMFace:
 
 
 class BMFaceSeq:
+    def __len__(self) -> int:
+        pass
+
+    def __iter__(self) -> typing.Iterator['BMFace']:
+        pass
+
+    def __next__(self) -> 'BMFace':
+        pass
+
+    def __getitem__(self, key: int) -> 'BMFace':
+        pass
+
     active: 'BMFace' = None
     ''' active face.
 
@@ -542,7 +554,7 @@ class BMFaceSeq:
     :type: 'BMLayerAccessFace'
     '''
 
-    def ensure_lookup_table(self):
+    def ensure_lookup_table(self) -> None:
         ''' Ensure internal data needed for int subscription is initialized with verts/edges/faces, eg bm.verts[index] . This needs to be called again after adding/removing data in this sequence.
 
         '''
@@ -566,7 +578,7 @@ class BMFaceSeq:
         '''
         pass
 
-    def new(self, verts: 'BMVert', example: 'BMFace' = None) -> 'BMFace':
+    def new(self, verts: typing.Tuple['BMVert', ...], example: 'BMFace' = None) -> 'BMFace':
         ''' Create a new face from a given set of verts.
 
         :param verts: Sequence of 3 or more verts.
@@ -673,25 +685,25 @@ class BMLayerAccessLoop:
     ''' Exposes custom-data layer attributes.
     '''
 
-    color = None
+    color: 'BMLayerCollection' = None
     ''' Generic RGBA color with 8-bit precision custom-data layer. type: BMLayerCollection'''
 
-    float = None
+    float: 'BMLayerCollection' = None
     ''' Generic float custom-data layer. type: BMLayerCollection'''
 
-    float_color = None
+    float_color: 'BMLayerCollection' = None
     ''' Generic RGBA color with float precision custom-data layer. type: BMLayerCollection'''
 
-    float_vector = None
+    float_vector: 'BMLayerCollection' = None
     ''' Generic 3D vector with float precision custom-data layer. type: BMLayerCollection'''
 
-    int = None
+    int: 'BMLayerCollection' = None
     ''' Generic int custom-data layer. type: BMLayerCollection'''
 
-    string = None
+    string: 'BMLayerCollection' = None
     ''' Generic string custom-data layer (exposed as bytes, 255 max length). type: BMLayerCollection'''
 
-    uv = None
+    uv: 'BMLayerCollection' = None
     ''' Accessor for BMLoopUV UV (as a 2D Vector). type: BMLayerCollection'''
 
 
@@ -781,7 +793,7 @@ class BMLayerCollection:
         '''
         pass
 
-    def new(self, name: str) -> 'BMLayerItem':
+    def new(self, name: str = "") -> 'BMLayerItem':
         ''' Create a new layer
 
         :param name: Optional name argument (will be made unique).
@@ -1033,19 +1045,22 @@ class BMVert:
     :type: bool
     '''
 
-    link_edges: typing.Union[typing.List['BMEdge'], 'BMElemSeq'] = None
+    link_edges: typing.List['BMEdge'] = None
+    # link_edges: typing.Union[typing.List['BMEdge'], 'BMElemSeq'] = None
     ''' Edges connected to this vertex (read-only).
 
     :type: typing.Union[typing.List['BMEdge'], 'BMElemSeq']
     '''
 
-    link_faces: typing.Union[typing.List['BMFace'], 'BMElemSeq'] = None
+    link_faces: typing.List['BMFace'] = None
+    # link_faces: typing.Union[typing.List['BMFace'], 'BMElemSeq'] = None
     ''' Faces connected to this vertex (read-only).
 
     :type: typing.Union[typing.List['BMFace'], 'BMElemSeq']
     '''
 
-    link_loops: typing.Union[typing.List['BMLoop'], 'BMElemSeq'] = None
+    link_loops: typing.List['BMLoop'] = None
+    # link_loops: typing.Union[typing.List['BMLoop'], 'BMElemSeq'] = None
     ''' Loops that use this vertex (read-only).
 
     :type: typing.Union[typing.List['BMLoop'], 'BMElemSeq']
@@ -1133,6 +1148,18 @@ class BMVert:
 
 
 class BMVertSeq:
+    def __len__(self) -> int:
+        pass
+
+    def __iter__(self) -> typing.Iterator['BMVert']:
+        pass
+
+    def __next__(self) -> 'BMVert':
+        pass
+
+    def __getitem__(self, key: int) -> 'BMVert':
+        pass
+
     layers: 'BMLayerAccessVert' = None
     ''' custom-data layers (read-only).
 
@@ -1151,7 +1178,7 @@ class BMVertSeq:
         '''
         pass
 
-    def new(self, co: float = (0.0, 0.0, 0.0),
+    def new(self, co: typing.Tuple[float, float, float] = (0.0, 0.0, 0.0),
             example: 'BMVert' = None) -> 'BMVert':
         ''' Create a new vertex.
 
@@ -1185,13 +1212,15 @@ class BMesh:
     ''' The BMesh data structure
     '''
 
-    edges: typing.Union[typing.List['BMEdge'], 'BMEdgeSeq'] = None
+    # edges: typing.Union[typing.List['BMEdge'], 'BMEdgeSeq'] = None
+    edges: 'BMEdgeSeq' = None
     ''' This meshes edge sequence (read-only).
 
     :type: typing.Union[typing.List['BMEdge'], 'BMEdgeSeq']
     '''
 
-    faces: typing.Union[typing.List['BMFace'], 'BMFaceSeq'] = None
+    # faces: typing.Union[typing.List['BMFace'], 'BMFaceSeq'] = None
+    faces: 'BMFaceSeq' = None
     ''' This meshes face sequence (read-only).
 
     :type: typing.Union[typing.List['BMFace'], 'BMFaceSeq']
@@ -1209,7 +1238,8 @@ class BMesh:
     :type: bool
     '''
 
-    loops: typing.Union[typing.List['BMLoop'], 'BMLoopSeq'] = None
+    # loops: typing.Union[typing.List['BMLoop'], 'BMLoopSeq'] = None
+    loops: 'BMLoopSeq' = None
     ''' This meshes loops (read-only).
 
     :type: typing.Union[typing.List['BMLoop'], 'BMLoopSeq']
@@ -1227,7 +1257,8 @@ class BMesh:
     :type: set
     '''
 
-    verts: typing.Union[typing.List['BMVert'], 'BMVertSeq'] = None
+    # verts: typing.Union[typing.List['BMVert'], 'BMVertSeq'] = None
+    verts: 'BMVertSeq' = None
     ''' This meshes vert sequence (read-only).
 
     :type: typing.Union[typing.List['BMVert'], 'BMVertSeq']
@@ -1251,7 +1282,7 @@ class BMesh:
         '''
         pass
 
-    def clear(self):
+    def clear(self) -> None:
         ''' Clear all mesh data.
 
         '''
@@ -1265,7 +1296,7 @@ class BMesh:
         '''
         pass
 
-    def free(self):
+    def free(self) -> None:
         ''' Explicitly free the BMesh data from memory, causing exceptions on further access.
 
         '''
@@ -1275,7 +1306,7 @@ class BMesh:
                   mesh: 'bpy.types.Mesh',
                   face_normals=True,
                   use_shape_key: bool = False,
-                  shape_key_index: int = 0):
+                  shape_key_index: int = 0) -> None:
         ''' Initialize this bmesh from existing mesh datablock.
 
         :param mesh: The mesh data to load.
@@ -1291,7 +1322,7 @@ class BMesh:
                     object: 'bpy.types.Object',
                     depsgraph,
                     cage: bool = False,
-                    face_normals: bool = True):
+                    face_normals: bool = True) -> None:
         ''' Initialize this bmesh from existing object data-block (only meshes are currently supported).
 
         :param object: The object data to load.
@@ -1303,13 +1334,13 @@ class BMesh:
         '''
         pass
 
-    def normal_update(self):
+    def normal_update(self) -> None:
         ''' Update mesh normals.
 
         '''
         pass
 
-    def select_flush(self, select: bool):
+    def select_flush(self, select: bool) -> None:
         ''' Flush selection, independent of the current selection mode.
 
         :param select: flush selection or de-selected elements.
@@ -1317,13 +1348,13 @@ class BMesh:
         '''
         pass
 
-    def select_flush_mode(self):
+    def select_flush_mode(self) -> None:
         ''' flush selection based on the current mode current BMesh.select_mode .
 
         '''
         pass
 
-    def to_mesh(self, mesh: 'bpy.types.Mesh'):
+    def to_mesh(self, mesh: 'bpy.types.Mesh') -> None:
         ''' Writes this BMesh data into an existing Mesh datablock.
 
         :param mesh: The mesh data to write into.
@@ -1331,7 +1362,7 @@ class BMesh:
         '''
         pass
 
-    def transform(self, matrix: 'mathutils.Matrix', filter: set = None):
+    def transform(self, matrix: 'mathutils.Matrix', filter: set = None) -> None:
         ''' Transform the mesh (optionally filtering flagged data only).
 
         :param matrix: transform matrix.

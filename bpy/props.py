@@ -340,14 +340,14 @@ def IntVectorProperty(name: str = "",
     pass
 
 
-def PointerProperty(type=None,
+def PointerProperty(type: type = None,
                     name: str = "",
                     description: str = "",
-                    options: set = {'ANIMATABLE'},
-                    override: set = 'set()',
-                    tags: set = 'set()',
-                    poll=None,
-                    update=None) -> 'bpy.types.PointerProperty':
+                    options: typing.Set[str] = {'ANIMATABLE'},
+                    override: typing.Set[str] = 'set()',
+                    tags: typing.Set[str] = 'set()',
+                    poll: typing.Callable[['bpy.types.PointerProperty', object], bool] = None,
+                    update: typing.Callable[['bpy.types.PointerProperty', 'bpy.types.Context'], None] = None) -> 'bpy.types.PointerProperty':
     ''' Returns a new pointer property definition.
 
     :param type: bpy.types.ID .
@@ -379,17 +379,19 @@ def RemoveProperty(cls, attr: str):
     pass
 
 
+
 def StringProperty(name: str = "",
                    description: str = "",
                    default: str = "",
                    maxlen: int = 0,
-                   options: set = {'ANIMATABLE'},
-                   override: set = 'set()',
-                   tags: set = 'set()',
+                   options: typing.Set[str] = {'ANIMATABLE'},
+                   override: typing.Set[str] = 'set()',
+                   tags: typing.Set[str] = 'set()',
                    subtype: str = 'NONE',
-                   update=None,
-                   get=None,
-                   set=None) -> 'bpy.types.StringProperty':
+                   update: typing.Callable[[bpy.types.StringProperty, bpy.types.Context], None] = None,
+                   get: typing.Callable[[bpy.types.StringProperty], str] = None,
+                   set: typing.Callable[[bpy.types.StringProperty, str], None] = None) -> 'bpy.types.StringProperty':
+
     ''' Returns a new string property definition.
 
     :param name: Name used in the user interface.
