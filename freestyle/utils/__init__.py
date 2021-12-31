@@ -22,7 +22,7 @@ class StrokeCollector:
     '''
 
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass

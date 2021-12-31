@@ -13,20 +13,20 @@ class PropertyPanel:
     ''' '''
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
 
 def draw(layout, context, context_member, property_type, use_edit):
-    ''' 
+    '''
 
     '''
 
@@ -34,7 +34,7 @@ def draw(layout, context, context_member, property_type, use_edit):
 
 
 def rna_idprop_context_value(context, context_member, property_type):
-    ''' 
+    '''
 
     '''
 
@@ -42,7 +42,7 @@ def rna_idprop_context_value(context, context_member, property_type):
 
 
 def rna_idprop_has_properties(rna_item):
-    ''' 
+    '''
 
     '''
 
@@ -50,7 +50,7 @@ def rna_idprop_has_properties(rna_item):
 
 
 def rna_idprop_quote_path(prop):
-    ''' 
+    '''
 
     '''
 
@@ -59,7 +59,7 @@ def rna_idprop_quote_path(prop):
 
 def rna_idprop_ui_create(item, prop, default, min, max, soft_min, soft_max,
                          description, overridable, subtype):
-    ''' 
+    '''
 
     '''
 
@@ -67,7 +67,7 @@ def rna_idprop_ui_create(item, prop, default, min, max, soft_min, soft_max,
 
 
 def rna_idprop_ui_del(item):
-    ''' 
+    '''
 
     '''
 
@@ -75,7 +75,7 @@ def rna_idprop_ui_del(item):
 
 
 def rna_idprop_ui_get(item, create):
-    ''' 
+    '''
 
     '''
 
@@ -83,7 +83,7 @@ def rna_idprop_ui_get(item, create):
 
 
 def rna_idprop_ui_prop_clear(item, prop, remove):
-    ''' 
+    '''
 
     '''
 
@@ -91,7 +91,7 @@ def rna_idprop_ui_prop_clear(item, prop, remove):
 
 
 def rna_idprop_ui_prop_default_set(item, prop, value):
-    ''' 
+    '''
 
     '''
 
@@ -99,7 +99,7 @@ def rna_idprop_ui_prop_default_set(item, prop, value):
 
 
 def rna_idprop_ui_prop_get(item, prop, create):
-    ''' 
+    '''
 
     '''
 
@@ -107,7 +107,7 @@ def rna_idprop_ui_prop_get(item, prop, create):
 
 
 def rna_idprop_ui_prop_update(item, prop):
-    ''' 
+    '''
 
     '''
 
@@ -115,7 +115,7 @@ def rna_idprop_ui_prop_update(item, prop):
 
 
 def rna_idprop_value_item_type(value):
-    ''' 
+    '''
 
     '''
 
@@ -123,7 +123,7 @@ def rna_idprop_value_item_type(value):
 
 
 def rna_idprop_value_to_python(value):
-    ''' 
+    '''
 
     '''
 

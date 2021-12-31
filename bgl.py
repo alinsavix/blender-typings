@@ -59,7 +59,7 @@ def glAttachShader(program: int, shader: int):
 
 
 def glBeginQuery(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -69,7 +69,7 @@ def glBeginQuery(p0: int, p1: int):
 
 
 def glBindAttribLocation(p0: int, p1: int, p2: str):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -80,7 +80,7 @@ def glBindAttribLocation(p0: int, p1: int, p2: str):
 
 
 def glBindBuffer(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -90,7 +90,7 @@ def glBindBuffer(p0: int, p1: int):
 
 
 def glBindBufferBase(p0: int, p1: int, p2: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -101,7 +101,7 @@ def glBindBufferBase(p0: int, p1: int, p2: int):
 
 
 def glBindBufferRange(p0: int, p1: int, p2: int, p3: int, p4: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -114,7 +114,7 @@ def glBindBufferRange(p0: int, p1: int, p2: int, p3: int, p4: int):
 
 
 def glBindFramebuffer(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -124,7 +124,7 @@ def glBindFramebuffer(p0: int, p1: int):
 
 
 def glBindRenderbuffer(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -146,7 +146,7 @@ def glBindTexture(target: typing.Union[str, int], texture: int):
 
 
 def glBindVertexArray(p0: int):
-    ''' 
+    '''
 
     :type p0: int
     '''
@@ -155,7 +155,7 @@ def glBindVertexArray(p0: int):
 
 
 def glBlendColor(p0: float, p1: float, p2: float, p3: float):
-    ''' 
+    '''
 
     :type p0: float
     :type p1: float
@@ -167,7 +167,7 @@ def glBlendColor(p0: float, p1: float, p2: float, p3: float):
 
 
 def glBlendEquation(p0: int):
-    ''' 
+    '''
 
     :type p0: int
     '''
@@ -176,7 +176,7 @@ def glBlendEquation(p0: int):
 
 
 def glBlendEquationSeparate(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -200,7 +200,7 @@ def glBlendFunc(sfactor: typing.Union[str, int],
 
 def glBlitFramebuffer(p0: int, p1: int, p2: int, p3: int, p4: int, p5: int,
                       p6: int, p7: int, p8: int, p9: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -218,7 +218,7 @@ def glBlitFramebuffer(p0: int, p1: int, p2: int, p3: int, p4: int, p5: int,
 
 
 def glBufferData(p0: int, p1: int, p2, p3: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -229,7 +229,7 @@ def glBufferData(p0: int, p1: int, p2, p3: int):
 
 
 def glBufferSubData(p0: int, p1: int, p2: int, p3):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -240,7 +240,7 @@ def glBufferSubData(p0: int, p1: int, p2: int, p3):
 
 
 def glCheckFramebufferStatus(p0: int) -> int:
-    ''' 
+    '''
 
     :type p0: int
     '''
@@ -347,7 +347,7 @@ def glCompileShader(shader: int):
 
 def glCompressedTexImage1D(p0: int, p1: int, p2: int, p3: int, p4: int,
                            p5: int, p6):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -362,7 +362,7 @@ def glCompressedTexImage1D(p0: int, p1: int, p2: int, p3: int, p4: int,
 
 def glCompressedTexImage2D(p0: int, p1: int, p2: int, p3: int, p4: int,
                            p5: int, p6: int, p7):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -378,7 +378,7 @@ def glCompressedTexImage2D(p0: int, p1: int, p2: int, p3: int, p4: int,
 
 def glCompressedTexImage3D(p0: int, p1: int, p2: int, p3: int, p4: int,
                            p5: int, p6: int, p7: int, p8):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -395,7 +395,7 @@ def glCompressedTexImage3D(p0: int, p1: int, p2: int, p3: int, p4: int,
 
 def glCompressedTexSubImage1D(p0: int, p1: int, p2: int, p3: int, p4: int,
                               p5: int, p6):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -410,7 +410,7 @@ def glCompressedTexSubImage1D(p0: int, p1: int, p2: int, p3: int, p4: int,
 
 def glCompressedTexSubImage2D(p0: int, p1: int, p2: int, p3: int, p4: int,
                               p5: int, p6: int, p7: int, p8):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -427,7 +427,7 @@ def glCompressedTexSubImage2D(p0: int, p1: int, p2: int, p3: int, p4: int,
 
 def glCopyTexImage1D(p0: int, p1: int, p2: int, p3: int, p4: int, p5: int,
                      p6: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -468,7 +468,7 @@ def glCopyTexImage2D(target: typing.Union[str, int], level: int,
 
 
 def glCopyTexSubImage1D(p0: int, p1: int, p2: int, p3: int, p4: int, p5: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -483,7 +483,7 @@ def glCopyTexSubImage1D(p0: int, p1: int, p2: int, p3: int, p4: int, p5: int):
 
 def glCopyTexSubImage2D(p0: int, p1: int, p2: int, p3: int, p4: int, p5: int,
                         p6: int, p7: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -500,7 +500,7 @@ def glCopyTexSubImage2D(p0: int, p1: int, p2: int, p3: int, p4: int, p5: int,
 
 def glCopyTexSubImage3D(p0: int, p1: int, p2: int, p3: int, p4: int, p5: int,
                         p6: int, p7: int, p8: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -549,7 +549,7 @@ def glCullFace(mode: typing.Union[str, int]):
 
 
 def glDeleteBuffers(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -559,7 +559,7 @@ def glDeleteBuffers(p0: int, p1: int):
 
 
 def glDeleteFramebuffers(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -579,7 +579,7 @@ def glDeleteProgram(program: int):
 
 
 def glDeleteQueries(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -589,7 +589,7 @@ def glDeleteQueries(p0: int, p1: int):
 
 
 def glDeleteRenderbuffers(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -621,7 +621,7 @@ def glDeleteTextures(n: int, textures: 'Buffer'):
 
 
 def glDeleteVertexArrays(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -685,7 +685,7 @@ def glDisable(cap: typing.Union[str, int]):
 
 
 def glDisableVertexAttribArray(p0: int):
-    ''' 
+    '''
 
     :type p0: int
     '''
@@ -694,7 +694,7 @@ def glDisableVertexAttribArray(p0: int):
 
 
 def glDrawArrays(p0: int, p1: int, p2: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -715,7 +715,7 @@ def glDrawBuffer(mode: typing.Union[str, int]):
 
 
 def glDrawBuffers(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -725,7 +725,7 @@ def glDrawBuffers(p0: int, p1: int):
 
 
 def glDrawElements(p0: int, p1: int, p2: int, p3):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -736,7 +736,7 @@ def glDrawElements(p0: int, p1: int, p2: int, p3):
 
 
 def glDrawRangeElements(p0: int, p1: int, p2: int, p3: int, p4: int, p5):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -768,7 +768,7 @@ def glEnable(cap: typing.Union[str, int]):
 
 
 def glEnableVertexAttribArray(p0: int):
-    ''' 
+    '''
 
     :type p0: int
     '''
@@ -777,7 +777,7 @@ def glEnableVertexAttribArray(p0: int):
 
 
 def glEndQuery(p0: int):
-    ''' 
+    '''
 
     :type p0: int
     '''
@@ -864,7 +864,7 @@ def glFog(pname: typing.Union[str, int], param):
 
 
 def glFramebufferRenderbuffer(p0: int, p1: int, p2: int, p3: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -876,7 +876,7 @@ def glFramebufferRenderbuffer(p0: int, p1: int, p2: int, p3: int):
 
 
 def glFramebufferTexture(p0: int, p1: int, p2: int, p3: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -898,7 +898,7 @@ def glFrontFace(mode: typing.Union[str, int]):
 
 
 def glGenBuffers(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -908,7 +908,7 @@ def glGenBuffers(p0: int, p1: int):
 
 
 def glGenFramebuffers(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -918,7 +918,7 @@ def glGenFramebuffers(p0: int, p1: int):
 
 
 def glGenQueries(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -928,7 +928,7 @@ def glGenQueries(p0: int, p1: int):
 
 
 def glGenRenderbuffers(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -951,7 +951,7 @@ def glGenTextures(n: int,
 
 
 def glGenVertexArrays(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -973,7 +973,7 @@ def glGet(pname: typing.Union[str, int], param):
 
 def glGetActiveAttrib(p0: int, p1: int, p2: int, p3: int, p4: int, p5: int,
                       p6: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -989,7 +989,7 @@ def glGetActiveAttrib(p0: int, p1: int, p2: int, p3: int, p4: int, p5: int,
 
 def glGetActiveUniform(p0: int, p1: int, p2: int, p3: int, p4: int, p5: int,
                        p6: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -1004,7 +1004,7 @@ def glGetActiveUniform(p0: int, p1: int, p2: int, p3: int, p4: int, p5: int,
 
 
 def glGetActiveUniformBlockName(p0: int, p1: int, p2: int, p3: int, p4: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -1017,7 +1017,7 @@ def glGetActiveUniformBlockName(p0: int, p1: int, p2: int, p3: int, p4: int):
 
 
 def glGetActiveUniformBlockiv(p0: int, p1: int, p2: int, p3: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -1029,7 +1029,7 @@ def glGetActiveUniformBlockiv(p0: int, p1: int, p2: int, p3: int):
 
 
 def glGetActiveUniformName(p0: int, p1: int, p2: int, p3: int, p4: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -1042,7 +1042,7 @@ def glGetActiveUniformName(p0: int, p1: int, p2: int, p3: int, p4: int):
 
 
 def glGetActiveUniformsiv(p0: int, p1: int, p2: int, p3: int, p4: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -1073,7 +1073,7 @@ def glGetAttachedShaders(program: int, maxCount: int,
 
 
 def glGetAttribLocation(p0: int, p1: str) -> int:
-    ''' 
+    '''
 
     :type p0: int
     :type p1: str
@@ -1083,7 +1083,7 @@ def glGetAttribLocation(p0: int, p1: str) -> int:
 
 
 def glGetBooleanv(p0: int, p1: bool):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: bool
@@ -1093,7 +1093,7 @@ def glGetBooleanv(p0: int, p1: bool):
 
 
 def glGetBufferParameteri64v(p0: int, p1: int, p2: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -1104,7 +1104,7 @@ def glGetBufferParameteri64v(p0: int, p1: int, p2: int):
 
 
 def glGetBufferParameteriv(p0: int, p1: int, p2: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -1115,7 +1115,7 @@ def glGetBufferParameteriv(p0: int, p1: int, p2: int):
 
 
 def glGetBufferPointerv(p0: int, p1: int, p2):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -1125,7 +1125,7 @@ def glGetBufferPointerv(p0: int, p1: int, p2):
 
 
 def glGetBufferSubData(p0: int, p1: int, p2: int, p3):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -1136,7 +1136,7 @@ def glGetBufferSubData(p0: int, p1: int, p2: int, p3):
 
 
 def glGetCompressedTexImage(p0: int, p1: int, p2):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -1146,7 +1146,7 @@ def glGetCompressedTexImage(p0: int, p1: int, p2):
 
 
 def glGetDoublev(p0: int, p1: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: float
@@ -1164,7 +1164,7 @@ def glGetError():
 
 
 def glGetFloatv(p0: int, p1: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: float
@@ -1174,7 +1174,7 @@ def glGetFloatv(p0: int, p1: float):
 
 
 def glGetIntegerv(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -1229,7 +1229,7 @@ def glGetMaterial(face: typing.Union[str, int], pname: typing.Union[str, int],
 
 
 def glGetMultisamplefv(p0: int, p1: int, p2: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -1285,7 +1285,7 @@ def glGetProgramiv(program: int, pname: int,
 
 
 def glGetQueryObjectiv(p0: int, p1: int, p2: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -1296,7 +1296,7 @@ def glGetQueryObjectiv(p0: int, p1: int, p2: int):
 
 
 def glGetQueryObjectuiv(p0: int, p1: int, p2: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -1307,7 +1307,7 @@ def glGetQueryObjectuiv(p0: int, p1: int, p2: int):
 
 
 def glGetQueryiv(p0: int, p1: int, p2: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -1352,7 +1352,7 @@ def glGetShaderSource(shader: int, bufSize: int,
 
 
 def glGetShaderiv(p0: int, p1: int, p2: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -1373,7 +1373,7 @@ def glGetString(name: typing.Union[str, int]):
 
 
 def glGetStringi(p0: int, p1: int) -> str:
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -1450,7 +1450,7 @@ def glGetTexLevelParameter(target: typing.Union[str, int], level: int,
 
 
 def glGetTexLevelParameterfv(p0: int, p1: int, p2: int, p3: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -1462,7 +1462,7 @@ def glGetTexLevelParameterfv(p0: int, p1: int, p2: int, p3: float):
 
 
 def glGetTexLevelParameteriv(p0: int, p1: int, p2: int, p3: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -1489,7 +1489,7 @@ def glGetTexParameter(target: typing.Union[str, int],
 
 
 def glGetTexParameterfv(p0: int, p1: int, p2: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -1500,7 +1500,7 @@ def glGetTexParameterfv(p0: int, p1: int, p2: float):
 
 
 def glGetTexParameteriv(p0: int, p1: int, p2: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -1511,7 +1511,7 @@ def glGetTexParameteriv(p0: int, p1: int, p2: int):
 
 
 def glGetUniformBlockIndex(p0: int, p1: str) -> int:
-    ''' 
+    '''
 
     :type p0: int
     :type p1: str
@@ -1521,7 +1521,7 @@ def glGetUniformBlockIndex(p0: int, p1: str) -> int:
 
 
 def glGetUniformIndices(p0: int, p1: int, p2: int, p3: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -1533,7 +1533,7 @@ def glGetUniformIndices(p0: int, p1: int, p2: int, p3: int):
 
 
 def glGetUniformLocation(p0: int, p1: str) -> int:
-    ''' 
+    '''
 
     :type p0: int
     :type p1: str
@@ -1543,7 +1543,7 @@ def glGetUniformLocation(p0: int, p1: str) -> int:
 
 
 def glGetUniformfv(p0: int, p1: int, p2: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -1554,7 +1554,7 @@ def glGetUniformfv(p0: int, p1: int, p2: float):
 
 
 def glGetUniformiv(p0: int, p1: int, p2: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -1565,7 +1565,7 @@ def glGetUniformiv(p0: int, p1: int, p2: int):
 
 
 def glGetVertexAttribPointerv(p0: int, p1: int, p2):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -1575,7 +1575,7 @@ def glGetVertexAttribPointerv(p0: int, p1: int, p2):
 
 
 def glGetVertexAttribdv(p0: int, p1: int, p2: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -1586,7 +1586,7 @@ def glGetVertexAttribdv(p0: int, p1: int, p2: float):
 
 
 def glGetVertexAttribfv(p0: int, p1: int, p2: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -1597,7 +1597,7 @@ def glGetVertexAttribfv(p0: int, p1: int, p2: float):
 
 
 def glGetVertexAttribiv(p0: int, p1: int, p2: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -1620,7 +1620,7 @@ def glHint(target: typing.Union[str, int], mode: typing.Union[str, int]):
 
 
 def glIsBuffer(p0: int) -> bool:
-    ''' 
+    '''
 
     :type p0: int
     '''
@@ -1649,7 +1649,7 @@ def glIsProgram(program: int):
 
 
 def glIsQuery(p0: int) -> bool:
-    ''' 
+    '''
 
     :type p0: int
     '''
@@ -1678,7 +1678,7 @@ def glIsTexture(texture: int):
 
 
 def glIsVertexArray(p0: int) -> bool:
-    ''' 
+    '''
 
     :type p0: int
     '''
@@ -1796,7 +1796,7 @@ def glMap2(target: typing.Union[str, int], u1, u2, ustride: int, uorder: int,
 
 
 def glMapBuffer(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -1884,7 +1884,7 @@ def glPixelStore(pname: typing.Union[str, int], param):
 
 
 def glPixelStoref(p0: int, p1: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: float
@@ -1894,7 +1894,7 @@ def glPixelStoref(p0: int, p1: float):
 
 
 def glPixelStorei(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2009,7 +2009,7 @@ def glRect(x1, y1, x2, y2, v1, v2):
 
 
 def glRenderbufferStorage(p0: int, p1: int, p2: int, p3: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2033,7 +2033,7 @@ def glRotate(angle, x, y, z):
 
 
 def glSampleCoverage(p0: float, p1: bool):
-    ''' 
+    '''
 
     :type p0: float
     :type p1: bool
@@ -2043,7 +2043,7 @@ def glSampleCoverage(p0: float, p1: bool):
 
 
 def glSampleMaski(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2104,7 +2104,7 @@ def glStencilFunc(func: typing.Union[str, int], ref: int, mask: int):
 
 
 def glStencilFuncSeparate(p0: int, p1: int, p2: int, p3: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2126,7 +2126,7 @@ def glStencilMask(mask: int):
 
 
 def glStencilMaskSeparate(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2151,7 +2151,7 @@ def glStencilOp(fail: typing.Union[str, int], zfail: typing.Union[str, int],
 
 
 def glStencilOpSeparate(p0: int, p1: int, p2: int, p3: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2262,7 +2262,7 @@ def glTexImage2D(target: typing.Union[str, int], level: int,
 
 def glTexImage2DMultisample(p0: int, p1: int, p2: int, p3: int, p4: int,
                             p5: bool):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2277,7 +2277,7 @@ def glTexImage2DMultisample(p0: int, p1: int, p2: int, p3: int, p4: int,
 
 def glTexImage3D(p0: int, p1: int, p2: int, p3: int, p4: int, p5: int, p6: int,
                  p7: int, p8: int, p9):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2295,7 +2295,7 @@ def glTexImage3D(p0: int, p1: int, p2: int, p3: int, p4: int, p5: int, p6: int,
 
 def glTexImage3DMultisample(p0: int, p1: int, p2: int, p3: int, p4: int,
                             p5: int, p6: bool):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2324,7 +2324,7 @@ def glTexParameter(target: typing.Union[str, int],
 
 
 def glTexParameterf(p0: int, p1: int, p2: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2335,7 +2335,7 @@ def glTexParameterf(p0: int, p1: int, p2: float):
 
 
 def glTexParameterfv(p0: int, p1: int, p2: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2346,7 +2346,7 @@ def glTexParameterfv(p0: int, p1: int, p2: float):
 
 
 def glTexParameteri(p0: int, p1: int, p2: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2357,7 +2357,7 @@ def glTexParameteri(p0: int, p1: int, p2: int):
 
 
 def glTexParameteriv(p0: int, p1: int, p2: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2368,7 +2368,7 @@ def glTexParameteriv(p0: int, p1: int, p2: int):
 
 
 def glTexSubImage1D(p0: int, p1: int, p2: int, p3: int, p4: int, p5: int, p6):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2383,7 +2383,7 @@ def glTexSubImage1D(p0: int, p1: int, p2: int, p3: int, p4: int, p5: int, p6):
 
 def glTexSubImage2D(p0: int, p1: int, p2: int, p3: int, p4: int, p5: int,
                     p6: int, p7: int, p8):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2400,7 +2400,7 @@ def glTexSubImage2D(p0: int, p1: int, p2: int, p3: int, p4: int, p5: int,
 
 def glTexSubImage3D(p0: int, p1: int, p2: int, p3: int, p4: int, p5: int,
                     p6: int, p7: int, p8: int, p9: int, p10):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2429,7 +2429,7 @@ def glTranslate(x, y, z):
 
 
 def glUniform1f(p0: int, p1: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: float
@@ -2439,7 +2439,7 @@ def glUniform1f(p0: int, p1: float):
 
 
 def glUniform1fv(p0: int, p1: int, p2: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2450,7 +2450,7 @@ def glUniform1fv(p0: int, p1: int, p2: float):
 
 
 def glUniform1i(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2460,7 +2460,7 @@ def glUniform1i(p0: int, p1: int):
 
 
 def glUniform1iv(p0: int, p1: int, p2: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2471,7 +2471,7 @@ def glUniform1iv(p0: int, p1: int, p2: int):
 
 
 def glUniform2f(p0: int, p1: float, p2: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: float
@@ -2482,7 +2482,7 @@ def glUniform2f(p0: int, p1: float, p2: float):
 
 
 def glUniform2fv(p0: int, p1: int, p2: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2493,7 +2493,7 @@ def glUniform2fv(p0: int, p1: int, p2: float):
 
 
 def glUniform2i(p0: int, p1: int, p2: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2504,7 +2504,7 @@ def glUniform2i(p0: int, p1: int, p2: int):
 
 
 def glUniform2iv(p0: int, p1: int, p2: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2515,7 +2515,7 @@ def glUniform2iv(p0: int, p1: int, p2: int):
 
 
 def glUniform3f(p0: int, p1: float, p2: float, p3: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: float
@@ -2527,7 +2527,7 @@ def glUniform3f(p0: int, p1: float, p2: float, p3: float):
 
 
 def glUniform3fv(p0: int, p1: int, p2: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2538,7 +2538,7 @@ def glUniform3fv(p0: int, p1: int, p2: float):
 
 
 def glUniform3i(p0: int, p1: int, p2: int, p3: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2550,7 +2550,7 @@ def glUniform3i(p0: int, p1: int, p2: int, p3: int):
 
 
 def glUniform3iv(p0: int, p1: int, p2: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2561,7 +2561,7 @@ def glUniform3iv(p0: int, p1: int, p2: int):
 
 
 def glUniform4f(p0: int, p1: float, p2: float, p3: float, p4: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: float
@@ -2574,7 +2574,7 @@ def glUniform4f(p0: int, p1: float, p2: float, p3: float, p4: float):
 
 
 def glUniform4fv(p0: int, p1: int, p2: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2585,7 +2585,7 @@ def glUniform4fv(p0: int, p1: int, p2: float):
 
 
 def glUniform4i(p0: int, p1: int, p2: int, p3: int, p4: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2598,7 +2598,7 @@ def glUniform4i(p0: int, p1: int, p2: int, p3: int, p4: int):
 
 
 def glUniform4iv(p0: int, p1: int, p2: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2609,7 +2609,7 @@ def glUniform4iv(p0: int, p1: int, p2: int):
 
 
 def glUniformBlockBinding(p0: int, p1: int, p2: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2620,7 +2620,7 @@ def glUniformBlockBinding(p0: int, p1: int, p2: int):
 
 
 def glUniformMatrix2fv(p0: int, p1: int, p2: bool, p3: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2632,7 +2632,7 @@ def glUniformMatrix2fv(p0: int, p1: int, p2: bool, p3: float):
 
 
 def glUniformMatrix2x3fv(p0: int, p1: int, p2: bool, p3: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2644,7 +2644,7 @@ def glUniformMatrix2x3fv(p0: int, p1: int, p2: bool, p3: float):
 
 
 def glUniformMatrix2x4fv(p0: int, p1: int, p2: bool, p3: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2656,7 +2656,7 @@ def glUniformMatrix2x4fv(p0: int, p1: int, p2: bool, p3: float):
 
 
 def glUniformMatrix3fv(p0: int, p1: int, p2: bool, p3: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2668,7 +2668,7 @@ def glUniformMatrix3fv(p0: int, p1: int, p2: bool, p3: float):
 
 
 def glUniformMatrix3x2fv(p0: int, p1: int, p2: bool, p3: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2680,7 +2680,7 @@ def glUniformMatrix3x2fv(p0: int, p1: int, p2: bool, p3: float):
 
 
 def glUniformMatrix3x4fv(p0: int, p1: int, p2: bool, p3: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2692,7 +2692,7 @@ def glUniformMatrix3x4fv(p0: int, p1: int, p2: bool, p3: float):
 
 
 def glUniformMatrix4fv(p0: int, p1: int, p2: bool, p3: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2704,7 +2704,7 @@ def glUniformMatrix4fv(p0: int, p1: int, p2: bool, p3: float):
 
 
 def glUniformMatrix4x2fv(p0: int, p1: int, p2: bool, p3: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2716,7 +2716,7 @@ def glUniformMatrix4x2fv(p0: int, p1: int, p2: bool, p3: float):
 
 
 def glUniformMatrix4x3fv(p0: int, p1: int, p2: bool, p3: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2728,7 +2728,7 @@ def glUniformMatrix4x3fv(p0: int, p1: int, p2: bool, p3: float):
 
 
 def glUnmapBuffer(p0: int) -> bool:
-    ''' 
+    '''
 
     :type p0: int
     '''
@@ -2757,7 +2757,7 @@ def glValidateProgram(program: int):
 
 
 def glVertexAttrib1d(p0: int, p1: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: float
@@ -2767,7 +2767,7 @@ def glVertexAttrib1d(p0: int, p1: float):
 
 
 def glVertexAttrib1dv(p0: int, p1: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: float
@@ -2777,7 +2777,7 @@ def glVertexAttrib1dv(p0: int, p1: float):
 
 
 def glVertexAttrib1f(p0: int, p1: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: float
@@ -2787,7 +2787,7 @@ def glVertexAttrib1f(p0: int, p1: float):
 
 
 def glVertexAttrib1fv(p0: int, p1: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: float
@@ -2797,7 +2797,7 @@ def glVertexAttrib1fv(p0: int, p1: float):
 
 
 def glVertexAttrib1s(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2807,7 +2807,7 @@ def glVertexAttrib1s(p0: int, p1: int):
 
 
 def glVertexAttrib1sv(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2817,7 +2817,7 @@ def glVertexAttrib1sv(p0: int, p1: int):
 
 
 def glVertexAttrib2d(p0: int, p1: float, p2: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: float
@@ -2828,7 +2828,7 @@ def glVertexAttrib2d(p0: int, p1: float, p2: float):
 
 
 def glVertexAttrib2dv(p0: int, p1: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: float
@@ -2838,7 +2838,7 @@ def glVertexAttrib2dv(p0: int, p1: float):
 
 
 def glVertexAttrib2f(p0: int, p1: float, p2: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: float
@@ -2849,7 +2849,7 @@ def glVertexAttrib2f(p0: int, p1: float, p2: float):
 
 
 def glVertexAttrib2fv(p0: int, p1: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: float
@@ -2859,7 +2859,7 @@ def glVertexAttrib2fv(p0: int, p1: float):
 
 
 def glVertexAttrib2s(p0: int, p1: int, p2: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2870,7 +2870,7 @@ def glVertexAttrib2s(p0: int, p1: int, p2: int):
 
 
 def glVertexAttrib2sv(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2880,7 +2880,7 @@ def glVertexAttrib2sv(p0: int, p1: int):
 
 
 def glVertexAttrib3d(p0: int, p1: float, p2: float, p3: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: float
@@ -2892,7 +2892,7 @@ def glVertexAttrib3d(p0: int, p1: float, p2: float, p3: float):
 
 
 def glVertexAttrib3dv(p0: int, p1: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: float
@@ -2902,7 +2902,7 @@ def glVertexAttrib3dv(p0: int, p1: float):
 
 
 def glVertexAttrib3f(p0: int, p1: float, p2: float, p3: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: float
@@ -2914,7 +2914,7 @@ def glVertexAttrib3f(p0: int, p1: float, p2: float, p3: float):
 
 
 def glVertexAttrib3fv(p0: int, p1: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: float
@@ -2924,7 +2924,7 @@ def glVertexAttrib3fv(p0: int, p1: float):
 
 
 def glVertexAttrib3s(p0: int, p1: int, p2: int, p3: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2936,7 +2936,7 @@ def glVertexAttrib3s(p0: int, p1: int, p2: int, p3: int):
 
 
 def glVertexAttrib3sv(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2946,7 +2946,7 @@ def glVertexAttrib3sv(p0: int, p1: int):
 
 
 def glVertexAttrib4Nbv(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2956,7 +2956,7 @@ def glVertexAttrib4Nbv(p0: int, p1: int):
 
 
 def glVertexAttrib4Niv(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2966,7 +2966,7 @@ def glVertexAttrib4Niv(p0: int, p1: int):
 
 
 def glVertexAttrib4Nsv(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2976,7 +2976,7 @@ def glVertexAttrib4Nsv(p0: int, p1: int):
 
 
 def glVertexAttrib4Nub(p0: int, p1: int, p2: int, p3: int, p4: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2989,7 +2989,7 @@ def glVertexAttrib4Nub(p0: int, p1: int, p2: int, p3: int, p4: int):
 
 
 def glVertexAttrib4Nubv(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -2999,7 +2999,7 @@ def glVertexAttrib4Nubv(p0: int, p1: int):
 
 
 def glVertexAttrib4Nuiv(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -3009,7 +3009,7 @@ def glVertexAttrib4Nuiv(p0: int, p1: int):
 
 
 def glVertexAttrib4Nusv(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -3019,7 +3019,7 @@ def glVertexAttrib4Nusv(p0: int, p1: int):
 
 
 def glVertexAttrib4bv(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -3029,7 +3029,7 @@ def glVertexAttrib4bv(p0: int, p1: int):
 
 
 def glVertexAttrib4d(p0: int, p1: float, p2: float, p3: float, p4: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: float
@@ -3042,7 +3042,7 @@ def glVertexAttrib4d(p0: int, p1: float, p2: float, p3: float, p4: float):
 
 
 def glVertexAttrib4dv(p0: int, p1: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: float
@@ -3052,7 +3052,7 @@ def glVertexAttrib4dv(p0: int, p1: float):
 
 
 def glVertexAttrib4f(p0: int, p1: float, p2: float, p3: float, p4: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: float
@@ -3065,7 +3065,7 @@ def glVertexAttrib4f(p0: int, p1: float, p2: float, p3: float, p4: float):
 
 
 def glVertexAttrib4fv(p0: int, p1: float):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: float
@@ -3075,7 +3075,7 @@ def glVertexAttrib4fv(p0: int, p1: float):
 
 
 def glVertexAttrib4iv(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -3085,7 +3085,7 @@ def glVertexAttrib4iv(p0: int, p1: int):
 
 
 def glVertexAttrib4s(p0: int, p1: int, p2: int, p3: int, p4: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -3098,7 +3098,7 @@ def glVertexAttrib4s(p0: int, p1: int, p2: int, p3: int, p4: int):
 
 
 def glVertexAttrib4sv(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -3108,7 +3108,7 @@ def glVertexAttrib4sv(p0: int, p1: int):
 
 
 def glVertexAttrib4ubv(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -3118,7 +3118,7 @@ def glVertexAttrib4ubv(p0: int, p1: int):
 
 
 def glVertexAttrib4uiv(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -3128,7 +3128,7 @@ def glVertexAttrib4uiv(p0: int, p1: int):
 
 
 def glVertexAttrib4usv(p0: int, p1: int):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -3138,7 +3138,7 @@ def glVertexAttrib4usv(p0: int, p1: int):
 
 
 def glVertexAttribIPointer(p0: int, p1: int, p2: int, p3: int, p4):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int
@@ -3150,7 +3150,7 @@ def glVertexAttribIPointer(p0: int, p1: int, p2: int, p3: int, p4):
 
 
 def glVertexAttribPointer(p0: int, p1: int, p2: int, p3: bool, p4: int, p5):
-    ''' 
+    '''
 
     :type p0: int
     :type p1: int

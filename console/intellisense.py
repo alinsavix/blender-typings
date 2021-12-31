@@ -3,7 +3,7 @@ import typing
 
 
 def complete(line, cursor, namespace, private):
-    ''' 
+    '''
 
     '''
 
@@ -11,7 +11,7 @@ def complete(line, cursor, namespace, private):
 
 
 def expand(line, cursor, namespace, private):
-    ''' 
+    '''
 
     '''
 

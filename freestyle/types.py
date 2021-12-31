@@ -176,7 +176,7 @@ class ChainingIterator:
         :type begin: 'ViewEdge'
         :param orientation: The direction to follow to explore the graph. If true, the direction indicated by the first ViewEdge is used.
         :type orientation: bool
-        :param brother: 
+        :param brother:
         :type brother: 'ChainingIterator'
         '''
         pass
@@ -513,7 +513,7 @@ class Id:
 
         :param brother: An Id object.
         :type brother: 'Id'
-        :param first: 
+        :param first:
         :type first: int
         :param second: The second number.
         :type second: int

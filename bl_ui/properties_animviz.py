@@ -13,7 +13,7 @@ class MotionPathButtonsPanel:
     ''' '''
 
     def draw_settings(self, _context, avs, mpath, bones):
-        ''' 
+        '''
 
         '''
         pass
@@ -30,7 +30,7 @@ class MotionPathButtonsPanel_display:
     ''' '''
 
     def draw_settings(self, _context, avs, mpath, bones):
-        ''' 
+        '''
 
         '''
         pass

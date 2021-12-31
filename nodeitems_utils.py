@@ -4,7 +4,7 @@ import typing
 
 class NodeCategory:
     def poll(self, _context):
-        ''' 
+        '''
 
         '''
         pass
@@ -18,7 +18,7 @@ class NodeItem:
     ''' '''
 
     def draw(self, layout, _context):
-        ''' 
+        '''
 
         '''
         pass
@@ -29,7 +29,7 @@ class NodeItemCustom:
 
 
 def draw_node_categories_menu(context):
-    ''' 
+    '''
 
     '''
 
@@ -37,7 +37,7 @@ def draw_node_categories_menu(context):
 
 
 def has_node_categories(context):
-    ''' 
+    '''
 
     '''
 
@@ -45,7 +45,7 @@ def has_node_categories(context):
 
 
 def node_categories_iter(context):
-    ''' 
+    '''
 
     '''
 
@@ -53,7 +53,7 @@ def node_categories_iter(context):
 
 
 def node_items_iter(context):
-    ''' 
+    '''
 
     '''
 
@@ -61,7 +61,7 @@ def node_items_iter(context):
 
 
 def register_node_categories(identifier, cat_list):
-    ''' 
+    '''
 
     '''
 
@@ -69,7 +69,7 @@ def register_node_categories(identifier, cat_list):
 
 
 def unregister_node_cat_types(cats):
-    ''' 
+    '''
 
     '''
 
@@ -77,7 +77,7 @@ def unregister_node_cat_types(cats):
 
 
 def unregister_node_categories(identifier):
-    ''' 
+    '''
 
     '''
 

@@ -4,10 +4,10 @@ import bpy.types
 
 
 def brush_stroke(stroke: typing.Union[
-        typing.Dict[str, 'bpy.types.OperatorStrokeElement'], typing.
-        List['bpy.types.OperatorStrokeElement'], 'bpy_prop_collection'] = None,
-                 mode: typing.Union[str, int] = 'NORMAL',
-                 ignore_background_click: bool = False):
+    typing.Dict[str, 'bpy.types.OperatorStrokeElement'], typing.
+    List['bpy.types.OperatorStrokeElement'], 'bpy_prop_collection'] = None,
+        mode: typing.Union[str, int] = 'NORMAL',
+        ignore_background_click: bool = False):
     ''' Sculpt a stroke into the geometry
 
     :param stroke: Stroke
@@ -25,12 +25,12 @@ def cloth_filter(type: typing.Union[str, int] = 'GRAVITY',
                  strength: float = 1.0,
                  force_axis: typing.Union[typing.Set[str], typing.Set[int]] = {
                      'X', 'Y', 'Z'
-                 },
-                 orientation: typing.Union[str, int] = 'LOCAL',
-                 cloth_mass: float = 1.0,
-                 cloth_damping: float = 0.0,
-                 use_face_sets: bool = False,
-                 use_collisions: bool = False):
+},
+        orientation: typing.Union[str, int] = 'LOCAL',
+        cloth_mass: float = 1.0,
+        cloth_damping: float = 0.0,
+        use_face_sets: bool = False,
+        use_collisions: bool = False):
     ''' Applies a cloth simulation deformation to the entire mesh
 
     :param type: Filter Type, Operation that is going to be applied to the mesh * GRAVITY Gravity, Applies gravity to the simulation. * INFLATE Inflate, Inflates the cloth. * EXPAND Expand, Expands the cloth's dimensions. * PINCH Pinch, Pulls the cloth to the cursor's start position. * SCALE Scale, Scales the mesh as a soft body using the origin of the object as scale.
@@ -187,10 +187,10 @@ def face_set_edit(mode: typing.Union[str, int] = 'GROW',
 
 
 def face_set_lasso_gesture(path: typing.Union[
-        typing.Dict[str, 'bpy.types.OperatorMousePath'], typing.
-        List['bpy.types.OperatorMousePath'], 'bpy_prop_collection'] = None,
-                           use_front_faces_only: bool = False,
-                           use_limit_to_segment: bool = False):
+    typing.Dict[str, 'bpy.types.OperatorMousePath'], typing.
+    List['bpy.types.OperatorMousePath'], 'bpy_prop_collection'] = None,
+        use_front_faces_only: bool = False,
+        use_limit_to_segment: bool = False):
     ''' Add face set within the lasso as you move the brush
 
     :param path: Path
@@ -326,13 +326,13 @@ def mesh_filter(type: typing.Union[str, int] = 'INFLATE',
                 strength: float = 1.0,
                 deform_axis: typing.Union[typing.Set[str], typing.Set[int]] = {
                     'X', 'Y', 'Z'
-                },
-                orientation: typing.Union[str, int] = 'LOCAL',
-                surface_smooth_shape_preservation: float = 0.5,
-                surface_smooth_current_vertex: float = 0.5,
-                sharpen_smooth_ratio: float = 0.35,
-                sharpen_intensify_detail_strength: float = 0.0,
-                sharpen_curvature_smooth_iterations: int = 0):
+},
+        orientation: typing.Union[str, int] = 'LOCAL',
+        surface_smooth_shape_preservation: float = 0.5,
+        surface_smooth_current_vertex: float = 0.5,
+        sharpen_smooth_ratio: float = 0.35,
+        sharpen_intensify_detail_strength: float = 0.0,
+        sharpen_curvature_smooth_iterations: int = 0):
     ''' Applies a filter to modify the current mesh
 
     :param type: Filter Type, Operation that is going to be applied to the mesh * SMOOTH Smooth, Smooth mesh. * SCALE Scale, Scale mesh. * INFLATE Inflate, Inflate mesh. * SPHERE Sphere, Morph into sphere. * RANDOM Random, Randomize vertex positions. * RELAX Relax, Relax mesh. * RELAX_FACE_SETS Relax Face Sets, Smooth the edges of all the Face Sets. * SURFACE_SMOOTH Surface Smooth, Smooth the surface of the mesh, preserving the volume. * SHARPEN Sharpen, Sharpen the cavities of the mesh. * ENHANCE_DETAILS Enhance Details, Enhance the high frequency surface detail. * ERASE_DISCPLACEMENT Erase Displacement, Deletes the displacement of the Multires Modifier.
@@ -506,13 +506,13 @@ def trim_box_gesture(xmin: int = 0,
 
 
 def trim_lasso_gesture(path: typing.Union[
-        typing.Dict[str, 'bpy.types.OperatorMousePath'], typing.
-        List['bpy.types.OperatorMousePath'], 'bpy_prop_collection'] = None,
-                       use_front_faces_only: bool = False,
-                       use_limit_to_segment: bool = False,
-                       trim_mode: typing.Union[str, int] = 'DIFFERENCE',
-                       use_cursor_depth: bool = False,
-                       trim_orientation: typing.Union[str, int] = 'VIEW'):
+    typing.Dict[str, 'bpy.types.OperatorMousePath'], typing.
+    List['bpy.types.OperatorMousePath'], 'bpy_prop_collection'] = None,
+        use_front_faces_only: bool = False,
+        use_limit_to_segment: bool = False,
+        trim_mode: typing.Union[str, int] = 'DIFFERENCE',
+        use_cursor_depth: bool = False,
+        trim_orientation: typing.Union[str, int] = 'VIEW'):
     ''' Trims the mesh within the lasso as you move the brush
 
     :param path: Path

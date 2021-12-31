@@ -177,9 +177,9 @@ def add_object(name: str = "Object"):
 
 
 def add_reroute(path: typing.Union[
-        typing.Dict[str, 'bpy.types.OperatorMousePath'], typing.
-        List['bpy.types.OperatorMousePath'], 'bpy_prop_collection'] = None,
-                cursor: int = 8):
+    typing.Dict[str, 'bpy.types.OperatorMousePath'], typing.
+    List['bpy.types.OperatorMousePath'], 'bpy_prop_collection'] = None,
+        cursor: int = 8):
     ''' Add a reroute node
 
     :param path: Path
@@ -510,9 +510,9 @@ def link_viewer():
 
 
 def links_cut(path: typing.Union[
-        typing.Dict[str, 'bpy.types.OperatorMousePath'], typing.
-        List['bpy.types.OperatorMousePath'], 'bpy_prop_collection'] = None,
-              cursor: int = 12):
+    typing.Dict[str, 'bpy.types.OperatorMousePath'], typing.
+    List['bpy.types.OperatorMousePath'], 'bpy_prop_collection'] = None,
+        cursor: int = 12):
     ''' Use the mouse to cut (remove) some links
 
     :param path: Path
@@ -533,9 +533,9 @@ def links_detach():
 
 
 def links_mute(path: typing.Union[
-        typing.Dict[str, 'bpy.types.OperatorMousePath'], typing.
-        List['bpy.types.OperatorMousePath'], 'bpy_prop_collection'] = None,
-               cursor: int = 35):
+    typing.Dict[str, 'bpy.types.OperatorMousePath'], typing.
+    List['bpy.types.OperatorMousePath'], 'bpy_prop_collection'] = None,
+        cursor: int = 35):
     ''' Use the mouse to mute links
 
     :param path: Path

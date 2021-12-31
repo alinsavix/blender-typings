@@ -20,7 +20,7 @@ def publish_rna(key):
 
 
 def subscribe_rna(key, owner, args, notify, options: set = 'set()'):
-    ''' 
+    '''
 
     :param key: Represents the type of data being subscribed to Arguments include - bpy.types.Property instance. - bpy.types.Struct type. - ( bpy.types.Struct , str) type and property name.
     :param owner: Handle for this subscription (compared by identity).

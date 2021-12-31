@@ -17,7 +17,7 @@ class BMDeformVert:
         :param key: The key associated with deform weight.
         :type key: int
         :param default: Optional argument for the value to return if *key* is not found.
-        :type default: 
+        :type default:
         '''
         pass
 
@@ -141,27 +141,27 @@ class BMEdge:
     '''
 
     def calc_face_angle(self, fallback=None) -> float:
-        ''' 
+        '''
 
         :param fallback: return this when the edge doesn't have 2 faces (instead of raising a :exc: ValueError ).
-        :type fallback: 
+        :type fallback:
         :rtype: float
         :return: The angle between 2 connected faces in radians.
         '''
         pass
 
     def calc_face_angle_signed(self, fallback=None) -> float:
-        ''' 
+        '''
 
         :param fallback: return this when the edge doesn't have 2 faces (instead of raising a :exc: ValueError ).
-        :type fallback: 
+        :type fallback:
         :rtype: float
         :return: The angle between 2 connected faces in radians (negative for concave join).
         '''
         pass
 
     def calc_length(self) -> float:
-        ''' 
+        '''
 
         :rtype: float
         :return: The length between both verts.
@@ -235,8 +235,8 @@ class BMEdgeSeq:
 
         :param verts: Sequence of verts.
         :type verts: 'BMVert'
-        :param fallback: 
-        :type fallback: 
+        :param fallback:
+        :type fallback:
         :rtype: 'BMEdge'
         :return: The edge found or None
         '''
@@ -270,9 +270,9 @@ class BMEdgeSeq:
         ''' Sort the elements of this sequence, using an optional custom sort key. Indices of elements are not changed, BMElemeSeq.index_update() can be used for that.
 
         :param key: The key that sets the ordering of the elements.
-        :type key: 
+        :type key:
         :param reverse: Reverse the order of the elements
-        :type reverse: 
+        :type reverse:
         '''
         pass
 
@@ -553,8 +553,8 @@ class BMFaceSeq:
 
         :param verts: Sequence of verts.
         :type verts: 'BMVert'
-        :param fallback: 
-        :type fallback: 
+        :param fallback:
+        :type fallback:
         :rtype: 'BMFace'
         :return: The face found or None
         '''
@@ -588,9 +588,9 @@ class BMFaceSeq:
         ''' Sort the elements of this sequence, using an optional custom sort key. Indices of elements are not changed, BMElemeSeq.index_update() can be used for that.
 
         :param key: The key that sets the ordering of the elements.
-        :type key: 
+        :type key:
         :param reverse: Reverse the order of the elements
-        :type reverse: 
+        :type reverse:
         '''
         pass
 
@@ -761,7 +761,7 @@ class BMLayerCollection:
         :param key: The key associated with the layer.
         :type key: str
         :param default: Optional argument for the value to return if *key* is not found.
-        :type default: 
+        :type default:
         '''
         pass
 
@@ -829,10 +829,10 @@ class BMLayerItem:
     def copy_from(self, other):
         ''' Return a copy of the layer
 
-        :param other: 
-        :type other: 
-        :param other: 
-        :type other: 
+        :param other:
+        :type other:
+        :param other:
+        :type other:
         '''
         pass
 
@@ -1073,7 +1073,7 @@ class BMVert:
         ''' Return the angle between this vert's two connected edges.
 
         :param fallback: return this when the vert doesn't have 2 edges (instead of raising a :exc: ValueError ).
-        :type fallback: 
+        :type fallback:
         :rtype: float
         :return: Angle between edges in radians.
         '''
@@ -1174,9 +1174,9 @@ class BMVertSeq:
         ''' Sort the elements of this sequence, using an optional custom sort key. Indices of elements are not changed, BMElemeSeq.index_update() can be used for that.
 
         :param key: The key that sets the ordering of the elements.
-        :type key: 
+        :type key:
         :param reverse: Reverse the order of the elements
-        :type reverse: 
+        :type reverse:
         '''
         pass
 
@@ -1258,7 +1258,7 @@ class BMesh:
         pass
 
     def copy(self) -> 'BMesh':
-        ''' 
+        '''
 
         :rtype: 'BMesh'
         :return: A copy of this BMesh.

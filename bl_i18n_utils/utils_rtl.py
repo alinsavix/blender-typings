@@ -3,7 +3,7 @@ import typing
 
 
 def log2vis(msgs, settings):
-    ''' 
+    '''
 
     '''
 
@@ -11,7 +11,7 @@ def log2vis(msgs, settings):
 
 
 def protect_format_seq(msg):
-    ''' 
+    '''
 
     '''
 

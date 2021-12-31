@@ -3,7 +3,7 @@ import typing
 
 
 def complete(line):
-    ''' 
+    '''
 
     '''
 
@@ -11,7 +11,7 @@ def complete(line):
 
 
 def get_root_modules():
-    ''' 
+    '''
 
     '''
 
@@ -19,7 +19,7 @@ def get_root_modules():
 
 
 def module_list(path):
-    ''' 
+    '''
 
     '''
 

@@ -21,7 +21,7 @@ def from_edit_mesh(mesh: 'bpy.types.Mesh') -> 'bmesh.types.BMesh':
 
 
 def new(use_operators: bool = True) -> 'bmesh.types.BMesh':
-    ''' 
+    '''
 
     :param use_operators: bmesh.ops (uses some extra memory per vert/edge/face).
     :type use_operators: bool

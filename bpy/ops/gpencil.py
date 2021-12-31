@@ -911,9 +911,9 @@ def reveal(select: bool = True):
 
 
 def sculpt_paint(stroke: typing.Union[
-        typing.Dict[str, 'bpy.types.OperatorStrokeElement'], typing.
-        List['bpy.types.OperatorStrokeElement'], 'bpy_prop_collection'] = None,
-                 wait_for_input: bool = True):
+    typing.Dict[str, 'bpy.types.OperatorStrokeElement'], typing.
+    List['bpy.types.OperatorStrokeElement'], 'bpy_prop_collection'] = None,
+        wait_for_input: bool = True):
     ''' Apply tweaks to strokes by painting over the strokes
 
     :param stroke: Stroke
@@ -1205,9 +1205,9 @@ def stroke_change_color(material: str = ""):
 
 
 def stroke_cutter(path: typing.Union[
-        typing.Dict[str, 'bpy.types.OperatorMousePath'], typing.
-        List['bpy.types.OperatorMousePath'], 'bpy_prop_collection'] = None,
-                  flat_caps: bool = False):
+    typing.Dict[str, 'bpy.types.OperatorMousePath'], typing.
+    List['bpy.types.OperatorMousePath'], 'bpy_prop_collection'] = None,
+        flat_caps: bool = False):
     ''' Select section and cut
 
     :param path: Path
@@ -1670,9 +1670,9 @@ def vertex_group_smooth(factor: float = 0.5, repeat: int = 1):
 
 
 def vertex_paint(stroke: typing.Union[
-        typing.Dict[str, 'bpy.types.OperatorStrokeElement'], typing.
-        List['bpy.types.OperatorStrokeElement'], 'bpy_prop_collection'] = None,
-                 wait_for_input: bool = True):
+    typing.Dict[str, 'bpy.types.OperatorStrokeElement'], typing.
+    List['bpy.types.OperatorStrokeElement'], 'bpy_prop_collection'] = None,
+        wait_for_input: bool = True):
     ''' Paint stroke points with a color
 
     :param stroke: Stroke
@@ -1695,9 +1695,9 @@ def vertexmode_toggle(back: bool = False):
 
 
 def weight_paint(stroke: typing.Union[
-        typing.Dict[str, 'bpy.types.OperatorStrokeElement'], typing.
-        List['bpy.types.OperatorStrokeElement'], 'bpy_prop_collection'] = None,
-                 wait_for_input: bool = True):
+    typing.Dict[str, 'bpy.types.OperatorStrokeElement'], typing.
+    List['bpy.types.OperatorStrokeElement'], 'bpy_prop_collection'] = None,
+        wait_for_input: bool = True):
     ''' Paint stroke points with a color
 
     :param stroke: Stroke

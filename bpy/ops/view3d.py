@@ -505,9 +505,9 @@ def select_circle(x: int = 0,
 
 
 def select_lasso(path: typing.Union[
-        typing.Dict[str, 'bpy.types.OperatorMousePath'], typing.
-        List['bpy.types.OperatorMousePath'], 'bpy_prop_collection'] = None,
-                 mode: typing.Union[str, int] = 'SET'):
+    typing.Dict[str, 'bpy.types.OperatorMousePath'], typing.
+    List['bpy.types.OperatorMousePath'], 'bpy_prop_collection'] = None,
+        mode: typing.Union[str, int] = 'SET'):
     ''' Select items using lasso selection
 
     :param path: Path

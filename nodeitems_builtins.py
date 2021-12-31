@@ -5,7 +5,7 @@ import nodeitems_utils
 
 class SortedNodeCategory(nodeitems_utils.NodeCategory):
     def poll(self, _context):
-        ''' 
+        '''
 
         '''
         pass
@@ -13,7 +13,7 @@ class SortedNodeCategory(nodeitems_utils.NodeCategory):
 
 class CompositorNodeCategory(SortedNodeCategory, nodeitems_utils.NodeCategory):
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
@@ -21,7 +21,7 @@ class CompositorNodeCategory(SortedNodeCategory, nodeitems_utils.NodeCategory):
 
 class GeometryNodeCategory(SortedNodeCategory, nodeitems_utils.NodeCategory):
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
@@ -29,7 +29,7 @@ class GeometryNodeCategory(SortedNodeCategory, nodeitems_utils.NodeCategory):
 
 class ShaderNodeCategory(SortedNodeCategory, nodeitems_utils.NodeCategory):
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
@@ -37,14 +37,14 @@ class ShaderNodeCategory(SortedNodeCategory, nodeitems_utils.NodeCategory):
 
 class TextureNodeCategory(SortedNodeCategory, nodeitems_utils.NodeCategory):
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
 
 def cycles_shader_nodes_poll(context):
-    ''' 
+    '''
 
     '''
 
@@ -52,7 +52,7 @@ def cycles_shader_nodes_poll(context):
 
 
 def eevee_cycles_shader_nodes_poll(context):
-    ''' 
+    '''
 
     '''
 
@@ -60,7 +60,7 @@ def eevee_cycles_shader_nodes_poll(context):
 
 
 def eevee_shader_nodes_poll(context):
-    ''' 
+    '''
 
     '''
 
@@ -68,7 +68,7 @@ def eevee_shader_nodes_poll(context):
 
 
 def group_input_output_item_poll(context):
-    ''' 
+    '''
 
     '''
 
@@ -76,7 +76,7 @@ def group_input_output_item_poll(context):
 
 
 def group_tools_draw(layout, context):
-    ''' 
+    '''
 
     '''
 
@@ -84,7 +84,7 @@ def group_tools_draw(layout, context):
 
 
 def line_style_shader_nodes_poll(context):
-    ''' 
+    '''
 
     '''
 
@@ -92,7 +92,7 @@ def line_style_shader_nodes_poll(context):
 
 
 def node_group_items(context):
-    ''' 
+    '''
 
     '''
 
@@ -100,7 +100,7 @@ def node_group_items(context):
 
 
 def not_implemented_node(idname):
-    ''' 
+    '''
 
     '''
 
@@ -108,7 +108,7 @@ def not_implemented_node(idname):
 
 
 def object_cycles_shader_nodes_poll(context):
-    ''' 
+    '''
 
     '''
 
@@ -116,7 +116,7 @@ def object_cycles_shader_nodes_poll(context):
 
 
 def object_eevee_cycles_shader_nodes_poll(context):
-    ''' 
+    '''
 
     '''
 
@@ -124,7 +124,7 @@ def object_eevee_cycles_shader_nodes_poll(context):
 
 
 def object_eevee_shader_nodes_poll(context):
-    ''' 
+    '''
 
     '''
 
@@ -132,7 +132,7 @@ def object_eevee_shader_nodes_poll(context):
 
 
 def object_shader_nodes_poll(context):
-    ''' 
+    '''
 
     '''
 
@@ -140,7 +140,7 @@ def object_shader_nodes_poll(context):
 
 
 def register():
-    ''' 
+    '''
 
     '''
 
@@ -148,7 +148,7 @@ def register():
 
 
 def unregister():
-    ''' 
+    '''
 
     '''
 
@@ -156,7 +156,7 @@ def unregister():
 
 
 def world_shader_nodes_poll(context):
-    ''' 
+    '''
 
     '''
 

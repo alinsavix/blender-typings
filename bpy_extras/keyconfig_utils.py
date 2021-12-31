@@ -19,7 +19,7 @@ def addon_keymap_unregister(keymap_data):
 
 
 def keyconfig_test(kc):
-    ''' 
+    '''
 
     '''
 

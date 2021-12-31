@@ -31,7 +31,7 @@ from . import console
 
 
 def register():
-    ''' 
+    '''
 
     '''
 
@@ -39,7 +39,7 @@ def register():
 
 
 def unregister():
-    ''' 
+    '''
 
     '''
 

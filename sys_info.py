@@ -3,7 +3,7 @@ import typing
 
 
 def write_sysinfo(filepath):
-    ''' 
+    '''
 
     '''
 

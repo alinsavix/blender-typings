@@ -8,7 +8,7 @@ import bpy.context
 
 class AddObjectHelper:
     def align_update_callback(self, _context):
-        ''' 
+        '''
 
         '''
         pass

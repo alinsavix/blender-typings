@@ -18,7 +18,7 @@ class KDTree:
         :param co: 3d coordinates.
         :type co: float
         :param filter: function which takes an index and returns True for indices to include in the search.
-        :type filter: 
+        :type filter:
         :rtype: tuple
         :return: Vector , index, distance).
         '''
@@ -59,7 +59,7 @@ class KDTree:
         pass
 
     def __init__(self, size):
-        ''' 
+        '''
 
         '''
         pass

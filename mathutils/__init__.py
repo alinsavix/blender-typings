@@ -85,7 +85,7 @@ class Color:
         pass
 
     def __init__(self, rgb=(0.0, 0.0, 0.0)):
-        ''' 
+        '''
 
         '''
         pass
@@ -197,7 +197,7 @@ class Euler:
         pass
 
     def __init__(self, angles=(0.0, 0.0, 0.0), order='XYZ'):
-        ''' 
+        '''
 
         '''
         pass
@@ -426,7 +426,7 @@ class Matrix:
         ''' Return an inverted copy of the matrix.
 
         :param fallback: return this when the inverse can't be calculated (instead of raising a :exc: ValueError ).
-        :type fallback: 
+        :type fallback:
         :rtype: 'Matrix'
         :return: the inverted matrix or fallback when given.
         '''
@@ -564,7 +564,7 @@ class Matrix:
     def __init__(self,
                  rows=((1.0, 0.0, 0.0, 0.0), (0.0, 1.0, 0.0, 0.0),
                        (0.0, 0.0, 1.0, 0.0), (0.0, 0.0, 0.0, 1.0))):
-        ''' 
+        '''
 
         '''
         pass
@@ -806,15 +806,15 @@ class Quaternion:
     def to_swing_twist(self, axis) -> typing.Union[float, 'Quaternion']:
         ''' Split the rotation into a swing quaternion with the specified axis fixed at zero, and the remaining twist rotation angle.
 
-        :param axis: 
-        :type axis: 
+        :param axis:
+        :type axis:
         :rtype: typing.Union[float, 'Quaternion']
         :return: swing, twist angle.
         '''
         pass
 
     def __init__(self, seq=(1.0, 0.0, 0.0, 0.0)):
-        ''' 
+        '''
 
         '''
         pass
@@ -1944,7 +1944,7 @@ class Vector:
         :param other: another vector to compare the angle with
         :type other: 'Vector'
         :param fallback: return this when the angle can't be calculated (zero length vector), (instead of raising a :exc: ValueError ).
-        :type fallback: 
+        :type fallback:
         :rtype: float
         :return: angle in radians or fallback when given
         '''
@@ -1957,7 +1957,7 @@ class Vector:
         :param other: another vector to compare the angle with
         :type other: 'Vector'
         :param fallback: return this when the angle can't be calculated (zero length vector), (instead of raising a :exc: ValueError ).
-        :type fallback: 
+        :type fallback:
         :rtype: float
         :return: angle in radians or fallback when given
         '''
@@ -2122,7 +2122,7 @@ class Vector:
         :param factor: The interpolation value typically in [0.0, 1.0].
         :type factor: float
         :param fallback: return this when the vector can't be calculated (zero length vector or direct opposites), (instead of raising a :exc: ValueError ).
-        :type fallback: 
+        :type fallback:
         :rtype: 'Vector'
         :return: The interpolated vector.
         '''
@@ -2181,7 +2181,7 @@ class Vector:
         pass
 
     def __init__(self, seq=(0.0, 0.0, 0.0)):
-        ''' 
+        '''
 
         '''
         pass

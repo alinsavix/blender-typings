@@ -51,7 +51,7 @@ class ImagePreviewCollection:
 
 
 def new() -> 'ImagePreviewCollection':
-    ''' 
+    '''
 
     :return: a new preview collection.
     '''

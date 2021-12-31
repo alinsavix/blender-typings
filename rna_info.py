@@ -25,7 +25,7 @@ class InfoFunctionRNA:
     ''' '''
 
     def build(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -57,13 +57,13 @@ class InfoOperatorRNA:
     ''' '''
 
     def build(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_location(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -134,19 +134,19 @@ class InfoPropertyRNA:
     ''' '''
 
     def build(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_arg_default(self, force):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_type_description(self, as_ret, as_arg, class_fmt, collection_id):
-        ''' 
+        '''
 
         '''
         pass
@@ -196,44 +196,44 @@ class InfoStructRNA:
     ''' '''
 
     def build(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_bases(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_nested_properties(self, ls):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_py_c_functions(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_py_functions(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_py_properties(self):
-        ''' 
+        '''
 
         '''
         pass
 
 
 def BuildRNAInfo():
-    ''' 
+    '''
 
     '''
 
@@ -241,7 +241,7 @@ def BuildRNAInfo():
 
 
 def GetInfoFunctionRNA(bl_rna, parent_id):
-    ''' 
+    '''
 
     '''
 
@@ -249,7 +249,7 @@ def GetInfoFunctionRNA(bl_rna, parent_id):
 
 
 def GetInfoOperatorRNA(bl_rna):
-    ''' 
+    '''
 
     '''
 
@@ -257,7 +257,7 @@ def GetInfoOperatorRNA(bl_rna):
 
 
 def GetInfoPropertyRNA(bl_rna, parent_id):
-    ''' 
+    '''
 
     '''
 
@@ -265,7 +265,7 @@ def GetInfoPropertyRNA(bl_rna, parent_id):
 
 
 def GetInfoStructRNA(bl_rna):
-    ''' 
+    '''
 
     '''
 
@@ -273,7 +273,7 @@ def GetInfoStructRNA(bl_rna):
 
 
 def float_as_string(f):
-    ''' 
+    '''
 
     '''
 
@@ -281,7 +281,7 @@ def float_as_string(f):
 
 
 def get_direct_functions(rna_type):
-    ''' 
+    '''
 
     '''
 
@@ -289,7 +289,7 @@ def get_direct_functions(rna_type):
 
 
 def get_direct_properties(rna_type):
-    ''' 
+    '''
 
     '''
 
@@ -297,7 +297,7 @@ def get_direct_properties(rna_type):
 
 
 def get_py_class_from_rna(rna_type):
-    ''' 
+    '''
 
     '''
 
@@ -305,7 +305,7 @@ def get_py_class_from_rna(rna_type):
 
 
 def main():
-    ''' 
+    '''
 
     '''
 
@@ -313,7 +313,7 @@ def main():
 
 
 def range_str(val):
-    ''' 
+    '''
 
     '''
 
@@ -321,7 +321,7 @@ def range_str(val):
 
 
 def rna_id_ignore(rna_id):
-    ''' 
+    '''
 
     '''
 

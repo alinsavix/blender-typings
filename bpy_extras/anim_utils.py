@@ -5,7 +5,7 @@ import bpy.types
 
 def bake_action(obj: 'bpy.types.Object', *, action: 'bpy.types.Action',
                 frames: int, **kwargs) -> 'bpy.types.Action':
-    ''' 
+    '''
 
     :param obj: Object to bake.
     :type obj: 'bpy.types.Object'

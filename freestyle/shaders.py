@@ -302,13 +302,13 @@ class PolygonalizationShader:
 
 class RoundCapShader:
     def round_cap_thickness(self, x):
-        ''' 
+        '''
 
         '''
         pass
 
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -410,7 +410,7 @@ class SpatialNoiseShader:
 
 class SquareCapShader:
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -486,7 +486,7 @@ class py2DCurvatureColorShader:
     '''
 
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -497,7 +497,7 @@ class pyBackboneStretcherNoCuspShader:
     '''
 
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -508,7 +508,7 @@ class pyBackboneStretcherShader:
     '''
 
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -519,7 +519,7 @@ class pyBluePrintCirclesShader:
     '''
 
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -530,7 +530,7 @@ class pyBluePrintDirectedSquaresShader:
     '''
 
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -538,7 +538,7 @@ class pyBluePrintDirectedSquaresShader:
 
 class pyBluePrintEllipsesShader:
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -546,7 +546,7 @@ class pyBluePrintEllipsesShader:
 
 class pyBluePrintSquaresShader:
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -557,7 +557,7 @@ class pyConstantColorShader:
     '''
 
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -568,7 +568,7 @@ class pyConstantThicknessShader:
     '''
 
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -579,7 +579,7 @@ class pyConstrainedIncreasingThicknessShader:
     '''
 
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -590,7 +590,7 @@ class pyDecreasingThicknessShader:
     '''
 
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -601,7 +601,7 @@ class pyDepthDiscontinuityThicknessShader:
     '''
 
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -612,7 +612,7 @@ class pyDiffusion2Shader:
     '''
 
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -623,7 +623,7 @@ class pyFXSVaryingThicknessWithDensityShader:
     '''
 
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -631,7 +631,7 @@ class pyFXSVaryingThicknessWithDensityShader:
 
 class pyGuidingLineShader:
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -642,7 +642,7 @@ class pyHLRShader:
     '''
 
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -653,7 +653,7 @@ class pyImportance2DThicknessShader:
     '''
 
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -664,7 +664,7 @@ class pyImportance3DThicknessShader:
     '''
 
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -675,7 +675,7 @@ class pyIncreasingColorShader:
     '''
 
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -686,7 +686,7 @@ class pyIncreasingThicknessShader:
     '''
 
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -697,7 +697,7 @@ class pyInterpolateColorShader:
     '''
 
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -708,7 +708,7 @@ class pyLengthDependingBackboneStretcherShader:
     '''
 
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -719,7 +719,7 @@ class pyMaterialColorShader:
     '''
 
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -730,7 +730,7 @@ class pyModulateAlphaShader:
     '''
 
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -741,7 +741,7 @@ class pyNonLinearVaryingThicknessShader:
     '''
 
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -752,7 +752,7 @@ class pyPerlinNoise1DShader:
     '''
 
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -763,7 +763,7 @@ class pyPerlinNoise2DShader:
     '''
 
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -774,7 +774,7 @@ class pyRandomColorShader:
     '''
 
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -785,7 +785,7 @@ class pySLERPThicknessShader:
     '''
 
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -796,7 +796,7 @@ class pySamplingShader:
     '''
 
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -807,7 +807,7 @@ class pySinusDisplacementShader:
     '''
 
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -818,7 +818,7 @@ class pyTVertexRemoverShader:
     '''
 
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -829,7 +829,7 @@ class pyTVertexThickenerShader:
     '''
 
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -840,7 +840,7 @@ class pyTimeColorShader:
     '''
 
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -851,7 +851,7 @@ class pyTipRemoverShader:
     '''
 
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass
@@ -862,7 +862,7 @@ class pyZDependingThicknessShader:
     '''
 
     def shade(self, stroke):
-        ''' 
+        '''
 
         '''
         pass

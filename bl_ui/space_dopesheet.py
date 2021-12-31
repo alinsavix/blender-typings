@@ -6,7 +6,7 @@ import bl_ui.properties_grease_pencil_common
 
 class DOPESHEET_HT_editor_buttons:
     def draw_header(self, context, layout):
-        ''' 
+        '''
 
         '''
         pass
@@ -23,157 +23,157 @@ class DOPESHEET_HT_header(bpy_types.Header, bpy_types._GenericUI):
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -190,176 +190,176 @@ class DOPESHEET_MT_channel(bpy_types.Menu, bpy_types._GenericUI):
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_collapsible(self, context, layout):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_preset(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_menu(self, searchpaths, operator, props_default, prop_filepath,
                   filter_ext, filter_path, display_name, add_operator):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -376,176 +376,176 @@ class DOPESHEET_MT_channel_context_menu(bpy_types.Menu, bpy_types._GenericUI):
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_collapsible(self, context, layout):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_preset(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_menu(self, searchpaths, operator, props_default, prop_filepath,
                   filter_ext, filter_path, display_name, add_operator):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -562,176 +562,176 @@ class DOPESHEET_MT_context_menu(bpy_types.Menu, bpy_types._GenericUI):
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_collapsible(self, context, layout):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_preset(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_menu(self, searchpaths, operator, props_default, prop_filepath,
                   filter_ext, filter_path, display_name, add_operator):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -748,176 +748,176 @@ class DOPESHEET_MT_delete(bpy_types.Menu, bpy_types._GenericUI):
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_collapsible(self, context, layout):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_preset(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_menu(self, searchpaths, operator, props_default, prop_filepath,
                   filter_ext, filter_path, display_name, add_operator):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -937,176 +937,176 @@ class DOPESHEET_MT_editor_menus(bpy_types.Menu, bpy_types._GenericUI):
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_collapsible(self, context, layout):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_preset(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_menu(self, searchpaths, operator, props_default, prop_filepath,
                   filter_ext, filter_path, display_name, add_operator):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -1123,176 +1123,176 @@ class DOPESHEET_MT_gpencil_channel(bpy_types.Menu, bpy_types._GenericUI):
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_collapsible(self, context, layout):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_preset(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_menu(self, searchpaths, operator, props_default, prop_filepath,
                   filter_ext, filter_path, display_name, add_operator):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -1309,176 +1309,176 @@ class DOPESHEET_MT_gpencil_key(bpy_types.Menu, bpy_types._GenericUI):
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_collapsible(self, context, layout):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_preset(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_menu(self, searchpaths, operator, props_default, prop_filepath,
                   filter_ext, filter_path, display_name, add_operator):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -1495,176 +1495,176 @@ class DOPESHEET_MT_key(bpy_types.Menu, bpy_types._GenericUI):
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_collapsible(self, context, layout):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_preset(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_menu(self, searchpaths, operator, props_default, prop_filepath,
                   filter_ext, filter_path, display_name, add_operator):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -1681,176 +1681,176 @@ class DOPESHEET_MT_key_transform(bpy_types.Menu, bpy_types._GenericUI):
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_collapsible(self, context, layout):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_preset(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_menu(self, searchpaths, operator, props_default, prop_filepath,
                   filter_ext, filter_path, display_name, add_operator):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -1867,176 +1867,176 @@ class DOPESHEET_MT_marker(bpy_types.Menu, bpy_types._GenericUI):
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_collapsible(self, context, layout):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_preset(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_menu(self, searchpaths, operator, props_default, prop_filepath,
                   filter_ext, filter_path, display_name, add_operator):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -2053,176 +2053,176 @@ class DOPESHEET_MT_select(bpy_types.Menu, bpy_types._GenericUI):
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_collapsible(self, context, layout):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_preset(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_menu(self, searchpaths, operator, props_default, prop_filepath,
                   filter_ext, filter_path, display_name, add_operator):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -2239,176 +2239,176 @@ class DOPESHEET_MT_snap_pie(bpy_types.Menu, bpy_types._GenericUI):
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_collapsible(self, context, layout):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_preset(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_menu(self, searchpaths, operator, props_default, prop_filepath,
                   filter_ext, filter_path, display_name, add_operator):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -2425,176 +2425,176 @@ class DOPESHEET_MT_view(bpy_types.Menu, bpy_types._GenericUI):
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_collapsible(self, context, layout):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_preset(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_menu(self, searchpaths, operator, props_default, prop_filepath,
                   filter_ext, filter_path, display_name, add_operator):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -2608,19 +2608,19 @@ class DopesheetFilterPopoverBase:
     ''' '''
 
     def draw_generic_filters(self, context, layout):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_search_filters(self, context, layout, generic_filters_only):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_standard_filters(self, context, layout):
-        ''' 
+        '''
 
         '''
         pass
@@ -2637,7 +2637,7 @@ class LayersDopeSheetPanel:
     ''' '''
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
@@ -2661,175 +2661,175 @@ class DOPESHEET_PT_filters(DopesheetFilterPopoverBase, bpy_types.Panel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_generic_filters(self, context, layout):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_search_filters(self, context, layout, generic_filters_only):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_standard_filters(self, context, layout):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -2864,163 +2864,163 @@ class DOPESHEET_PT_gpencil_layer_adjustments(
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -3055,163 +3055,163 @@ class DOPESHEET_PT_gpencil_layer_display(
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -3246,169 +3246,169 @@ class DOPESHEET_PT_gpencil_layer_masks(
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -3443,163 +3443,163 @@ class DOPESHEET_PT_gpencil_layer_relations(
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -3634,163 +3634,163 @@ class DOPESHEET_PT_gpencil_layer_transform(
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -3817,170 +3817,170 @@ class DOPESHEET_PT_gpencil_mode(LayersDopeSheetPanel, bpy_types.Panel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
 
 
 def dopesheet_filter(layout, context):
-    ''' 
+    '''
 
     '''
 

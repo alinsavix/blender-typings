@@ -205,10 +205,10 @@ class GPUShader:
 
         :param name: name of the uniform variable whose UBO is to be specified.
         :type name: str
-        :param texture: 
+        :param texture:
         :type texture: 'GPUUniformBuf'
-        :param ubo: 
-        :type ubo: 
+        :param ubo:
+        :type ubo:
         '''
         pass
 
@@ -319,12 +319,12 @@ class GPUTexture:
     def clear(self, format='FLOAT', value: list = (0.0, 0.0, 0.0, 1.0)):
         ''' Fill texture with specific value.
 
-        :param type: 
+        :param type:
         :type type: str
         :param value: sequence each representing the value to fill.
         :type value: list
-        :param format: 
-        :type format: 
+        :param format:
+        :type format:
         '''
         pass
 

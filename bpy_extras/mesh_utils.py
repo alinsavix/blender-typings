@@ -4,7 +4,7 @@ import bpy.types
 
 
 def edge_face_count(mesh) -> list:
-    ''' 
+    '''
 
     :return: list face users for each item in mesh.edges.
     '''
@@ -13,7 +13,7 @@ def edge_face_count(mesh) -> list:
 
 
 def edge_face_count_dict(mesh) -> dict:
-    ''' 
+    '''
 
     :return: dict of edge keys with their value set to the number of faces using each edge.
     '''

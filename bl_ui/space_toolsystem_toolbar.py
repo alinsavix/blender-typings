@@ -32,219 +32,219 @@ class IMAGE_PT_tools_active(
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_active_tool_fallback(self, context, layout, tool,
                                   is_horizontal_layout):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_active_tool_header(self, context, layout, show_tool_name,
                                 tool_key):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_cls(self, layout, context, detect_layout, scale_y):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_fallback_tool_items(self, layout, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_fallback_tool_items_for_pie_menu(self, layout, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keymap_ui_hierarchy(self, context_mode):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def register(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def tool_active_from_context(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def tools_all(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def tools_from_context(self, context, mode):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -277,219 +277,219 @@ class NODE_PT_tools_active(bl_ui.space_toolsystem_common.ToolSelectPanelHelper,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_active_tool_fallback(self, context, layout, tool,
                                   is_horizontal_layout):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_active_tool_header(self, context, layout, show_tool_name,
                                 tool_key):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_cls(self, layout, context, detect_layout, scale_y):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_fallback_tool_items(self, layout, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_fallback_tool_items_for_pie_menu(self, layout, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keymap_ui_hierarchy(self, context_mode):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def register(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def tool_active_from_context(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def tools_all(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def tools_from_context(self, context, mode):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -523,219 +523,219 @@ class SEQUENCER_PT_tools_active(
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_active_tool_fallback(self, context, layout, tool,
                                   is_horizontal_layout):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_active_tool_header(self, context, layout, show_tool_name,
                                 tool_key):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_cls(self, layout, context, detect_layout, scale_y):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_fallback_tool_items(self, layout, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_fallback_tool_items_for_pie_menu(self, layout, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keymap_ui_hierarchy(self, context_mode):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def register(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def tool_active_from_context(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def tools_all(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def tools_from_context(self, context, mode):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -769,219 +769,219 @@ class VIEW3D_PT_tools_active(
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_active_tool_fallback(self, context, layout, tool,
                                   is_horizontal_layout):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_active_tool_header(self, context, layout, show_tool_name,
                                 tool_key):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_cls(self, layout, context, detect_layout, scale_y):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_fallback_tool_items(self, layout, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_fallback_tool_items_for_pie_menu(self, layout, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keymap_ui_hierarchy(self, context_mode):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def register(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def tool_active_from_context(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def tools_all(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def tools_from_context(self, context, mode):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -1001,7 +1001,7 @@ class _defs_annotate:
     ''' '''
 
     def draw_settings_common(self, context, layout, tool):
-        ''' 
+        '''
 
         '''
         pass
@@ -1150,7 +1150,7 @@ class _defs_gpencil_edit:
     ''' '''
 
     def is_segment(self, context):
-        ''' 
+        '''
 
         '''
         pass
@@ -1185,13 +1185,13 @@ class _defs_gpencil_paint:
     ''' '''
 
     def generate_from_brushes(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def gpencil_primitive_toolbar(self, context, layout, _tool, props):
-        ''' 
+        '''
 
         '''
         pass
@@ -1199,13 +1199,13 @@ class _defs_gpencil_paint:
 
 class _defs_gpencil_sculpt:
     def generate_from_brushes(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll_select_mask(self, context):
-        ''' 
+        '''
 
         '''
         pass
@@ -1213,13 +1213,13 @@ class _defs_gpencil_sculpt:
 
 class _defs_gpencil_vertex:
     def generate_from_brushes(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll_select_mask(self, context):
-        ''' 
+        '''
 
         '''
         pass
@@ -1227,7 +1227,7 @@ class _defs_gpencil_vertex:
 
 class _defs_gpencil_weight:
     def generate_from_brushes(self, context):
-        ''' 
+        '''
 
         '''
         pass
@@ -1241,7 +1241,7 @@ class _defs_image_generic:
     ''' '''
 
     def poll_uvedit(self, context):
-        ''' 
+        '''
 
         '''
         pass
@@ -1254,7 +1254,7 @@ class _defs_image_uv_edit:
 
 class _defs_image_uv_sculpt:
     def generate_from_brushes(self, context):
-        ''' 
+        '''
 
         '''
         pass
@@ -1309,7 +1309,7 @@ class _defs_node_select:
 
 class _defs_particle:
     def generate_from_brushes(self, context):
-        ''' 
+        '''
 
         '''
         pass
@@ -1370,7 +1370,7 @@ class _defs_sculpt:
     ''' '''
 
     def generate_from_brushes(self, context):
-        ''' 
+        '''
 
         '''
         pass
@@ -1394,13 +1394,13 @@ class _defs_sequencer_select:
 
 class _defs_texture_paint:
     def generate_from_brushes(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll_select_mask(self, context):
-        ''' 
+        '''
 
         '''
         pass
@@ -1428,13 +1428,13 @@ class _defs_transform:
 
 class _defs_vertex_paint:
     def generate_from_brushes(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll_select_mask(self, context):
-        ''' 
+        '''
 
         '''
         pass
@@ -1457,13 +1457,13 @@ class _defs_view3d_add:
     ''' '''
 
     def description_interactive_add(self, context, _item, _km, prefix):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_settings_interactive_add(self, layout, tool, extra):
-        ''' 
+        '''
 
         '''
         pass
@@ -1505,13 +1505,13 @@ class _defs_weight_paint:
     ''' '''
 
     def generate_from_brushes(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll_select_mask(self, context):
-        ''' 
+        '''
 
         '''
         pass
@@ -1519,13 +1519,13 @@ class _defs_weight_paint:
 
 class _template_widget:
     def VIEW3D_GGT_xform_extrude(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def VIEW3D_GGT_xform_gizmo(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -1533,7 +1533,7 @@ class _template_widget:
 
 def generate_from_enum_ex(_context, idname_prefix, icon_prefix, type, attr,
                           cursor, tooldef_keywords, exclude_filter):
-    ''' 
+    '''
 
     '''
 
@@ -1541,7 +1541,7 @@ def generate_from_enum_ex(_context, idname_prefix, icon_prefix, type, attr,
 
 
 def kmi_to_string_or_none(kmi):
-    ''' 
+    '''
 
     '''
 

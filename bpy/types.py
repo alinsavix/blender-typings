@@ -114,7 +114,7 @@ class bpy_prop_collection:
         :param key: The identifier for the collection member.
         :type key: str
         :param default: Optional argument for the value to return if *key* is not found.
-        :type default: 
+        :type default:
         '''
         pass
 
@@ -188,7 +188,7 @@ class bpy_struct:
         :param key: The key associated with the custom property.
         :type key: str
         :param default: Optional argument for the value to return if *key* is not found.
-        :type default: 
+        :type default:
         '''
         pass
 
@@ -270,10 +270,10 @@ class bpy_struct:
         :type frame: float
         :param group: The name of the group the F-Curve should be added to if it doesn't exist yet.
         :type group: str
-        :param flag: 
+        :param flag:
         :type flag: set
-        :param options: 
-        :type options: 
+        :param options:
+        :type options:
         :rtype: bool
         :return: Success of keyframe insertion.
         '''
@@ -313,7 +313,7 @@ class bpy_struct:
         :param key: The key associated with the custom property.
         :type key: str
         :param default: Optional argument for the value to return if *key* is not found.
-        :type default: 
+        :type default:
         '''
         pass
 
@@ -369,7 +369,7 @@ class AOV(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -380,7 +380,7 @@ class AOV(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -403,7 +403,7 @@ class AOVs(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -414,7 +414,7 @@ class AOVs(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -464,7 +464,7 @@ class ActionFCurves(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -475,7 +475,7 @@ class ActionFCurves(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -520,7 +520,7 @@ class ActionGroup(bpy_struct):
     '''
 
     name: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -544,14 +544,14 @@ class ActionGroup(bpy_struct):
     '''
 
     use_pin: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -562,7 +562,7 @@ class ActionGroup(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -595,7 +595,7 @@ class ActionGroups(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -606,7 +606,7 @@ class ActionGroups(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -651,7 +651,7 @@ class ActionPoseMarkers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -662,7 +662,7 @@ class ActionPoseMarkers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -682,14 +682,14 @@ class Addon(bpy_struct):
     '''
 
     preferences: 'AddonPreferences' = None
-    ''' 
+    '''
 
     :type: 'AddonPreferences'
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -700,7 +700,7 @@ class Addon(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -711,14 +711,14 @@ class Addon(bpy_struct):
 
 class AddonPreferences(bpy_struct):
     bl_idname: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -729,7 +729,7 @@ class AddonPreferences(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -762,7 +762,7 @@ class Addons(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -773,7 +773,7 @@ class Addons(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -794,7 +794,7 @@ class AlembicObjectPath(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -805,7 +805,7 @@ class AlembicObjectPath(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -820,7 +820,7 @@ class AlembicObjectPaths(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -831,7 +831,7 @@ class AlembicObjectPaths(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -890,7 +890,7 @@ class AnimData(bpy_struct):
     '''
 
     use_pin: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -916,7 +916,7 @@ class AnimData(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -927,7 +927,7 @@ class AnimData(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -955,7 +955,7 @@ class AnimDataDrivers(bpy_struct):
     def remove(self, driver: 'FCurve'):
         ''' remove
 
-        :param driver: 
+        :param driver:
         :type driver: 'FCurve'
         '''
         pass
@@ -984,7 +984,7 @@ class AnimDataDrivers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -995,7 +995,7 @@ class AnimDataDrivers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -1016,7 +1016,7 @@ class AnimViz(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -1027,7 +1027,7 @@ class AnimViz(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -1114,7 +1114,7 @@ class AnimVizMotionPaths(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -1125,7 +1125,7 @@ class AnimVizMotionPaths(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -1140,7 +1140,7 @@ class AnyType(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -1151,7 +1151,7 @@ class AnyType(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -1236,7 +1236,7 @@ class Area(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -1247,7 +1247,7 @@ class Area(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -1268,7 +1268,7 @@ class AreaSpaces(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -1279,7 +1279,7 @@ class AreaSpaces(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -1300,7 +1300,7 @@ class ArmatureBones(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -1311,7 +1311,7 @@ class ArmatureBones(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -1348,7 +1348,7 @@ class ArmatureConstraintTargets(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -1359,7 +1359,7 @@ class ArmatureConstraintTargets(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -1398,7 +1398,7 @@ class ArmatureEditBones(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -1409,7 +1409,7 @@ class ArmatureEditBones(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -1443,7 +1443,7 @@ class AssetMetaData(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -1454,7 +1454,7 @@ class AssetMetaData(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -1475,7 +1475,7 @@ class AssetTag(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -1486,7 +1486,7 @@ class AssetTag(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -1521,7 +1521,7 @@ class AssetTags(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -1532,7 +1532,7 @@ class AssetTags(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -1565,7 +1565,7 @@ class Attribute(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -1576,7 +1576,7 @@ class Attribute(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -1596,7 +1596,7 @@ class AttributeGroup(bpy_struct):
     '''
 
     active_index: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -1626,7 +1626,7 @@ class AttributeGroup(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -1637,7 +1637,7 @@ class AttributeGroup(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -1675,7 +1675,7 @@ class BakeSettings(bpy_struct):
     '''
 
     image_settings: 'ImageFormatSettings' = None
-    ''' 
+    '''
 
     :type: 'ImageFormatSettings'
     '''
@@ -1820,7 +1820,7 @@ class BakeSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -1831,7 +1831,7 @@ class BakeSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -1918,7 +1918,7 @@ class BezierSplinePoint(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -1929,7 +1929,7 @@ class BezierSplinePoint(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -2243,16 +2243,16 @@ class BlendData(bpy_struct):
     def batch_remove(self, ids=()):
         ''' Remove (delete) several IDs at once. WARNING: Considered experimental feature currently. Note that this function is quicker than individual calls to :func: remove() (from bpy.types.BlendData ID collections), but less safe/versatile (it can break Blender, e.g. by removing all scenes...).
 
-        :param subset: 
+        :param subset:
         :type subset: list
-        :param ids: 
-        :type ids: 
+        :param ids:
+        :type ids:
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -2263,7 +2263,7 @@ class BlendData(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -2350,7 +2350,7 @@ class BlendDataActions(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -2361,7 +2361,7 @@ class BlendDataActions(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -2412,7 +2412,7 @@ class BlendDataArmatures(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -2423,7 +2423,7 @@ class BlendDataArmatures(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -2485,7 +2485,7 @@ class BlendDataBrushes(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -2496,7 +2496,7 @@ class BlendDataBrushes(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -2519,7 +2519,7 @@ class BlendDataCacheFiles(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -2530,7 +2530,7 @@ class BlendDataCacheFiles(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -2581,7 +2581,7 @@ class BlendDataCameras(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -2592,7 +2592,7 @@ class BlendDataCameras(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -2643,7 +2643,7 @@ class BlendDataCollections(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -2654,7 +2654,7 @@ class BlendDataCollections(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -2707,7 +2707,7 @@ class BlendDataCurves(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -2718,7 +2718,7 @@ class BlendDataCurves(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -2772,7 +2772,7 @@ class BlendDataFonts(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -2783,7 +2783,7 @@ class BlendDataFonts(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -2834,7 +2834,7 @@ class BlendDataGreasePencils(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -2845,7 +2845,7 @@ class BlendDataGreasePencils(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -2930,7 +2930,7 @@ class BlendDataImages(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -2941,7 +2941,7 @@ class BlendDataImages(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -2992,7 +2992,7 @@ class BlendDataLattices(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -3003,7 +3003,7 @@ class BlendDataLattices(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -3044,7 +3044,7 @@ class BlendDataLibraries(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -3055,7 +3055,7 @@ class BlendDataLibraries(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -3108,7 +3108,7 @@ class BlendDataLights(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -3119,7 +3119,7 @@ class BlendDataLights(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -3170,7 +3170,7 @@ class BlendDataLineStyles(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -3181,7 +3181,7 @@ class BlendDataLineStyles(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -3232,7 +3232,7 @@ class BlendDataMasks(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -3243,7 +3243,7 @@ class BlendDataMasks(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -3310,7 +3310,7 @@ class BlendDataMaterials(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -3321,7 +3321,7 @@ class BlendDataMaterials(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -3389,7 +3389,7 @@ class BlendDataMeshes(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -3400,7 +3400,7 @@ class BlendDataMeshes(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -3451,7 +3451,7 @@ class BlendDataMetaBalls(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -3462,7 +3462,7 @@ class BlendDataMetaBalls(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -3515,7 +3515,7 @@ class BlendDataMovieClips(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -3526,7 +3526,7 @@ class BlendDataMovieClips(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -3579,7 +3579,7 @@ class BlendDataNodeTrees(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -3590,7 +3590,7 @@ class BlendDataNodeTrees(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -3643,7 +3643,7 @@ class BlendDataObjects(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -3654,7 +3654,7 @@ class BlendDataObjects(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -3677,7 +3677,7 @@ class BlendDataPaintCurves(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -3688,7 +3688,7 @@ class BlendDataPaintCurves(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -3739,7 +3739,7 @@ class BlendDataPalettes(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -3750,7 +3750,7 @@ class BlendDataPalettes(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -3801,7 +3801,7 @@ class BlendDataParticles(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -3812,7 +3812,7 @@ class BlendDataParticles(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -3865,7 +3865,7 @@ class BlendDataProbes(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -3876,7 +3876,7 @@ class BlendDataProbes(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -3919,7 +3919,7 @@ class BlendDataScenes(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -3930,7 +3930,7 @@ class BlendDataScenes(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -3953,7 +3953,7 @@ class BlendDataScreens(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -3964,7 +3964,7 @@ class BlendDataScreens(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -4017,7 +4017,7 @@ class BlendDataSounds(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -4028,7 +4028,7 @@ class BlendDataSounds(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -4079,7 +4079,7 @@ class BlendDataSpeakers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -4090,7 +4090,7 @@ class BlendDataSpeakers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -4153,7 +4153,7 @@ class BlendDataTexts(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -4164,7 +4164,7 @@ class BlendDataTexts(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -4217,7 +4217,7 @@ class BlendDataTextures(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -4228,7 +4228,7 @@ class BlendDataTextures(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -4279,7 +4279,7 @@ class BlendDataVolumes(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -4290,7 +4290,7 @@ class BlendDataVolumes(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -4313,7 +4313,7 @@ class BlendDataWindowManagers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -4324,7 +4324,7 @@ class BlendDataWindowManagers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -4347,7 +4347,7 @@ class BlendDataWorkSpaces(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -4358,7 +4358,7 @@ class BlendDataWorkSpaces(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -4409,7 +4409,7 @@ class BlendDataWorlds(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -4420,7 +4420,7 @@ class BlendDataWorlds(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -4435,14 +4435,14 @@ class BlenderRNA(bpy_struct):
 
     structs: typing.Union[typing.Dict[str, 'Struct'], typing.
                           List['Struct'], 'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'Struct'], typing.List['Struct'], 'bpy_prop_collection']
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -4453,7 +4453,7 @@ class BlenderRNA(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -4489,7 +4489,7 @@ class BoidRule(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -4500,7 +4500,7 @@ class BoidRule(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -4520,13 +4520,13 @@ class BoidSettings(bpy_struct):
     '''
 
     active_boid_state: 'BoidRule' = None
-    ''' 
+    '''
 
     :type: 'BoidRule'
     '''
 
     active_boid_state_index: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -4641,7 +4641,7 @@ class BoidSettings(bpy_struct):
 
     states: typing.Union[typing.Dict[str, 'BoidState'], typing.
                          List['BoidState'], 'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'BoidState'], typing.List['BoidState'], 'bpy_prop_collection']
     '''
@@ -4672,7 +4672,7 @@ class BoidSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -4683,7 +4683,7 @@ class BoidSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -4697,19 +4697,19 @@ class BoidState(bpy_struct):
     '''
 
     active_boid_rule: 'BoidRule' = None
-    ''' 
+    '''
 
     :type: 'BoidRule'
     '''
 
     active_boid_rule_index: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     falloff: float = None
-    ''' 
+    '''
 
     :type: float
     '''
@@ -4721,14 +4721,14 @@ class BoidState(bpy_struct):
     '''
 
     rule_fuzzy: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     rules: typing.Union[typing.Dict[str, 'BoidRule'], typing.
                         List['BoidRule'], 'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'BoidRule'], typing.List['BoidRule'], 'bpy_prop_collection']
     '''
@@ -4740,14 +4740,14 @@ class BoidState(bpy_struct):
     '''
 
     volume: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -4758,7 +4758,7 @@ class BoidState(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -4965,7 +4965,7 @@ class Bone(bpy_struct):
     '''
 
     name: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -4977,19 +4977,19 @@ class Bone(bpy_struct):
     '''
 
     select: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     select_head: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     select_tail: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -5181,7 +5181,7 @@ class Bone(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -5192,7 +5192,7 @@ class Bone(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -5224,14 +5224,14 @@ class BoneGroup(bpy_struct):
     '''
 
     name: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -5242,7 +5242,7 @@ class BoneGroup(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -5287,7 +5287,7 @@ class BoneGroups(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -5298,7 +5298,7 @@ class BoneGroups(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -5312,14 +5312,14 @@ class BoolAttributeValue(bpy_struct):
     '''
 
     value: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -5330,7 +5330,7 @@ class BoolAttributeValue(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -5344,32 +5344,32 @@ class BrushCapabilities(bpy_struct):
     '''
 
     has_overlay: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     has_random_texture_angle: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     has_smooth_stroke: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     has_spacing: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -5380,7 +5380,7 @@ class BrushCapabilities(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -5394,32 +5394,32 @@ class BrushCapabilitiesImagePaint(bpy_struct):
     '''
 
     has_accumulate: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     has_color: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     has_radius: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     has_space_attenuation: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -5430,7 +5430,7 @@ class BrushCapabilitiesImagePaint(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -5444,128 +5444,128 @@ class BrushCapabilitiesSculpt(bpy_struct):
     '''
 
     has_accumulate: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     has_auto_smooth: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     has_color: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     has_direction: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     has_gravity: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     has_height: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     has_jitter: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     has_normal_weight: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     has_persistence: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     has_pinch_factor: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     has_plane_offset: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     has_rake_factor: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     has_random_texture_angle: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     has_sculpt_plane: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     has_secondary_color: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     has_smooth_stroke: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     has_space_attenuation: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     has_strength_pressure: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     has_tilt: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     has_topology_rake: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -5576,7 +5576,7 @@ class BrushCapabilitiesSculpt(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -5590,14 +5590,14 @@ class BrushCapabilitiesVertexPaint(bpy_struct):
     '''
 
     has_color: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -5608,7 +5608,7 @@ class BrushCapabilitiesVertexPaint(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -5622,14 +5622,14 @@ class BrushCapabilitiesWeightPaint(bpy_struct):
     '''
 
     has_weight: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -5640,7 +5640,7 @@ class BrushCapabilitiesWeightPaint(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -5672,7 +5672,7 @@ class BrushGpencilSettings(bpy_struct):
     '''
 
     aspect: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -5810,25 +5810,25 @@ class BrushGpencilSettings(bpy_struct):
     '''
 
     gpencil_paint_icon: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     gpencil_sculpt_icon: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     gpencil_vertex_icon: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     gpencil_weight_icon: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -6135,7 +6135,7 @@ class BrushGpencilSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -6146,7 +6146,7 @@ class BrushGpencilSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -6167,7 +6167,7 @@ class ByteColorAttributeValue(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -6178,7 +6178,7 @@ class ByteColorAttributeValue(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -6234,7 +6234,7 @@ class CameraBackgroundImage(bpy_struct):
     '''
 
     offset: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -6295,7 +6295,7 @@ class CameraBackgroundImage(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -6306,7 +6306,7 @@ class CameraBackgroundImage(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -6343,7 +6343,7 @@ class CameraBackgroundImages(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -6354,7 +6354,7 @@ class CameraBackgroundImages(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -6411,7 +6411,7 @@ class CameraDOFSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -6422,7 +6422,7 @@ class CameraDOFSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -6454,7 +6454,7 @@ class CameraStereoData(bpy_struct):
     '''
 
     pivot: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -6485,7 +6485,7 @@ class CameraStereoData(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -6496,7 +6496,7 @@ class CameraStereoData(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -6527,7 +6527,7 @@ class ChannelDriverVariables(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -6538,7 +6538,7 @@ class ChannelDriverVariables(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -6553,7 +6553,7 @@ class ChildParticle(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -6564,7 +6564,7 @@ class ChildParticle(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -6657,7 +6657,7 @@ class ClothCollisionSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -6668,7 +6668,7 @@ class ClothCollisionSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -6712,7 +6712,7 @@ class ClothSettings(bpy_struct):
     '''
 
     collider_friction: float = None
-    ''' 
+    '''
 
     :type: float
     '''
@@ -6748,7 +6748,7 @@ class ClothSettings(bpy_struct):
     '''
 
     effector_weights: 'EffectorWeights' = None
-    ''' 
+    '''
 
     :type: 'EffectorWeights'
     '''
@@ -6808,7 +6808,7 @@ class ClothSettings(bpy_struct):
     '''
 
     internal_friction: float = None
-    ''' 
+    '''
 
     :type: float
     '''
@@ -7025,7 +7025,7 @@ class ClothSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -7036,7 +7036,7 @@ class ClothSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -7093,7 +7093,7 @@ class ClothSolverResult(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -7104,7 +7104,7 @@ class ClothSolverResult(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -7135,7 +7135,7 @@ class CollectionChildren(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -7146,7 +7146,7 @@ class CollectionChildren(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -7177,7 +7177,7 @@ class CollectionObjects(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -7188,7 +7188,7 @@ class CollectionObjects(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -7293,7 +7293,7 @@ class CollisionSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -7304,7 +7304,7 @@ class CollisionSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -7325,7 +7325,7 @@ class ColorManagedDisplaySettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -7336,7 +7336,7 @@ class ColorManagedDisplaySettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -7363,7 +7363,7 @@ class ColorManagedInputColorspaceSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -7374,7 +7374,7 @@ class ColorManagedInputColorspaceSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -7395,7 +7395,7 @@ class ColorManagedSequencerColorspaceSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -7406,7 +7406,7 @@ class ColorManagedSequencerColorspaceSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -7457,7 +7457,7 @@ class ColorManagedViewSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -7468,7 +7468,7 @@ class ColorManagedViewSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -7488,7 +7488,7 @@ class ColorMapping(bpy_struct):
     '''
 
     blend_factor: float = None
-    ''' 
+    '''
 
     :type: float
     '''
@@ -7506,7 +7506,7 @@ class ColorMapping(bpy_struct):
     '''
 
     color_ramp: 'ColorRamp' = None
-    ''' 
+    '''
 
     :type: 'ColorRamp'
     '''
@@ -7531,7 +7531,7 @@ class ColorMapping(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -7542,7 +7542,7 @@ class ColorMapping(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -7564,7 +7564,7 @@ class ColorRamp(bpy_struct):
     elements: typing.Union[typing.Dict[str, 'ColorRampElement'], typing.
                            List['ColorRampElement'], 'bpy_prop_collection',
                            'ColorRampElements'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'ColorRampElement'], typing.List['ColorRampElement'], 'bpy_prop_collection', 'ColorRampElements']
     '''
@@ -7593,7 +7593,7 @@ class ColorRamp(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -7604,7 +7604,7 @@ class ColorRamp(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -7637,7 +7637,7 @@ class ColorRampElement(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -7648,7 +7648,7 @@ class ColorRampElement(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -7681,7 +7681,7 @@ class ColorRampElements(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -7692,7 +7692,7 @@ class ColorRampElements(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -7741,7 +7741,7 @@ class CompositorNodeOutputFileFileSlots(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -7752,7 +7752,7 @@ class CompositorNodeOutputFileFileSlots(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -7801,7 +7801,7 @@ class CompositorNodeOutputFileLayerSlots(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -7812,7 +7812,7 @@ class CompositorNodeOutputFileLayerSlots(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -7832,7 +7832,7 @@ class ConsoleLine(bpy_struct):
     '''
 
     current_character: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -7845,7 +7845,7 @@ class ConsoleLine(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -7856,7 +7856,7 @@ class ConsoleLine(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -7955,7 +7955,7 @@ class Constraint(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -7966,7 +7966,7 @@ class Constraint(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -7993,7 +7993,7 @@ class ConstraintTarget(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -8004,7 +8004,7 @@ class ConstraintTarget(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -8037,7 +8037,7 @@ class ConstraintTargetBone(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -8048,7 +8048,7 @@ class ConstraintTargetBone(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -8062,109 +8062,109 @@ class Context(bpy_struct):
     '''
 
     area: 'Area' = None
-    ''' 
+    '''
 
     :type: 'Area'
     '''
 
     blend_data: 'BlendData' = None
-    ''' 
+    '''
 
     :type: 'BlendData'
     '''
 
     collection: 'Collection' = None
-    ''' 
+    '''
 
     :type: 'Collection'
     '''
 
     engine: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     gizmo_group: 'GizmoGroup' = None
-    ''' 
+    '''
 
     :type: 'GizmoGroup'
     '''
 
     layer_collection: 'LayerCollection' = None
-    ''' 
+    '''
 
     :type: 'LayerCollection'
     '''
 
     mode: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     preferences: 'Preferences' = None
-    ''' 
+    '''
 
     :type: 'Preferences'
     '''
 
     region: 'Region' = None
-    ''' 
+    '''
 
     :type: 'Region'
     '''
 
     region_data: 'RegionView3D' = None
-    ''' 
+    '''
 
     :type: 'RegionView3D'
     '''
 
     scene: 'Scene' = None
-    ''' 
+    '''
 
     :type: 'Scene'
     '''
 
     screen: 'Screen' = None
-    ''' 
+    '''
 
     :type: 'Screen'
     '''
 
     space_data: 'Space' = None
-    ''' 
+    '''
 
     :type: 'Space'
     '''
 
     tool_settings: 'ToolSettings' = None
-    ''' 
+    '''
 
     :type: 'ToolSettings'
     '''
 
     view_layer: 'ViewLayer' = None
-    ''' 
+    '''
 
     :type: 'ViewLayer'
     '''
 
     window: 'Window' = None
-    ''' 
+    '''
 
     :type: 'Window'
     '''
 
     window_manager: 'WindowManager' = None
-    ''' 
+    '''
 
     :type: 'WindowManager'
     '''
 
     workspace: 'WorkSpace' = None
-    ''' 
+    '''
 
     :type: 'WorkSpace'
     '''
@@ -8178,14 +8178,14 @@ class Context(bpy_struct):
         pass
 
     def copy(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -8196,7 +8196,7 @@ class Context(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -8207,20 +8207,20 @@ class Context(bpy_struct):
 
 class CryptomatteEntry(bpy_struct):
     encoded_hash: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     name: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -8231,7 +8231,7 @@ class CryptomatteEntry(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -8247,14 +8247,14 @@ class CurveMap(bpy_struct):
     points: typing.Union[typing.Dict[str, 'CurveMapPoint'], typing.
                          List['CurveMapPoint'], 'bpy_prop_collection',
                          'CurveMapPoints'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'CurveMapPoint'], typing.List['CurveMapPoint'], 'bpy_prop_collection', 'CurveMapPoints']
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -8265,7 +8265,7 @@ class CurveMap(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -8298,7 +8298,7 @@ class CurveMapPoint(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -8309,7 +8309,7 @@ class CurveMapPoint(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -8344,7 +8344,7 @@ class CurveMapPoints(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -8355,7 +8355,7 @@ class CurveMapPoints(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -8375,32 +8375,32 @@ class CurveMapping(bpy_struct):
     '''
 
     clip_max_x: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     clip_max_y: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     clip_min_x: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     clip_min_y: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     curves: typing.Union[typing.Dict[str, 'CurveMap'], typing.
                          List['CurveMap'], 'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'CurveMap'], typing.List['CurveMap'], 'bpy_prop_collection']
     '''
@@ -8461,7 +8461,7 @@ class CurveMapping(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -8472,7 +8472,7 @@ class CurveMapping(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -8574,7 +8574,7 @@ class CurvePaintSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -8585,7 +8585,7 @@ class CurvePaintSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -8670,7 +8670,7 @@ class CurveProfile(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -8681,7 +8681,7 @@ class CurveProfile(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -8720,7 +8720,7 @@ class CurveProfilePoint(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -8731,7 +8731,7 @@ class CurveProfilePoint(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -8766,7 +8766,7 @@ class CurveProfilePoints(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -8777,7 +8777,7 @@ class CurveProfilePoints(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -8822,7 +8822,7 @@ class CurveSplines(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -8833,7 +8833,7 @@ class CurveSplines(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -8963,7 +8963,7 @@ class Depsgraph(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -8974,7 +8974,7 @@ class Depsgraph(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -9061,7 +9061,7 @@ class DepsgraphObjectInstance(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -9072,7 +9072,7 @@ class DepsgraphObjectInstance(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -9111,7 +9111,7 @@ class DepsgraphUpdate(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -9122,7 +9122,7 @@ class DepsgraphUpdate(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -9161,7 +9161,7 @@ class DisplaySafeAreas(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -9172,7 +9172,7 @@ class DisplaySafeAreas(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -9415,7 +9415,7 @@ class DopeSheet(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -9426,7 +9426,7 @@ class DopeSheet(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -9479,7 +9479,7 @@ class Driver(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -9490,7 +9490,7 @@ class Driver(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -9547,7 +9547,7 @@ class DriverTarget(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -9558,7 +9558,7 @@ class DriverTarget(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -9598,7 +9598,7 @@ class DriverVariable(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -9609,7 +9609,7 @@ class DriverVariable(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -9653,7 +9653,7 @@ class DynamicPaintBrushSettings(bpy_struct):
     '''
 
     paint_source: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -9785,14 +9785,14 @@ class DynamicPaintBrushSettings(bpy_struct):
     '''
 
     wave_type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -9803,7 +9803,7 @@ class DynamicPaintBrushSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -9827,7 +9827,7 @@ class DynamicPaintCanvasSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -9838,7 +9838,7 @@ class DynamicPaintCanvasSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -9894,7 +9894,7 @@ class DynamicPaintSurface(bpy_struct):
     '''
 
     displace_type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -9924,13 +9924,13 @@ class DynamicPaintSurface(bpy_struct):
     '''
 
     effect_ui: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     effector_weights: 'EffectorWeights' = None
-    ''' 
+    '''
 
     :type: 'EffectorWeights'
     '''
@@ -9954,7 +9954,7 @@ class DynamicPaintSurface(bpy_struct):
     '''
 
     image_fileformat: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -9978,19 +9978,19 @@ class DynamicPaintSurface(bpy_struct):
     '''
 
     init_color_type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     init_layername: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     init_texture: 'Texture' = None
-    ''' 
+    '''
 
     :type: 'Texture'
     '''
@@ -10002,7 +10002,7 @@ class DynamicPaintSurface(bpy_struct):
     '''
 
     is_cache_user: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -10026,7 +10026,7 @@ class DynamicPaintSurface(bpy_struct):
     '''
 
     point_cache: 'PointCache' = None
-    ''' 
+    '''
 
     :type: 'PointCache'
     '''
@@ -10172,7 +10172,7 @@ class DynamicPaintSurface(bpy_struct):
     def output_exists(self, object: 'Object', index: int):
         ''' Checks if surface output layer of given name exists
 
-        :param object: 
+        :param object:
         :type object: 'Object'
         :param index: Index
         :type index: int
@@ -10181,7 +10181,7 @@ class DynamicPaintSurface(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -10192,7 +10192,7 @@ class DynamicPaintSurface(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -10212,14 +10212,14 @@ class DynamicPaintSurfaces(bpy_struct):
     '''
 
     active_index: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -10230,7 +10230,7 @@ class DynamicPaintSurfaces(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -10424,7 +10424,7 @@ class EditBone(bpy_struct):
     '''
 
     name: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -10442,19 +10442,19 @@ class EditBone(bpy_struct):
     '''
 
     select: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     select_head: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     select_tail: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -10604,7 +10604,7 @@ class EditBone(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -10615,7 +10615,7 @@ class EditBone(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -10732,7 +10732,7 @@ class EffectorWeights(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -10743,7 +10743,7 @@ class EffectorWeights(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -10788,7 +10788,7 @@ class EnumPropertyItem(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -10799,7 +10799,7 @@ class EnumPropertyItem(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -10928,7 +10928,7 @@ class Event(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -10939,7 +10939,7 @@ class Event(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -11114,7 +11114,7 @@ class FCurve(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -11125,7 +11125,7 @@ class FCurve(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -11179,7 +11179,7 @@ class FCurveKeyframePoints(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -11190,7 +11190,7 @@ class FCurveKeyframePoints(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -11229,7 +11229,7 @@ class FCurveModifiers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -11240,7 +11240,7 @@ class FCurveModifiers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -11267,7 +11267,7 @@ class FCurveSample(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -11278,7 +11278,7 @@ class FCurveSample(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -11413,7 +11413,7 @@ class FFmpegSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -11424,7 +11424,7 @@ class FFmpegSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -11511,7 +11511,7 @@ class FModifier(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -11522,7 +11522,7 @@ class FModifier(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -11555,7 +11555,7 @@ class FModifierEnvelopeControlPoint(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -11566,7 +11566,7 @@ class FModifierEnvelopeControlPoint(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -11599,7 +11599,7 @@ class FModifierEnvelopeControlPoints(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -11610,7 +11610,7 @@ class FModifierEnvelopeControlPoints(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -11659,7 +11659,7 @@ class FaceMap(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -11670,7 +11670,7 @@ class FaceMap(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -11721,7 +11721,7 @@ class FaceMaps(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -11732,7 +11732,7 @@ class FaceMaps(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -11776,7 +11776,7 @@ class FieldSettings(bpy_struct):
     '''
 
     falloff_type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -12047,7 +12047,7 @@ class FieldSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -12058,7 +12058,7 @@ class FieldSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -12072,7 +12072,7 @@ class FileBrowserFSMenuEntry(bpy_struct):
     '''
 
     icon: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -12084,13 +12084,13 @@ class FileBrowserFSMenuEntry(bpy_struct):
     '''
 
     name: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     path: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -12103,7 +12103,7 @@ class FileBrowserFSMenuEntry(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -12114,7 +12114,7 @@ class FileBrowserFSMenuEntry(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -12134,7 +12134,7 @@ class FileSelectEntry(bpy_struct):
     '''
 
     name: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -12147,7 +12147,7 @@ class FileSelectEntry(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -12158,7 +12158,7 @@ class FileSelectEntry(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -12431,7 +12431,7 @@ class FileSelectIDFilter(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -12442,7 +12442,7 @@ class FileSelectIDFilter(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -12625,7 +12625,7 @@ class FileSelectParams(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -12636,7 +12636,7 @@ class FileSelectParams(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -12657,7 +12657,7 @@ class Float2AttributeValue(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -12668,7 +12668,7 @@ class Float2AttributeValue(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -12682,14 +12682,14 @@ class FloatAttributeValue(bpy_struct):
     '''
 
     value: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -12700,7 +12700,7 @@ class FloatAttributeValue(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -12721,7 +12721,7 @@ class FloatColorAttributeValue(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -12732,7 +12732,7 @@ class FloatColorAttributeValue(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -12753,7 +12753,7 @@ class FloatVectorAttributeValue(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -12764,7 +12764,7 @@ class FloatVectorAttributeValue(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -12838,31 +12838,31 @@ class FluidDomainSettings(bpy_struct):
     '''
 
     cache_frame_pause_data: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     cache_frame_pause_guide: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     cache_frame_pause_mesh: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     cache_frame_pause_noise: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     cache_frame_pause_particles: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -12928,7 +12928,7 @@ class FluidDomainSettings(bpy_struct):
     '''
 
     color_ramp: 'ColorRamp' = None
-    ''' 
+    '''
 
     :type: 'ColorRamp'
     '''
@@ -12994,7 +12994,7 @@ class FluidDomainSettings(bpy_struct):
     '''
 
     effector_weights: 'EffectorWeights' = None
-    ''' 
+    '''
 
     :type: 'EffectorWeights'
     '''
@@ -13138,37 +13138,37 @@ class FluidDomainSettings(bpy_struct):
     '''
 
     has_cache_baked_any: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     has_cache_baked_data: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     has_cache_baked_guide: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     has_cache_baked_mesh: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     has_cache_baked_noise: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     has_cache_baked_particles: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -13186,37 +13186,37 @@ class FluidDomainSettings(bpy_struct):
     '''
 
     is_cache_baking_any: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     is_cache_baking_data: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     is_cache_baking_guide: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     is_cache_baking_mesh: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     is_cache_baking_noise: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     is_cache_baking_particles: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -13542,7 +13542,7 @@ class FluidDomainSettings(bpy_struct):
     '''
 
     use_adaptive_timesteps: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -13753,7 +13753,7 @@ class FluidDomainSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -13764,7 +13764,7 @@ class FluidDomainSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -13778,14 +13778,14 @@ class FluidDomainVertexVelocity(bpy_struct):
     '''
 
     velocity: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -13796,7 +13796,7 @@ class FluidDomainVertexVelocity(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -13853,7 +13853,7 @@ class FluidEffectorSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -13864,7 +13864,7 @@ class FluidEffectorSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -13878,7 +13878,7 @@ class FluidFlowSettings(bpy_struct):
     '''
 
     density: float = None
-    ''' 
+    '''
 
     :type: float
     '''
@@ -13908,7 +13908,7 @@ class FluidFlowSettings(bpy_struct):
     '''
 
     fuel_amount: float = None
-    ''' 
+    '''
 
     :type: float
     '''
@@ -14047,7 +14047,7 @@ class FluidFlowSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -14058,7 +14058,7 @@ class FluidFlowSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -14283,7 +14283,7 @@ class FreestyleLineSet(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -14294,7 +14294,7 @@ class FreestyleLineSet(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -14321,7 +14321,7 @@ class FreestyleModuleSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -14332,7 +14332,7 @@ class FreestyleModuleSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -14363,7 +14363,7 @@ class FreestyleModules(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -14374,7 +14374,7 @@ class FreestyleModules(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -14408,7 +14408,7 @@ class FreestyleSettings(bpy_struct):
     linesets: typing.Union[typing.Dict[str, 'FreestyleLineSet'], typing.
                            List['FreestyleLineSet'], 'bpy_prop_collection',
                            'Linesets'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'FreestyleLineSet'], typing.List['FreestyleLineSet'], 'bpy_prop_collection', 'Linesets']
     '''
@@ -14477,7 +14477,7 @@ class FreestyleSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -14488,7 +14488,7 @@ class FreestyleSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -14546,7 +14546,7 @@ class Function(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -14557,7 +14557,7 @@ class Function(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -14586,7 +14586,7 @@ class GPencilEditCurve(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -14597,7 +14597,7 @@ class GPencilEditCurve(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -14690,7 +14690,7 @@ class GPencilEditCurvePoint(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -14701,7 +14701,7 @@ class GPencilEditCurvePoint(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -14754,7 +14754,7 @@ class GPencilFrame(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -14765,7 +14765,7 @@ class GPencilFrame(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -14810,7 +14810,7 @@ class GPencilFrames(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -14821,7 +14821,7 @@ class GPencilFrames(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -14842,7 +14842,7 @@ class GPencilInterpolateSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -14853,7 +14853,7 @@ class GPencilInterpolateSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -15136,7 +15136,7 @@ class GPencilLayer(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -15147,7 +15147,7 @@ class GPencilLayer(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -15180,7 +15180,7 @@ class GPencilLayerMask(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -15191,7 +15191,7 @@ class GPencilLayerMask(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -15260,7 +15260,7 @@ class GPencilSculptGuide(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -15271,7 +15271,7 @@ class GPencilSculptGuide(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -15285,7 +15285,7 @@ class GPencilSculptSettings(bpy_struct):
     '''
 
     guide: 'GPencilSculptGuide' = None
-    ''' 
+    '''
 
     :type: 'GPencilSculptGuide'
     '''
@@ -15334,7 +15334,7 @@ class GPencilSculptSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -15345,7 +15345,7 @@ class GPencilSculptSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -15359,19 +15359,19 @@ class GPencilStroke(bpy_struct):
     '''
 
     aspect: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     bound_box_max: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     bound_box_min: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -15490,7 +15490,7 @@ class GPencilStroke(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -15501,7 +15501,7 @@ class GPencilStroke(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -15515,7 +15515,7 @@ class GPencilStrokePoint(bpy_struct):
     '''
 
     co: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -15564,7 +15564,7 @@ class GPencilStrokePoint(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -15575,7 +15575,7 @@ class GPencilStrokePoint(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -15644,7 +15644,7 @@ class GPencilStrokePoints(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -15655,7 +15655,7 @@ class GPencilStrokePoints(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -15694,7 +15694,7 @@ class GPencilStrokes(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -15705,7 +15705,7 @@ class GPencilStrokes(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -15738,7 +15738,7 @@ class GPencilTriangle(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -15749,7 +15749,7 @@ class GPencilTriangle(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -15763,31 +15763,31 @@ class Gizmo(bpy_struct):
     '''
 
     alpha: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     alpha_highlight: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     bl_idname: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     color: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     color_highlight: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -15799,7 +15799,7 @@ class Gizmo(bpy_struct):
     '''
 
     hide: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -15811,67 +15811,67 @@ class Gizmo(bpy_struct):
     '''
 
     hide_select: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     is_highlight: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     is_modal: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     line_width: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     matrix_basis: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     matrix_offset: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     matrix_space: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     matrix_world: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     properties: 'GizmoProperties' = None
-    ''' 
+    '''
 
     :type: 'GizmoProperties'
     '''
 
     scale_basis: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     select: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -15883,7 +15883,7 @@ class Gizmo(bpy_struct):
     '''
 
     use_draw_hover: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -15919,7 +15919,7 @@ class Gizmo(bpy_struct):
     '''
 
     use_grab_cursor: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -15943,28 +15943,28 @@ class Gizmo(bpy_struct):
     '''
 
     def draw(self, context: 'Context'):
-        ''' 
+        '''
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         '''
         pass
 
     def draw_select(self, context: 'Context', select_id: int = 0):
-        ''' 
+        '''
 
-        :param context: 
+        :param context:
         :type context: 'Context'
-        :param select_id: 
+        :param select_id:
         :type select_id: int
         '''
         pass
 
     def test_select(self, context: 'Context',
                     location: typing.List[int]) -> int:
-        ''' 
+        '''
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         :param location: Location, Region coordinates
         :type location: typing.List[int]
@@ -15976,11 +15976,11 @@ class Gizmo(bpy_struct):
     def modal(self, context: 'Context', event: 'Event',
               tweak: typing.Union[typing.Set[str], typing.Set[int]]
               ) -> typing.Union[typing.Set[str], typing.Set[int]]:
-        ''' 
+        '''
 
-        :param context: 
+        :param context:
         :type context: 'Context'
-        :param event: 
+        :param event:
         :type event: 'Event'
         :param tweak: Tweak
         :type tweak: typing.Union[typing.Set[str], typing.Set[int]]
@@ -15990,18 +15990,18 @@ class Gizmo(bpy_struct):
         pass
 
     def setup(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def invoke(self, context: 'Context', event: 'Event'
                ) -> typing.Union[typing.Set[str], typing.Set[int]]:
-        ''' 
+        '''
 
-        :param context: 
+        :param context:
         :type context: 'Context'
-        :param event: 
+        :param event:
         :type event: 'Event'
         :rtype: typing.Union[typing.Set[str], typing.Set[int]]
         :return: result * RUNNING_MODAL Running Modal, Keep the operator running with blender. * CANCELLED Cancelled, The operator exited without doing anything, so no undo entry should be pushed. * FINISHED Finished, The operator exited after completing its action. * PASS_THROUGH Pass Through, Do nothing and pass the event on. * INTERFACE Interface, Handled but not executed (popup menus).
@@ -16009,9 +16009,9 @@ class Gizmo(bpy_struct):
         pass
 
     def exit(self, context: 'Context', cancel: bool):
-        ''' 
+        '''
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         :param cancel: Cancel, otherwise confirm
         :type cancel: bool
@@ -16019,7 +16019,7 @@ class Gizmo(bpy_struct):
         pass
 
     def select_refresh(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -16084,7 +16084,7 @@ class Gizmo(bpy_struct):
                         data: 'AnyType',
                         property: str,
                         index: int = -1):
-        ''' 
+        '''
 
         :param target: Target property
         :type target: str
@@ -16092,7 +16092,7 @@ class Gizmo(bpy_struct):
         :type data: 'AnyType'
         :param property: Identifier of property in data
         :type property: str
-        :param index: 
+        :param index:
         :type index: int
         '''
         pass
@@ -16111,7 +16111,7 @@ class Gizmo(bpy_struct):
         pass
 
     def target_is_valid(self, property: str):
-        ''' 
+        '''
 
         :param property: Property identifier
         :type property: str
@@ -16126,13 +16126,13 @@ class Gizmo(bpy_struct):
         ''' Draw a shape created form bpy.types.Gizmo.draw_custom_shape .
 
         :param shape: The cached shape to draw.
-        :type shape: 
+        :type shape:
         :param matrix: 4x4 matrix, when not given bpy.types.Gizmo.matrix_world is used.
         :type matrix: 'mathutils.Matrix'
-        :param select_it: 
+        :param select_it:
         :type select_it: int
-        :param select_id: 
-        :type select_id: 
+        :param select_id:
+        :type select_id:
         '''
         pass
 
@@ -16152,7 +16152,7 @@ class Gizmo(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -16163,7 +16163,7 @@ class Gizmo(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -16174,8 +16174,8 @@ class Gizmo(bpy_struct):
     def target_get_range(self, target) -> tuple:
         ''' Get the range for this target property.
 
-        :param target: 
-        :type target: 
+        :param target:
+        :type target:
         :rtype: tuple
         :return: The range of this property (min, max).
         '''
@@ -16195,11 +16195,11 @@ class Gizmo(bpy_struct):
         ''' Assigns callbacks to a gizmos property.
 
         :param get: Function that returns the value for this property (single value or sequence).
-        :type get: 
+        :type get:
         :param set: Function that takes a single value argument and applies it.
-        :type set: 
+        :type set:
         :param range: Function that returns a (min, max) tuple for gizmos that use a range.
-        :type range: 
+        :type range:
         '''
         pass
 
@@ -16217,13 +16217,13 @@ class GizmoGroup(bpy_struct):
     '''
 
     bl_idname: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     bl_label: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -16235,7 +16235,7 @@ class GizmoGroup(bpy_struct):
     '''
 
     bl_owner_id: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -16266,7 +16266,7 @@ class GizmoGroup(bpy_struct):
     '''
 
     name: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -16275,7 +16275,7 @@ class GizmoGroup(bpy_struct):
     def poll(cls, context: 'Context'):
         ''' Test if the gizmo group can be called or not
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         '''
         pass
@@ -16284,7 +16284,7 @@ class GizmoGroup(bpy_struct):
     def setup_keymap(cls, keyconfig: 'KeyConfig'):
         ''' Initialize keymaps for this gizmo group, use fallback keymap when not present
 
-        :param keyconfig: 
+        :param keyconfig:
         :type keyconfig: 'KeyConfig'
         '''
         pass
@@ -16292,7 +16292,7 @@ class GizmoGroup(bpy_struct):
     def setup(self, context: 'Context'):
         ''' Create gizmos function for the gizmo group
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         '''
         pass
@@ -16300,7 +16300,7 @@ class GizmoGroup(bpy_struct):
     def refresh(self, context: 'Context'):
         ''' Refresh data (called on common state changes such as selection)
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         '''
         pass
@@ -16308,7 +16308,7 @@ class GizmoGroup(bpy_struct):
     def draw_prepare(self, context: 'Context'):
         ''' Run before each redraw
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         '''
         pass
@@ -16316,16 +16316,16 @@ class GizmoGroup(bpy_struct):
     def invoke_prepare(self, context: 'Context', gizmo: 'Gizmo'):
         ''' Run before invoke
 
-        :param context: 
+        :param context:
         :type context: 'Context'
-        :param gizmo: 
+        :param gizmo:
         :type gizmo: 'Gizmo'
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -16336,7 +16336,7 @@ class GizmoGroup(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -16351,7 +16351,7 @@ class GizmoGroupProperties(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -16362,7 +16362,7 @@ class GizmoGroupProperties(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -16377,7 +16377,7 @@ class GizmoProperties(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -16388,7 +16388,7 @@ class GizmoProperties(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -16427,7 +16427,7 @@ class Gizmos(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -16438,7 +16438,7 @@ class Gizmos(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -16489,7 +16489,7 @@ class GpencilModifier(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -16500,7 +16500,7 @@ class GpencilModifier(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -16514,7 +16514,7 @@ class GpencilVertexGroupElement(bpy_struct):
     '''
 
     group: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -16527,7 +16527,7 @@ class GpencilVertexGroupElement(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -16538,7 +16538,7 @@ class GpencilVertexGroupElement(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -16577,7 +16577,7 @@ class GreasePencilGrid(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -16588,7 +16588,7 @@ class GreasePencilGrid(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -16651,7 +16651,7 @@ class GreasePencilLayers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -16662,7 +16662,7 @@ class GreasePencilLayers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -16699,7 +16699,7 @@ class GreasePencilMaskLayers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -16710,7 +16710,7 @@ class GreasePencilMaskLayers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -16750,14 +16750,14 @@ class Header(bpy_struct):
     def draw(self, context: 'Context'):
         ''' Draw UI elements into the header UI layout
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -16768,7 +16768,7 @@ class Header(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -16795,7 +16795,7 @@ class Histogram(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -16806,7 +16806,7 @@ class Histogram(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -16991,7 +16991,7 @@ class ID(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -17002,7 +17002,7 @@ class ID(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -17041,7 +17041,7 @@ class IDMaterials(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -17052,7 +17052,7 @@ class IDMaterials(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -17082,7 +17082,7 @@ class IDOverrideLibrary(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -17093,7 +17093,7 @@ class IDOverrideLibrary(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -17118,7 +17118,7 @@ class IDOverrideLibraryProperties(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -17129,7 +17129,7 @@ class IDOverrideLibraryProperties(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -17159,7 +17159,7 @@ class IDOverrideLibraryProperty(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -17170,7 +17170,7 @@ class IDOverrideLibraryProperty(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -17221,7 +17221,7 @@ class IDOverrideLibraryPropertyOperation(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -17232,7 +17232,7 @@ class IDOverrideLibraryPropertyOperation(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -17271,7 +17271,7 @@ class IDOverrideLibraryPropertyOperations(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -17282,7 +17282,7 @@ class IDOverrideLibraryPropertyOperations(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -17294,7 +17294,7 @@ class IDOverrideLibraryPropertyOperations(bpy_struct):
 class IDPropertyWrapPtr(bpy_struct):
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -17305,7 +17305,7 @@ class IDPropertyWrapPtr(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -17326,7 +17326,7 @@ class IKParam(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -17337,7 +17337,7 @@ class IKParam(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -17478,7 +17478,7 @@ class ImageFormatSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -17489,7 +17489,7 @@ class ImageFormatSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -17500,13 +17500,13 @@ class ImageFormatSettings(bpy_struct):
 
 class ImagePackedFile(bpy_struct):
     filepath: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     packed_file: 'PackedFile' = None
-    ''' 
+    '''
 
     :type: 'PackedFile'
     '''
@@ -17519,7 +17519,7 @@ class ImagePackedFile(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -17530,7 +17530,7 @@ class ImagePackedFile(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -17605,7 +17605,7 @@ class ImagePreview(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -17616,7 +17616,7 @@ class ImagePreview(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -17691,7 +17691,7 @@ class ImageUser(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -17702,7 +17702,7 @@ class ImageUser(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -17716,14 +17716,14 @@ class IntAttributeValue(bpy_struct):
     '''
 
     value: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -17734,7 +17734,7 @@ class IntAttributeValue(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -17767,14 +17767,14 @@ class KeyConfig(bpy_struct):
     '''
 
     preferences: 'KeyConfigPreferences' = None
-    ''' 
+    '''
 
     :type: 'KeyConfigPreferences'
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -17785,7 +17785,7 @@ class KeyConfig(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -17796,14 +17796,14 @@ class KeyConfig(bpy_struct):
 
 class KeyConfigPreferences(bpy_struct):
     bl_idname: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -17814,7 +17814,7 @@ class KeyConfigPreferences(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -17884,7 +17884,7 @@ class KeyConfigurations(bpy_struct):
         :type idname: str
         :param context: context
         :type context: typing.Union[str, int]
-        :param properties: 
+        :param properties:
         :type properties: 'OperatorProperties'
         :param include: Include
         :type include: typing.Union[typing.Set[str], typing.Set[int]]
@@ -17901,7 +17901,7 @@ class KeyConfigurations(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -17912,7 +17912,7 @@ class KeyConfigurations(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -18005,7 +18005,7 @@ class KeyMap(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -18016,7 +18016,7 @@ class KeyMap(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -18138,7 +18138,7 @@ class KeyMapItem(bpy_struct):
     '''
 
     value: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -18165,7 +18165,7 @@ class KeyMapItem(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -18176,7 +18176,7 @@ class KeyMapItem(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -18311,7 +18311,7 @@ class KeyMapItems(bpy_struct):
 
         :param idname: Operator Identifier
         :type idname: str
-        :param properties: 
+        :param properties:
         :type properties: 'OperatorProperties'
         :param include: Include
         :type include: typing.Union[typing.Set[str], typing.Set[int]]
@@ -18323,14 +18323,14 @@ class KeyMapItems(bpy_struct):
     def match_event(self, event: 'Event'):
         ''' match_event
 
-        :param event: 
+        :param event:
         :type event: 'Event'
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -18341,7 +18341,7 @@ class KeyMapItems(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -18414,7 +18414,7 @@ class KeyMaps(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -18425,7 +18425,7 @@ class KeyMaps(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -18530,7 +18530,7 @@ class Keyframe(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -18541,7 +18541,7 @@ class Keyframe(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -18567,7 +18567,7 @@ class KeyingSet(bpy_struct):
     '''
 
     bl_label: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -18636,7 +18636,7 @@ class KeyingSet(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -18647,7 +18647,7 @@ class KeyingSet(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -18673,7 +18673,7 @@ class KeyingSetInfo(bpy_struct):
     '''
 
     bl_label: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -18687,7 +18687,7 @@ class KeyingSetInfo(bpy_struct):
     def poll(self, context: 'Context'):
         ''' Test if Keying Set can be used or not
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         '''
         pass
@@ -18695,9 +18695,9 @@ class KeyingSetInfo(bpy_struct):
     def iterator(self, context: 'Context', ks: 'KeyingSet'):
         ''' Call generate() on the structs which have properties to be keyframed
 
-        :param context: 
+        :param context:
         :type context: 'Context'
-        :param ks: 
+        :param ks:
         :type ks: 'KeyingSet'
         '''
         pass
@@ -18705,18 +18705,18 @@ class KeyingSetInfo(bpy_struct):
     def generate(self, context: 'Context', ks: 'KeyingSet', data: 'AnyType'):
         ''' Add Paths to the Keying Set to keyframe the properties of the given data
 
-        :param context: 
+        :param context:
         :type context: 'Context'
-        :param ks: 
+        :param ks:
         :type ks: 'KeyingSet'
-        :param data: 
+        :param data:
         :type data: 'AnyType'
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -18727,7 +18727,7 @@ class KeyingSetInfo(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -18820,7 +18820,7 @@ class KeyingSetPath(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -18831,7 +18831,7 @@ class KeyingSetPath(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -18895,7 +18895,7 @@ class KeyingSetPaths(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -18906,7 +18906,7 @@ class KeyingSetPaths(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -18946,7 +18946,7 @@ class KeyingSets(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -18957,7 +18957,7 @@ class KeyingSets(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -18984,7 +18984,7 @@ class KeyingSetsAll(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -18995,7 +18995,7 @@ class KeyingSetsAll(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -19015,7 +19015,7 @@ class LatticePoint(bpy_struct):
     '''
 
     co_deform: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -19042,7 +19042,7 @@ class LatticePoint(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -19053,7 +19053,7 @@ class LatticePoint(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -19123,13 +19123,13 @@ class LayerCollection(bpy_struct):
         pass
 
     def has_objects(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def has_selected_objects(self, view_layer: 'ViewLayer'):
-        ''' 
+        '''
 
         :param view_layer: View layer the layer collection belongs to
         :type view_layer: 'ViewLayer'
@@ -19138,7 +19138,7 @@ class LayerCollection(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -19149,7 +19149,7 @@ class LayerCollection(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -19177,7 +19177,7 @@ class LayerObjects(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -19188,7 +19188,7 @@ class LayerObjects(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -19224,7 +19224,7 @@ class LineStyleAlphaModifiers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -19235,7 +19235,7 @@ class LineStyleAlphaModifiers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -19271,7 +19271,7 @@ class LineStyleColorModifiers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -19282,7 +19282,7 @@ class LineStyleColorModifiers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -19318,7 +19318,7 @@ class LineStyleGeometryModifiers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -19329,7 +19329,7 @@ class LineStyleGeometryModifiers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -19344,7 +19344,7 @@ class LineStyleModifier(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -19355,7 +19355,7 @@ class LineStyleModifier(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -19399,7 +19399,7 @@ class LineStyleTextureSlots(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -19410,7 +19410,7 @@ class LineStyleTextureSlots(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -19446,7 +19446,7 @@ class LineStyleThicknessModifiers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -19457,7 +19457,7 @@ class LineStyleThicknessModifiers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -19502,7 +19502,7 @@ class Linesets(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -19513,7 +19513,7 @@ class Linesets(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -19561,7 +19561,7 @@ class LoopColors(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -19572,7 +19572,7 @@ class LoopColors(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -19586,19 +19586,19 @@ class Macro(bpy_struct):
     '''
 
     bl_description: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     bl_idname: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     bl_label: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -19610,25 +19610,25 @@ class Macro(bpy_struct):
     '''
 
     bl_translation_context: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     bl_undo_group: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     name: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     properties: 'OperatorProperties' = None
-    ''' 
+    '''
 
     :type: 'OperatorProperties'
     '''
@@ -19648,7 +19648,7 @@ class Macro(bpy_struct):
     def poll(cls, context: 'Context'):
         ''' Test if the operator can be called or not
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         '''
         pass
@@ -19656,14 +19656,14 @@ class Macro(bpy_struct):
     def draw(self, context: 'Context'):
         ''' Draw function for the operator
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -19674,7 +19674,7 @@ class Macro(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -19763,7 +19763,7 @@ class MaskLayer(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -19774,7 +19774,7 @@ class MaskLayer(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -19819,7 +19819,7 @@ class MaskLayers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -19830,7 +19830,7 @@ class MaskLayers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -19875,7 +19875,7 @@ class MaskParent(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -19886,7 +19886,7 @@ class MaskParent(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -19939,7 +19939,7 @@ class MaskSpline(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -19950,7 +19950,7 @@ class MaskSpline(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -20008,7 +20008,7 @@ class MaskSplinePoint(bpy_struct):
     '''
 
     parent: 'MaskParent' = None
-    ''' 
+    '''
 
     :type: 'MaskParent'
     '''
@@ -20027,7 +20027,7 @@ class MaskSplinePoint(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -20038,7 +20038,7 @@ class MaskSplinePoint(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -20071,7 +20071,7 @@ class MaskSplinePointUW(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -20082,7 +20082,7 @@ class MaskSplinePointUW(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -20113,7 +20113,7 @@ class MaskSplinePoints(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -20124,7 +20124,7 @@ class MaskSplinePoints(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -20167,7 +20167,7 @@ class MaskSplines(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -20178,7 +20178,7 @@ class MaskSplines(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -20201,7 +20201,7 @@ class MaterialGPencilStyle(bpy_struct):
     '''
 
     color: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -20213,7 +20213,7 @@ class MaterialGPencilStyle(bpy_struct):
     '''
 
     fill_image: 'Image' = None
-    ''' 
+    '''
 
     :type: 'Image'
     '''
@@ -20315,7 +20315,7 @@ class MaterialGPencilStyle(bpy_struct):
     '''
 
     stroke_image: 'Image' = None
-    ''' 
+    '''
 
     :type: 'Image'
     '''
@@ -20370,7 +20370,7 @@ class MaterialGPencilStyle(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -20381,7 +20381,7 @@ class MaterialGPencilStyle(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -20398,14 +20398,14 @@ class MaterialLineArt(bpy_struct):
     '''
 
     use_transparency_mask: typing.List[bool] = None
-    ''' 
+    '''
 
     :type: typing.List[bool]
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -20416,7 +20416,7 @@ class MaterialLineArt(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -20449,7 +20449,7 @@ class MaterialSlot(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -20460,7 +20460,7 @@ class MaterialSlot(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -20474,7 +20474,7 @@ class Menu(bpy_struct):
     '''
 
     bl_description: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -20492,13 +20492,13 @@ class Menu(bpy_struct):
     '''
 
     bl_owner_id: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     bl_translation_context: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -20513,7 +20513,7 @@ class Menu(bpy_struct):
     def poll(cls, context: 'Context'):
         ''' If this method returns a non-null output, then the menu can be drawn
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         '''
         pass
@@ -20521,7 +20521,7 @@ class Menu(bpy_struct):
     def draw(self, context: 'Context'):
         ''' Draw UI elements into the menu UI layout
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         '''
         pass
@@ -20561,7 +20561,7 @@ class Menu(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -20572,7 +20572,7 @@ class Menu(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -20586,14 +20586,14 @@ class MeshCacheVertexVelocity(bpy_struct):
     '''
 
     velocity: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -20604,7 +20604,7 @@ class MeshCacheVertexVelocity(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -20630,7 +20630,7 @@ class MeshEdge(bpy_struct):
     '''
 
     hide: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -20648,7 +20648,7 @@ class MeshEdge(bpy_struct):
     '''
 
     select: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -20682,7 +20682,7 @@ class MeshEdge(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -20693,7 +20693,7 @@ class MeshEdge(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -20716,7 +20716,7 @@ class MeshEdges(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -20727,7 +20727,7 @@ class MeshEdges(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -20738,14 +20738,14 @@ class MeshEdges(bpy_struct):
 
 class MeshFaceMap(bpy_struct):
     value: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -20756,7 +20756,7 @@ class MeshFaceMap(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -20771,7 +20771,7 @@ class MeshFaceMapLayer(bpy_struct):
 
     data: typing.Union[typing.Dict[str, 'MeshFaceMap'], typing.
                        List['MeshFaceMap'], 'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'MeshFaceMap'], typing.List['MeshFaceMap'], 'bpy_prop_collection']
     '''
@@ -20784,7 +20784,7 @@ class MeshFaceMapLayer(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -20795,7 +20795,7 @@ class MeshFaceMapLayer(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -20809,7 +20809,7 @@ class MeshFaceMapLayers(bpy_struct):
     '''
 
     active: 'MeshFaceMapLayer' = None
-    ''' 
+    '''
 
     :type: 'MeshFaceMapLayer'
     '''
@@ -20834,7 +20834,7 @@ class MeshFaceMapLayers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -20845,7 +20845,7 @@ class MeshFaceMapLayers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -20902,7 +20902,7 @@ class MeshLoop(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -20913,7 +20913,7 @@ class MeshLoop(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -20927,14 +20927,14 @@ class MeshLoopColor(bpy_struct):
     '''
 
     color: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -20945,7 +20945,7 @@ class MeshLoopColor(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -20972,7 +20972,7 @@ class MeshLoopColorLayer(bpy_struct):
 
     data: typing.Union[typing.Dict[str, 'MeshLoopColor'], typing.
                        List['MeshLoopColor'], 'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'MeshLoopColor'], typing.List['MeshLoopColor'], 'bpy_prop_collection']
     '''
@@ -20985,7 +20985,7 @@ class MeshLoopColorLayer(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -20996,7 +20996,7 @@ class MeshLoopColorLayer(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21028,7 +21028,7 @@ class MeshLoopTriangle(bpy_struct):
     '''
 
     material_index: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -21052,7 +21052,7 @@ class MeshLoopTriangle(bpy_struct):
     '''
 
     use_smooth: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -21071,7 +21071,7 @@ class MeshLoopTriangle(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21082,7 +21082,7 @@ class MeshLoopTriangle(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21097,7 +21097,7 @@ class MeshLoopTriangles(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21108,7 +21108,7 @@ class MeshLoopTriangles(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21131,7 +21131,7 @@ class MeshLoops(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21142,7 +21142,7 @@ class MeshLoops(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21158,14 +21158,14 @@ class MeshPaintMaskLayer(bpy_struct):
     data: typing.Union[typing.Dict[str, 'MeshPaintMaskProperty'], typing.
                        List['MeshPaintMaskProperty'],
                        'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'MeshPaintMaskProperty'], typing.List['MeshPaintMaskProperty'], 'bpy_prop_collection']
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21176,7 +21176,7 @@ class MeshPaintMaskLayer(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21190,14 +21190,14 @@ class MeshPaintMaskProperty(bpy_struct):
     '''
 
     value: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21208,7 +21208,7 @@ class MeshPaintMaskProperty(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21234,7 +21234,7 @@ class MeshPolygon(bpy_struct):
     '''
 
     hide: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -21258,7 +21258,7 @@ class MeshPolygon(bpy_struct):
     '''
 
     material_index: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -21270,7 +21270,7 @@ class MeshPolygon(bpy_struct):
     '''
 
     select: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -21282,7 +21282,7 @@ class MeshPolygon(bpy_struct):
     '''
 
     use_smooth: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -21307,7 +21307,7 @@ class MeshPolygon(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21318,7 +21318,7 @@ class MeshPolygon(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21332,14 +21332,14 @@ class MeshPolygonFloatProperty(bpy_struct):
     '''
 
     value: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21350,7 +21350,7 @@ class MeshPolygonFloatProperty(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21366,20 +21366,20 @@ class MeshPolygonFloatPropertyLayer(bpy_struct):
     data: typing.Union[typing.Dict[str, 'MeshPolygonFloatProperty'], typing.
                        List['MeshPolygonFloatProperty'],
                        'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'MeshPolygonFloatProperty'], typing.List['MeshPolygonFloatProperty'], 'bpy_prop_collection']
     '''
 
     name: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21390,7 +21390,7 @@ class MeshPolygonFloatPropertyLayer(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21404,14 +21404,14 @@ class MeshPolygonIntProperty(bpy_struct):
     '''
 
     value: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21422,7 +21422,7 @@ class MeshPolygonIntProperty(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21438,20 +21438,20 @@ class MeshPolygonIntPropertyLayer(bpy_struct):
     data: typing.Union[typing.Dict[str, 'MeshPolygonIntProperty'], typing.
                        List['MeshPolygonIntProperty'],
                        'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'MeshPolygonIntProperty'], typing.List['MeshPolygonIntProperty'], 'bpy_prop_collection']
     '''
 
     name: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21462,7 +21462,7 @@ class MeshPolygonIntPropertyLayer(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21476,14 +21476,14 @@ class MeshPolygonStringProperty(bpy_struct):
     '''
 
     value: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21494,7 +21494,7 @@ class MeshPolygonStringProperty(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21510,20 +21510,20 @@ class MeshPolygonStringPropertyLayer(bpy_struct):
     data: typing.Union[typing.Dict[str, 'MeshPolygonStringProperty'], typing.
                        List['MeshPolygonStringProperty'],
                        'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'MeshPolygonStringProperty'], typing.List['MeshPolygonStringProperty'], 'bpy_prop_collection']
     '''
 
     name: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21534,7 +21534,7 @@ class MeshPolygonStringPropertyLayer(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21563,7 +21563,7 @@ class MeshPolygons(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21574,7 +21574,7 @@ class MeshPolygons(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21607,7 +21607,7 @@ class MeshSkinVertex(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21618,7 +21618,7 @@ class MeshSkinVertex(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21633,7 +21633,7 @@ class MeshSkinVertexLayer(bpy_struct):
 
     data: typing.Union[typing.Dict[str, 'MeshSkinVertex'], typing.
                        List['MeshSkinVertex'], 'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'MeshSkinVertex'], typing.List['MeshSkinVertex'], 'bpy_prop_collection']
     '''
@@ -21646,7 +21646,7 @@ class MeshSkinVertexLayer(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21657,7 +21657,7 @@ class MeshSkinVertexLayer(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21680,7 +21680,7 @@ class MeshStatVis(bpy_struct):
     '''
 
     overhang_axis: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -21735,7 +21735,7 @@ class MeshStatVis(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21746,7 +21746,7 @@ class MeshStatVis(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21757,26 +21757,26 @@ class MeshStatVis(bpy_struct):
 
 class MeshUVLoop(bpy_struct):
     pin_uv: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     select: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     uv: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21787,7 +21787,7 @@ class MeshUVLoop(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21817,7 +21817,7 @@ class MeshUVLoopLayer(bpy_struct):
 
     data: typing.Union[typing.Dict[str, 'MeshUVLoop'], typing.
                        List['MeshUVLoop'], 'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'MeshUVLoop'], typing.List['MeshUVLoop'], 'bpy_prop_collection']
     '''
@@ -21830,7 +21830,7 @@ class MeshUVLoopLayer(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21841,7 +21841,7 @@ class MeshUVLoopLayer(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21855,14 +21855,14 @@ class MeshVertColor(bpy_struct):
     '''
 
     color: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21873,7 +21873,7 @@ class MeshVertColor(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21900,7 +21900,7 @@ class MeshVertColorLayer(bpy_struct):
 
     data: typing.Union[typing.Dict[str, 'MeshVertColor'], typing.
                        List['MeshVertColor'], 'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'MeshVertColor'], typing.List['MeshVertColor'], 'bpy_prop_collection']
     '''
@@ -21913,7 +21913,7 @@ class MeshVertColorLayer(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21924,7 +21924,7 @@ class MeshVertColorLayer(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -21944,7 +21944,7 @@ class MeshVertex(bpy_struct):
     '''
 
     co: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -21958,7 +21958,7 @@ class MeshVertex(bpy_struct):
     '''
 
     hide: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -21976,7 +21976,7 @@ class MeshVertex(bpy_struct):
     '''
 
     select: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -21989,7 +21989,7 @@ class MeshVertex(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -22000,7 +22000,7 @@ class MeshVertex(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -22014,14 +22014,14 @@ class MeshVertexFloatProperty(bpy_struct):
     '''
 
     value: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -22032,7 +22032,7 @@ class MeshVertexFloatProperty(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -22048,20 +22048,20 @@ class MeshVertexFloatPropertyLayer(bpy_struct):
     data: typing.Union[typing.Dict[str, 'MeshVertexFloatProperty'], typing.
                        List['MeshVertexFloatProperty'],
                        'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'MeshVertexFloatProperty'], typing.List['MeshVertexFloatProperty'], 'bpy_prop_collection']
     '''
 
     name: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -22072,7 +22072,7 @@ class MeshVertexFloatPropertyLayer(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -22086,14 +22086,14 @@ class MeshVertexIntProperty(bpy_struct):
     '''
 
     value: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -22104,7 +22104,7 @@ class MeshVertexIntProperty(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -22120,20 +22120,20 @@ class MeshVertexIntPropertyLayer(bpy_struct):
     data: typing.Union[typing.Dict[str, 'MeshVertexIntProperty'], typing.
                        List['MeshVertexIntProperty'],
                        'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'MeshVertexIntProperty'], typing.List['MeshVertexIntProperty'], 'bpy_prop_collection']
     '''
 
     name: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -22144,7 +22144,7 @@ class MeshVertexIntPropertyLayer(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -22158,14 +22158,14 @@ class MeshVertexStringProperty(bpy_struct):
     '''
 
     value: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -22176,7 +22176,7 @@ class MeshVertexStringProperty(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -22192,20 +22192,20 @@ class MeshVertexStringPropertyLayer(bpy_struct):
     data: typing.Union[typing.Dict[str, 'MeshVertexStringProperty'], typing.
                        List['MeshVertexStringProperty'],
                        'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'MeshVertexStringProperty'], typing.List['MeshVertexStringProperty'], 'bpy_prop_collection']
     '''
 
     name: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -22216,7 +22216,7 @@ class MeshVertexStringPropertyLayer(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -22239,7 +22239,7 @@ class MeshVertices(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -22250,7 +22250,7 @@ class MeshVertices(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -22295,7 +22295,7 @@ class MetaBallElements(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -22306,7 +22306,7 @@ class MetaBallElements(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -22320,7 +22320,7 @@ class MetaElement(bpy_struct):
     '''
 
     co: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -22332,7 +22332,7 @@ class MetaElement(bpy_struct):
     '''
 
     radius: float = None
-    ''' 
+    '''
 
     :type: float
     '''
@@ -22393,7 +22393,7 @@ class MetaElement(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -22404,7 +22404,7 @@ class MetaElement(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -22473,7 +22473,7 @@ class Modifier(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -22484,7 +22484,7 @@ class Modifier(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -22560,7 +22560,7 @@ class MotionPath(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -22571,7 +22571,7 @@ class MotionPath(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -22585,7 +22585,7 @@ class MotionPathVert(bpy_struct):
     '''
 
     co: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -22598,7 +22598,7 @@ class MotionPathVert(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -22609,7 +22609,7 @@ class MotionPathVert(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -22708,7 +22708,7 @@ class MovieClipProxy(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -22719,7 +22719,7 @@ class MovieClipProxy(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -22734,7 +22734,7 @@ class MovieClipScopes(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -22745,7 +22745,7 @@ class MovieClipScopes(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -22778,7 +22778,7 @@ class MovieClipUser(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -22789,7 +22789,7 @@ class MovieClipUser(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -22822,7 +22822,7 @@ class MovieReconstructedCamera(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -22833,7 +22833,7 @@ class MovieReconstructedCamera(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -22853,13 +22853,13 @@ class MovieTracking(bpy_struct):
     '''
 
     camera: 'MovieTrackingCamera' = None
-    ''' 
+    '''
 
     :type: 'MovieTrackingCamera'
     '''
 
     dopesheet: 'MovieTrackingDopesheet' = None
-    ''' 
+    '''
 
     :type: 'MovieTrackingDopesheet'
     '''
@@ -22882,19 +22882,19 @@ class MovieTracking(bpy_struct):
     '''
 
     reconstruction: 'MovieTrackingReconstruction' = None
-    ''' 
+    '''
 
     :type: 'MovieTrackingReconstruction'
     '''
 
     settings: 'MovieTrackingSettings' = None
-    ''' 
+    '''
 
     :type: 'MovieTrackingSettings'
     '''
 
     stabilization: 'MovieTrackingStabilization' = None
-    ''' 
+    '''
 
     :type: 'MovieTrackingStabilization'
     '''
@@ -22909,7 +22909,7 @@ class MovieTracking(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -22920,7 +22920,7 @@ class MovieTracking(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -23055,7 +23055,7 @@ class MovieTrackingCamera(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -23066,7 +23066,7 @@ class MovieTrackingCamera(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -23105,7 +23105,7 @@ class MovieTrackingDopesheet(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -23116,7 +23116,7 @@ class MovieTrackingDopesheet(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -23179,7 +23179,7 @@ class MovieTrackingMarker(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -23190,7 +23190,7 @@ class MovieTrackingMarker(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -23240,7 +23240,7 @@ class MovieTrackingMarkers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -23251,7 +23251,7 @@ class MovieTrackingMarkers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -23298,7 +23298,7 @@ class MovieTrackingObject(bpy_struct):
     '''
 
     reconstruction: 'MovieTrackingReconstruction' = None
-    ''' 
+    '''
 
     :type: 'MovieTrackingReconstruction'
     '''
@@ -23319,7 +23319,7 @@ class MovieTrackingObject(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -23330,7 +23330,7 @@ class MovieTrackingObject(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -23351,7 +23351,7 @@ class MovieTrackingObjectPlaneTracks(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -23362,7 +23362,7 @@ class MovieTrackingObjectPlaneTracks(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -23395,7 +23395,7 @@ class MovieTrackingObjectTracks(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -23406,7 +23406,7 @@ class MovieTrackingObjectTracks(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -23445,7 +23445,7 @@ class MovieTrackingObjects(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -23456,7 +23456,7 @@ class MovieTrackingObjects(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -23489,7 +23489,7 @@ class MovieTrackingPlaneMarker(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -23500,7 +23500,7 @@ class MovieTrackingPlaneMarker(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -23546,7 +23546,7 @@ class MovieTrackingPlaneMarkers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -23557,7 +23557,7 @@ class MovieTrackingPlaneMarkers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -23611,7 +23611,7 @@ class MovieTrackingPlaneTrack(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -23622,7 +23622,7 @@ class MovieTrackingPlaneTrack(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -23643,7 +23643,7 @@ class MovieTrackingPlaneTracks(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -23654,7 +23654,7 @@ class MovieTrackingPlaneTracks(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -23689,7 +23689,7 @@ class MovieTrackingReconstructedCameras(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -23700,7 +23700,7 @@ class MovieTrackingReconstructedCameras(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -23736,7 +23736,7 @@ class MovieTrackingReconstruction(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -23747,7 +23747,7 @@ class MovieTrackingReconstruction(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -23918,7 +23918,7 @@ class MovieTrackingSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -23929,7 +23929,7 @@ class MovieTrackingSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -24056,7 +24056,7 @@ class MovieTrackingStabilization(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -24067,7 +24067,7 @@ class MovieTrackingStabilization(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -24264,7 +24264,7 @@ class MovieTrackingTrack(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -24275,7 +24275,7 @@ class MovieTrackingTrack(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -24308,7 +24308,7 @@ class MovieTrackingTracks(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -24319,7 +24319,7 @@ class MovieTrackingTracks(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -24363,7 +24363,7 @@ class NlaStrip(bpy_struct):
     '''
 
     blend_out: float = None
-    ''' 
+    '''
 
     :type: float
     '''
@@ -24388,13 +24388,13 @@ class NlaStrip(bpy_struct):
     '''
 
     frame_end: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     frame_start: float = None
-    ''' 
+    '''
 
     :type: float
     '''
@@ -24419,7 +24419,7 @@ class NlaStrip(bpy_struct):
     '''
 
     name: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -24499,7 +24499,7 @@ class NlaStrip(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -24510,7 +24510,7 @@ class NlaStrip(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -24537,7 +24537,7 @@ class NlaStripFCurves(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -24548,7 +24548,7 @@ class NlaStripFCurves(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -24585,7 +24585,7 @@ class NlaStrips(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -24596,7 +24596,7 @@ class NlaStrips(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -24634,7 +24634,7 @@ class NlaTrack(bpy_struct):
     '''
 
     name: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -24654,7 +24654,7 @@ class NlaTrack(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -24665,7 +24665,7 @@ class NlaTrack(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -24704,7 +24704,7 @@ class NlaTracks(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -24715,7 +24715,7 @@ class NlaTracks(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -24735,25 +24735,25 @@ class Node(bpy_struct):
     '''
 
     bl_description: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     bl_height_default: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     bl_height_max: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     bl_height_min: float = None
-    ''' 
+    '''
 
     :type: float
     '''
@@ -24765,7 +24765,7 @@ class Node(bpy_struct):
     '''
 
     bl_idname: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -24783,19 +24783,19 @@ class Node(bpy_struct):
     '''
 
     bl_width_default: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     bl_width_max: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     bl_width_min: float = None
-    ''' 
+    '''
 
     :type: float
     '''
@@ -24819,7 +24819,7 @@ class Node(bpy_struct):
     '''
 
     hide: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -24827,7 +24827,7 @@ class Node(bpy_struct):
     inputs: typing.Union[typing.Dict[str, 'NodeSocket'], typing.
                          List['NodeSocket'], 'bpy_prop_collection',
                          'NodeInputs'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'NodeSocket'], typing.List['NodeSocket'], 'bpy_prop_collection', 'NodeInputs']
     '''
@@ -24847,13 +24847,13 @@ class Node(bpy_struct):
     '''
 
     location: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     mute: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -24867,7 +24867,7 @@ class Node(bpy_struct):
     outputs: typing.Union[typing.Dict[str, 'NodeSocket'], typing.
                           List['NodeSocket'], 'bpy_prop_collection',
                           'NodeOutputs'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'NodeSocket'], typing.List['NodeSocket'], 'bpy_prop_collection', 'NodeOutputs']
     '''
@@ -24885,13 +24885,13 @@ class Node(bpy_struct):
     '''
 
     show_options: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_preview: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -24929,7 +24929,7 @@ class Node(bpy_struct):
     def socket_value_update(self, context: 'Context'):
         ''' Update after property changes
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         '''
         pass
@@ -24977,7 +24977,7 @@ class Node(bpy_struct):
     def init(self, context: 'Context'):
         ''' Initialize a new instance of this node
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         '''
         pass
@@ -24999,7 +24999,7 @@ class Node(bpy_struct):
     def draw_buttons(self, context: 'Context', layout: 'UILayout'):
         ''' Draw node buttons
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         :param layout: Layout, Layout in the UI
         :type layout: 'UILayout'
@@ -25009,7 +25009,7 @@ class Node(bpy_struct):
     def draw_buttons_ext(self, context: 'Context', layout: 'UILayout'):
         ''' Draw node buttons in the sidebar
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         :param layout: Layout, Layout in the UI
         :type layout: 'UILayout'
@@ -25026,7 +25026,7 @@ class Node(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -25037,7 +25037,7 @@ class Node(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -25090,7 +25090,7 @@ class NodeInputs(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -25101,7 +25101,7 @@ class NodeInputs(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -25116,7 +25116,7 @@ class NodeInstanceHash(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -25127,7 +25127,7 @@ class NodeInstanceHash(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -25160,7 +25160,7 @@ class NodeInternalSocketTemplate(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -25171,7 +25171,7 @@ class NodeInternalSocketTemplate(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -25185,13 +25185,13 @@ class NodeLink(bpy_struct):
     '''
 
     from_node: 'Node' = None
-    ''' 
+    '''
 
     :type: 'Node'
     '''
 
     from_socket: 'NodeSocket' = None
-    ''' 
+    '''
 
     :type: 'NodeSocket'
     '''
@@ -25203,32 +25203,32 @@ class NodeLink(bpy_struct):
     '''
 
     is_muted: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     is_valid: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     to_node: 'Node' = None
-    ''' 
+    '''
 
     :type: 'Node'
     '''
 
     to_socket: 'NodeSocket' = None
-    ''' 
+    '''
 
     :type: 'NodeSocket'
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -25239,7 +25239,7 @@ class NodeLink(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -25285,7 +25285,7 @@ class NodeLinks(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -25296,7 +25296,7 @@ class NodeLinks(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -25310,7 +25310,7 @@ class NodeOutputFileSlotFile(bpy_struct):
     '''
 
     format: 'ImageFormatSettings' = None
-    ''' 
+    '''
 
     :type: 'ImageFormatSettings'
     '''
@@ -25328,14 +25328,14 @@ class NodeOutputFileSlotFile(bpy_struct):
     '''
 
     use_node_format: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -25346,7 +25346,7 @@ class NodeOutputFileSlotFile(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -25367,7 +25367,7 @@ class NodeOutputFileSlotLayer(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -25378,7 +25378,7 @@ class NodeOutputFileSlotLayer(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -25431,7 +25431,7 @@ class NodeOutputs(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -25442,7 +25442,7 @@ class NodeOutputs(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -25456,7 +25456,7 @@ class NodeSocket(bpy_struct):
     '''
 
     bl_idname: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -25558,7 +25558,7 @@ class NodeSocket(bpy_struct):
              text: str):
         ''' Draw socket
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         :param layout: Layout, Layout in the UI
         :type layout: 'UILayout'
@@ -25573,7 +25573,7 @@ class NodeSocket(bpy_struct):
                    node: 'Node') -> typing.List[float]:
         ''' Color of the socket icon
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         :param node: Node, Node the socket belongs to
         :type node: 'Node'
@@ -25584,7 +25584,7 @@ class NodeSocket(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -25595,7 +25595,7 @@ class NodeSocket(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -25609,7 +25609,7 @@ class NodeSocketInterface(bpy_struct):
     '''
 
     bl_socket_idname: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -25647,7 +25647,7 @@ class NodeSocketInterface(bpy_struct):
     def draw(self, context: 'Context', layout: 'UILayout'):
         ''' Draw template settings
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         :param layout: Layout, Layout in the UI
         :type layout: 'UILayout'
@@ -25657,7 +25657,7 @@ class NodeSocketInterface(bpy_struct):
     def draw_color(self, context: 'Context') -> typing.List[float]:
         ''' Color of the socket icon
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         :rtype: typing.List[float]
         :return: Color
@@ -25696,7 +25696,7 @@ class NodeSocketInterface(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -25707,7 +25707,7 @@ class NodeSocketInterface(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -25758,7 +25758,7 @@ class NodeTreeInputs(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -25769,7 +25769,7 @@ class NodeTreeInputs(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -25820,7 +25820,7 @@ class NodeTreeOutputs(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -25831,7 +25831,7 @@ class NodeTreeOutputs(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -25852,7 +25852,7 @@ class NodeTreePath(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -25863,7 +25863,7 @@ class NodeTreePath(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -25908,7 +25908,7 @@ class Nodes(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -25919,7 +25919,7 @@ class Nodes(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -25952,7 +25952,7 @@ class ObjectBase(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -25963,7 +25963,7 @@ class ObjectBase(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -26028,7 +26028,7 @@ class ObjectConstraints(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -26039,7 +26039,7 @@ class ObjectConstraints(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -26060,7 +26060,7 @@ class ObjectDisplay(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -26071,7 +26071,7 @@ class ObjectDisplay(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -26113,7 +26113,7 @@ class ObjectGpencilModifiers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -26124,7 +26124,7 @@ class ObjectGpencilModifiers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -26157,7 +26157,7 @@ class ObjectLineArt(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -26168,7 +26168,7 @@ class ObjectLineArt(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -26215,7 +26215,7 @@ class ObjectModifiers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -26226,7 +26226,7 @@ class ObjectModifiers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -26267,7 +26267,7 @@ class ObjectShaderFx(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -26278,7 +26278,7 @@ class ObjectShaderFx(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -26292,19 +26292,19 @@ class Operator(bpy_struct):
     '''
 
     bl_description: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     bl_idname: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     bl_label: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -26316,13 +26316,13 @@ class Operator(bpy_struct):
     '''
 
     bl_translation_context: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     bl_undo_group: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -26334,20 +26334,20 @@ class Operator(bpy_struct):
     '''
 
     layout: 'UILayout' = None
-    ''' 
+    '''
 
     :type: 'UILayout'
     '''
 
     macros: typing.Union[typing.Dict[str, 'Macro'], typing.
                          List['Macro'], 'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'Macro'], typing.List['Macro'], 'bpy_prop_collection']
     '''
 
     name: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -26359,7 +26359,7 @@ class Operator(bpy_struct):
     '''
 
     properties: 'OperatorProperties' = None
-    ''' 
+    '''
 
     :type: 'OperatorProperties'
     '''
@@ -26393,7 +26393,7 @@ class Operator(bpy_struct):
     def poll(cls, context: 'Context'):
         ''' Test if the operator can be called or not
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         '''
         pass
@@ -26402,7 +26402,7 @@ class Operator(bpy_struct):
                 ) -> typing.Union[typing.Set[str], typing.Set[int]]:
         ''' Execute the operator
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         :rtype: typing.Union[typing.Set[str], typing.Set[int]]
         :return: result * RUNNING_MODAL Running Modal, Keep the operator running with blender. * CANCELLED Cancelled, The operator exited without doing anything, so no undo entry should be pushed. * FINISHED Finished, The operator exited after completing its action. * PASS_THROUGH Pass Through, Do nothing and pass the event on. * INTERFACE Interface, Handled but not executed (popup menus).
@@ -26412,7 +26412,7 @@ class Operator(bpy_struct):
     def check(self, context: 'Context') -> bool:
         ''' Check the operator settings, return True to signal a change to redraw
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         :rtype: bool
         :return: result
@@ -26423,9 +26423,9 @@ class Operator(bpy_struct):
                ) -> typing.Union[typing.Set[str], typing.Set[int]]:
         ''' Invoke the operator
 
-        :param context: 
+        :param context:
         :type context: 'Context'
-        :param event: 
+        :param event:
         :type event: 'Event'
         :rtype: typing.Union[typing.Set[str], typing.Set[int]]
         :return: result * RUNNING_MODAL Running Modal, Keep the operator running with blender. * CANCELLED Cancelled, The operator exited without doing anything, so no undo entry should be pushed. * FINISHED Finished, The operator exited after completing its action. * PASS_THROUGH Pass Through, Do nothing and pass the event on. * INTERFACE Interface, Handled but not executed (popup menus).
@@ -26436,9 +26436,9 @@ class Operator(bpy_struct):
               ) -> typing.Union[typing.Set[str], typing.Set[int]]:
         ''' Modal operator function
 
-        :param context: 
+        :param context:
         :type context: 'Context'
-        :param event: 
+        :param event:
         :type event: 'Event'
         :rtype: typing.Union[typing.Set[str], typing.Set[int]]
         :return: result * RUNNING_MODAL Running Modal, Keep the operator running with blender. * CANCELLED Cancelled, The operator exited without doing anything, so no undo entry should be pushed. * FINISHED Finished, The operator exited after completing its action. * PASS_THROUGH Pass Through, Do nothing and pass the event on. * INTERFACE Interface, Handled but not executed (popup menus).
@@ -26448,7 +26448,7 @@ class Operator(bpy_struct):
     def draw(self, context: 'Context'):
         ''' Draw function for the operator
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         '''
         pass
@@ -26456,7 +26456,7 @@ class Operator(bpy_struct):
     def cancel(self, context: 'Context'):
         ''' Called when the operator is canceled
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         '''
         pass
@@ -26466,9 +26466,9 @@ class Operator(bpy_struct):
                     properties: 'OperatorProperties') -> str:
         ''' Compute a description string that depends on parameters
 
-        :param context: 
+        :param context:
         :type context: 'Context'
-        :param properties: 
+        :param properties:
         :type properties: 'OperatorProperties'
         :rtype: str
         :return: result
@@ -26483,7 +26483,7 @@ class Operator(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -26494,7 +26494,7 @@ class Operator(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -26508,14 +26508,14 @@ class OperatorMacro(bpy_struct):
     '''
 
     properties: 'OperatorProperties' = None
-    ''' 
+    '''
 
     :type: 'OperatorProperties'
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -26526,7 +26526,7 @@ class OperatorMacro(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -26571,7 +26571,7 @@ class OperatorOptions(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -26582,7 +26582,7 @@ class OperatorOptions(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -26597,7 +26597,7 @@ class OperatorProperties(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -26608,7 +26608,7 @@ class OperatorProperties(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -26635,7 +26635,7 @@ class PackedFile(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -26646,7 +26646,7 @@ class PackedFile(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -26681,13 +26681,13 @@ class Paint(bpy_struct):
     '''
 
     show_brush: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_brush_on_surface: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -26725,7 +26725,7 @@ class Paint(bpy_struct):
     tool_slots: typing.Union[typing.Dict[str, 'PaintToolSlot'], typing.
                              List['PaintToolSlot'],
                              'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'PaintToolSlot'], typing.List['PaintToolSlot'], 'bpy_prop_collection']
     '''
@@ -26768,7 +26768,7 @@ class Paint(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -26779,7 +26779,7 @@ class Paint(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -26790,14 +26790,14 @@ class Paint(bpy_struct):
 
 class PaintToolSlot(bpy_struct):
     brush: 'Brush' = None
-    ''' 
+    '''
 
     :type: 'Brush'
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -26808,7 +26808,7 @@ class PaintToolSlot(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -26819,26 +26819,26 @@ class PaintToolSlot(bpy_struct):
 
 class PaletteColor(bpy_struct):
     color: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     strength: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     weight: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -26849,7 +26849,7 @@ class PaletteColor(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -26863,7 +26863,7 @@ class PaletteColors(bpy_struct):
     '''
 
     active: 'PaletteColor' = None
-    ''' 
+    '''
 
     :type: 'PaletteColor'
     '''
@@ -26892,7 +26892,7 @@ class PaletteColors(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -26903,7 +26903,7 @@ class PaletteColors(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -26917,7 +26917,7 @@ class Panel(bpy_struct):
     '''
 
     bl_category: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -26929,7 +26929,7 @@ class Panel(bpy_struct):
     '''
 
     bl_description: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -26959,7 +26959,7 @@ class Panel(bpy_struct):
     '''
 
     bl_owner_id: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -26983,7 +26983,7 @@ class Panel(bpy_struct):
     '''
 
     bl_translation_context: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -27001,7 +27001,7 @@ class Panel(bpy_struct):
     '''
 
     is_popover: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -27028,7 +27028,7 @@ class Panel(bpy_struct):
     def poll(cls, context: 'Context'):
         ''' If this method returns a non-null output, then the panel can be drawn
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         '''
         pass
@@ -27036,7 +27036,7 @@ class Panel(bpy_struct):
     def draw(self, context: 'Context'):
         ''' Draw UI elements into the panel UI layout
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         '''
         pass
@@ -27044,7 +27044,7 @@ class Panel(bpy_struct):
     def draw_header(self, context: 'Context'):
         ''' Draw UI elements into the panel's header UI layout
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         '''
         pass
@@ -27052,14 +27052,14 @@ class Panel(bpy_struct):
     def draw_header_preset(self, context: 'Context'):
         ''' Draw UI elements for presets in the panel's header
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -27070,7 +27070,7 @@ class Panel(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -27084,25 +27084,25 @@ class Particle(bpy_struct):
     '''
 
     alive_state: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     angular_velocity: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     birth_time: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     die_time: float = None
-    ''' 
+    '''
 
     :type: float
     '''
@@ -27110,31 +27110,31 @@ class Particle(bpy_struct):
     hair_keys: typing.Union[typing.Dict[str, 'ParticleHairKey'], typing.
                             List['ParticleHairKey'],
                             'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'ParticleHairKey'], typing.List['ParticleHairKey'], 'bpy_prop_collection']
     '''
 
     is_exist: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     is_visible: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     lifetime: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     location: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -27142,49 +27142,49 @@ class Particle(bpy_struct):
     particle_keys: typing.Union[typing.Dict[str, 'ParticleKey'], typing.
                                 List['ParticleKey'],
                                 'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'ParticleKey'], typing.List['ParticleKey'], 'bpy_prop_collection']
     '''
 
     prev_angular_velocity: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     prev_location: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     prev_rotation: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     prev_velocity: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     rotation: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     size: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     velocity: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -27202,7 +27202,7 @@ class Particle(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -27213,7 +27213,7 @@ class Particle(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -27233,7 +27233,7 @@ class ParticleBrush(bpy_struct):
     '''
 
     curve: 'CurveMapping' = None
-    ''' 
+    '''
 
     :type: 'CurveMapping'
     '''
@@ -27276,7 +27276,7 @@ class ParticleBrush(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -27287,7 +27287,7 @@ class ParticleBrush(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -27314,7 +27314,7 @@ class ParticleDupliWeight(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -27325,7 +27325,7 @@ class ParticleDupliWeight(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -27339,7 +27339,7 @@ class ParticleEdit(bpy_struct):
     '''
 
     brush: 'ParticleBrush' = None
-    ''' 
+    '''
 
     :type: 'ParticleBrush'
     '''
@@ -27411,7 +27411,7 @@ class ParticleEdit(bpy_struct):
     '''
 
     type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -27454,7 +27454,7 @@ class ParticleEdit(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -27465,7 +27465,7 @@ class ParticleEdit(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -27535,7 +27535,7 @@ class ParticleHairKey(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -27546,7 +27546,7 @@ class ParticleHairKey(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -27591,7 +27591,7 @@ class ParticleKey(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -27602,7 +27602,7 @@ class ParticleKey(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -27646,7 +27646,7 @@ class ParticleSettingsTextureSlots(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -27657,7 +27657,7 @@ class ParticleSettingsTextureSlots(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -27671,13 +27671,13 @@ class ParticleSystem(bpy_struct):
     '''
 
     active_particle_target: 'ParticleTarget' = None
-    ''' 
+    '''
 
     :type: 'ParticleTarget'
     '''
 
     active_particle_target_index: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -27830,7 +27830,7 @@ class ParticleSystem(bpy_struct):
     '''
 
     point_cache: 'PointCache' = None
-    ''' 
+    '''
 
     :type: 'PointCache'
     '''
@@ -28013,7 +28013,7 @@ class ParticleSystem(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -28024,7 +28024,7 @@ class ParticleSystem(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -28051,7 +28051,7 @@ class ParticleSystems(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -28062,7 +28062,7 @@ class ParticleSystems(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -28076,13 +28076,13 @@ class ParticleTarget(bpy_struct):
     '''
 
     alliance: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     duration: float = None
-    ''' 
+    '''
 
     :type: float
     '''
@@ -28112,14 +28112,14 @@ class ParticleTarget(bpy_struct):
     '''
 
     time: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -28130,7 +28130,7 @@ class ParticleTarget(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -28144,7 +28144,7 @@ class PathCompare(bpy_struct):
     '''
 
     path: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -28157,7 +28157,7 @@ class PathCompare(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -28168,7 +28168,7 @@ class PathCompare(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -28192,14 +28192,14 @@ class PathCompareCollection(bpy_struct):
     def remove(cls, pathcmp: 'PathCompare'):
         ''' Remove path
 
-        :param pathcmp: 
+        :param pathcmp:
         :type pathcmp: 'PathCompare'
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -28210,7 +28210,7 @@ class PathCompareCollection(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -28266,25 +28266,25 @@ class PointCache(bpy_struct):
     '''
 
     is_baked: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     is_baking: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     is_frame_skip: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     is_outdated: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -28298,7 +28298,7 @@ class PointCache(bpy_struct):
     point_caches: typing.Union[typing.Dict[str, 'PointCacheItem'], typing.
                                List['PointCacheItem'], 'bpy_prop_collection',
                                'PointCaches'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'PointCacheItem'], typing.List['PointCacheItem'], 'bpy_prop_collection', 'PointCaches']
     '''
@@ -28323,7 +28323,7 @@ class PointCache(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -28334,7 +28334,7 @@ class PointCache(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -28390,25 +28390,25 @@ class PointCacheItem(bpy_struct):
     '''
 
     is_baked: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     is_baking: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     is_frame_skip: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     is_outdated: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -28439,7 +28439,7 @@ class PointCacheItem(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -28450,7 +28450,7 @@ class PointCacheItem(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -28464,14 +28464,14 @@ class PointCaches(bpy_struct):
     '''
 
     active_index: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -28482,7 +28482,7 @@ class PointCaches(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -28507,7 +28507,7 @@ class PolygonFloatProperties(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -28518,7 +28518,7 @@ class PolygonFloatProperties(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -28543,7 +28543,7 @@ class PolygonIntProperties(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -28554,7 +28554,7 @@ class PolygonIntProperties(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -28580,7 +28580,7 @@ class PolygonStringProperties(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -28591,7 +28591,7 @@ class PolygonStringProperties(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -28670,7 +28670,7 @@ class Pose(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -28681,7 +28681,7 @@ class Pose(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -28919,7 +28919,7 @@ class PoseBone(bpy_struct):
     '''
 
     location: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -28997,7 +28997,7 @@ class PoseBone(bpy_struct):
     '''
 
     name: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -29033,7 +29033,7 @@ class PoseBone(bpy_struct):
     '''
 
     scale: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -29162,7 +29162,7 @@ class PoseBone(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -29173,7 +29173,7 @@ class PoseBone(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -29232,7 +29232,7 @@ class PoseBoneConstraints(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -29243,7 +29243,7 @@ class PoseBoneConstraints(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -29264,13 +29264,13 @@ class Preferences(bpy_struct):
 
     addons: typing.Union[typing.Dict[str, 'Addon'], typing.
                          List['Addon'], 'bpy_prop_collection', 'Addons'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'Addon'], typing.List['Addon'], 'bpy_prop_collection', 'Addons']
     '''
 
     app_template: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -29278,7 +29278,7 @@ class Preferences(bpy_struct):
     autoexec_paths: typing.Union[typing.Dict[str, 'PathCompare'], typing.
                                  List['PathCompare'], 'bpy_prop_collection',
                                  'PathCompareCollection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'PathCompare'], typing.List['PathCompare'], 'bpy_prop_collection', 'PathCompareCollection']
     '''
@@ -29322,7 +29322,7 @@ class Preferences(bpy_struct):
     studio_lights: typing.Union[typing.Dict[str, 'StudioLight'], typing.
                                 List['StudioLight'], 'bpy_prop_collection',
                                 'StudioLights'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'StudioLight'], typing.List['StudioLight'], 'bpy_prop_collection', 'StudioLights']
     '''
@@ -29335,14 +29335,14 @@ class Preferences(bpy_struct):
 
     themes: typing.Union[typing.Dict[str, 'Theme'], typing.
                          List['Theme'], 'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'Theme'], typing.List['Theme'], 'bpy_prop_collection']
     '''
 
     ui_styles: typing.Union[typing.Dict[str, 'ThemeStyle'], typing.
                             List['ThemeStyle'], 'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'ThemeStyle'], typing.List['ThemeStyle'], 'bpy_prop_collection']
     '''
@@ -29367,7 +29367,7 @@ class Preferences(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -29378,7 +29378,7 @@ class Preferences(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -29651,7 +29651,7 @@ class PreferencesEdit(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -29662,7 +29662,7 @@ class PreferencesEdit(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -29731,7 +29731,7 @@ class PreferencesExperimental(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -29742,7 +29742,7 @@ class PreferencesExperimental(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -29770,7 +29770,7 @@ class PreferencesFilePaths(bpy_struct):
     asset_libraries: typing.Union[typing.Dict[str, 'UserAssetLibrary'], typing.
                                   List['UserAssetLibrary'],
                                   'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'UserAssetLibrary'], typing.List['UserAssetLibrary'], 'bpy_prop_collection']
     '''
@@ -29915,7 +29915,7 @@ class PreferencesFilePaths(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -29926,7 +29926,7 @@ class PreferencesFilePaths(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -30024,37 +30024,37 @@ class PreferencesInput(bpy_struct):
     '''
 
     ndof_panx_invert_axis: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     ndof_pany_invert_axis: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     ndof_panz_invert_axis: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     ndof_rotx_invert_axis: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     ndof_roty_invert_axis: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     ndof_rotz_invert_axis: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -30144,7 +30144,7 @@ class PreferencesInput(bpy_struct):
     '''
 
     use_ndof: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -30205,7 +30205,7 @@ class PreferencesInput(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -30216,7 +30216,7 @@ class PreferencesInput(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -30236,14 +30236,14 @@ class PreferencesKeymap(bpy_struct):
     '''
 
     show_ui_keyconfig: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -30254,7 +30254,7 @@ class PreferencesKeymap(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -30304,7 +30304,7 @@ class PreferencesSystem(bpy_struct):
     '''
 
     dpi: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -30352,7 +30352,7 @@ class PreferencesSystem(bpy_struct):
     '''
 
     pixel_size: float = None
-    ''' 
+    '''
 
     :type: float
     '''
@@ -30475,7 +30475,7 @@ class PreferencesSystem(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -30486,7 +30486,7 @@ class PreferencesSystem(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -30843,7 +30843,7 @@ class PreferencesView(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -30854,7 +30854,7 @@ class PreferencesView(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -31013,7 +31013,7 @@ class Property(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -31024,7 +31024,7 @@ class Property(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -31045,7 +31045,7 @@ class PropertyGroup(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -31056,7 +31056,7 @@ class PropertyGroup(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -31072,43 +31072,43 @@ class PropertyGroupItem(bpy_struct):
     collection: typing.Union[typing.Dict[str, 'PropertyGroup'], typing.
                              List['PropertyGroup'],
                              'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'PropertyGroup'], typing.List['PropertyGroup'], 'bpy_prop_collection']
     '''
 
     double: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     double_array: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     float: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     float_array: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     group: 'PropertyGroup' = None
-    ''' 
+    '''
 
     :type: 'PropertyGroup'
     '''
 
     id: 'ID' = None
-    ''' 
+    '''
 
     :type: 'ID'
     '''
@@ -31116,32 +31116,32 @@ class PropertyGroupItem(bpy_struct):
     idp_array: typing.Union[typing.Dict[str, 'PropertyGroup'], typing.
                             List['PropertyGroup'],
                             'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'PropertyGroup'], typing.List['PropertyGroup'], 'bpy_prop_collection']
     '''
 
     int: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     int_array: typing.List[int] = None
-    ''' 
+    '''
 
     :type: typing.List[int]
     '''
 
     string: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -31152,7 +31152,7 @@ class PropertyGroupItem(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -31221,7 +31221,7 @@ class Region(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -31232,7 +31232,7 @@ class Region(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -31246,7 +31246,7 @@ class RegionView3D(bpy_struct):
     '''
 
     clip_planes: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -31258,7 +31258,7 @@ class RegionView3D(bpy_struct):
     '''
 
     is_perspective: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -31288,7 +31288,7 @@ class RegionView3D(bpy_struct):
     '''
 
     use_clip_planes: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -31349,7 +31349,7 @@ class RegionView3D(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -31360,7 +31360,7 @@ class RegionView3D(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -31374,13 +31374,13 @@ class RenderEngine(bpy_struct):
     '''
 
     bl_idname: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     bl_label: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -31440,61 +31440,61 @@ class RenderEngine(bpy_struct):
     '''
 
     camera_override: 'Object' = None
-    ''' 
+    '''
 
     :type: 'Object'
     '''
 
     is_animation: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     is_preview: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     layer_override: typing.List[bool] = None
-    ''' 
+    '''
 
     :type: typing.List[bool]
     '''
 
     render: 'RenderSettings' = None
-    ''' 
+    '''
 
     :type: 'RenderSettings'
     '''
 
     resolution_x: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     resolution_y: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     tile_x: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     tile_y: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     use_highlight_tiles: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -31502,9 +31502,9 @@ class RenderEngine(bpy_struct):
     def update(self, data: 'BlendData' = None, depsgraph: 'Depsgraph' = None):
         ''' Export scene data for render
 
-        :param data: 
+        :param data:
         :type data: 'BlendData'
-        :param depsgraph: 
+        :param depsgraph:
         :type depsgraph: 'Depsgraph'
         '''
         pass
@@ -31512,7 +31512,7 @@ class RenderEngine(bpy_struct):
     def render(self, depsgraph: 'Depsgraph'):
         ''' Render scene into an image
 
-        :param depsgraph: 
+        :param depsgraph:
         :type depsgraph: 'Depsgraph'
         '''
         pass
@@ -31522,9 +31522,9 @@ class RenderEngine(bpy_struct):
              height: int):
         ''' Bake passes
 
-        :param depsgraph: 
+        :param depsgraph:
         :type depsgraph: 'Depsgraph'
-        :param object: 
+        :param object:
         :type object: 'Object'
         :param pass_type: Pass, Pass to bake
         :type pass_type: typing.Union[str, int]
@@ -31540,9 +31540,9 @@ class RenderEngine(bpy_struct):
     def view_update(self, context: 'Context', depsgraph: 'Depsgraph'):
         ''' Update on data changes for viewport render
 
-        :param context: 
+        :param context:
         :type context: 'Context'
-        :param depsgraph: 
+        :param depsgraph:
         :type depsgraph: 'Depsgraph'
         '''
         pass
@@ -31550,9 +31550,9 @@ class RenderEngine(bpy_struct):
     def view_draw(self, context: 'Context', depsgraph: 'Depsgraph'):
         ''' Draw viewport render
 
-        :param context: 
+        :param context:
         :type context: 'Context'
-        :param depsgraph: 
+        :param depsgraph:
         :type depsgraph: 'Depsgraph'
         '''
         pass
@@ -31560,7 +31560,7 @@ class RenderEngine(bpy_struct):
     def update_script_node(self, node: 'Node' = None):
         ''' Compile shader script node
 
-        :param node: 
+        :param node:
         :type node: 'Node'
         '''
         pass
@@ -31570,9 +31570,9 @@ class RenderEngine(bpy_struct):
                              renderlayer: 'ViewLayer' = None):
         ''' Update the render passes that will be generated
 
-        :param scene: 
+        :param scene:
         :type scene: 'Scene'
-        :param renderlayer: 
+        :param renderlayer:
         :type renderlayer: 'ViewLayer'
         '''
         pass
@@ -31693,7 +31693,7 @@ class RenderEngine(bpy_struct):
                        use_spherical_stereo: bool = False) -> float:
         ''' camera_shift_x
 
-        :param camera: 
+        :param camera:
         :type camera: 'Object'
         :param use_spherical_stereo: Spherical Stereo
         :type use_spherical_stereo: bool
@@ -31708,7 +31708,7 @@ class RenderEngine(bpy_struct):
                             ) -> typing.List[float]:
         ''' camera_model_matrix
 
-        :param camera: 
+        :param camera:
         :type camera: 'Object'
         :param use_spherical_stereo: Spherical Stereo
         :type use_spherical_stereo: bool
@@ -31720,7 +31720,7 @@ class RenderEngine(bpy_struct):
     def use_spherical_stereo(self, camera: 'Object') -> bool:
         ''' use_spherical_stereo
 
-        :param camera: 
+        :param camera:
         :type camera: 'Object'
         :rtype: bool
         :return: Spherical Stereo
@@ -31789,7 +31789,7 @@ class RenderEngine(bpy_struct):
     def bind_display_space_shader(self, scene: 'Scene'):
         ''' Bind GLSL fragment shader that converts linear colors to display space colors using scene color management settings
 
-        :param scene: 
+        :param scene:
         :type scene: 'Scene'
         '''
         pass
@@ -31803,7 +31803,7 @@ class RenderEngine(bpy_struct):
     def support_display_space_shader(self, scene: 'Scene') -> bool:
         ''' Test if GLSL display space shader is supported for the combination of graphics card and scene settings
 
-        :param scene: 
+        :param scene:
         :type scene: 'Scene'
         :rtype: bool
         :return: Supported
@@ -31813,7 +31813,7 @@ class RenderEngine(bpy_struct):
     def get_preview_pixel_size(self, scene: 'Scene') -> int:
         ''' Get the pixel size that should be used for preview rendering
 
-        :param scene: 
+        :param scene:
         :type scene: 'Scene'
         :rtype: int
         :return: Pixel Size
@@ -31831,9 +31831,9 @@ class RenderEngine(bpy_struct):
                       type: typing.Union[str, int]):
         ''' Register a render pass that will be part of the render with the current settings
 
-        :param scene: 
+        :param scene:
         :type scene: 'Scene'
-        :param view_layer: 
+        :param view_layer:
         :type view_layer: 'ViewLayer'
         :param name: Name
         :type name: str
@@ -31848,7 +31848,7 @@ class RenderEngine(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -31859,7 +31859,7 @@ class RenderEngine(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -31884,7 +31884,7 @@ class RenderLayer(bpy_struct):
     passes: typing.Union[typing.Dict[str, 'RenderPass'], typing.
                          List['RenderPass'], 'bpy_prop_collection',
                          'RenderPasses'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'RenderPass'], typing.List['RenderPass'], 'bpy_prop_collection', 'RenderPasses']
     '''
@@ -32107,7 +32107,7 @@ class RenderLayer(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -32118,7 +32118,7 @@ class RenderLayer(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -32129,44 +32129,44 @@ class RenderLayer(bpy_struct):
 
 class RenderPass(bpy_struct):
     channel_id: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     channels: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     fullname: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     name: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     rect: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     view_id: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -32177,7 +32177,7 @@ class RenderPass(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -32217,7 +32217,7 @@ class RenderPasses(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -32228,7 +32228,7 @@ class RenderPasses(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -32243,26 +32243,26 @@ class RenderResult(bpy_struct):
 
     layers: typing.Union[typing.Dict[str, 'RenderLayer'], typing.
                          List['RenderLayer'], 'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'RenderLayer'], typing.List['RenderLayer'], 'bpy_prop_collection']
     '''
 
     resolution_x: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     resolution_y: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     views: typing.Union[typing.Dict[str, 'RenderView'], typing.
                         List['RenderView'], 'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'RenderView'], typing.List['RenderView'], 'bpy_prop_collection']
     '''
@@ -32287,7 +32287,7 @@ class RenderResult(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -32298,7 +32298,7 @@ class RenderResult(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -32312,7 +32312,7 @@ class RenderSettings(bpy_struct):
     '''
 
     bake: 'BakeSettings' = None
-    ''' 
+    '''
 
     :type: 'BakeSettings'
     '''
@@ -32456,7 +32456,7 @@ class RenderSettings(bpy_struct):
     '''
 
     image_settings: 'ImageFormatSettings' = None
-    ''' 
+    '''
 
     :type: 'ImageFormatSettings'
     '''
@@ -32644,7 +32644,7 @@ class RenderSettings(bpy_struct):
     stereo_views: typing.Union[typing.Dict[str, 'SceneRenderView'], typing.
                                List['SceneRenderView'],
                                'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'SceneRenderView'], typing.List['SceneRenderView'], 'bpy_prop_collection']
     '''
@@ -32922,7 +32922,7 @@ class RenderSettings(bpy_struct):
     views: typing.Union[typing.Dict[str, 'SceneRenderView'], typing.
                         List['SceneRenderView'], 'bpy_prop_collection',
                         'RenderViews'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'SceneRenderView'], typing.List['SceneRenderView'], 'bpy_prop_collection', 'RenderViews']
     '''
@@ -32952,7 +32952,7 @@ class RenderSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -32963,7 +32963,7 @@ class RenderSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -32992,7 +32992,7 @@ class RenderSlot(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -33003,7 +33003,7 @@ class RenderSlot(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -33040,7 +33040,7 @@ class RenderSlots(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -33051,7 +33051,7 @@ class RenderSlots(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -33062,14 +33062,14 @@ class RenderSlots(bpy_struct):
 
 class RenderView(bpy_struct):
     name: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -33080,7 +33080,7 @@ class RenderView(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -33125,7 +33125,7 @@ class RenderViews(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -33136,7 +33136,7 @@ class RenderViews(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -33463,7 +33463,7 @@ class RigidBodyConstraint(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -33474,7 +33474,7 @@ class RigidBodyConstraint(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -33597,7 +33597,7 @@ class RigidBodyObject(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -33608,7 +33608,7 @@ class RigidBodyObject(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -33634,7 +33634,7 @@ class RigidBodyWorld(bpy_struct):
     '''
 
     effector_weights: 'EffectorWeights' = None
-    ''' 
+    '''
 
     :type: 'EffectorWeights'
     '''
@@ -33646,7 +33646,7 @@ class RigidBodyWorld(bpy_struct):
     '''
 
     point_cache: 'PointCache' = None
-    ''' 
+    '''
 
     :type: 'PointCache'
     '''
@@ -33681,16 +33681,16 @@ class RigidBodyWorld(bpy_struct):
 
         :param object: Rigidbody object with a convex collision shape
         :type object: 'Object'
-        :param start: 
+        :param start:
         :type start: typing.List[float]
-        :param end: 
+        :param end:
         :type end: typing.List[float]
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -33701,7 +33701,7 @@ class RigidBodyWorld(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -33836,7 +33836,7 @@ class SPHFluidSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -33847,7 +33847,7 @@ class SPHFluidSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -33916,7 +33916,7 @@ class SceneDisplay(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -33927,7 +33927,7 @@ class SceneDisplay(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -34344,7 +34344,7 @@ class SceneEEVEE(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -34355,7 +34355,7 @@ class SceneEEVEE(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -34376,7 +34376,7 @@ class SceneGpencil(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -34387,7 +34387,7 @@ class SceneGpencil(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -34402,7 +34402,7 @@ class SceneObjects(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -34413,7 +34413,7 @@ class SceneObjects(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -34452,7 +34452,7 @@ class SceneRenderView(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -34463,7 +34463,7 @@ class SceneRenderView(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -34507,14 +34507,14 @@ class Scopes(bpy_struct):
     '''
 
     waveform_mode: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -34525,7 +34525,7 @@ class Scopes(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -34587,13 +34587,13 @@ class Sequence(bpy_struct):
     '''
 
     frame_offset_end: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     frame_offset_start: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -34605,13 +34605,13 @@ class Sequence(bpy_struct):
     '''
 
     frame_still_end: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     frame_still_start: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -34637,7 +34637,7 @@ class Sequence(bpy_struct):
     '''
 
     name: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -34649,19 +34649,19 @@ class Sequence(bpy_struct):
     '''
 
     select: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     select_left_handle: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     select_right_handle: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -34673,7 +34673,7 @@ class Sequence(bpy_struct):
     '''
 
     type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -34752,7 +34752,7 @@ class Sequence(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -34763,7 +34763,7 @@ class Sequence(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -34814,7 +34814,7 @@ class SequenceColorBalanceData(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -34825,7 +34825,7 @@ class SequenceColorBalanceData(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -34864,7 +34864,7 @@ class SequenceCrop(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -34875,7 +34875,7 @@ class SequenceCrop(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -34908,7 +34908,7 @@ class SequenceEditor(bpy_struct):
     '''
 
     proxy_dir: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -34995,7 +34995,7 @@ class SequenceEditor(bpy_struct):
     '''
 
     use_overlay_lock: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -35008,7 +35008,7 @@ class SequenceEditor(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -35019,7 +35019,7 @@ class SequenceEditor(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -35052,7 +35052,7 @@ class SequenceElement(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -35063,7 +35063,7 @@ class SequenceElement(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -35096,7 +35096,7 @@ class SequenceElements(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -35107,7 +35107,7 @@ class SequenceElements(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -35151,7 +35151,7 @@ class SequenceModifier(bpy_struct):
     '''
 
     name: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -35163,14 +35163,14 @@ class SequenceModifier(bpy_struct):
     '''
 
     type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -35181,7 +35181,7 @@ class SequenceModifier(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -35223,7 +35223,7 @@ class SequenceModifiers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -35234,7 +35234,7 @@ class SequenceModifiers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -35333,7 +35333,7 @@ class SequenceProxy(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -35344,7 +35344,7 @@ class SequenceProxy(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -35389,7 +35389,7 @@ class SequenceTransform(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -35400,7 +35400,7 @@ class SequenceTransform(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -35418,7 +35418,7 @@ class SequencerToolSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -35429,7 +35429,7 @@ class SequencerToolSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -35615,7 +35615,7 @@ class SequencesMeta(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -35626,7 +35626,7 @@ class SequencesMeta(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -35812,7 +35812,7 @@ class SequencesTopLevel(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -35823,7 +35823,7 @@ class SequencesTopLevel(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -35874,7 +35874,7 @@ class ShaderFx(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -35885,7 +35885,7 @@ class ShaderFx(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -35900,7 +35900,7 @@ class ShapeKey(bpy_struct):
 
     data: typing.Union[typing.Dict[str, 'UnknownType'], typing.
                        List['UnknownType'], 'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'UnknownType'], typing.List['UnknownType'], 'bpy_prop_collection']
     '''
@@ -35985,7 +35985,7 @@ class ShapeKey(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -35996,7 +35996,7 @@ class ShapeKey(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -36010,19 +36010,19 @@ class ShapeKeyBezierPoint(bpy_struct):
     '''
 
     co: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_left: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_right: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -36041,7 +36041,7 @@ class ShapeKeyBezierPoint(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -36052,7 +36052,7 @@ class ShapeKeyBezierPoint(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -36066,7 +36066,7 @@ class ShapeKeyCurvePoint(bpy_struct):
     '''
 
     co: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -36085,7 +36085,7 @@ class ShapeKeyCurvePoint(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -36096,7 +36096,7 @@ class ShapeKeyCurvePoint(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -36110,14 +36110,14 @@ class ShapeKeyPoint(bpy_struct):
     '''
 
     co: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -36128,7 +36128,7 @@ class ShapeKeyPoint(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -36202,7 +36202,7 @@ class SoftBodySettings(bpy_struct):
     '''
 
     effector_weights: 'EffectorWeights' = None
-    ''' 
+    '''
 
     :type: 'EffectorWeights'
     '''
@@ -36407,7 +36407,7 @@ class SoftBodySettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -36418,7 +36418,7 @@ class SoftBodySettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -36438,7 +36438,7 @@ class Space(bpy_struct):
     '''
 
     show_region_header: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -36451,7 +36451,7 @@ class Space(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -36462,7 +36462,7 @@ class Space(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -36475,7 +36475,7 @@ class Space(bpy_struct):
         ''' Add a new draw handler to this space type. It will be called every time the specified region in the space type will be drawn. Note: All arguments are positional only for now.
 
         :param callback: A function that will be called when the region is drawn. It gets the specified arguments as input.
-        :type callback: 
+        :type callback:
         :param args: Arguments that will be passed to the callback.
         :type args: tuple
         :param region_type: bpy.types.Region.type )
@@ -36511,7 +36511,7 @@ class SpaceImageOverlay(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -36522,7 +36522,7 @@ class SpaceImageOverlay(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -36536,7 +36536,7 @@ class SpaceNodeEditorPath(bpy_struct):
     '''
 
     to_string: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -36573,7 +36573,7 @@ class SpaceNodeEditorPath(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -36584,7 +36584,7 @@ class SpaceNodeEditorPath(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -36683,7 +36683,7 @@ class SpaceUVEditor(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -36694,7 +36694,7 @@ class SpaceUVEditor(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -36729,7 +36729,7 @@ class Spline(bpy_struct):
     '''
 
     material_index: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -36850,7 +36850,7 @@ class Spline(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -36861,7 +36861,7 @@ class Spline(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -36884,7 +36884,7 @@ class SplineBezierPoints(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -36895,7 +36895,7 @@ class SplineBezierPoints(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -36952,7 +36952,7 @@ class SplinePoint(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -36963,7 +36963,7 @@ class SplinePoint(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -36986,7 +36986,7 @@ class SplinePoints(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -36997,7 +36997,7 @@ class SplinePoints(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -37018,7 +37018,7 @@ class SpreadsheetContext(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -37029,7 +37029,7 @@ class SpreadsheetContext(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -37057,7 +37057,7 @@ class SpreadsheetContextPath(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -37068,7 +37068,7 @@ class SpreadsheetContextPath(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -37082,7 +37082,7 @@ class Stereo3dDisplay(bpy_struct):
     '''
 
     anaglyph_type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -37094,7 +37094,7 @@ class Stereo3dDisplay(bpy_struct):
     '''
 
     interlace_type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -37113,7 +37113,7 @@ class Stereo3dDisplay(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -37124,7 +37124,7 @@ class Stereo3dDisplay(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -37138,7 +37138,7 @@ class Stereo3dFormat(bpy_struct):
     '''
 
     anaglyph_type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -37150,7 +37150,7 @@ class Stereo3dFormat(bpy_struct):
     '''
 
     interlace_type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -37175,7 +37175,7 @@ class Stereo3dFormat(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -37186,7 +37186,7 @@ class Stereo3dFormat(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -37200,14 +37200,14 @@ class StringAttributeValue(bpy_struct):
     '''
 
     value: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -37218,7 +37218,7 @@ class StringAttributeValue(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -37245,7 +37245,7 @@ class Struct(bpy_struct):
 
     functions: typing.Union[typing.Dict[str, 'Function'], typing.
                             List['Function'], 'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'Function'], typing.List['Function'], 'bpy_prop_collection']
     '''
@@ -37297,7 +37297,7 @@ class Struct(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -37308,7 +37308,7 @@ class Struct(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -37328,13 +37328,13 @@ class StudioLight(bpy_struct):
     '''
 
     index: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     is_user_defined: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -37346,13 +37346,13 @@ class StudioLight(bpy_struct):
     '''
 
     name: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     path: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -37378,20 +37378,20 @@ class StudioLight(bpy_struct):
     '''
 
     spherical_harmonics_coefficients: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -37402,7 +37402,7 @@ class StudioLight(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -37453,7 +37453,7 @@ class StudioLights(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -37464,7 +37464,7 @@ class StudioLights(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -37484,19 +37484,19 @@ class TexMapping(bpy_struct):
     '''
 
     mapping_x: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     mapping_y: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     mapping_z: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -37514,19 +37514,19 @@ class TexMapping(bpy_struct):
     '''
 
     rotation: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     scale: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     translation: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -37551,7 +37551,7 @@ class TexMapping(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -37562,7 +37562,7 @@ class TexMapping(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -37589,7 +37589,7 @@ class TexPaintSlot(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -37600,7 +37600,7 @@ class TexPaintSlot(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -37614,32 +37614,32 @@ class TextBox(bpy_struct):
     '''
 
     height: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     width: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     x: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     y: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -37650,7 +37650,7 @@ class TextBox(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -37670,38 +37670,38 @@ class TextCharacterFormat(bpy_struct):
     '''
 
     material_index: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     use_bold: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     use_italic: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     use_small_caps: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     use_underline: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -37712,7 +37712,7 @@ class TextCharacterFormat(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -37733,7 +37733,7 @@ class TextLine(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -37744,7 +37744,7 @@ class TextLine(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -37807,7 +37807,7 @@ class TextureSlot(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -37818,7 +37818,7 @@ class TextureSlot(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -37834,13 +37834,13 @@ class Theme(bpy_struct):
     bone_color_sets: typing.Union[
         typing.Dict[str, 'ThemeBoneColorSet'], typing.
         List['ThemeBoneColorSet'], 'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'ThemeBoneColorSet'], typing.List['ThemeBoneColorSet'], 'bpy_prop_collection']
     '''
 
     clip_editor: 'ThemeClipEditor' = None
-    ''' 
+    '''
 
     :type: 'ThemeClipEditor'
     '''
@@ -37848,43 +37848,43 @@ class Theme(bpy_struct):
     collection_color: typing.Union[
         typing.Dict[str, 'ThemeCollectionColor'], typing.
         List['ThemeCollectionColor'], 'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'ThemeCollectionColor'], typing.List['ThemeCollectionColor'], 'bpy_prop_collection']
     '''
 
     console: 'ThemeConsole' = None
-    ''' 
+    '''
 
     :type: 'ThemeConsole'
     '''
 
     dopesheet_editor: 'ThemeDopeSheet' = None
-    ''' 
+    '''
 
     :type: 'ThemeDopeSheet'
     '''
 
     file_browser: 'ThemeFileBrowser' = None
-    ''' 
+    '''
 
     :type: 'ThemeFileBrowser'
     '''
 
     graph_editor: 'ThemeGraphEditor' = None
-    ''' 
+    '''
 
     :type: 'ThemeGraphEditor'
     '''
 
     image_editor: 'ThemeImageEditor' = None
-    ''' 
+    '''
 
     :type: 'ThemeImageEditor'
     '''
 
     info: 'ThemeInfo' = None
-    ''' 
+    '''
 
     :type: 'ThemeInfo'
     '''
@@ -37896,86 +37896,86 @@ class Theme(bpy_struct):
     '''
 
     nla_editor: 'ThemeNLAEditor' = None
-    ''' 
+    '''
 
     :type: 'ThemeNLAEditor'
     '''
 
     node_editor: 'ThemeNodeEditor' = None
-    ''' 
+    '''
 
     :type: 'ThemeNodeEditor'
     '''
 
     outliner: 'ThemeOutliner' = None
-    ''' 
+    '''
 
     :type: 'ThemeOutliner'
     '''
 
     preferences: 'ThemePreferences' = None
-    ''' 
+    '''
 
     :type: 'ThemePreferences'
     '''
 
     properties: 'ThemeProperties' = None
-    ''' 
+    '''
 
     :type: 'ThemeProperties'
     '''
 
     sequence_editor: 'ThemeSequenceEditor' = None
-    ''' 
+    '''
 
     :type: 'ThemeSequenceEditor'
     '''
 
     spreadsheet: 'ThemeSpreadsheet' = None
-    ''' 
+    '''
 
     :type: 'ThemeSpreadsheet'
     '''
 
     statusbar: 'ThemeStatusBar' = None
-    ''' 
+    '''
 
     :type: 'ThemeStatusBar'
     '''
 
     text_editor: 'ThemeTextEditor' = None
-    ''' 
+    '''
 
     :type: 'ThemeTextEditor'
     '''
 
     theme_area: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     topbar: 'ThemeTopBar' = None
-    ''' 
+    '''
 
     :type: 'ThemeTopBar'
     '''
 
     user_interface: 'ThemeUserInterface' = None
-    ''' 
+    '''
 
     :type: 'ThemeUserInterface'
     '''
 
     view_3d: 'ThemeView3D' = None
-    ''' 
+    '''
 
     :type: 'ThemeView3D'
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -37986,7 +37986,7 @@ class Theme(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -38025,7 +38025,7 @@ class ThemeBoneColorSet(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -38036,7 +38036,7 @@ class ThemeBoneColorSet(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -38062,79 +38062,79 @@ class ThemeClipEditor(bpy_struct):
     '''
 
     frame_current: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     grid: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_align: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_auto: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_auto_clamped: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_free: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_sel_align: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_sel_auto: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_sel_auto_clamped: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_sel_free: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_vertex: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_vertex_select: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_vertex_size: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -38158,13 +38158,13 @@ class ThemeClipEditor(bpy_struct):
     '''
 
     metadatabg: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     metadatatext: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -38212,38 +38212,38 @@ class ThemeClipEditor(bpy_struct):
     '''
 
     strips: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     strips_selected: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     time_marker_line: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     time_marker_line_selected: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     time_scrub_background: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -38254,7 +38254,7 @@ class ThemeClipEditor(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -38275,7 +38275,7 @@ class ThemeCollectionColor(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -38286,7 +38286,7 @@ class ThemeCollectionColor(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -38300,37 +38300,37 @@ class ThemeConsole(bpy_struct):
     '''
 
     cursor: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     line_error: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     line_info: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     line_input: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     line_output: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     select: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -38343,7 +38343,7 @@ class ThemeConsole(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -38354,7 +38354,7 @@ class ThemeConsole(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -38368,49 +38368,49 @@ class ThemeDopeSheet(bpy_struct):
     '''
 
     active_channels_group: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     channel_group: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     channels: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     channels_selected: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     dopesheet_channel: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     dopesheet_subchannel: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     frame_current: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     grid: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -38500,13 +38500,13 @@ class ThemeDopeSheet(bpy_struct):
     '''
 
     long_key: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     long_key_selected: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -38536,38 +38536,38 @@ class ThemeDopeSheet(bpy_struct):
     '''
 
     time_marker_line: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     time_marker_line_selected: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     time_scrub_background: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     value_sliders: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     view_sliders: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -38578,7 +38578,7 @@ class ThemeDopeSheet(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -38598,7 +38598,7 @@ class ThemeFileBrowser(bpy_struct):
     '''
 
     selected_file: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -38611,7 +38611,7 @@ class ThemeFileBrowser(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -38622,7 +38622,7 @@ class ThemeFileBrowser(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -38654,7 +38654,7 @@ class ThemeFontStyle(bpy_struct):
     '''
 
     shadow_alpha: float = None
-    ''' 
+    '''
 
     :type: float
     '''
@@ -38679,7 +38679,7 @@ class ThemeFontStyle(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -38690,7 +38690,7 @@ class ThemeFontStyle(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -38710,20 +38710,20 @@ class ThemeGradientColors(bpy_struct):
     '''
 
     gradient: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     high_gradient: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -38734,7 +38734,7 @@ class ThemeGradientColors(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -38748,127 +38748,127 @@ class ThemeGraphEditor(bpy_struct):
     '''
 
     active_channels_group: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     channel_group: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     channels_region: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     dopesheet_channel: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     dopesheet_subchannel: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     frame_current: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     grid: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_align: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_auto: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_auto_clamped: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_free: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_sel_align: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_sel_auto: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_sel_auto_clamped: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_sel_free: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_sel_vect: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_vect: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_vertex: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_vertex_select: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_vertex_size: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     lastsel_point: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -38892,68 +38892,68 @@ class ThemeGraphEditor(bpy_struct):
     '''
 
     time_marker_line: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     time_marker_line_selected: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     time_scrub_background: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     vertex: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     vertex_active: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     vertex_bevel: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     vertex_select: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     vertex_size: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     vertex_unreferenced: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     window_sliders: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -38964,7 +38964,7 @@ class ThemeGraphEditor(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -38978,199 +38978,199 @@ class ThemeImageEditor(bpy_struct):
     '''
 
     edge_select: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     editmesh_active: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     face: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     face_back: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     face_dot: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     face_front: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     face_select: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     facedot_size: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     frame_current: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     freestyle_face_mark: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     grid: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_align: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_auto: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_auto_clamped: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_free: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_sel_align: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_sel_auto: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_sel_auto_clamped: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_sel_free: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_vertex: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_vertex_select: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_vertex_size: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     metadatabg: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     metadatatext: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     paint_curve_handle: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     paint_curve_pivot: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     preview_stitch_active: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     preview_stitch_edge: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     preview_stitch_face: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     preview_stitch_stitchable: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     preview_stitch_unstitchable: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     preview_stitch_vert: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     scope_back: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -39182,56 +39182,56 @@ class ThemeImageEditor(bpy_struct):
     '''
 
     uv_shadow: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     vertex: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     vertex_active: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     vertex_bevel: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     vertex_select: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     vertex_size: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     vertex_unreferenced: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     wire_edit: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -39242,7 +39242,7 @@ class ThemeImageEditor(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -39347,7 +39347,7 @@ class ThemeInfo(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -39358,7 +39358,7 @@ class ThemeInfo(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -39390,13 +39390,13 @@ class ThemeNLAEditor(bpy_struct):
     '''
 
     frame_current: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     grid: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -39474,19 +39474,19 @@ class ThemeNLAEditor(bpy_struct):
     '''
 
     time_marker_line: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     time_marker_line_selected: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     time_scrub_background: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -39516,14 +39516,14 @@ class ThemeNLAEditor(bpy_struct):
     '''
 
     view_sliders: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -39534,7 +39534,7 @@ class ThemeNLAEditor(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -39548,49 +39548,49 @@ class ThemeNodeEditor(bpy_struct):
     '''
 
     attribute_node: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     color_node: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     converter_node: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     distor_node: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     filter_node: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     frame_node: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     geometry_node: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     grid: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -39602,49 +39602,49 @@ class ThemeNodeEditor(bpy_struct):
     '''
 
     group_node: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     group_socket_node: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     input_node: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     layout_node: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     matte_node: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     node_active: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     node_backdrop: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     node_selected: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -39656,31 +39656,31 @@ class ThemeNodeEditor(bpy_struct):
     '''
 
     output_node: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     pattern_node: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     script_node: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     selected_text: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     shader_node: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -39698,38 +39698,38 @@ class ThemeNodeEditor(bpy_struct):
     '''
 
     texture_node: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     vector_node: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     wire: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     wire_inner: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     wire_select: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -39740,7 +39740,7 @@ class ThemeNodeEditor(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -39754,25 +39754,25 @@ class ThemeOutliner(bpy_struct):
     '''
 
     active: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     active_object: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     edited_object: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     match: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -39784,13 +39784,13 @@ class ThemeOutliner(bpy_struct):
     '''
 
     selected_highlight: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     selected_object: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -39803,7 +39803,7 @@ class ThemeOutliner(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -39814,7 +39814,7 @@ class ThemeOutliner(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -39828,26 +39828,26 @@ class ThemePanelColors(bpy_struct):
     '''
 
     back: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     header: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     sub_back: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -39858,7 +39858,7 @@ class ThemePanelColors(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -39879,7 +39879,7 @@ class ThemePreferences(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -39890,7 +39890,7 @@ class ThemePreferences(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -39904,13 +39904,13 @@ class ThemeProperties(bpy_struct):
     '''
 
     active_modifier: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     match: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -39923,7 +39923,7 @@ class ThemeProperties(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -39934,7 +39934,7 @@ class ThemeProperties(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -39948,97 +39948,97 @@ class ThemeSequenceEditor(bpy_struct):
     '''
 
     active_strip: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     audio_strip: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     color_strip: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     draw_action: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     effect_strip: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     frame_current: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     grid: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     image_strip: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     keyframe: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     mask_strip: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     meta_strip: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     metadatabg: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     metadatatext: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     movie_strip: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     movieclip_strip: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     preview_back: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -40056,13 +40056,13 @@ class ThemeSequenceEditor(bpy_struct):
     '''
 
     scene_strip: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     selected_strip: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -40074,38 +40074,38 @@ class ThemeSequenceEditor(bpy_struct):
     '''
 
     text_strip: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     time_marker_line: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     time_marker_line_selected: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     time_scrub_background: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     window_sliders: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -40116,7 +40116,7 @@ class ThemeSequenceEditor(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -40127,116 +40127,116 @@ class ThemeSequenceEditor(bpy_struct):
 
 class ThemeSpaceGeneric(bpy_struct):
     back: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     button: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     button_text: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     button_text_hi: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     button_title: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     execution_buts: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     header: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     header_text: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     header_text_hi: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     navigation_bar: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     panelcolors: 'ThemePanelColors' = None
-    ''' 
+    '''
 
     :type: 'ThemePanelColors'
     '''
 
     tab_active: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     tab_back: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     tab_inactive: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     tab_outline: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     text: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     text_hi: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     title: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -40247,7 +40247,7 @@ class ThemeSpaceGeneric(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -40258,116 +40258,116 @@ class ThemeSpaceGeneric(bpy_struct):
 
 class ThemeSpaceGradient(bpy_struct):
     button: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     button_text: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     button_text_hi: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     button_title: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     execution_buts: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     gradients: 'ThemeGradientColors' = None
-    ''' 
+    '''
 
     :type: 'ThemeGradientColors'
     '''
 
     header: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     header_text: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     header_text_hi: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     navigation_bar: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     panelcolors: 'ThemePanelColors' = None
-    ''' 
+    '''
 
     :type: 'ThemePanelColors'
     '''
 
     tab_active: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     tab_back: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     tab_inactive: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     tab_outline: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     text: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     text_hi: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     title: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -40378,7 +40378,7 @@ class ThemeSpaceGradient(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -40389,32 +40389,32 @@ class ThemeSpaceGradient(bpy_struct):
 
 class ThemeSpaceListGeneric(bpy_struct):
     list: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     list_text: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     list_text_hi: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     list_title: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -40425,7 +40425,7 @@ class ThemeSpaceListGeneric(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -40452,7 +40452,7 @@ class ThemeSpreadsheet(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -40463,7 +40463,7 @@ class ThemeSpreadsheet(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -40484,7 +40484,7 @@ class ThemeStatusBar(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -40495,7 +40495,7 @@ class ThemeStatusBar(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -40509,26 +40509,26 @@ class ThemeStyle(bpy_struct):
     '''
 
     panel_title: 'ThemeFontStyle' = None
-    ''' 
+    '''
 
     :type: 'ThemeFontStyle'
     '''
 
     widget: 'ThemeFontStyle' = None
-    ''' 
+    '''
 
     :type: 'ThemeFontStyle'
     '''
 
     widget_label: 'ThemeFontStyle' = None
-    ''' 
+    '''
 
     :type: 'ThemeFontStyle'
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -40539,7 +40539,7 @@ class ThemeStyle(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -40553,25 +40553,25 @@ class ThemeTextEditor(bpy_struct):
     '''
 
     cursor: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     line_numbers: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     line_numbers_background: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     selected_text: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -40583,56 +40583,56 @@ class ThemeTextEditor(bpy_struct):
     '''
 
     syntax_builtin: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     syntax_comment: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     syntax_numbers: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     syntax_preprocessor: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     syntax_reserved: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     syntax_special: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     syntax_string: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     syntax_symbols: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -40643,7 +40643,7 @@ class ThemeTextEditor(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -40664,7 +40664,7 @@ class ThemeTopBar(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -40675,7 +40675,7 @@ class ThemeTopBar(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -40689,19 +40689,19 @@ class ThemeUserInterface(bpy_struct):
     '''
 
     axis_x: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     axis_y: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     axis_z: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -40713,37 +40713,37 @@ class ThemeUserInterface(bpy_struct):
     '''
 
     gizmo_a: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     gizmo_b: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     gizmo_hi: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     gizmo_primary: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     gizmo_secondary: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     gizmo_view_align: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -40761,7 +40761,7 @@ class ThemeUserInterface(bpy_struct):
     '''
 
     icon_collection: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -40773,19 +40773,19 @@ class ThemeUserInterface(bpy_struct):
     '''
 
     icon_modifier: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     icon_object: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     icon_object_data: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -40797,13 +40797,13 @@ class ThemeUserInterface(bpy_struct):
     '''
 
     icon_scene: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     icon_shading: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -40839,127 +40839,127 @@ class ThemeUserInterface(bpy_struct):
     '''
 
     wcol_box: 'ThemeWidgetColors' = None
-    ''' 
+    '''
 
     :type: 'ThemeWidgetColors'
     '''
 
     wcol_list_item: 'ThemeWidgetColors' = None
-    ''' 
+    '''
 
     :type: 'ThemeWidgetColors'
     '''
 
     wcol_menu: 'ThemeWidgetColors' = None
-    ''' 
+    '''
 
     :type: 'ThemeWidgetColors'
     '''
 
     wcol_menu_back: 'ThemeWidgetColors' = None
-    ''' 
+    '''
 
     :type: 'ThemeWidgetColors'
     '''
 
     wcol_menu_item: 'ThemeWidgetColors' = None
-    ''' 
+    '''
 
     :type: 'ThemeWidgetColors'
     '''
 
     wcol_num: 'ThemeWidgetColors' = None
-    ''' 
+    '''
 
     :type: 'ThemeWidgetColors'
     '''
 
     wcol_numslider: 'ThemeWidgetColors' = None
-    ''' 
+    '''
 
     :type: 'ThemeWidgetColors'
     '''
 
     wcol_option: 'ThemeWidgetColors' = None
-    ''' 
+    '''
 
     :type: 'ThemeWidgetColors'
     '''
 
     wcol_pie_menu: 'ThemeWidgetColors' = None
-    ''' 
+    '''
 
     :type: 'ThemeWidgetColors'
     '''
 
     wcol_progress: 'ThemeWidgetColors' = None
-    ''' 
+    '''
 
     :type: 'ThemeWidgetColors'
     '''
 
     wcol_pulldown: 'ThemeWidgetColors' = None
-    ''' 
+    '''
 
     :type: 'ThemeWidgetColors'
     '''
 
     wcol_radio: 'ThemeWidgetColors' = None
-    ''' 
+    '''
 
     :type: 'ThemeWidgetColors'
     '''
 
     wcol_regular: 'ThemeWidgetColors' = None
-    ''' 
+    '''
 
     :type: 'ThemeWidgetColors'
     '''
 
     wcol_scroll: 'ThemeWidgetColors' = None
-    ''' 
+    '''
 
     :type: 'ThemeWidgetColors'
     '''
 
     wcol_state: 'ThemeWidgetStateColors' = None
-    ''' 
+    '''
 
     :type: 'ThemeWidgetStateColors'
     '''
 
     wcol_tab: 'ThemeWidgetColors' = None
-    ''' 
+    '''
 
     :type: 'ThemeWidgetColors'
     '''
 
     wcol_text: 'ThemeWidgetColors' = None
-    ''' 
+    '''
 
     :type: 'ThemeWidgetColors'
     '''
 
     wcol_toggle: 'ThemeWidgetColors' = None
-    ''' 
+    '''
 
     :type: 'ThemeWidgetColors'
     '''
 
     wcol_tool: 'ThemeWidgetColors' = None
-    ''' 
+    '''
 
     :type: 'ThemeWidgetColors'
     '''
 
     wcol_toolbar_item: 'ThemeWidgetColors' = None
-    ''' 
+    '''
 
     :type: 'ThemeWidgetColors'
     '''
 
     wcol_tooltip: 'ThemeWidgetColors' = None
-    ''' 
+    '''
 
     :type: 'ThemeWidgetColors'
     '''
@@ -40978,7 +40978,7 @@ class ThemeUserInterface(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -40989,7 +40989,7 @@ class ThemeUserInterface(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -41003,7 +41003,7 @@ class ThemeView3D(bpy_struct):
     '''
 
     act_spline: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -41015,289 +41015,289 @@ class ThemeView3D(bpy_struct):
     '''
 
     bone_pose: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     bone_pose_active: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     bone_solid: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     bundle_solid: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     camera: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     camera_path: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     clipping_border_3d: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     edge_bevel: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     edge_crease: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     edge_facesel: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     edge_seam: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     edge_select: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     edge_sharp: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     editmesh_active: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     empty: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     extra_edge_angle: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     extra_edge_len: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     extra_face_angle: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     extra_face_area: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     face: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     face_back: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     face_dot: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     face_front: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     face_select: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     facedot_size: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     frame_current: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     freestyle_edge_mark: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     freestyle_face_mark: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     gp_vertex: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     gp_vertex_select: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     gp_vertex_size: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     grid: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_align: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_auto: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_free: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_sel_align: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_sel_auto: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_sel_free: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_sel_vect: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     handle_vect: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     lastsel_point: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     light: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     normal: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     nurb_sel_uline: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     nurb_sel_vline: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     nurb_uline: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     nurb_vline: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     object_active: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -41309,31 +41309,31 @@ class ThemeView3D(bpy_struct):
     '''
 
     object_selected: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     outline_width: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     paint_curve_handle: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     paint_curve_pivot: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     skin_root: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -41345,13 +41345,13 @@ class ThemeView3D(bpy_struct):
     '''
 
     speaker: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     split_normal: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -41369,61 +41369,61 @@ class ThemeView3D(bpy_struct):
     '''
 
     transform: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     vertex: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     vertex_active: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     vertex_bevel: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     vertex_normal: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     vertex_select: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     vertex_size: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     vertex_unreferenced: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     view_overlay: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     wire: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -41436,7 +41436,7 @@ class ThemeView3D(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -41447,7 +41447,7 @@ class ThemeView3D(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -41461,25 +41461,25 @@ class ThemeWidgetColors(bpy_struct):
     '''
 
     inner: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     inner_sel: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     item: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     outline: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -41491,38 +41491,38 @@ class ThemeWidgetColors(bpy_struct):
     '''
 
     shadedown: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     shadetop: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     show_shaded: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     text: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     text_sel: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -41533,7 +41533,7 @@ class ThemeWidgetColors(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -41547,74 +41547,74 @@ class ThemeWidgetStateColors(bpy_struct):
     '''
 
     blend: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     inner_anim: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     inner_anim_sel: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     inner_changed: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     inner_changed_sel: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     inner_driven: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     inner_driven_sel: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     inner_key: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     inner_key_sel: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     inner_overridden: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     inner_overridden_sel: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -41625,7 +41625,7 @@ class ThemeWidgetStateColors(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -41651,7 +41651,7 @@ class TimelineMarker(bpy_struct):
     '''
 
     name: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -41664,7 +41664,7 @@ class TimelineMarker(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -41675,7 +41675,7 @@ class TimelineMarker(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -41716,7 +41716,7 @@ class TimelineMarkers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -41727,7 +41727,7 @@ class TimelineMarkers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -41753,14 +41753,14 @@ class Timer(bpy_struct):
     '''
 
     time_step: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -41771,7 +41771,7 @@ class Timer(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -41819,7 +41819,7 @@ class ToolSettings(bpy_struct):
     '''
 
     curve_paint_settings: 'CurvePaintSettings' = None
-    ''' 
+    '''
 
     :type: 'CurvePaintSettings'
     '''
@@ -41843,7 +41843,7 @@ class ToolSettings(bpy_struct):
     '''
 
     gpencil_paint: 'GpPaint' = None
-    ''' 
+    '''
 
     :type: 'GpPaint'
     '''
@@ -41855,7 +41855,7 @@ class ToolSettings(bpy_struct):
     '''
 
     gpencil_sculpt_paint: 'GpSculptPaint' = None
-    ''' 
+    '''
 
     :type: 'GpSculptPaint'
     '''
@@ -41879,19 +41879,19 @@ class ToolSettings(bpy_struct):
     '''
 
     gpencil_vertex_paint: 'GpVertexPaint' = None
-    ''' 
+    '''
 
     :type: 'GpVertexPaint'
     '''
 
     gpencil_weight_paint: 'GpWeightPaint' = None
-    ''' 
+    '''
 
     :type: 'GpWeightPaint'
     '''
 
     image_paint: 'ImagePaint' = None
-    ''' 
+    '''
 
     :type: 'ImagePaint'
     '''
@@ -41927,7 +41927,7 @@ class ToolSettings(bpy_struct):
     '''
 
     particle_edit: 'ParticleEdit' = None
-    ''' 
+    '''
 
     :type: 'ParticleEdit'
     '''
@@ -41945,13 +41945,13 @@ class ToolSettings(bpy_struct):
     '''
 
     sculpt: 'Sculpt' = None
-    ''' 
+    '''
 
     :type: 'Sculpt'
     '''
 
     sequencer_tool_settings: 'SequencerToolSettings' = None
-    ''' 
+    '''
 
     :type: 'SequencerToolSettings'
     '''
@@ -41987,7 +41987,7 @@ class ToolSettings(bpy_struct):
     '''
 
     statvis: 'MeshStatVis' = None
-    ''' 
+    '''
 
     :type: 'MeshStatVis'
     '''
@@ -41999,7 +41999,7 @@ class ToolSettings(bpy_struct):
     '''
 
     unified_paint_settings: 'UnifiedPaintSettings' = None
-    ''' 
+    '''
 
     :type: 'UnifiedPaintSettings'
     '''
@@ -42281,7 +42281,7 @@ class ToolSettings(bpy_struct):
     '''
 
     uv_sculpt: 'UvSculpt' = None
-    ''' 
+    '''
 
     :type: 'UvSculpt'
     '''
@@ -42323,13 +42323,13 @@ class ToolSettings(bpy_struct):
     '''
 
     vertex_paint: 'VertexPaint' = None
-    ''' 
+    '''
 
     :type: 'VertexPaint'
     '''
 
     weight_paint: 'VertexPaint' = None
-    ''' 
+    '''
 
     :type: 'VertexPaint'
     '''
@@ -42342,7 +42342,7 @@ class ToolSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -42353,7 +42353,7 @@ class ToolSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -42364,7 +42364,7 @@ class ToolSettings(bpy_struct):
 
 class TransformOrientation(bpy_struct):
     matrix: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -42377,7 +42377,7 @@ class TransformOrientation(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -42388,7 +42388,7 @@ class TransformOrientation(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -42399,7 +42399,7 @@ class TransformOrientation(bpy_struct):
 
 class TransformOrientationSlot(bpy_struct):
     custom_orientation: 'TransformOrientation' = None
-    ''' 
+    '''
 
     :type: 'TransformOrientation'
     '''
@@ -42418,7 +42418,7 @@ class TransformOrientationSlot(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -42429,7 +42429,7 @@ class TransformOrientationSlot(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -42456,7 +42456,7 @@ class UDIMTile(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -42467,7 +42467,7 @@ class UDIMTile(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -42524,7 +42524,7 @@ class UDIMTiles(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -42535,7 +42535,7 @@ class UDIMTiles(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -42555,7 +42555,7 @@ class UILayout(bpy_struct):
     '''
 
     active: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -42567,19 +42567,19 @@ class UILayout(bpy_struct):
     '''
 
     alert: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     alignment: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     direction: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -42597,7 +42597,7 @@ class UILayout(bpy_struct):
     '''
 
     operator_context: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -42627,13 +42627,13 @@ class UILayout(bpy_struct):
     '''
 
     use_property_decorate: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     use_property_split: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -43711,9 +43711,9 @@ class UILayout(bpy_struct):
     def template_image_layers(self, image: 'Image', image_user: 'ImageUser'):
         ''' template_image_layers
 
-        :param image: 
+        :param image:
         :type image: 'Image'
-        :param image_user: 
+        :param image_user:
         :type image_user: 'ImageUser'
         '''
         pass
@@ -43730,7 +43730,7 @@ class UILayout(bpy_struct):
         :type data: 'AnyType'
         :param property: Identifier of property in data
         :type property: str
-        :param image_user: 
+        :param image_user:
         :type image_user: 'ImageUser'
         :param compact: Use more compact layout
         :type compact: bool
@@ -43744,7 +43744,7 @@ class UILayout(bpy_struct):
                                 color_management: bool = False):
         ''' User interface for setting image format options
 
-        :param image_settings: 
+        :param image_settings:
         :type image_settings: 'ImageFormatSettings'
         :param color_management: Show color management settings
         :type color_management: bool
@@ -43754,7 +43754,7 @@ class UILayout(bpy_struct):
     def template_image_stereo_3d(self, stereo_3d_format: 'Stereo3dFormat'):
         ''' User interface for setting image stereo 3d options
 
-        :param stereo_3d_format: 
+        :param stereo_3d_format:
         :type stereo_3d_format: 'Stereo3dFormat'
         '''
         pass
@@ -43762,7 +43762,7 @@ class UILayout(bpy_struct):
     def template_image_views(self, image_settings: 'ImageFormatSettings'):
         ''' User interface for setting image views output options
 
-        :param image_settings: 
+        :param image_settings:
         :type image_settings: 'ImageFormatSettings'
         '''
         pass
@@ -43804,9 +43804,9 @@ class UILayout(bpy_struct):
         :type data: 'AnyType'
         :param property: Identifier of property in data
         :type property: str
-        :param clip_user: 
+        :param clip_user:
         :type clip_user: 'MovieClipUser'
-        :param track: 
+        :param track:
         :type track: 'MovieTrackingTrack'
         :param compact: Use more compact layout
         :type compact: bool
@@ -43821,7 +43821,7 @@ class UILayout(bpy_struct):
         :type data: 'AnyType'
         :param property: Identifier of property in data
         :type property: str
-        :param clip_user: 
+        :param clip_user:
         :type clip_user: 'MovieClipUser'
         '''
         pass
@@ -43890,7 +43890,7 @@ class UILayout(bpy_struct):
         pass
 
     def template_header_3D_mode(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -43917,11 +43917,11 @@ class UILayout(bpy_struct):
                            socket: 'NodeSocket'):
         ''' template_node_link
 
-        :param ntree: 
+        :param ntree:
         :type ntree: 'NodeTree'
-        :param node: 
+        :param node:
         :type node: 'Node'
-        :param socket: 
+        :param socket:
         :type socket: 'NodeSocket'
         '''
         pass
@@ -43930,11 +43930,11 @@ class UILayout(bpy_struct):
                            socket: 'NodeSocket'):
         ''' template_node_view
 
-        :param ntree: 
+        :param ntree:
         :type ntree: 'NodeTree'
-        :param node: 
+        :param node:
         :type node: 'Node'
-        :param socket: 
+        :param socket:
         :type socket: 'NodeSocket'
         '''
         pass
@@ -43948,7 +43948,7 @@ class UILayout(bpy_struct):
     def template_keymap_item_properties(self, item: 'KeyMapItem'):
         ''' template_keymap_item_properties
 
-        :param item: 
+        :param item:
         :type item: 'KeyMapItem'
         '''
         pass
@@ -43963,7 +43963,7 @@ class UILayout(bpy_struct):
         :type data: 'AnyType'
         :param property: Identifier of property in data
         :type property: str
-        :param name: 
+        :param name:
         :type name: str
         '''
         pass
@@ -44021,7 +44021,7 @@ class UILayout(bpy_struct):
     def template_file_select_path(self, params: 'FileSelectParams'):
         ''' Item. A text button to set the active file browser path.
 
-        :param params: 
+        :param params:
         :type params: 'FileSelectParams'
         '''
         pass
@@ -44046,7 +44046,7 @@ class UILayout(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44057,7 +44057,7 @@ class UILayout(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44136,7 +44136,7 @@ class UIList(bpy_struct):
                   flt_flag: int = 0):
         ''' Draw an item in the list (NOTE: when you define your own draw_item function, you may want to check given 'item' is of the right type...)
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         :param layout: Layout to draw the item
         :type layout: 'UILayout'
@@ -44160,7 +44160,7 @@ class UIList(bpy_struct):
     def draw_filter(self, context: 'Context', layout: 'UILayout'):
         ''' Draw filtering options
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         :param layout: Layout to draw the item
         :type layout: 'UILayout'
@@ -44170,7 +44170,7 @@ class UIList(bpy_struct):
     def filter_items(self, context: 'Context', data: 'AnyType', property: str):
         ''' Filter and/or re-order items of the collection (output filter results in filter_flags, and reorder results in filter_neworder arrays)
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         :param data: Data from which to take Collection property
         :type data: 'AnyType'
@@ -44181,7 +44181,7 @@ class UIList(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44192,7 +44192,7 @@ class UIList(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44203,14 +44203,14 @@ class UIList(bpy_struct):
 
 class UIPieMenu(bpy_struct):
     layout: 'UILayout' = None
-    ''' 
+    '''
 
     :type: 'UILayout'
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44221,7 +44221,7 @@ class UIPieMenu(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44232,14 +44232,14 @@ class UIPieMenu(bpy_struct):
 
 class UIPopover(bpy_struct):
     layout: 'UILayout' = None
-    ''' 
+    '''
 
     :type: 'UILayout'
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44250,7 +44250,7 @@ class UIPopover(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44261,14 +44261,14 @@ class UIPopover(bpy_struct):
 
 class UIPopupMenu(bpy_struct):
     layout: 'UILayout' = None
-    ''' 
+    '''
 
     :type: 'UILayout'
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44279,7 +44279,7 @@ class UIPopupMenu(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44327,7 +44327,7 @@ class UVLoopLayers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44338,7 +44338,7 @@ class UVLoopLayers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44359,7 +44359,7 @@ class UVProjector(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44370,7 +44370,7 @@ class UVProjector(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44384,13 +44384,13 @@ class UnifiedPaintSettings(bpy_struct):
     '''
 
     color: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     secondary_color: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -44451,7 +44451,7 @@ class UnifiedPaintSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44462,7 +44462,7 @@ class UnifiedPaintSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44522,7 +44522,7 @@ class UnitSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44533,7 +44533,7 @@ class UnitSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44548,7 +44548,7 @@ class UnknownType(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44559,7 +44559,7 @@ class UnknownType(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44586,7 +44586,7 @@ class UserAssetLibrary(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44597,7 +44597,7 @@ class UserAssetLibrary(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44642,7 +44642,7 @@ class UserSolidLight(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44653,7 +44653,7 @@ class UserSolidLight(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44701,7 +44701,7 @@ class VertColors(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44712,7 +44712,7 @@ class VertColors(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44737,7 +44737,7 @@ class VertexFloatProperties(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44748,7 +44748,7 @@ class VertexFloatProperties(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44812,7 +44812,7 @@ class VertexGroup(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44823,7 +44823,7 @@ class VertexGroup(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44837,7 +44837,7 @@ class VertexGroupElement(bpy_struct):
     '''
 
     group: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -44850,7 +44850,7 @@ class VertexGroupElement(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44861,7 +44861,7 @@ class VertexGroupElement(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44912,7 +44912,7 @@ class VertexGroups(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44923,7 +44923,7 @@ class VertexGroups(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44948,7 +44948,7 @@ class VertexIntProperties(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44959,7 +44959,7 @@ class VertexIntProperties(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44985,7 +44985,7 @@ class VertexStringProperties(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -44996,7 +44996,7 @@ class VertexStringProperties(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -45038,7 +45038,7 @@ class View2D(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -45049,7 +45049,7 @@ class View2D(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -45060,7 +45060,7 @@ class View2D(bpy_struct):
 
 class View3DCursor(bpy_struct):
     location: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -45097,7 +45097,7 @@ class View3DCursor(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -45108,7 +45108,7 @@ class View3DCursor(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -45194,13 +45194,13 @@ class View3DOverlay(bpy_struct):
     '''
 
     sculpt_mode_face_sets_opacity: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     sculpt_mode_mask_opacity: float = None
-    ''' 
+    '''
 
     :type: float
     '''
@@ -45585,7 +45585,7 @@ class View3DOverlay(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -45596,7 +45596,7 @@ class View3DOverlay(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -45842,7 +45842,7 @@ class View3DShading(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -45853,7 +45853,7 @@ class View3DShading(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -45886,7 +45886,7 @@ class ViewLayer(bpy_struct):
 
     aovs: typing.Union[typing.Dict[str, 'AOV'], typing.
                        List['AOV'], 'bpy_prop_collection', 'AOVs'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'AOV'], typing.List['AOV'], 'bpy_prop_collection', 'AOVs']
     '''
@@ -45907,7 +45907,7 @@ class ViewLayer(bpy_struct):
     '''
 
     freestyle_settings: 'FreestyleSettings' = None
-    ''' 
+    '''
 
     :type: 'FreestyleSettings'
     '''
@@ -46216,7 +46216,7 @@ class ViewLayer(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -46227,7 +46227,7 @@ class ViewLayer(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -46254,7 +46254,7 @@ class ViewLayerEEVEE(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -46265,7 +46265,7 @@ class ViewLayerEEVEE(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -46298,7 +46298,7 @@ class ViewLayers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -46309,7 +46309,7 @@ class ViewLayers(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -46366,7 +46366,7 @@ class VolumeDisplay(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -46377,7 +46377,7 @@ class VolumeDisplay(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -46436,7 +46436,7 @@ class VolumeGrid(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -46447,7 +46447,7 @@ class VolumeGrid(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -46516,7 +46516,7 @@ class VolumeGrids(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -46527,7 +46527,7 @@ class VolumeGrids(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -46560,7 +46560,7 @@ class VolumeRender(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -46571,7 +46571,7 @@ class VolumeRender(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -46634,7 +46634,7 @@ class WalkNavigation(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -46645,7 +46645,7 @@ class WalkNavigation(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -46721,9 +46721,9 @@ class Window(bpy_struct):
     def cursor_warp(self, x: int, y: int):
         ''' Set the cursor position
 
-        :param x: 
+        :param x:
         :type x: int
-        :param y: 
+        :param y:
         :type y: int
         '''
         pass
@@ -46766,11 +46766,11 @@ class Window(bpy_struct):
         :type type: typing.Union[str, int]
         :param value: Value
         :type value: typing.Union[str, int]
-        :param unicode: 
+        :param unicode:
         :type unicode: str
-        :param x: 
+        :param x:
         :type x: int
-        :param y: 
+        :param y:
         :type y: int
         :param shift: Shift
         :type shift: bool
@@ -46787,7 +46787,7 @@ class Window(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -46798,7 +46798,7 @@ class Window(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -46809,31 +46809,31 @@ class Window(bpy_struct):
 
 class WorkSpaceTool(bpy_struct):
     has_datablock: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     idname: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     idname_fallback: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     index: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     mode: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -46845,7 +46845,7 @@ class WorkSpaceTool(bpy_struct):
     '''
 
     widget: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -46886,7 +46886,7 @@ class WorkSpaceTool(bpy_struct):
     def operator_properties(self, operator: str):
         ''' operator_properties
 
-        :param operator: 
+        :param operator:
         :type operator: str
         '''
         pass
@@ -46894,7 +46894,7 @@ class WorkSpaceTool(bpy_struct):
     def gizmo_group_properties(self, group: str):
         ''' gizmo_group_properties
 
-        :param group: 
+        :param group:
         :type group: str
         '''
         pass
@@ -46907,7 +46907,7 @@ class WorkSpaceTool(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -46918,7 +46918,7 @@ class WorkSpaceTool(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -46951,7 +46951,7 @@ class WorldLighting(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -46962,7 +46962,7 @@ class WorldLighting(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47013,7 +47013,7 @@ class WorldMistSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47024,7 +47024,7 @@ class WorldMistSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47071,7 +47071,7 @@ class XrSessionSettings(bpy_struct):
     '''
 
     shading: 'View3DShading' = None
-    ''' 
+    '''
 
     :type: 'View3DShading'
     '''
@@ -47096,7 +47096,7 @@ class XrSessionSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47107,7 +47107,7 @@ class XrSessionSettings(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47136,7 +47136,7 @@ class XrSessionState(bpy_struct):
     def is_running(cls, context: 'Context') -> bool:
         ''' Query if the VR session is currently running
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         :rtype: bool
         :return: Result
@@ -47147,14 +47147,14 @@ class XrSessionState(bpy_struct):
     def reset_to_base_pose(cls, context: 'Context'):
         ''' Force resetting of position and rotation deltas
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47165,7 +47165,7 @@ class XrSessionState(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47176,14 +47176,14 @@ class XrSessionState(bpy_struct):
 
 class wmOwnerID(bpy_struct):
     name: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47194,7 +47194,7 @@ class wmOwnerID(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47228,7 +47228,7 @@ class wmOwnerIDs(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47239,7 +47239,7 @@ class wmOwnerIDs(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47252,9 +47252,9 @@ class wmTools(bpy_struct):
     def from_space_view3d_mode(self,
                                mode: typing.Union[str, int],
                                create: bool = False):
-        ''' 
+        '''
 
-        :param mode: 
+        :param mode:
         :type mode: typing.Union[str, int]
         :param create: Create
         :type create: bool
@@ -47264,7 +47264,7 @@ class wmTools(bpy_struct):
     def from_space_image_mode(self,
                               mode: typing.Union[str, int],
                               create: bool = False):
-        ''' 
+        '''
 
         :param mode: * VIEW View, View the image. * UV UV Editor, UV edit in mesh editmode. * PAINT Paint, 2D image painting mode. * MASK Mask, Mask editing.
         :type mode: typing.Union[str, int]
@@ -47274,7 +47274,7 @@ class wmTools(bpy_struct):
         pass
 
     def from_space_node(self, create: bool = False):
-        ''' 
+        '''
 
         :param create: Create
         :type create: bool
@@ -47284,9 +47284,9 @@ class wmTools(bpy_struct):
     def from_space_sequencer(self,
                              mode: typing.Union[str, int],
                              create: bool = False):
-        ''' 
+        '''
 
-        :param mode: 
+        :param mode:
         :type mode: typing.Union[str, int]
         :param create: Create
         :type create: bool
@@ -47295,7 +47295,7 @@ class wmTools(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47306,7 +47306,7 @@ class wmTools(bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47322,14 +47322,14 @@ class BoolAttribute(Attribute, bpy_struct):
     data: typing.Union[typing.Dict[str, 'BoolAttributeValue'], typing.
                        List['BoolAttributeValue'],
                        'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'BoolAttributeValue'], typing.List['BoolAttributeValue'], 'bpy_prop_collection']
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47340,7 +47340,7 @@ class BoolAttribute(Attribute, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47356,14 +47356,14 @@ class ByteColorAttribute(Attribute, bpy_struct):
     data: typing.Union[typing.Dict[str, 'ByteColorAttributeValue'], typing.
                        List['ByteColorAttributeValue'],
                        'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'ByteColorAttributeValue'], typing.List['ByteColorAttributeValue'], 'bpy_prop_collection']
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47374,7 +47374,7 @@ class ByteColorAttribute(Attribute, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47390,14 +47390,14 @@ class Float2Attribute(Attribute, bpy_struct):
     data: typing.Union[typing.Dict[str, 'Float2AttributeValue'], typing.
                        List['Float2AttributeValue'],
                        'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'Float2AttributeValue'], typing.List['Float2AttributeValue'], 'bpy_prop_collection']
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47408,7 +47408,7 @@ class Float2Attribute(Attribute, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47424,14 +47424,14 @@ class FloatAttribute(Attribute, bpy_struct):
     data: typing.Union[typing.Dict[str, 'FloatAttributeValue'], typing.
                        List['FloatAttributeValue'],
                        'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'FloatAttributeValue'], typing.List['FloatAttributeValue'], 'bpy_prop_collection']
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47442,7 +47442,7 @@ class FloatAttribute(Attribute, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47458,14 +47458,14 @@ class FloatColorAttribute(Attribute, bpy_struct):
     data: typing.Union[typing.Dict[str, 'FloatColorAttributeValue'], typing.
                        List['FloatColorAttributeValue'],
                        'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'FloatColorAttributeValue'], typing.List['FloatColorAttributeValue'], 'bpy_prop_collection']
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47476,7 +47476,7 @@ class FloatColorAttribute(Attribute, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47492,14 +47492,14 @@ class FloatVectorAttribute(Attribute, bpy_struct):
     data: typing.Union[typing.Dict[str, 'FloatVectorAttributeValue'], typing.
                        List['FloatVectorAttributeValue'],
                        'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'FloatVectorAttributeValue'], typing.List['FloatVectorAttributeValue'], 'bpy_prop_collection']
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47510,7 +47510,7 @@ class FloatVectorAttribute(Attribute, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47525,14 +47525,14 @@ class IntAttribute(Attribute, bpy_struct):
 
     data: typing.Union[typing.Dict[str, 'IntAttributeValue'], typing.
                        List['IntAttributeValue'], 'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'IntAttributeValue'], typing.List['IntAttributeValue'], 'bpy_prop_collection']
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47543,7 +47543,7 @@ class IntAttribute(Attribute, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47559,14 +47559,14 @@ class StringAttribute(Attribute, bpy_struct):
     data: typing.Union[typing.Dict[str, 'StringAttributeValue'], typing.
                        List['StringAttributeValue'],
                        'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'StringAttributeValue'], typing.List['StringAttributeValue'], 'bpy_prop_collection']
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47577,7 +47577,7 @@ class StringAttribute(Attribute, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47607,7 +47607,7 @@ class BoidRuleAverageSpeed(BoidRule, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47618,7 +47618,7 @@ class BoidRuleAverageSpeed(BoidRule, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47648,7 +47648,7 @@ class BoidRuleAvoid(BoidRule, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47659,7 +47659,7 @@ class BoidRuleAvoid(BoidRule, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47689,7 +47689,7 @@ class BoidRuleAvoidCollision(BoidRule, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47700,7 +47700,7 @@ class BoidRuleAvoidCollision(BoidRule, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47724,7 +47724,7 @@ class BoidRuleFight(BoidRule, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47735,7 +47735,7 @@ class BoidRuleFight(BoidRule, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47771,7 +47771,7 @@ class BoidRuleFollowLeader(BoidRule, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47782,7 +47782,7 @@ class BoidRuleFollowLeader(BoidRule, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47806,7 +47806,7 @@ class BoidRuleGoal(BoidRule, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47817,7 +47817,7 @@ class BoidRuleGoal(BoidRule, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47904,7 +47904,7 @@ class ActionConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47915,7 +47915,7 @@ class ActionConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47956,7 +47956,7 @@ class ArmatureConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47967,7 +47967,7 @@ class ArmatureConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -47994,7 +47994,7 @@ class CameraSolverConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -48005,7 +48005,7 @@ class CameraSolverConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -48098,7 +48098,7 @@ class ChildOfConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -48109,7 +48109,7 @@ class ChildOfConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -48142,7 +48142,7 @@ class ClampToConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -48153,7 +48153,7 @@ class ClampToConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -48234,7 +48234,7 @@ class CopyLocationConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -48245,7 +48245,7 @@ class CopyLocationConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -48326,7 +48326,7 @@ class CopyRotationConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -48337,7 +48337,7 @@ class CopyRotationConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -48406,7 +48406,7 @@ class CopyScaleConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -48417,7 +48417,7 @@ class CopyScaleConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -48462,7 +48462,7 @@ class CopyTransformsConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -48473,7 +48473,7 @@ class CopyTransformsConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -48518,7 +48518,7 @@ class DampedTrackConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -48529,7 +48529,7 @@ class DampedTrackConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -48574,7 +48574,7 @@ class FloorConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -48585,7 +48585,7 @@ class FloorConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -48648,7 +48648,7 @@ class FollowPathConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -48659,7 +48659,7 @@ class FollowPathConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -48728,7 +48728,7 @@ class FollowTrackConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -48739,7 +48739,7 @@ class FollowTrackConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -48765,7 +48765,7 @@ class KinematicConstraint(Constraint, bpy_struct):
     '''
 
     ik_type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -48831,7 +48831,7 @@ class KinematicConstraint(Constraint, bpy_struct):
     '''
 
     pole_subtarget: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -48892,7 +48892,7 @@ class KinematicConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -48903,7 +48903,7 @@ class KinematicConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -48960,7 +48960,7 @@ class LimitDistanceConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -48971,7 +48971,7 @@ class LimitDistanceConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -49064,7 +49064,7 @@ class LimitLocationConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -49075,7 +49075,7 @@ class LimitLocationConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -49150,7 +49150,7 @@ class LimitRotationConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -49161,7 +49161,7 @@ class LimitRotationConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -49254,7 +49254,7 @@ class LimitScaleConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -49265,7 +49265,7 @@ class LimitScaleConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -49316,7 +49316,7 @@ class LockedTrackConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -49327,7 +49327,7 @@ class LockedTrackConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -49360,7 +49360,7 @@ class MaintainVolumeConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -49371,7 +49371,7 @@ class MaintainVolumeConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -49416,7 +49416,7 @@ class ObjectSolverConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -49427,7 +49427,7 @@ class ObjectSolverConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -49459,7 +49459,7 @@ class PivotConstraint(Constraint, bpy_struct):
     '''
 
     subtarget: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -49484,7 +49484,7 @@ class PivotConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -49495,7 +49495,7 @@ class PivotConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -49542,7 +49542,7 @@ class PythonConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -49553,7 +49553,7 @@ class PythonConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -49640,7 +49640,7 @@ class ShrinkwrapConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -49651,7 +49651,7 @@ class ShrinkwrapConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -49756,7 +49756,7 @@ class SplineIKConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -49767,7 +49767,7 @@ class SplineIKConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -49860,7 +49860,7 @@ class StretchToConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -49871,7 +49871,7 @@ class StretchToConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -49928,7 +49928,7 @@ class TrackToConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -49939,7 +49939,7 @@ class TrackToConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -49953,7 +49953,7 @@ class TransformCacheConstraint(Constraint, bpy_struct):
     '''
 
     cache_file: 'CacheFile' = None
-    ''' 
+    '''
 
     :type: 'CacheFile'
     '''
@@ -49966,7 +49966,7 @@ class TransformCacheConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -49977,7 +49977,7 @@ class TransformCacheConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -50286,7 +50286,7 @@ class TransformConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -50297,7 +50297,7 @@ class TransformConstraint(Constraint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -50336,7 +50336,7 @@ class FModifierCycles(FModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -50347,7 +50347,7 @@ class FModifierCycles(FModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -50389,7 +50389,7 @@ class FModifierEnvelope(FModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -50400,7 +50400,7 @@ class FModifierEnvelope(FModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -50451,7 +50451,7 @@ class FModifierFunctionGenerator(FModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -50462,7 +50462,7 @@ class FModifierFunctionGenerator(FModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -50501,7 +50501,7 @@ class FModifierGenerator(FModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -50512,7 +50512,7 @@ class FModifierGenerator(FModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -50575,7 +50575,7 @@ class FModifierLimits(FModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -50586,7 +50586,7 @@ class FModifierLimits(FModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -50637,7 +50637,7 @@ class FModifierNoise(FModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -50648,7 +50648,7 @@ class FModifierNoise(FModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -50663,7 +50663,7 @@ class FModifierPython(FModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -50674,7 +50674,7 @@ class FModifierPython(FModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -50725,7 +50725,7 @@ class FModifierStepped(FModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -50736,7 +50736,7 @@ class FModifierStepped(FModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -50756,14 +50756,14 @@ class FileAssetSelectParams(FileSelectParams, bpy_struct):
     '''
 
     asset_library: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -50774,7 +50774,7 @@ class FileAssetSelectParams(FileSelectParams, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -50825,7 +50825,7 @@ class ArmatureGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -50836,7 +50836,7 @@ class ArmatureGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -50977,7 +50977,7 @@ class ArrayGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -50988,7 +50988,7 @@ class ArrayGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -51087,7 +51087,7 @@ class BuildGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -51098,7 +51098,7 @@ class BuildGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -51197,7 +51197,7 @@ class ColorGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -51208,7 +51208,7 @@ class ColorGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -51222,7 +51222,7 @@ class HookGpencilModifier(GpencilModifier, bpy_struct):
     '''
 
     center: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -51240,7 +51240,7 @@ class HookGpencilModifier(GpencilModifier, bpy_struct):
     '''
 
     falloff_type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -51337,7 +51337,7 @@ class HookGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -51348,7 +51348,7 @@ class HookGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -51435,7 +51435,7 @@ class LatticeGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -51446,7 +51446,7 @@ class LatticeGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -51634,7 +51634,7 @@ class LineartGpencilModifier(GpencilModifier, bpy_struct):
     '''
 
     use_transparency_mask: typing.List[bool] = None
-    ''' 
+    '''
 
     :type: typing.List[bool]
     '''
@@ -51653,7 +51653,7 @@ class LineartGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -51664,7 +51664,7 @@ class LineartGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -51757,7 +51757,7 @@ class MirrorGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -51768,7 +51768,7 @@ class MirrorGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -51873,7 +51873,7 @@ class MultiplyGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -51884,7 +51884,7 @@ class MultiplyGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -52025,7 +52025,7 @@ class NoiseGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -52036,7 +52036,7 @@ class NoiseGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -52129,7 +52129,7 @@ class OffsetGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -52140,7 +52140,7 @@ class OffsetGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -52251,7 +52251,7 @@ class OpacityGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -52262,7 +52262,7 @@ class OpacityGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -52355,7 +52355,7 @@ class SimplifyGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -52366,7 +52366,7 @@ class SimplifyGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -52489,7 +52489,7 @@ class SmoothGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -52500,7 +52500,7 @@ class SmoothGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -52575,7 +52575,7 @@ class SubdivGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -52586,7 +52586,7 @@ class SubdivGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -52709,7 +52709,7 @@ class TextureGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -52720,7 +52720,7 @@ class TextureGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -52825,7 +52825,7 @@ class ThickGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -52836,7 +52836,7 @@ class ThickGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -52917,7 +52917,7 @@ class TimeGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -52928,7 +52928,7 @@ class TimeGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -53057,7 +53057,7 @@ class TintGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -53068,7 +53068,7 @@ class TintGpencilModifier(GpencilModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -53126,7 +53126,7 @@ class Action(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -53137,7 +53137,7 @@ class Action(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -53164,7 +53164,7 @@ class Armature(ID, bpy_struct):
 
     bones: typing.Union[typing.Dict[str, 'Bone'], typing.List['Bone'],
                         'bpy_prop_collection', 'ArmatureBones'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'Bone'], typing.List['Bone'], 'bpy_prop_collection', 'ArmatureBones']
     '''
@@ -53178,7 +53178,7 @@ class Armature(ID, bpy_struct):
     edit_bones: typing.Union[typing.Dict[str, 'EditBone'], typing.
                              List['EditBone'], 'bpy_prop_collection',
                              'ArmatureEditBones'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'EditBone'], typing.List['EditBone'], 'bpy_prop_collection', 'ArmatureEditBones']
     '''
@@ -53247,7 +53247,7 @@ class Armature(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -53258,7 +53258,7 @@ class Armature(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -53302,7 +53302,7 @@ class Brush(ID, bpy_struct):
     '''
 
     blur_mode: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -53344,7 +53344,7 @@ class Brush(ID, bpy_struct):
     '''
 
     clone_offset: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -53398,7 +53398,7 @@ class Brush(ID, bpy_struct):
     '''
 
     color: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -53428,7 +53428,7 @@ class Brush(ID, bpy_struct):
     '''
 
     cursor_overlay_alpha: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -53440,7 +53440,7 @@ class Brush(ID, bpy_struct):
     '''
 
     curve_preset: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -53524,7 +53524,7 @@ class Brush(ID, bpy_struct):
     '''
 
     gpencil_settings: 'BrushGpencilSettings' = None
-    ''' 
+    '''
 
     :type: 'BrushGpencilSettings'
     '''
@@ -53536,7 +53536,7 @@ class Brush(ID, bpy_struct):
     '''
 
     gpencil_vertex_tool: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -53554,19 +53554,19 @@ class Brush(ID, bpy_struct):
     '''
 
     gradient: 'ColorRamp' = None
-    ''' 
+    '''
 
     :type: 'ColorRamp'
     '''
 
     gradient_fill_mode: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     gradient_stroke_mode: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -53590,13 +53590,13 @@ class Brush(ID, bpy_struct):
     '''
 
     image_paint_capabilities: 'BrushCapabilitiesImagePaint' = None
-    ''' 
+    '''
 
     :type: 'BrushCapabilitiesImagePaint'
     '''
 
     image_tool: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -53656,7 +53656,7 @@ class Brush(ID, bpy_struct):
     '''
 
     mask_overlay_alpha: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -53674,19 +53674,19 @@ class Brush(ID, bpy_struct):
     '''
 
     mask_texture: 'Texture' = None
-    ''' 
+    '''
 
     :type: 'Texture'
     '''
 
     mask_texture_slot: 'BrushTextureSlot' = None
-    ''' 
+    '''
 
     :type: 'BrushTextureSlot'
     '''
 
     mask_tool: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -53770,25 +53770,25 @@ class Brush(ID, bpy_struct):
     '''
 
     sculpt_capabilities: 'BrushCapabilitiesSculpt' = None
-    ''' 
+    '''
 
     :type: 'BrushCapabilitiesSculpt'
     '''
 
     sculpt_plane: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     sculpt_tool: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     secondary_color: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -53896,13 +53896,13 @@ class Brush(ID, bpy_struct):
     '''
 
     texture: 'Texture' = None
-    ''' 
+    '''
 
     :type: 'Texture'
     '''
 
     texture_overlay_alpha: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -53914,7 +53914,7 @@ class Brush(ID, bpy_struct):
     '''
 
     texture_slot: 'BrushTextureSlot' = None
-    ''' 
+    '''
 
     :type: 'BrushTextureSlot'
     '''
@@ -54316,13 +54316,13 @@ class Brush(ID, bpy_struct):
     '''
 
     vertex_paint_capabilities: 'BrushCapabilitiesVertexPaint' = None
-    ''' 
+    '''
 
     :type: 'BrushCapabilitiesVertexPaint'
     '''
 
     vertex_tool: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -54334,13 +54334,13 @@ class Brush(ID, bpy_struct):
     '''
 
     weight_paint_capabilities: 'BrushCapabilitiesWeightPaint' = None
-    ''' 
+    '''
 
     :type: 'BrushCapabilitiesWeightPaint'
     '''
 
     weight_tool: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -54365,7 +54365,7 @@ class Brush(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -54376,7 +54376,7 @@ class Brush(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -54399,7 +54399,7 @@ class CacheFile(ID, bpy_struct):
     '''
 
     forward_axis: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -54444,7 +54444,7 @@ class CacheFile(ID, bpy_struct):
     '''
 
     up_axis: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -54463,7 +54463,7 @@ class CacheFile(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -54474,7 +54474,7 @@ class CacheFile(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -54542,7 +54542,7 @@ class Camera(ID, bpy_struct):
     '''
 
     dof: 'CameraDOFSettings' = None
-    ''' 
+    '''
 
     :type: 'CameraDOFSettings'
     '''
@@ -54698,7 +54698,7 @@ class Camera(ID, bpy_struct):
     '''
 
     stereo: 'CameraStereoData' = None
-    ''' 
+    '''
 
     :type: 'CameraStereoData'
     '''
@@ -54719,7 +54719,7 @@ class Camera(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -54730,7 +54730,7 @@ class Camera(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -54806,7 +54806,7 @@ class Collection(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -54817,7 +54817,7 @@ class Collection(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -54926,7 +54926,7 @@ class Curve(ID, bpy_struct):
     materials: typing.Union[typing.Dict[str, 'Material'], typing.
                             List['Material'], 'bpy_prop_collection',
                             'IDMaterials'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'Material'], typing.List['Material'], 'bpy_prop_collection', 'IDMaterials']
     '''
@@ -54968,7 +54968,7 @@ class Curve(ID, bpy_struct):
     '''
 
     shape_keys: 'Key' = None
-    ''' 
+    '''
 
     :type: 'Key'
     '''
@@ -55102,7 +55102,7 @@ class Curve(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -55113,7 +55113,7 @@ class Curve(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -55467,7 +55467,7 @@ class FreestyleLineStyle(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -55478,7 +55478,7 @@ class FreestyleLineStyle(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -55584,7 +55584,7 @@ class GreasePencil(ID, bpy_struct):
     layers: typing.Union[typing.Dict[str, 'GPencilLayer'], typing.
                          List['GPencilLayer'], 'bpy_prop_collection',
                          'GreasePencilLayers'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'GPencilLayer'], typing.List['GPencilLayer'], 'bpy_prop_collection', 'GreasePencilLayers']
     '''
@@ -55592,7 +55592,7 @@ class GreasePencil(ID, bpy_struct):
     materials: typing.Union[typing.Dict[str, 'Material'], typing.
                             List['Material'], 'bpy_prop_collection',
                             'IDMaterials'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'Material'], typing.List['Material'], 'bpy_prop_collection', 'IDMaterials']
     '''
@@ -55707,7 +55707,7 @@ class GreasePencil(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -55718,7 +55718,7 @@ class GreasePencil(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -56046,7 +56046,7 @@ class Image(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -56057,7 +56057,7 @@ class Image(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -56090,7 +56090,7 @@ class Key(ID, bpy_struct):
     '''
 
     reference_key: 'ShapeKey' = None
-    ''' 
+    '''
 
     :type: 'ShapeKey'
     '''
@@ -56109,7 +56109,7 @@ class Key(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -56120,7 +56120,7 @@ class Key(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -56140,19 +56140,19 @@ class Lattice(ID, bpy_struct):
     '''
 
     interpolation_type_u: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     interpolation_type_v: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     interpolation_type_w: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -56189,7 +56189,7 @@ class Lattice(ID, bpy_struct):
     '''
 
     shape_keys: 'Key' = None
-    ''' 
+    '''
 
     :type: 'Key'
     '''
@@ -56224,7 +56224,7 @@ class Lattice(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -56235,7 +56235,7 @@ class Lattice(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -56255,13 +56255,13 @@ class Library(ID, bpy_struct):
     '''
 
     packed_file: 'PackedFile' = None
-    ''' 
+    '''
 
     :type: 'PackedFile'
     '''
 
     parent: 'Library' = None
-    ''' 
+    '''
 
     :type: 'Library'
     '''
@@ -56283,7 +56283,7 @@ class Library(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -56294,7 +56294,7 @@ class Library(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -56378,7 +56378,7 @@ class Light(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -56389,7 +56389,7 @@ class Light(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -56542,7 +56542,7 @@ class LightProbe(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -56553,7 +56553,7 @@ class LightProbe(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -56600,7 +56600,7 @@ class Mask(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -56611,7 +56611,7 @@ class Mask(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -56801,7 +56801,7 @@ class Material(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -56812,7 +56812,7 @@ class Material(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -56864,7 +56864,7 @@ class Mesh(ID, bpy_struct):
     face_maps: typing.Union[typing.Dict[str, 'MeshFaceMapLayer'], typing.
                             List['MeshFaceMapLayer'], 'bpy_prop_collection',
                             'MeshFaceMapLayers'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'MeshFaceMapLayer'], typing.List['MeshFaceMapLayer'], 'bpy_prop_collection', 'MeshFaceMapLayers']
     '''
@@ -56899,7 +56899,7 @@ class Mesh(ID, bpy_struct):
     materials: typing.Union[typing.Dict[str, 'Material'], typing.
                             List['Material'], 'bpy_prop_collection',
                             'IDMaterials'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'Material'], typing.List['Material'], 'bpy_prop_collection', 'IDMaterials']
     '''
@@ -56908,7 +56908,7 @@ class Mesh(ID, bpy_struct):
         typing.Dict[str, 'MeshPolygonFloatPropertyLayer'], typing.
         List['MeshPolygonFloatPropertyLayer'], 'bpy_prop_collection',
         'PolygonFloatProperties'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'MeshPolygonFloatPropertyLayer'], typing.List['MeshPolygonFloatPropertyLayer'], 'bpy_prop_collection', 'PolygonFloatProperties']
     '''
@@ -56917,7 +56917,7 @@ class Mesh(ID, bpy_struct):
         typing.Dict[str, 'MeshPolygonIntPropertyLayer'], typing.
         List['MeshPolygonIntPropertyLayer'], 'bpy_prop_collection',
         'PolygonIntProperties'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'MeshPolygonIntPropertyLayer'], typing.List['MeshPolygonIntPropertyLayer'], 'bpy_prop_collection', 'PolygonIntProperties']
     '''
@@ -56926,7 +56926,7 @@ class Mesh(ID, bpy_struct):
         typing.Dict[str, 'MeshPolygonStringPropertyLayer'], typing.
         List['MeshPolygonStringPropertyLayer'], 'bpy_prop_collection',
         'PolygonStringProperties'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'MeshPolygonStringPropertyLayer'], typing.List['MeshPolygonStringPropertyLayer'], 'bpy_prop_collection', 'PolygonStringProperties']
     '''
@@ -56966,7 +56966,7 @@ class Mesh(ID, bpy_struct):
     '''
 
     shape_keys: 'Key' = None
-    ''' 
+    '''
 
     :type: 'Key'
     '''
@@ -57034,19 +57034,19 @@ class Mesh(ID, bpy_struct):
     '''
 
     use_customdata_edge_bevel: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     use_customdata_edge_crease: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     use_customdata_vertex_bevel: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -57173,7 +57173,7 @@ class Mesh(ID, bpy_struct):
         typing.Dict[str, 'MeshVertexFloatPropertyLayer'], typing.
         List['MeshVertexFloatPropertyLayer'], 'bpy_prop_collection',
         'VertexFloatProperties'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'MeshVertexFloatPropertyLayer'], typing.List['MeshVertexFloatPropertyLayer'], 'bpy_prop_collection', 'VertexFloatProperties']
     '''
@@ -57182,7 +57182,7 @@ class Mesh(ID, bpy_struct):
         typing.Dict[str, 'MeshVertexIntPropertyLayer'], typing.
         List['MeshVertexIntPropertyLayer'], 'bpy_prop_collection',
         'VertexIntProperties'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'MeshVertexIntPropertyLayer'], typing.List['MeshVertexIntPropertyLayer'], 'bpy_prop_collection', 'VertexIntProperties']
     '''
@@ -57191,7 +57191,7 @@ class Mesh(ID, bpy_struct):
         typing.Dict[str, 'MeshVertexStringPropertyLayer'], typing.
         List['MeshVertexStringPropertyLayer'], 'bpy_prop_collection',
         'VertexStringProperties'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'MeshVertexStringPropertyLayer'], typing.List['MeshVertexStringPropertyLayer'], 'bpy_prop_collection', 'VertexStringProperties']
     '''
@@ -57388,7 +57388,7 @@ class Mesh(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -57399,7 +57399,7 @@ class Mesh(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -57438,7 +57438,7 @@ class MetaBall(ID, bpy_struct):
     materials: typing.Union[typing.Dict[str, 'Material'], typing.
                             List['Material'], 'bpy_prop_collection',
                             'IDMaterials'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'Material'], typing.List['Material'], 'bpy_prop_collection', 'IDMaterials']
     '''
@@ -57501,7 +57501,7 @@ class MetaBall(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -57512,7 +57512,7 @@ class MetaBall(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -57580,7 +57580,7 @@ class MovieClip(ID, bpy_struct):
     '''
 
     proxy: 'MovieClipProxy' = None
-    ''' 
+    '''
 
     :type: 'MovieClipProxy'
     '''
@@ -57598,7 +57598,7 @@ class MovieClip(ID, bpy_struct):
     '''
 
     tracking: 'MovieTracking' = None
-    ''' 
+    '''
 
     :type: 'MovieTracking'
     '''
@@ -57625,7 +57625,7 @@ class MovieClip(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -57636,7 +57636,7 @@ class MovieClip(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -57668,7 +57668,7 @@ class NodeTree(ID, bpy_struct):
     '''
 
     bl_description: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -57680,7 +57680,7 @@ class NodeTree(ID, bpy_struct):
     '''
 
     bl_idname: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -57707,14 +57707,14 @@ class NodeTree(ID, bpy_struct):
 
     links: typing.Union[typing.Dict[str, 'NodeLink'], typing.List['NodeLink'],
                         'bpy_prop_collection', 'NodeLinks'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'NodeLink'], typing.List['NodeLink'], 'bpy_prop_collection', 'NodeLinks']
     '''
 
     nodes: typing.Union[typing.Dict[str, 'Node'], typing.
                         List['Node'], 'bpy_prop_collection', 'Nodes'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'Node'], typing.List['Node'], 'bpy_prop_collection', 'Nodes']
     '''
@@ -57734,7 +57734,7 @@ class NodeTree(ID, bpy_struct):
     '''
 
     view_center: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -57742,7 +57742,7 @@ class NodeTree(ID, bpy_struct):
     def interface_update(self, context: 'Context'):
         ''' Updated node group interface
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         '''
         pass
@@ -57751,7 +57751,7 @@ class NodeTree(ID, bpy_struct):
     def poll(cls, context: 'Context'):
         ''' Check visibility in the editor
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         '''
         pass
@@ -57766,14 +57766,14 @@ class NodeTree(ID, bpy_struct):
     def get_from_context(cls, context: 'Context'):
         ''' Get a node tree from the context
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -57784,7 +57784,7 @@ class NodeTree(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -58026,7 +58026,7 @@ class Object(ID, bpy_struct):
     '''
 
     is_instancer: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -58352,7 +58352,7 @@ class Object(ID, bpy_struct):
     '''
 
     use_dynamic_topology_sculpting: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -58753,7 +58753,7 @@ class Object(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -58764,7 +58764,7 @@ class Object(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -58776,7 +58776,7 @@ class Object(ID, bpy_struct):
 class PaintCurve(ID, bpy_struct):
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -58787,7 +58787,7 @@ class PaintCurve(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -58800,14 +58800,14 @@ class Palette(ID, bpy_struct):
     colors: typing.Union[typing.Dict[str, 'PaletteColor'], typing.
                          List['PaletteColor'], 'bpy_prop_collection',
                          'PaletteColors'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'PaletteColor'], typing.List['PaletteColor'], 'bpy_prop_collection', 'PaletteColors']
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -58818,7 +58818,7 @@ class Palette(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -58832,13 +58832,13 @@ class ParticleSettings(ID, bpy_struct):
     '''
 
     active_instanceweight: 'ParticleDupliWeight' = None
-    ''' 
+    '''
 
     :type: 'ParticleDupliWeight'
     '''
 
     active_instanceweight_index: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -58892,7 +58892,7 @@ class ParticleSettings(ID, bpy_struct):
     '''
 
     apply_guide_to_children: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -58904,7 +58904,7 @@ class ParticleSettings(ID, bpy_struct):
     '''
 
     boids: 'BoidSettings' = None
-    ''' 
+    '''
 
     :type: 'BoidSettings'
     '''
@@ -59102,7 +59102,7 @@ class ParticleSettings(ID, bpy_struct):
     '''
 
     effector_weights: 'EffectorWeights' = None
-    ''' 
+    '''
 
     :type: 'EffectorWeights'
     '''
@@ -59120,19 +59120,19 @@ class ParticleSettings(ID, bpy_struct):
     '''
 
     fluid: 'SPHFluidSettings' = None
-    ''' 
+    '''
 
     :type: 'SPHFluidSettings'
     '''
 
     force_field_1: 'FieldSettings' = None
-    ''' 
+    '''
 
     :type: 'FieldSettings'
     '''
 
     force_field_2: 'FieldSettings' = None
-    ''' 
+    '''
 
     :type: 'FieldSettings'
     '''
@@ -59230,7 +59230,7 @@ class ParticleSettings(ID, bpy_struct):
     '''
 
     keys_step: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -59840,7 +59840,7 @@ class ParticleSettings(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -59851,7 +59851,7 @@ class ParticleSettings(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -59919,7 +59919,7 @@ class Scene(ID, bpy_struct):
     '''
 
     cursor: 'View3DCursor' = None
-    ''' 
+    '''
 
     :type: 'View3DCursor'
     '''
@@ -59967,7 +59967,7 @@ class Scene(ID, bpy_struct):
     '''
 
     frame_float: float = None
-    ''' 
+    '''
 
     :type: float
     '''
@@ -59997,7 +59997,7 @@ class Scene(ID, bpy_struct):
     '''
 
     frame_subframe: float = None
-    ''' 
+    '''
 
     :type: float
     '''
@@ -60056,31 +60056,31 @@ class Scene(ID, bpy_struct):
 
     objects: typing.Union[typing.Dict[str, 'Object'], typing.List['Object'],
                           'bpy_prop_collection', 'SceneObjects'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'Object'], typing.List['Object'], 'bpy_prop_collection', 'SceneObjects']
     '''
 
     render: 'RenderSettings' = None
-    ''' 
+    '''
 
     :type: 'RenderSettings'
     '''
 
     rigidbody_world: 'RigidBodyWorld' = None
-    ''' 
+    '''
 
     :type: 'RigidBodyWorld'
     '''
 
     safe_areas: 'DisplaySafeAreas' = None
-    ''' 
+    '''
 
     :type: 'DisplaySafeAreas'
     '''
 
     sequence_editor: 'SequenceEditor' = None
-    ''' 
+    '''
 
     :type: 'SequenceEditor'
     '''
@@ -60118,7 +60118,7 @@ class Scene(ID, bpy_struct):
     '''
 
     tool_settings: 'ToolSettings' = None
-    ''' 
+    '''
 
     :type: 'ToolSettings'
     '''
@@ -60126,7 +60126,7 @@ class Scene(ID, bpy_struct):
     transform_orientation_slots: typing.Union[
         typing.Dict[str, 'TransformOrientationSlot'], typing.
         List['TransformOrientationSlot'], 'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'TransformOrientationSlot'], typing.List['TransformOrientationSlot'], 'bpy_prop_collection']
     '''
@@ -60176,7 +60176,7 @@ class Scene(ID, bpy_struct):
     view_layers: typing.Union[typing.Dict[str, 'ViewLayer'], typing.
                               List['ViewLayer'], 'bpy_prop_collection',
                               'ViewLayers'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'ViewLayer'], typing.List['ViewLayer'], 'bpy_prop_collection', 'ViewLayers']
     '''
@@ -60232,9 +60232,9 @@ class Scene(ID, bpy_struct):
 
         :param depsgraph: The current dependency graph
         :type depsgraph: 'Depsgraph'
-        :param origin: 
+        :param origin:
         :type origin: typing.List[float]
-        :param direction: 
+        :param direction:
         :type direction: typing.List[float]
         :param distance: Maximum distance
         :type distance: float
@@ -60335,7 +60335,7 @@ class Scene(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -60346,7 +60346,7 @@ class Scene(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -60379,7 +60379,7 @@ class Screen(ID, bpy_struct):
     '''
 
     is_temporary: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -60403,49 +60403,49 @@ class Screen(ID, bpy_struct):
     '''
 
     use_play_3d_editors: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     use_play_animation_editors: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     use_play_clip_editors: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     use_play_image_editors: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     use_play_node_editors: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     use_play_properties_editors: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     use_play_sequence_editors: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     use_play_top_left_3d_editor: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -60460,7 +60460,7 @@ class Screen(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -60471,7 +60471,7 @@ class Screen(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -60491,7 +60491,7 @@ class Sound(ID, bpy_struct):
     '''
 
     packed_file: 'PackedFile' = None
-    ''' 
+    '''
 
     :type: 'PackedFile'
     '''
@@ -60527,7 +60527,7 @@ class Sound(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -60538,7 +60538,7 @@ class Sound(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -60631,7 +60631,7 @@ class Speaker(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -60642,7 +60642,7 @@ class Speaker(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -60782,7 +60782,7 @@ class Text(ID, bpy_struct):
         pass
 
     def as_module(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -60801,7 +60801,7 @@ class Text(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -60812,7 +60812,7 @@ class Text(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -60832,7 +60832,7 @@ class Texture(ID, bpy_struct):
     '''
 
     color_ramp: 'ColorRamp' = None
-    ''' 
+    '''
 
     :type: 'ColorRamp'
     '''
@@ -60844,19 +60844,19 @@ class Texture(ID, bpy_struct):
     '''
 
     factor_blue: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     factor_green: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     factor_red: float = None
-    ''' 
+    '''
 
     :type: float
     '''
@@ -60918,7 +60918,7 @@ class Texture(ID, bpy_struct):
     def evaluate(self, value: typing.List[float]) -> typing.List[float]:
         ''' Evaluate the texture at the coordinates given
 
-        :param value: 
+        :param value:
         :type value: typing.List[float]
         :rtype: typing.List[float]
         :return: Result
@@ -60927,7 +60927,7 @@ class Texture(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -60938,7 +60938,7 @@ class Texture(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -60952,13 +60952,13 @@ class VectorFont(ID, bpy_struct):
     '''
 
     filepath: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     packed_file: 'PackedFile' = None
-    ''' 
+    '''
 
     :type: 'PackedFile'
     '''
@@ -60979,7 +60979,7 @@ class VectorFont(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -60990,7 +60990,7 @@ class VectorFont(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -61056,13 +61056,13 @@ class Volume(ID, bpy_struct):
     materials: typing.Union[typing.Dict[str, 'Material'], typing.
                             List['Material'], 'bpy_prop_collection',
                             'IDMaterials'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'Material'], typing.List['Material'], 'bpy_prop_collection', 'IDMaterials']
     '''
 
     packed_file: 'PackedFile' = None
-    ''' 
+    '''
 
     :type: 'PackedFile'
     '''
@@ -61081,7 +61081,7 @@ class Volume(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -61092,7 +61092,7 @@ class Volume(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -61158,7 +61158,7 @@ class WindowManager(ID, bpy_struct):
     '''
 
     xr_session_settings: 'XrSessionSettings' = None
-    ''' 
+    '''
 
     :type: 'XrSessionSettings'
     '''
@@ -61202,7 +61202,7 @@ class WindowManager(ID, bpy_struct):
     def event_timer_remove(self, timer: 'Timer'):
         ''' event_timer_remove
 
-        :param timer: 
+        :param timer:
         :type timer: 'Timer'
         '''
         pass
@@ -61321,7 +61321,7 @@ class WindowManager(ID, bpy_struct):
                                 icon: typing.Union[str, int] = 'NONE'):
         ''' popmenu_begin__internal
 
-        :param title: 
+        :param title:
         :type title: str
         :param icon: icon
         :type icon: typing.Union[str, int]
@@ -61332,7 +61332,7 @@ class WindowManager(ID, bpy_struct):
     def popmenu_end__internal(cls, menu: 'UIPopupMenu'):
         ''' popmenu_end__internal
 
-        :param menu: 
+        :param menu:
         :type menu: 'UIPopupMenu'
         '''
         pass
@@ -61354,7 +61354,7 @@ class WindowManager(ID, bpy_struct):
     def popover_end__internal(cls, menu: 'UIPopover', keymap: 'KeyMap' = None):
         ''' popover_end__internal
 
-        :param menu: 
+        :param menu:
         :type menu: 'UIPopover'
         :param keymap: Key Map, Active key map
         :type keymap: 'KeyMap'
@@ -61368,11 +61368,11 @@ class WindowManager(ID, bpy_struct):
                                 event: 'Event' = None):
         ''' piemenu_begin__internal
 
-        :param title: 
+        :param title:
         :type title: str
         :param icon: icon
         :type icon: typing.Union[str, int]
-        :param event: 
+        :param event:
         :type event: 'Event'
         '''
         pass
@@ -61381,7 +61381,7 @@ class WindowManager(ID, bpy_struct):
     def piemenu_end__internal(cls, menu: 'UIPieMenu'):
         ''' piemenu_end__internal
 
-        :param menu: 
+        :param menu:
         :type menu: 'UIPieMenu'
         '''
         pass
@@ -61390,7 +61390,7 @@ class WindowManager(ID, bpy_struct):
     def operator_properties_last(cls, operator: str):
         ''' operator_properties_last
 
-        :param operator: 
+        :param operator:
         :type operator: str
         '''
         pass
@@ -61414,7 +61414,7 @@ class WindowManager(ID, bpy_struct):
                 ui_units_x=0,
                 keymap=None,
                 from_active_button=False):
-        ''' 
+        '''
 
         '''
         pass
@@ -61426,14 +61426,14 @@ class WindowManager(ID, bpy_struct):
         pass
 
     def popup_menu_pie(self, event, draw_func, title='', icon='NONE'):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -61444,7 +61444,7 @@ class WindowManager(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -61480,7 +61480,7 @@ class WorkSpace(ID, bpy_struct):
     owner_ids: typing.Union[typing.Dict[str, 'wmOwnerID'], typing.
                             List['wmOwnerID'], 'bpy_prop_collection',
                             'wmOwnerIDs'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'wmOwnerID'], typing.List['wmOwnerID'], 'bpy_prop_collection', 'wmOwnerIDs']
     '''
@@ -61495,7 +61495,7 @@ class WorkSpace(ID, bpy_struct):
     tools: typing.Union[typing.Dict[str, 'WorkSpaceTool'], typing.
                         List['WorkSpaceTool'], 'bpy_prop_collection',
                         'wmTools'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'WorkSpaceTool'], typing.List['WorkSpaceTool'], 'bpy_prop_collection', 'wmTools']
     '''
@@ -61523,7 +61523,7 @@ class WorkSpace(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -61534,7 +61534,7 @@ class WorkSpace(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -61591,7 +61591,7 @@ class World(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -61602,7 +61602,7 @@ class World(ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -61695,7 +61695,7 @@ class Itasc(IKParam, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -61706,7 +61706,7 @@ class Itasc(IKParam, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -61721,7 +61721,7 @@ class LineStyleAlphaModifier(LineStyleModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -61732,7 +61732,7 @@ class LineStyleAlphaModifier(LineStyleModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -61747,7 +61747,7 @@ class LineStyleColorModifier(LineStyleModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -61758,7 +61758,7 @@ class LineStyleColorModifier(LineStyleModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -61773,7 +61773,7 @@ class LineStyleGeometryModifier(LineStyleModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -61784,7 +61784,7 @@ class LineStyleGeometryModifier(LineStyleModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -61799,7 +61799,7 @@ class LineStyleThicknessModifier(LineStyleModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -61810,7 +61810,7 @@ class LineStyleThicknessModifier(LineStyleModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -61867,7 +61867,7 @@ class ArmatureModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -61878,7 +61878,7 @@ class ArmatureModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -61995,7 +61995,7 @@ class ArrayModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -62006,7 +62006,7 @@ class ArrayModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -62159,7 +62159,7 @@ class BevelModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -62170,7 +62170,7 @@ class BevelModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -62239,7 +62239,7 @@ class BooleanModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -62250,7 +62250,7 @@ class BooleanModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -62295,7 +62295,7 @@ class BuildModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -62306,7 +62306,7 @@ class BuildModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -62326,7 +62326,7 @@ class CastModifier(Modifier, bpy_struct):
     '''
 
     factor: float = None
-    ''' 
+    '''
 
     :type: float
     '''
@@ -62368,19 +62368,19 @@ class CastModifier(Modifier, bpy_struct):
     '''
 
     use_x: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     use_y: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     use_z: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -62393,7 +62393,7 @@ class CastModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -62404,7 +62404,7 @@ class CastModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -62418,50 +62418,50 @@ class ClothModifier(Modifier, bpy_struct):
     '''
 
     collision_settings: 'ClothCollisionSettings' = None
-    ''' 
+    '''
 
     :type: 'ClothCollisionSettings'
     '''
 
     hair_grid_max: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     hair_grid_min: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     hair_grid_resolution: typing.List[int] = None
-    ''' 
+    '''
 
     :type: typing.List[int]
     '''
 
     point_cache: 'PointCache' = None
-    ''' 
+    '''
 
     :type: 'PointCache'
     '''
 
     settings: 'ClothSettings' = None
-    ''' 
+    '''
 
     :type: 'ClothSettings'
     '''
 
     solver_result: 'ClothSolverResult' = None
-    ''' 
+    '''
 
     :type: 'ClothSolverResult'
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -62472,7 +62472,7 @@ class ClothModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -62486,14 +62486,14 @@ class CollisionModifier(Modifier, bpy_struct):
     '''
 
     settings: 'CollisionSettings' = None
-    ''' 
+    '''
 
     :type: 'CollisionSettings'
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -62504,7 +62504,7 @@ class CollisionModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -62530,13 +62530,13 @@ class CorrectiveSmoothModifier(Modifier, bpy_struct):
     '''
 
     is_bind: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     iterations: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -62579,7 +62579,7 @@ class CorrectiveSmoothModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -62590,7 +62590,7 @@ class CorrectiveSmoothModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -62629,7 +62629,7 @@ class CurveModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -62640,7 +62640,7 @@ class CurveModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -62823,7 +62823,7 @@ class DataTransferModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -62834,7 +62834,7 @@ class DataTransferModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -62927,7 +62927,7 @@ class DecimateModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -62938,7 +62938,7 @@ class DecimateModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -62982,7 +62982,7 @@ class DisplaceModifier(Modifier, bpy_struct):
     '''
 
     texture: 'Texture' = None
-    ''' 
+    '''
 
     :type: 'Texture'
     '''
@@ -63019,7 +63019,7 @@ class DisplaceModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -63030,7 +63030,7 @@ class DisplaceModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -63044,26 +63044,26 @@ class DynamicPaintModifier(Modifier, bpy_struct):
     '''
 
     brush_settings: 'DynamicPaintBrushSettings' = None
-    ''' 
+    '''
 
     :type: 'DynamicPaintBrushSettings'
     '''
 
     canvas_settings: 'DynamicPaintCanvasSettings' = None
-    ''' 
+    '''
 
     :type: 'DynamicPaintCanvasSettings'
     '''
 
     ui_type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -63074,7 +63074,7 @@ class DynamicPaintModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -63107,7 +63107,7 @@ class EdgeSplitModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -63118,7 +63118,7 @@ class EdgeSplitModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -63180,14 +63180,14 @@ class ExplodeModifier(Modifier, bpy_struct):
     '''
 
     vertex_group: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -63198,7 +63198,7 @@ class ExplodeModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -63212,19 +63212,19 @@ class FluidModifier(Modifier, bpy_struct):
     '''
 
     domain_settings: 'FluidDomainSettings' = None
-    ''' 
+    '''
 
     :type: 'FluidDomainSettings'
     '''
 
     effector_settings: 'FluidEffectorSettings' = None
-    ''' 
+    '''
 
     :type: 'FluidEffectorSettings'
     '''
 
     flow_settings: 'FluidFlowSettings' = None
-    ''' 
+    '''
 
     :type: 'FluidFlowSettings'
     '''
@@ -63237,7 +63237,7 @@ class FluidModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -63248,7 +63248,7 @@ class FluidModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -63280,7 +63280,7 @@ class HookModifier(Modifier, bpy_struct):
     '''
 
     falloff_type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -63343,7 +63343,7 @@ class HookModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -63354,7 +63354,7 @@ class HookModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -63380,7 +63380,7 @@ class LaplacianDeformModifier(Modifier, bpy_struct):
     '''
 
     iterations: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -63393,7 +63393,7 @@ class LaplacianDeformModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -63404,7 +63404,7 @@ class LaplacianDeformModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -63424,7 +63424,7 @@ class LaplacianSmoothModifier(Modifier, bpy_struct):
     '''
 
     iterations: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -63479,7 +63479,7 @@ class LaplacianSmoothModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -63490,7 +63490,7 @@ class LaplacianSmoothModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -63529,7 +63529,7 @@ class LatticeModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -63540,7 +63540,7 @@ class LatticeModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -63566,7 +63566,7 @@ class MaskModifier(Modifier, bpy_struct):
     '''
 
     mode: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -63585,7 +63585,7 @@ class MaskModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -63596,7 +63596,7 @@ class MaskModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -63610,7 +63610,7 @@ class MeshCacheModifier(Modifier, bpy_struct):
     '''
 
     cache_format: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -63652,13 +63652,13 @@ class MeshCacheModifier(Modifier, bpy_struct):
     '''
 
     flip_axis: typing.Union[typing.Set[str], typing.Set[int]] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Set[str], typing.Set[int]]
     '''
 
     forward_axis: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -63676,7 +63676,7 @@ class MeshCacheModifier(Modifier, bpy_struct):
     '''
 
     interpolation: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -63694,14 +63694,14 @@ class MeshCacheModifier(Modifier, bpy_struct):
     '''
 
     up_axis: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -63712,7 +63712,7 @@ class MeshCacheModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -63763,7 +63763,7 @@ class MeshDeformModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -63774,7 +63774,7 @@ class MeshDeformModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -63788,13 +63788,13 @@ class MeshSequenceCacheModifier(Modifier, bpy_struct):
     '''
 
     cache_file: 'CacheFile' = None
-    ''' 
+    '''
 
     :type: 'CacheFile'
     '''
 
     has_velocity: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -63812,7 +63812,7 @@ class MeshSequenceCacheModifier(Modifier, bpy_struct):
     '''
 
     read_velocity: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -63839,7 +63839,7 @@ class MeshSequenceCacheModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -63850,7 +63850,7 @@ class MeshSequenceCacheModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -63910,7 +63910,7 @@ class MeshToVolumeModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -63921,7 +63921,7 @@ class MeshToVolumeModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -64032,7 +64032,7 @@ class MirrorModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -64043,7 +64043,7 @@ class MirrorModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -64136,7 +64136,7 @@ class MultiresModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -64147,7 +64147,7 @@ class MultiresModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -64165,7 +64165,7 @@ class NodesModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -64176,7 +64176,7 @@ class NodesModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -64251,7 +64251,7 @@ class NormalEditModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -64262,7 +64262,7 @@ class NormalEditModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -64469,7 +64469,7 @@ class OceanModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -64480,7 +64480,7 @@ class OceanModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -64524,13 +64524,13 @@ class ParticleInstanceModifier(Modifier, bpy_struct):
     '''
 
     particle_system: 'ParticleSystem' = None
-    ''' 
+    '''
 
     :type: 'ParticleSystem'
     '''
 
     particle_system_index: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -64621,7 +64621,7 @@ class ParticleInstanceModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -64632,7 +64632,7 @@ class ParticleInstanceModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -64653,7 +64653,7 @@ class ParticleSystemModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -64664,7 +64664,7 @@ class ParticleSystemModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -64714,7 +64714,7 @@ class RemeshModifier(Modifier, bpy_struct):
     '''
 
     use_remove_disconnected: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -64733,7 +64733,7 @@ class RemeshModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -64744,7 +64744,7 @@ class RemeshModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -64849,7 +64849,7 @@ class ScrewModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -64860,7 +64860,7 @@ class ScrewModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -64934,19 +64934,19 @@ class ShrinkwrapModifier(Modifier, bpy_struct):
     '''
 
     use_project_x: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     use_project_y: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     use_project_z: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -64971,7 +64971,7 @@ class ShrinkwrapModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -64982,7 +64982,7 @@ class ShrinkwrapModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -65063,7 +65063,7 @@ class SimpleDeformModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -65074,7 +65074,7 @@ class SimpleDeformModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -65119,7 +65119,7 @@ class SkinModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -65130,7 +65130,7 @@ class SkinModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -65156,7 +65156,7 @@ class SmoothModifier(Modifier, bpy_struct):
     '''
 
     iterations: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -65187,7 +65187,7 @@ class SmoothModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -65198,7 +65198,7 @@ class SmoothModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -65212,20 +65212,20 @@ class SoftBodyModifier(Modifier, bpy_struct):
     '''
 
     point_cache: 'PointCache' = None
-    ''' 
+    '''
 
     :type: 'PointCache'
     '''
 
     settings: 'SoftBodySettings' = None
-    ''' 
+    '''
 
     :type: 'SoftBodySettings'
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -65236,7 +65236,7 @@ class SoftBodyModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -65401,7 +65401,7 @@ class SolidifyModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -65412,7 +65412,7 @@ class SolidifyModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -65487,7 +65487,7 @@ class SubsurfModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -65498,7 +65498,7 @@ class SubsurfModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -65546,7 +65546,7 @@ class SurfaceDeformModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -65557,7 +65557,7 @@ class SurfaceDeformModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -65572,7 +65572,7 @@ class SurfaceModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -65583,7 +65583,7 @@ class SurfaceModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -65622,7 +65622,7 @@ class TriangulateModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -65633,7 +65633,7 @@ class TriangulateModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -65666,7 +65666,7 @@ class UVProjectModifier(Modifier, bpy_struct):
 
     projectors: typing.Union[typing.Dict[str, 'UVProjector'], typing.
                              List['UVProjector'], 'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'UVProjector'], typing.List['UVProjector'], 'bpy_prop_collection']
     '''
@@ -65691,7 +65691,7 @@ class UVProjectModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -65702,7 +65702,7 @@ class UVProjectModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -65795,7 +65795,7 @@ class UVWarpModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -65806,7 +65806,7 @@ class UVWarpModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -65935,7 +65935,7 @@ class VertexWeightEditModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -65946,7 +65946,7 @@ class VertexWeightEditModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -66069,7 +66069,7 @@ class VertexWeightMixModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -66080,7 +66080,7 @@ class VertexWeightMixModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -66209,7 +66209,7 @@ class VertexWeightProximityModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -66220,7 +66220,7 @@ class VertexWeightProximityModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -66237,7 +66237,7 @@ class VolumeDisplaceModifier(Modifier, bpy_struct):
     '''
 
     texture: 'Texture' = None
-    ''' 
+    '''
 
     :type: 'Texture'
     '''
@@ -66268,7 +66268,7 @@ class VolumeDisplaceModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -66279,7 +66279,7 @@ class VolumeDisplaceModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -66339,7 +66339,7 @@ class VolumeToMeshModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -66350,7 +66350,7 @@ class VolumeToMeshModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -66388,7 +66388,7 @@ class WarpModifier(Modifier, bpy_struct):
     '''
 
     falloff_type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -66412,13 +66412,13 @@ class WarpModifier(Modifier, bpy_struct):
     '''
 
     strength: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     texture: 'Texture' = None
-    ''' 
+    '''
 
     :type: 'Texture'
     '''
@@ -66461,7 +66461,7 @@ class WarpModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -66472,7 +66472,7 @@ class WarpModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -66546,7 +66546,7 @@ class WaveModifier(Modifier, bpy_struct):
     '''
 
     texture: 'Texture' = None
-    ''' 
+    '''
 
     :type: 'Texture'
     '''
@@ -66637,7 +66637,7 @@ class WaveModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -66648,7 +66648,7 @@ class WaveModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -66702,7 +66702,7 @@ class WeightedNormalModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -66713,7 +66713,7 @@ class WeightedNormalModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -66752,7 +66752,7 @@ class WeldModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -66763,7 +66763,7 @@ class WeldModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -66850,7 +66850,7 @@ class WireframeModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -66861,7 +66861,7 @@ class WireframeModifier(Modifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -66881,14 +66881,14 @@ class NodeCustomGroup(Node, bpy_struct):
     '''
 
     node_tree: 'NodeTree' = None
-    ''' 
+    '''
 
     :type: 'NodeTree'
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -66899,7 +66899,7 @@ class NodeCustomGroup(Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -66935,7 +66935,7 @@ class NodeInternal(Node, bpy_struct):
     def draw_buttons(self, context: 'Context', layout: 'UILayout'):
         ''' Draw node buttons
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         :param layout: Layout, Layout in the UI
         :type layout: 'UILayout'
@@ -66945,7 +66945,7 @@ class NodeInternal(Node, bpy_struct):
     def draw_buttons_ext(self, context: 'Context', layout: 'UILayout'):
         ''' Draw node buttons in the sidebar
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         :param layout: Layout, Layout in the UI
         :type layout: 'UILayout'
@@ -66954,7 +66954,7 @@ class NodeInternal(Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -66965,7 +66965,7 @@ class NodeInternal(Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -66982,7 +66982,7 @@ class NodeSocketStandard(NodeSocket, bpy_struct):
              text: str):
         ''' Draw socket
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         :param layout: Layout, Layout in the UI
         :type layout: 'UILayout'
@@ -66997,7 +66997,7 @@ class NodeSocketStandard(NodeSocket, bpy_struct):
                    node: 'Node') -> typing.List[float]:
         ''' Color of the socket icon
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         :param node: Node, Node the socket belongs to
         :type node: 'Node'
@@ -67008,7 +67008,7 @@ class NodeSocketStandard(NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67019,7 +67019,7 @@ class NodeSocketStandard(NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67038,7 +67038,7 @@ class NodeSocketInterfaceStandard(NodeSocketInterface, bpy_struct):
     def draw(self, context: 'Context', layout: 'UILayout'):
         ''' Draw template settings
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         :param layout: Layout, Layout in the UI
         :type layout: 'UILayout'
@@ -67048,7 +67048,7 @@ class NodeSocketInterfaceStandard(NodeSocketInterface, bpy_struct):
     def draw_color(self, context: 'Context') -> typing.List[float]:
         ''' Color of the socket icon
 
-        :param context: 
+        :param context:
         :type context: 'Context'
         :rtype: typing.List[float]
         :return: Color
@@ -67057,7 +67057,7 @@ class NodeSocketInterfaceStandard(NodeSocketInterface, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67068,7 +67068,7 @@ class NodeSocketInterfaceStandard(NodeSocketInterface, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67086,7 +67086,7 @@ class GpPaint(Paint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67097,7 +67097,7 @@ class GpPaint(Paint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67109,7 +67109,7 @@ class GpPaint(Paint, bpy_struct):
 class GpSculptPaint(Paint, bpy_struct):
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67120,7 +67120,7 @@ class GpSculptPaint(Paint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67132,7 +67132,7 @@ class GpSculptPaint(Paint, bpy_struct):
 class GpVertexPaint(Paint, bpy_struct):
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67143,7 +67143,7 @@ class GpVertexPaint(Paint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67155,7 +67155,7 @@ class GpVertexPaint(Paint, bpy_struct):
 class GpWeightPaint(Paint, bpy_struct):
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67166,7 +67166,7 @@ class GpWeightPaint(Paint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67307,7 +67307,7 @@ class ImagePaint(Paint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67318,7 +67318,7 @@ class ImagePaint(Paint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67450,7 +67450,7 @@ class Sculpt(Paint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67461,7 +67461,7 @@ class Sculpt(Paint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67473,7 +67473,7 @@ class Sculpt(Paint, bpy_struct):
 class UvSculpt(Paint, bpy_struct):
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67484,7 +67484,7 @@ class UvSculpt(Paint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67511,7 +67511,7 @@ class VertexPaint(Paint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67522,7 +67522,7 @@ class VertexPaint(Paint, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67560,14 +67560,14 @@ class BoolProperty(Property, bpy_struct):
     '''
 
     is_array: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67578,7 +67578,7 @@ class BoolProperty(Property, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67599,7 +67599,7 @@ class CollectionProperty(Property, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67610,7 +67610,7 @@ class CollectionProperty(Property, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67653,7 +67653,7 @@ class EnumProperty(Property, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67664,7 +67664,7 @@ class EnumProperty(Property, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67714,7 +67714,7 @@ class FloatProperty(Property, bpy_struct):
     '''
 
     is_array: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -67745,7 +67745,7 @@ class FloatProperty(Property, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67756,7 +67756,7 @@ class FloatProperty(Property, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67806,7 +67806,7 @@ class IntProperty(Property, bpy_struct):
     '''
 
     is_array: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -67831,7 +67831,7 @@ class IntProperty(Property, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67842,7 +67842,7 @@ class IntProperty(Property, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67863,7 +67863,7 @@ class PointerProperty(Property, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67874,7 +67874,7 @@ class PointerProperty(Property, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67901,7 +67901,7 @@ class StringProperty(Property, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67912,7 +67912,7 @@ class StringProperty(Property, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67930,7 +67930,7 @@ class OperatorFileListElement(PropertyGroup, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67941,7 +67941,7 @@ class OperatorFileListElement(PropertyGroup, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67968,7 +67968,7 @@ class OperatorMousePath(PropertyGroup, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67979,7 +67979,7 @@ class OperatorMousePath(PropertyGroup, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -67990,31 +67990,31 @@ class OperatorMousePath(PropertyGroup, bpy_struct):
 
 class OperatorStrokeElement(PropertyGroup, bpy_struct):
     is_start: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     location: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     mouse: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     mouse_event: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     pen_flip: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -68032,26 +68032,26 @@ class OperatorStrokeElement(PropertyGroup, bpy_struct):
     '''
 
     time: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     x_tilt: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     y_tilt: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -68062,7 +68062,7 @@ class OperatorStrokeElement(PropertyGroup, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -68073,20 +68073,20 @@ class OperatorStrokeElement(PropertyGroup, bpy_struct):
 
 class SelectedUvElement(PropertyGroup, bpy_struct):
     element_index: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     face_index: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -68097,7 +68097,7 @@ class SelectedUvElement(PropertyGroup, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -68117,7 +68117,7 @@ class EffectSequence(Sequence, bpy_struct):
     '''
 
     color_multiply: float = None
-    ''' 
+    '''
 
     :type: float
     '''
@@ -68129,13 +68129,13 @@ class EffectSequence(Sequence, bpy_struct):
     '''
 
     crop: 'SequenceCrop' = None
-    ''' 
+    '''
 
     :type: 'SequenceCrop'
     '''
 
     proxy: 'SequenceProxy' = None
-    ''' 
+    '''
 
     :type: 'SequenceProxy'
     '''
@@ -68147,7 +68147,7 @@ class EffectSequence(Sequence, bpy_struct):
     '''
 
     transform: 'SequenceTransform' = None
-    ''' 
+    '''
 
     :type: 'SequenceTransform'
     '''
@@ -68190,7 +68190,7 @@ class EffectSequence(Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -68201,7 +68201,7 @@ class EffectSequence(Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -68233,7 +68233,7 @@ class ImageSequence(Sequence, bpy_struct):
     '''
 
     color_multiply: float = None
-    ''' 
+    '''
 
     :type: float
     '''
@@ -68251,13 +68251,13 @@ class ImageSequence(Sequence, bpy_struct):
     '''
 
     crop: 'SequenceCrop' = None
-    ''' 
+    '''
 
     :type: 'SequenceCrop'
     '''
 
     directory: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -68265,13 +68265,13 @@ class ImageSequence(Sequence, bpy_struct):
     elements: typing.Union[typing.Dict[str, 'SequenceElement'], typing.
                            List['SequenceElement'], 'bpy_prop_collection',
                            'SequenceElements'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'SequenceElement'], typing.List['SequenceElement'], 'bpy_prop_collection', 'SequenceElements']
     '''
 
     proxy: 'SequenceProxy' = None
-    ''' 
+    '''
 
     :type: 'SequenceProxy'
     '''
@@ -68289,7 +68289,7 @@ class ImageSequence(Sequence, bpy_struct):
     '''
 
     transform: 'SequenceTransform' = None
-    ''' 
+    '''
 
     :type: 'SequenceTransform'
     '''
@@ -68344,7 +68344,7 @@ class ImageSequence(Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -68355,7 +68355,7 @@ class ImageSequence(Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -68387,7 +68387,7 @@ class MaskSequence(Sequence, bpy_struct):
     '''
 
     color_multiply: float = None
-    ''' 
+    '''
 
     :type: float
     '''
@@ -68399,7 +68399,7 @@ class MaskSequence(Sequence, bpy_struct):
     '''
 
     crop: 'SequenceCrop' = None
-    ''' 
+    '''
 
     :type: 'SequenceCrop'
     '''
@@ -68417,7 +68417,7 @@ class MaskSequence(Sequence, bpy_struct):
     '''
 
     transform: 'SequenceTransform' = None
-    ''' 
+    '''
 
     :type: 'SequenceTransform'
     '''
@@ -68454,7 +68454,7 @@ class MaskSequence(Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -68465,7 +68465,7 @@ class MaskSequence(Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -68497,7 +68497,7 @@ class MetaSequence(Sequence, bpy_struct):
     '''
 
     color_multiply: float = None
-    ''' 
+    '''
 
     :type: float
     '''
@@ -68509,13 +68509,13 @@ class MetaSequence(Sequence, bpy_struct):
     '''
 
     crop: 'SequenceCrop' = None
-    ''' 
+    '''
 
     :type: 'SequenceCrop'
     '''
 
     proxy: 'SequenceProxy' = None
-    ''' 
+    '''
 
     :type: 'SequenceProxy'
     '''
@@ -68535,7 +68535,7 @@ class MetaSequence(Sequence, bpy_struct):
     '''
 
     transform: 'SequenceTransform' = None
-    ''' 
+    '''
 
     :type: 'SequenceTransform'
     '''
@@ -68578,7 +68578,7 @@ class MetaSequence(Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -68589,7 +68589,7 @@ class MetaSequence(Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -68621,7 +68621,7 @@ class MovieClipSequence(Sequence, bpy_struct):
     '''
 
     color_multiply: float = None
-    ''' 
+    '''
 
     :type: float
     '''
@@ -68633,7 +68633,7 @@ class MovieClipSequence(Sequence, bpy_struct):
     '''
 
     crop: 'SequenceCrop' = None
-    ''' 
+    '''
 
     :type: 'SequenceCrop'
     '''
@@ -68657,7 +68657,7 @@ class MovieClipSequence(Sequence, bpy_struct):
     '''
 
     transform: 'SequenceTransform' = None
-    ''' 
+    '''
 
     :type: 'SequenceTransform'
     '''
@@ -68700,7 +68700,7 @@ class MovieClipSequence(Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -68711,7 +68711,7 @@ class MovieClipSequence(Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -68743,7 +68743,7 @@ class MovieSequence(Sequence, bpy_struct):
     '''
 
     color_multiply: float = None
-    ''' 
+    '''
 
     :type: float
     '''
@@ -68761,7 +68761,7 @@ class MovieSequence(Sequence, bpy_struct):
     '''
 
     crop: 'SequenceCrop' = None
-    ''' 
+    '''
 
     :type: 'SequenceCrop'
     '''
@@ -68769,13 +68769,13 @@ class MovieSequence(Sequence, bpy_struct):
     elements: typing.Union[typing.Dict[str, 'SequenceElement'], typing.
                            List['SequenceElement'],
                            'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'SequenceElement'], typing.List['SequenceElement'], 'bpy_prop_collection']
     '''
 
     filepath: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -68793,7 +68793,7 @@ class MovieSequence(Sequence, bpy_struct):
     '''
 
     proxy: 'SequenceProxy' = None
-    ''' 
+    '''
 
     :type: 'SequenceProxy'
     '''
@@ -68817,7 +68817,7 @@ class MovieSequence(Sequence, bpy_struct):
     '''
 
     transform: 'SequenceTransform' = None
-    ''' 
+    '''
 
     :type: 'SequenceTransform'
     '''
@@ -68888,7 +68888,7 @@ class MovieSequence(Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -68899,7 +68899,7 @@ class MovieSequence(Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -68931,7 +68931,7 @@ class SceneSequence(Sequence, bpy_struct):
     '''
 
     color_multiply: float = None
-    ''' 
+    '''
 
     :type: float
     '''
@@ -68943,7 +68943,7 @@ class SceneSequence(Sequence, bpy_struct):
     '''
 
     crop: 'SequenceCrop' = None
-    ''' 
+    '''
 
     :type: 'SequenceCrop'
     '''
@@ -68955,7 +68955,7 @@ class SceneSequence(Sequence, bpy_struct):
     '''
 
     proxy: 'SequenceProxy' = None
-    ''' 
+    '''
 
     :type: 'SequenceProxy'
     '''
@@ -68985,7 +68985,7 @@ class SceneSequence(Sequence, bpy_struct):
     '''
 
     transform: 'SequenceTransform' = None
-    ''' 
+    '''
 
     :type: 'SequenceTransform'
     '''
@@ -69034,7 +69034,7 @@ class SceneSequence(Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -69045,7 +69045,7 @@ class SceneSequence(Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -69102,7 +69102,7 @@ class SoundSequence(Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -69113,7 +69113,7 @@ class SoundSequence(Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -69128,7 +69128,7 @@ class SequenceColorBalance(SequenceColorBalanceData, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -69139,7 +69139,7 @@ class SequenceColorBalance(SequenceColorBalanceData, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -69166,7 +69166,7 @@ class BrightContrastModifier(SequenceModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -69177,7 +69177,7 @@ class BrightContrastModifier(SequenceModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -69191,7 +69191,7 @@ class ColorBalanceModifier(SequenceModifier, bpy_struct):
     '''
 
     color_balance: 'SequenceColorBalanceData' = None
-    ''' 
+    '''
 
     :type: 'SequenceColorBalanceData'
     '''
@@ -69204,7 +69204,7 @@ class ColorBalanceModifier(SequenceModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -69215,7 +69215,7 @@ class ColorBalanceModifier(SequenceModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -69229,14 +69229,14 @@ class CurvesModifier(SequenceModifier, bpy_struct):
     '''
 
     curve_mapping: 'CurveMapping' = None
-    ''' 
+    '''
 
     :type: 'CurveMapping'
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -69247,7 +69247,7 @@ class CurvesModifier(SequenceModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -69261,14 +69261,14 @@ class HueCorrectModifier(SequenceModifier, bpy_struct):
     '''
 
     curve_mapping: 'CurveMapping' = None
-    ''' 
+    '''
 
     :type: 'CurveMapping'
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -69279,7 +69279,7 @@ class HueCorrectModifier(SequenceModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -69342,7 +69342,7 @@ class SequencerTonemapModifierData(SequenceModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -69353,7 +69353,7 @@ class SequencerTonemapModifierData(SequenceModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -69374,7 +69374,7 @@ class WhiteBalanceModifier(SequenceModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -69385,7 +69385,7 @@ class WhiteBalanceModifier(SequenceModifier, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -69424,7 +69424,7 @@ class ShaderFxBlur(ShaderFx, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -69435,7 +69435,7 @@ class ShaderFxBlur(ShaderFx, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -69474,7 +69474,7 @@ class ShaderFxColorize(ShaderFx, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -69485,7 +69485,7 @@ class ShaderFxColorize(ShaderFx, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -69512,7 +69512,7 @@ class ShaderFxFlip(ShaderFx, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -69523,7 +69523,7 @@ class ShaderFxFlip(ShaderFx, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -69598,7 +69598,7 @@ class ShaderFxGlow(ShaderFx, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -69609,7 +69609,7 @@ class ShaderFxGlow(ShaderFx, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -69636,7 +69636,7 @@ class ShaderFxPixel(ShaderFx, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -69647,7 +69647,7 @@ class ShaderFxPixel(ShaderFx, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -69698,7 +69698,7 @@ class ShaderFxRim(ShaderFx, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -69709,7 +69709,7 @@ class ShaderFxRim(ShaderFx, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -69802,7 +69802,7 @@ class ShaderFxShadow(ShaderFx, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -69813,7 +69813,7 @@ class ShaderFxShadow(ShaderFx, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -69852,7 +69852,7 @@ class ShaderFxSwirl(ShaderFx, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -69863,7 +69863,7 @@ class ShaderFxSwirl(ShaderFx, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -69902,7 +69902,7 @@ class ShaderFxWave(ShaderFx, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -69913,7 +69913,7 @@ class ShaderFxWave(ShaderFx, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -70083,13 +70083,13 @@ class SpaceClipEditor(Space, bpy_struct):
     '''
 
     show_mask_overlay: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_mask_smooth: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -70113,19 +70113,19 @@ class SpaceClipEditor(Space, bpy_struct):
     '''
 
     show_region_hud: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_region_toolbar: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_region_ui: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -70180,7 +70180,7 @@ class SpaceClipEditor(Space, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -70191,7 +70191,7 @@ class SpaceClipEditor(Space, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -70204,7 +70204,7 @@ class SpaceClipEditor(Space, bpy_struct):
         ''' Add a new draw handler to this space type. It will be called every time the specified region in the space type will be drawn. Note: All arguments are positional only for now.
 
         :param callback: A function that will be called when the region is drawn. It gets the specified arguments as input.
-        :type callback: 
+        :type callback:
         :param args: Arguments that will be passed to the callback.
         :type args: tuple
         :param region_type: bpy.types.Region.type )
@@ -70265,20 +70265,20 @@ class SpaceConsole(Space, bpy_struct):
     '''
 
     select_end: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     select_start: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -70289,7 +70289,7 @@ class SpaceConsole(Space, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -70302,7 +70302,7 @@ class SpaceConsole(Space, bpy_struct):
         ''' Add a new draw handler to this space type. It will be called every time the specified region in the space type will be drawn. Note: All arguments are positional only for now.
 
         :param callback: A function that will be called when the region is drawn. It gets the specified arguments as input.
-        :type callback: 
+        :type callback:
         :param args: Arguments that will be passed to the callback.
         :type args: tuple
         :param region_type: bpy.types.Region.type )
@@ -70421,7 +70421,7 @@ class SpaceDopeSheetEditor(Space, bpy_struct):
     '''
 
     show_region_ui: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -70464,7 +70464,7 @@ class SpaceDopeSheetEditor(Space, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -70475,7 +70475,7 @@ class SpaceDopeSheetEditor(Space, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -70488,7 +70488,7 @@ class SpaceDopeSheetEditor(Space, bpy_struct):
         ''' Add a new draw handler to this space type. It will be called every time the specified region in the space type will be drawn. Note: All arguments are positional only for now.
 
         :param callback: A function that will be called when the region is drawn. It gets the specified arguments as input.
-        :type callback: 
+        :type callback:
         :param args: Arguments that will be passed to the callback.
         :type args: tuple
         :param region_type: bpy.types.Region.type )
@@ -70517,7 +70517,7 @@ class SpaceFileBrowser(Space, bpy_struct):
     '''
 
     active_operator: 'Operator' = None
-    ''' 
+    '''
 
     :type: 'Operator'
     '''
@@ -70543,7 +70543,7 @@ class SpaceFileBrowser(Space, bpy_struct):
     '''
 
     operator: 'Operator' = None
-    ''' 
+    '''
 
     :type: 'Operator'
     '''
@@ -70557,7 +70557,7 @@ class SpaceFileBrowser(Space, bpy_struct):
     recent_folders: typing.Union[
         typing.Dict[str, 'FileBrowserFSMenuEntry'], typing.
         List['FileBrowserFSMenuEntry'], 'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'FileBrowserFSMenuEntry'], typing.List['FileBrowserFSMenuEntry'], 'bpy_prop_collection']
     '''
@@ -70569,13 +70569,13 @@ class SpaceFileBrowser(Space, bpy_struct):
     '''
 
     show_region_toolbar: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_region_ui: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -70622,7 +70622,7 @@ class SpaceFileBrowser(Space, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -70633,7 +70633,7 @@ class SpaceFileBrowser(Space, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -70646,7 +70646,7 @@ class SpaceFileBrowser(Space, bpy_struct):
         ''' Add a new draw handler to this space type. It will be called every time the specified region in the space type will be drawn. Note: All arguments are positional only for now.
 
         :param callback: A function that will be called when the region is drawn. It gets the specified arguments as input.
-        :type callback: 
+        :type callback:
         :param args: Arguments that will be passed to the callback.
         :type args: tuple
         :param region_type: bpy.types.Region.type )
@@ -70723,7 +70723,7 @@ class SpaceGraphEditor(Space, bpy_struct):
     '''
 
     show_extrapolation: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -70741,13 +70741,13 @@ class SpaceGraphEditor(Space, bpy_struct):
     '''
 
     show_region_hud: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_region_ui: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -70808,7 +70808,7 @@ class SpaceGraphEditor(Space, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -70819,7 +70819,7 @@ class SpaceGraphEditor(Space, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -70832,7 +70832,7 @@ class SpaceGraphEditor(Space, bpy_struct):
         ''' Add a new draw handler to this space type. It will be called every time the specified region in the space type will be drawn. Note: All arguments are positional only for now.
 
         :param callback: A function that will be called when the region is drawn. It gets the specified arguments as input.
-        :type callback: 
+        :type callback:
         :param args: Arguments that will be passed to the callback.
         :type args: tuple
         :param region_type: bpy.types.Region.type )
@@ -70945,13 +70945,13 @@ class SpaceImageEditor(Space, bpy_struct):
     '''
 
     show_mask_overlay: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_mask_smooth: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -70969,25 +70969,25 @@ class SpaceImageEditor(Space, bpy_struct):
     '''
 
     show_region_hud: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_region_tool_header: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_region_toolbar: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_region_ui: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -71048,7 +71048,7 @@ class SpaceImageEditor(Space, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -71059,7 +71059,7 @@ class SpaceImageEditor(Space, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -71072,7 +71072,7 @@ class SpaceImageEditor(Space, bpy_struct):
         ''' Add a new draw handler to this space type. It will be called every time the specified region in the space type will be drawn. Note: All arguments are positional only for now.
 
         :param callback: A function that will be called when the region is drawn. It gets the specified arguments as input.
-        :type callback: 
+        :type callback:
         :param args: Arguments that will be passed to the callback.
         :type args: tuple
         :param region_type: bpy.types.Region.type )
@@ -71132,7 +71132,7 @@ class SpaceInfo(Space, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -71143,7 +71143,7 @@ class SpaceInfo(Space, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -71156,7 +71156,7 @@ class SpaceInfo(Space, bpy_struct):
         ''' Add a new draw handler to this space type. It will be called every time the specified region in the space type will be drawn. Note: All arguments are positional only for now.
 
         :param callback: A function that will be called when the region is drawn. It gets the specified arguments as input.
-        :type callback: 
+        :type callback:
         :param args: Arguments that will be passed to the callback.
         :type args: tuple
         :param region_type: bpy.types.Region.type )
@@ -71209,7 +71209,7 @@ class SpaceNLA(Space, bpy_struct):
     '''
 
     show_region_ui: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -71234,7 +71234,7 @@ class SpaceNLA(Space, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -71245,7 +71245,7 @@ class SpaceNLA(Space, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -71258,7 +71258,7 @@ class SpaceNLA(Space, bpy_struct):
         ''' Add a new draw handler to this space type. It will be called every time the specified region in the space type will be drawn. Note: All arguments are positional only for now.
 
         :param callback: A function that will be called when the region is drawn. It gets the specified arguments as input.
-        :type callback: 
+        :type callback:
         :param args: Arguments that will be passed to the callback.
         :type args: tuple
         :param region_type: bpy.types.Region.type )
@@ -71373,13 +71373,13 @@ class SpaceNodeEditor(Space, bpy_struct):
     '''
 
     show_region_toolbar: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_region_ui: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -71420,7 +71420,7 @@ class SpaceNodeEditor(Space, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -71431,7 +71431,7 @@ class SpaceNodeEditor(Space, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -71444,7 +71444,7 @@ class SpaceNodeEditor(Space, bpy_struct):
         ''' Add a new draw handler to this space type. It will be called every time the specified region in the space type will be drawn. Note: All arguments are positional only for now.
 
         :param callback: A function that will be called when the region is drawn. It gets the specified arguments as input.
-        :type callback: 
+        :type callback:
         :param args: Arguments that will be passed to the callback.
         :type args: tuple
         :param region_type: bpy.types.Region.type )
@@ -71641,7 +71641,7 @@ class SpaceOutliner(Space, bpy_struct):
     '''
 
     use_sort_alpha: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -71654,7 +71654,7 @@ class SpaceOutliner(Space, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -71665,7 +71665,7 @@ class SpaceOutliner(Space, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -71678,7 +71678,7 @@ class SpaceOutliner(Space, bpy_struct):
         ''' Add a new draw handler to this space type. It will be called every time the specified region in the space type will be drawn. Note: All arguments are positional only for now.
 
         :param callback: A function that will be called when the region is drawn. It gets the specified arguments as input.
-        :type callback: 
+        :type callback:
         :param args: Arguments that will be passed to the callback.
         :type args: tuple
         :param region_type: bpy.types.Region.type )
@@ -71720,7 +71720,7 @@ class SpacePreferences(Space, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -71731,7 +71731,7 @@ class SpacePreferences(Space, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -71744,7 +71744,7 @@ class SpacePreferences(Space, bpy_struct):
         ''' Add a new draw handler to this space type. It will be called every time the specified region in the space type will be drawn. Note: All arguments are positional only for now.
 
         :param callback: A function that will be called when the region is drawn. It gets the specified arguments as input.
-        :type callback: 
+        :type callback:
         :param args: Arguments that will be passed to the callback.
         :type args: tuple
         :param region_type: bpy.types.Region.type )
@@ -71785,7 +71785,7 @@ class SpaceProperties(Space, bpy_struct):
     '''
 
     pin_id: 'ID' = None
-    ''' 
+    '''
 
     :type: 'ID'
     '''
@@ -71810,7 +71810,7 @@ class SpaceProperties(Space, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -71821,7 +71821,7 @@ class SpaceProperties(Space, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -71834,7 +71834,7 @@ class SpaceProperties(Space, bpy_struct):
         ''' Add a new draw handler to this space type. It will be called every time the specified region in the space type will be drawn. Note: All arguments are positional only for now.
 
         :param callback: A function that will be called when the region is drawn. It gets the specified arguments as input.
-        :type callback: 
+        :type callback:
         :param args: Arguments that will be passed to the callback.
         :type args: tuple
         :param region_type: bpy.types.Region.type )
@@ -71941,25 +71941,25 @@ class SpaceSequenceEditor(Space, bpy_struct):
     '''
 
     show_region_hud: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_region_tool_header: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_region_toolbar: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_region_ui: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -71989,13 +71989,13 @@ class SpaceSequenceEditor(Space, bpy_struct):
     '''
 
     show_strip_duration: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_strip_name: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -72007,7 +72007,7 @@ class SpaceSequenceEditor(Space, bpy_struct):
     '''
 
     show_strip_overlay: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -72056,7 +72056,7 @@ class SpaceSequenceEditor(Space, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -72067,7 +72067,7 @@ class SpaceSequenceEditor(Space, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -72080,7 +72080,7 @@ class SpaceSequenceEditor(Space, bpy_struct):
         ''' Add a new draw handler to this space type. It will be called every time the specified region in the space type will be drawn. Note: All arguments are positional only for now.
 
         :param callback: A function that will be called when the region is drawn. It gets the specified arguments as input.
-        :type callback: 
+        :type callback:
         :param args: Arguments that will be passed to the callback.
         :type args: tuple
         :param region_type: bpy.types.Region.type )
@@ -72124,7 +72124,7 @@ class SpaceSpreadsheet(Space, bpy_struct):
     '''
 
     display_context_path_collapsed: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -72154,7 +72154,7 @@ class SpaceSpreadsheet(Space, bpy_struct):
     '''
 
     show_region_footer: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -72165,14 +72165,14 @@ class SpaceSpreadsheet(Space, bpy_struct):
 
         :param node_editor: Editor to take the context from
         :type node_editor: 'SpaceNodeEditor'
-        :param node: 
+        :param node:
         :type node: 'Node'
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -72183,7 +72183,7 @@ class SpaceSpreadsheet(Space, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -72196,7 +72196,7 @@ class SpaceSpreadsheet(Space, bpy_struct):
         ''' Add a new draw handler to this space type. It will be called every time the specified region in the space type will be drawn. Note: All arguments are positional only for now.
 
         :param callback: A function that will be called when the region is drawn. It gets the specified arguments as input.
-        :type callback: 
+        :type callback:
         :param args: Arguments that will be passed to the callback.
         :type args: tuple
         :param region_type: bpy.types.Region.type )
@@ -72267,13 +72267,13 @@ class SpaceTextEditor(Space, bpy_struct):
     '''
 
     show_region_footer: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_region_ui: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -72365,7 +72365,7 @@ class SpaceTextEditor(Space, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -72376,7 +72376,7 @@ class SpaceTextEditor(Space, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -72389,7 +72389,7 @@ class SpaceTextEditor(Space, bpy_struct):
         ''' Add a new draw handler to this space type. It will be called every time the specified region in the space type will be drawn. Note: All arguments are positional only for now.
 
         :param callback: A function that will be called when the region is drawn. It gets the specified arguments as input.
-        :type callback: 
+        :type callback:
         :param args: Arguments that will be passed to the callback.
         :type args: tuple
         :param region_type: bpy.types.Region.type )
@@ -72436,7 +72436,7 @@ class SpaceView3D(Space, bpy_struct):
     '''
 
     icon_from_show_object_viewport: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -72624,193 +72624,193 @@ class SpaceView3D(Space, bpy_struct):
     '''
 
     show_object_select_armature: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_object_select_camera: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_object_select_curve: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_object_select_empty: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_object_select_font: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_object_select_grease_pencil: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_object_select_hair: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_object_select_lattice: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_object_select_light: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_object_select_light_probe: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_object_select_mesh: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_object_select_meta: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_object_select_pointcloud: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_object_select_speaker: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_object_select_surf: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_object_select_volume: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_object_viewport_armature: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_object_viewport_camera: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_object_viewport_curve: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_object_viewport_empty: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_object_viewport_font: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_object_viewport_grease_pencil: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_object_viewport_hair: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_object_viewport_lattice: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_object_viewport_light: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_object_viewport_light_probe: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_object_viewport_mesh: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_object_viewport_meta: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_object_viewport_pointcloud: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_object_viewport_speaker: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_object_viewport_surf: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_object_viewport_volume: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -72822,25 +72822,25 @@ class SpaceView3D(Space, bpy_struct):
     '''
 
     show_region_hud: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_region_tool_header: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_region_toolbar: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     show_region_ui: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -72864,7 +72864,7 @@ class SpaceView3D(Space, bpy_struct):
     '''
 
     stereo_3d_camera: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -72919,7 +72919,7 @@ class SpaceView3D(Space, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -72930,7 +72930,7 @@ class SpaceView3D(Space, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -72943,7 +72943,7 @@ class SpaceView3D(Space, bpy_struct):
         ''' Add a new draw handler to this space type. It will be called every time the specified region in the space type will be drawn. Note: All arguments are positional only for now.
 
         :param callback: A function that will be called when the region is drawn. It gets the specified arguments as input.
-        :type callback: 
+        :type callback:
         :param args: Arguments that will be passed to the callback.
         :type args: tuple
         :param region_type: bpy.types.Region.type )
@@ -72969,14 +72969,14 @@ class SpaceView3D(Space, bpy_struct):
 
 class SpreadsheetContextModifier(SpreadsheetContext, bpy_struct):
     modifier_name: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -72987,7 +72987,7 @@ class SpreadsheetContextModifier(SpreadsheetContext, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -72998,14 +72998,14 @@ class SpreadsheetContextModifier(SpreadsheetContext, bpy_struct):
 
 class SpreadsheetContextNode(SpreadsheetContext, bpy_struct):
     node_name: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73016,7 +73016,7 @@ class SpreadsheetContextNode(SpreadsheetContext, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73027,14 +73027,14 @@ class SpreadsheetContextNode(SpreadsheetContext, bpy_struct):
 
 class SpreadsheetContextObject(SpreadsheetContext, bpy_struct):
     object: 'Object' = None
-    ''' 
+    '''
 
     :type: 'Object'
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73045,7 +73045,7 @@ class SpreadsheetContextObject(SpreadsheetContext, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73065,31 +73065,31 @@ class BrushTextureSlot(TextureSlot, bpy_struct):
     '''
 
     has_random_texture_angle: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     has_texture_angle: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     has_texture_angle_source: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     map_mode: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     mask_map_mode: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -73101,20 +73101,20 @@ class BrushTextureSlot(TextureSlot, bpy_struct):
     '''
 
     use_rake: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     use_random: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73125,7 +73125,7 @@ class BrushTextureSlot(TextureSlot, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73157,19 +73157,19 @@ class LineStyleTextureSlot(TextureSlot, bpy_struct):
     '''
 
     mapping_x: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     mapping_y: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     mapping_z: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -73194,7 +73194,7 @@ class LineStyleTextureSlot(TextureSlot, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73205,7 +73205,7 @@ class LineStyleTextureSlot(TextureSlot, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73279,19 +73279,19 @@ class ParticleSettingsTextureSlot(TextureSlot, bpy_struct):
     '''
 
     mapping_x: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     mapping_y: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     mapping_z: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -73430,7 +73430,7 @@ class ParticleSettingsTextureSlot(TextureSlot, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73441,7 +73441,7 @@ class ParticleSettingsTextureSlot(TextureSlot, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73453,14 +73453,14 @@ class ParticleSettingsTextureSlot(TextureSlot, bpy_struct):
 class ASSETBROWSER_UL_metadata_tags(UIList, bpy_struct):
     def draw_item(self, _context, layout, _data, item, icon, _active_data,
                   _active_propname, _index):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73471,7 +73471,7 @@ class ASSETBROWSER_UL_metadata_tags(UIList, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73483,14 +73483,14 @@ class ASSETBROWSER_UL_metadata_tags(UIList, bpy_struct):
 class CLIP_UL_tracking_objects(UIList, bpy_struct):
     def draw_item(self, _context, layout, _data, item, _icon, _active_data,
                   _active_propname, _index):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73501,7 +73501,7 @@ class CLIP_UL_tracking_objects(UIList, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73513,14 +73513,14 @@ class CLIP_UL_tracking_objects(UIList, bpy_struct):
 class FILEBROWSER_UL_dir(UIList, bpy_struct):
     def draw_item(self, _context, layout, _data, item, icon, _active_data,
                   _active_propname, _index):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73531,7 +73531,7 @@ class FILEBROWSER_UL_dir(UIList, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73543,14 +73543,14 @@ class FILEBROWSER_UL_dir(UIList, bpy_struct):
 class GPENCIL_UL_annotation_layer(UIList, bpy_struct):
     def draw_item(self, _context, layout, _data, item, icon, _active_data,
                   _active_propname, _index):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73561,7 +73561,7 @@ class GPENCIL_UL_annotation_layer(UIList, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73573,14 +73573,14 @@ class GPENCIL_UL_annotation_layer(UIList, bpy_struct):
 class GPENCIL_UL_layer(UIList, bpy_struct):
     def draw_item(self, _context, layout, _data, item, icon, _active_data,
                   _active_propname, _index):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73591,7 +73591,7 @@ class GPENCIL_UL_layer(UIList, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73603,14 +73603,14 @@ class GPENCIL_UL_layer(UIList, bpy_struct):
 class GPENCIL_UL_masks(UIList, bpy_struct):
     def draw_item(self, _context, layout, _data, item, icon, _active_data,
                   _active_propname, _index):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73621,7 +73621,7 @@ class GPENCIL_UL_masks(UIList, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73633,14 +73633,14 @@ class GPENCIL_UL_masks(UIList, bpy_struct):
 class GPENCIL_UL_matslots(UIList, bpy_struct):
     def draw_item(self, _context, layout, _data, item, icon, _active_data,
                   _active_propname, _index):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73651,7 +73651,7 @@ class GPENCIL_UL_matslots(UIList, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73663,14 +73663,14 @@ class GPENCIL_UL_matslots(UIList, bpy_struct):
 class GPENCIL_UL_vgroups(UIList, bpy_struct):
     def draw_item(self, _context, layout, _data, item, icon, _active_data,
                   _active_propname, _index):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73681,7 +73681,7 @@ class GPENCIL_UL_vgroups(UIList, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73693,14 +73693,14 @@ class GPENCIL_UL_vgroups(UIList, bpy_struct):
 class HAIR_UL_attributes(UIList, bpy_struct):
     def draw_item(self, _context, layout, _data, attribute, _icon,
                   _active_data, _active_propname, _index):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73711,7 +73711,7 @@ class HAIR_UL_attributes(UIList, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73723,14 +73723,14 @@ class HAIR_UL_attributes(UIList, bpy_struct):
 class IMAGE_UL_render_slots(UIList, bpy_struct):
     def draw_item(self, _context, layout, _data, item, _icon, _active_data,
                   _active_propname, _index):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73741,7 +73741,7 @@ class IMAGE_UL_render_slots(UIList, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73753,14 +73753,14 @@ class IMAGE_UL_render_slots(UIList, bpy_struct):
 class IMAGE_UL_udim_tiles(UIList, bpy_struct):
     def draw_item(self, _context, layout, _data, item, _icon, _active_data,
                   _active_propname, _index):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73771,7 +73771,7 @@ class IMAGE_UL_udim_tiles(UIList, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73783,14 +73783,14 @@ class IMAGE_UL_udim_tiles(UIList, bpy_struct):
 class MASK_UL_layers(UIList, bpy_struct):
     def draw_item(self, _context, layout, _data, item, icon, _active_data,
                   _active_propname, _index):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73801,7 +73801,7 @@ class MASK_UL_layers(UIList, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73813,14 +73813,14 @@ class MASK_UL_layers(UIList, bpy_struct):
 class MATERIAL_UL_matslots(UIList, bpy_struct):
     def draw_item(self, _context, layout, _data, item, icon, _active_data,
                   _active_propname, _index):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73831,7 +73831,7 @@ class MATERIAL_UL_matslots(UIList, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73843,14 +73843,14 @@ class MATERIAL_UL_matslots(UIList, bpy_struct):
 class MESH_UL_fmaps(UIList, bpy_struct):
     def draw_item(self, _context, layout, _data, item, icon, _active_data,
                   _active_propname, _index):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73861,7 +73861,7 @@ class MESH_UL_fmaps(UIList, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73873,14 +73873,14 @@ class MESH_UL_fmaps(UIList, bpy_struct):
 class MESH_UL_shape_keys(UIList, bpy_struct):
     def draw_item(self, _context, layout, _data, item, icon, active_data,
                   _active_propname, index):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73891,7 +73891,7 @@ class MESH_UL_shape_keys(UIList, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73903,14 +73903,14 @@ class MESH_UL_shape_keys(UIList, bpy_struct):
 class MESH_UL_uvmaps(UIList, bpy_struct):
     def draw_item(self, _context, layout, _data, item, icon, _active_data,
                   _active_propname, _index):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73921,7 +73921,7 @@ class MESH_UL_uvmaps(UIList, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73933,14 +73933,14 @@ class MESH_UL_uvmaps(UIList, bpy_struct):
 class MESH_UL_vcols(UIList, bpy_struct):
     def draw_item(self, _context, layout, _data, item, icon, _active_data,
                   _active_propname, _index):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73951,7 +73951,7 @@ class MESH_UL_vcols(UIList, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73963,14 +73963,14 @@ class MESH_UL_vcols(UIList, bpy_struct):
 class MESH_UL_vgroups(UIList, bpy_struct):
     def draw_item(self, _context, layout, _data, item, icon, _active_data_,
                   _active_propname, _index):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73981,7 +73981,7 @@ class MESH_UL_vgroups(UIList, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -73993,14 +73993,14 @@ class MESH_UL_vgroups(UIList, bpy_struct):
 class NODE_UL_interface_sockets(UIList, bpy_struct):
     def draw_item(self, context, layout, _data, item, icon, _active_data,
                   _active_propname, _index):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -74011,7 +74011,7 @@ class NODE_UL_interface_sockets(UIList, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -74023,14 +74023,14 @@ class NODE_UL_interface_sockets(UIList, bpy_struct):
 class PARTICLE_UL_particle_systems(UIList, bpy_struct):
     def draw_item(self, _context, layout, data, item, icon, _active_data,
                   _active_propname, _index, _flt_flag):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -74041,7 +74041,7 @@ class PARTICLE_UL_particle_systems(UIList, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -74053,14 +74053,14 @@ class PARTICLE_UL_particle_systems(UIList, bpy_struct):
 class PHYSICS_UL_dynapaint_surfaces(UIList, bpy_struct):
     def draw_item(self, _context, layout, _data, item, icon, _active_data,
                   _active_propname, _index):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -74071,7 +74071,7 @@ class PHYSICS_UL_dynapaint_surfaces(UIList, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -74083,14 +74083,14 @@ class PHYSICS_UL_dynapaint_surfaces(UIList, bpy_struct):
 class POINTCLOUD_UL_attributes(UIList, bpy_struct):
     def draw_item(self, _context, layout, _data, attribute, _icon,
                   _active_data, _active_propname, _index):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -74101,7 +74101,7 @@ class POINTCLOUD_UL_attributes(UIList, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -74113,14 +74113,14 @@ class POINTCLOUD_UL_attributes(UIList, bpy_struct):
 class RENDER_UL_renderviews(UIList, bpy_struct):
     def draw_item(self, _context, layout, _data, item, icon, _active_data,
                   _active_propname, index):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -74131,7 +74131,7 @@ class RENDER_UL_renderviews(UIList, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -74143,14 +74143,14 @@ class RENDER_UL_renderviews(UIList, bpy_struct):
 class SCENE_UL_keying_set_paths(UIList, bpy_struct):
     def draw_item(self, _context, layout, _data, item, icon, _active_data,
                   _active_propname, _index):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -74161,7 +74161,7 @@ class SCENE_UL_keying_set_paths(UIList, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -74173,14 +74173,14 @@ class SCENE_UL_keying_set_paths(UIList, bpy_struct):
 class TEXTURE_UL_texpaintslots(UIList, bpy_struct):
     def draw_item(self, _context, layout, _data, item, icon, _active_data,
                   _active_propname, _index):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -74191,7 +74191,7 @@ class TEXTURE_UL_texpaintslots(UIList, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -74203,14 +74203,14 @@ class TEXTURE_UL_texpaintslots(UIList, bpy_struct):
 class TEXTURE_UL_texslots(UIList, bpy_struct):
     def draw_item(self, _context, layout, _data, item, icon, _active_data,
                   _active_propname, _index):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -74221,7 +74221,7 @@ class TEXTURE_UL_texslots(UIList, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -74252,7 +74252,7 @@ class UI_UL_list(UIList, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -74263,7 +74263,7 @@ class UI_UL_list(UIList, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -74275,14 +74275,14 @@ class UI_UL_list(UIList, bpy_struct):
 class VIEWLAYER_UL_aov(UIList, bpy_struct):
     def draw_item(self, _context, layout, _data, item, icon, _active_data,
                   _active_propname):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -74293,7 +74293,7 @@ class VIEWLAYER_UL_aov(UIList, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -74305,14 +74305,14 @@ class VIEWLAYER_UL_aov(UIList, bpy_struct):
 class VIEWLAYER_UL_linesets(UIList, bpy_struct):
     def draw_item(self, _context, layout, _data, item, icon, _active_data,
                   _active_propname, index):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -74323,7 +74323,7 @@ class VIEWLAYER_UL_linesets(UIList, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -74335,14 +74335,14 @@ class VIEWLAYER_UL_linesets(UIList, bpy_struct):
 class VOLUME_UL_grids(UIList, bpy_struct):
     def draw_item(self, _context, layout, _data, grid, _icon, _active_data,
                   _active_propname, _index):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -74353,7 +74353,7 @@ class VOLUME_UL_grids(UIList, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -74368,7 +74368,7 @@ class SurfaceCurve(Curve, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -74379,7 +74379,7 @@ class SurfaceCurve(Curve, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -74393,7 +74393,7 @@ class TextCurve(Curve, ID, bpy_struct):
     '''
 
     active_textbox: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -74443,25 +74443,25 @@ class TextCurve(Curve, ID, bpy_struct):
     '''
 
     font: 'VectorFont' = None
-    ''' 
+    '''
 
     :type: 'VectorFont'
     '''
 
     font_bold: 'VectorFont' = None
-    ''' 
+    '''
 
     :type: 'VectorFont'
     '''
 
     font_bold_italic: 'VectorFont' = None
-    ''' 
+    '''
 
     :type: 'VectorFont'
     '''
 
     font_italic: 'VectorFont' = None
-    ''' 
+    '''
 
     :type: 'VectorFont'
     '''
@@ -74491,7 +74491,7 @@ class TextCurve(Curve, ID, bpy_struct):
     '''
 
     size: float = None
-    ''' 
+    '''
 
     :type: float
     '''
@@ -74503,32 +74503,32 @@ class TextCurve(Curve, ID, bpy_struct):
     '''
 
     space_character: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     space_line: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     space_word: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     text_boxes: typing.Union[typing.Dict[str, 'TextBox'], typing.
                              List['TextBox'], 'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'TextBox'], typing.List['TextBox'], 'bpy_prop_collection']
     '''
 
     underline_height: float = None
-    ''' 
+    '''
 
     :type: float
     '''
@@ -74547,7 +74547,7 @@ class TextCurve(Curve, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -74558,7 +74558,7 @@ class TextCurve(Curve, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -74704,14 +74704,14 @@ class AreaLight(Light, ID, bpy_struct):
     '''
 
     use_shadow: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -74722,7 +74722,7 @@ class AreaLight(Light, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -74844,14 +74844,14 @@ class PointLight(Light, ID, bpy_struct):
     '''
 
     use_shadow: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -74862,7 +74862,7 @@ class PointLight(Light, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -75002,7 +75002,7 @@ class SpotLight(Light, ID, bpy_struct):
     '''
 
     use_shadow: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -75015,7 +75015,7 @@ class SpotLight(Light, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -75026,7 +75026,7 @@ class SpotLight(Light, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -75136,14 +75136,14 @@ class SunLight(Light, ID, bpy_struct):
     '''
 
     use_shadow: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -75154,7 +75154,7 @@ class SunLight(Light, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -75211,7 +75211,7 @@ class CompositorNodeTree(NodeTree, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -75222,7 +75222,7 @@ class CompositorNodeTree(NodeTree, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -75237,7 +75237,7 @@ class GeometryNodeTree(NodeTree, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -75248,7 +75248,7 @@ class GeometryNodeTree(NodeTree, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -75273,7 +75273,7 @@ class ShaderNodeTree(NodeTree, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -75284,7 +75284,7 @@ class ShaderNodeTree(NodeTree, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -75299,7 +75299,7 @@ class TextureNodeTree(NodeTree, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -75310,7 +75310,7 @@ class TextureNodeTree(NodeTree, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -75343,7 +75343,7 @@ class BlendTexture(Texture, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -75354,7 +75354,7 @@ class BlendTexture(Texture, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -75411,7 +75411,7 @@ class CloudsTexture(Texture, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -75422,7 +75422,7 @@ class CloudsTexture(Texture, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -75473,7 +75473,7 @@ class DistortedNoiseTexture(Texture, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -75484,7 +75484,7 @@ class DistortedNoiseTexture(Texture, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -75555,7 +75555,7 @@ class ImageTexture(Texture, ID, bpy_struct):
     '''
 
     image: 'Image' = None
-    ''' 
+    '''
 
     :type: 'Image'
     '''
@@ -75664,7 +75664,7 @@ class ImageTexture(Texture, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -75675,7 +75675,7 @@ class ImageTexture(Texture, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -75708,7 +75708,7 @@ class MagicTexture(Texture, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -75719,7 +75719,7 @@ class MagicTexture(Texture, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -75788,7 +75788,7 @@ class MarbleTexture(Texture, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -75799,7 +75799,7 @@ class MarbleTexture(Texture, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -75880,7 +75880,7 @@ class MusgraveTexture(Texture, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -75891,7 +75891,7 @@ class MusgraveTexture(Texture, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -75912,7 +75912,7 @@ class NoiseTexture(Texture, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -75923,7 +75923,7 @@ class NoiseTexture(Texture, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -75974,7 +75974,7 @@ class StucciTexture(Texture, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -75985,7 +75985,7 @@ class StucciTexture(Texture, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -76066,7 +76066,7 @@ class VoronoiTexture(Texture, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -76077,7 +76077,7 @@ class VoronoiTexture(Texture, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -76140,7 +76140,7 @@ class WoodTexture(Texture, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -76151,7 +76151,7 @@ class WoodTexture(Texture, ID, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -76221,7 +76221,7 @@ class LineStyleAlphaModifier_AlongStroke(LineStyleAlphaModifier,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -76232,7 +76232,7 @@ class LineStyleAlphaModifier_AlongStroke(LineStyleAlphaModifier,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -76314,7 +76314,7 @@ class LineStyleAlphaModifier_CreaseAngle(LineStyleAlphaModifier,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -76325,7 +76325,7 @@ class LineStyleAlphaModifier_CreaseAngle(LineStyleAlphaModifier,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -76407,7 +76407,7 @@ class LineStyleAlphaModifier_Curvature_3D(LineStyleAlphaModifier,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -76418,7 +76418,7 @@ class LineStyleAlphaModifier_Curvature_3D(LineStyleAlphaModifier,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -76500,7 +76500,7 @@ class LineStyleAlphaModifier_DistanceFromCamera(LineStyleAlphaModifier,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -76511,7 +76511,7 @@ class LineStyleAlphaModifier_DistanceFromCamera(LineStyleAlphaModifier,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -76599,7 +76599,7 @@ class LineStyleAlphaModifier_DistanceFromObject(LineStyleAlphaModifier,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -76610,7 +76610,7 @@ class LineStyleAlphaModifier_DistanceFromObject(LineStyleAlphaModifier,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -76686,7 +76686,7 @@ class LineStyleAlphaModifier_Material(LineStyleAlphaModifier,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -76697,7 +76697,7 @@ class LineStyleAlphaModifier_Material(LineStyleAlphaModifier,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -76785,7 +76785,7 @@ class LineStyleAlphaModifier_Noise(LineStyleAlphaModifier, LineStyleModifier,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -76796,7 +76796,7 @@ class LineStyleAlphaModifier_Noise(LineStyleAlphaModifier, LineStyleModifier,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -76866,7 +76866,7 @@ class LineStyleAlphaModifier_Tangent(LineStyleAlphaModifier, LineStyleModifier,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -76877,7 +76877,7 @@ class LineStyleAlphaModifier_Tangent(LineStyleAlphaModifier, LineStyleModifier,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -76935,7 +76935,7 @@ class LineStyleColorModifier_AlongStroke(LineStyleColorModifier,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -76946,7 +76946,7 @@ class LineStyleColorModifier_AlongStroke(LineStyleColorModifier,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -77016,7 +77016,7 @@ class LineStyleColorModifier_CreaseAngle(LineStyleColorModifier,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -77027,7 +77027,7 @@ class LineStyleColorModifier_CreaseAngle(LineStyleColorModifier,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -77097,7 +77097,7 @@ class LineStyleColorModifier_Curvature_3D(LineStyleColorModifier,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -77108,7 +77108,7 @@ class LineStyleColorModifier_Curvature_3D(LineStyleColorModifier,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -77178,7 +77178,7 @@ class LineStyleColorModifier_DistanceFromCamera(LineStyleColorModifier,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -77189,7 +77189,7 @@ class LineStyleColorModifier_DistanceFromCamera(LineStyleColorModifier,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -77265,7 +77265,7 @@ class LineStyleColorModifier_DistanceFromObject(LineStyleColorModifier,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -77276,7 +77276,7 @@ class LineStyleColorModifier_DistanceFromObject(LineStyleColorModifier,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -77346,7 +77346,7 @@ class LineStyleColorModifier_Material(LineStyleColorModifier,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -77357,7 +77357,7 @@ class LineStyleColorModifier_Material(LineStyleColorModifier,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -77433,7 +77433,7 @@ class LineStyleColorModifier_Noise(LineStyleColorModifier, LineStyleModifier,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -77444,7 +77444,7 @@ class LineStyleColorModifier_Noise(LineStyleColorModifier, LineStyleModifier,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -77502,7 +77502,7 @@ class LineStyleColorModifier_Tangent(LineStyleColorModifier, LineStyleModifier,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -77513,7 +77513,7 @@ class LineStyleColorModifier_Tangent(LineStyleColorModifier, LineStyleModifier,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -77577,7 +77577,7 @@ class LineStyleGeometryModifier_2DOffset(LineStyleGeometryModifier,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -77588,7 +77588,7 @@ class LineStyleGeometryModifier_2DOffset(LineStyleGeometryModifier,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -77670,7 +77670,7 @@ class LineStyleGeometryModifier_2DTransform(LineStyleGeometryModifier,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -77681,7 +77681,7 @@ class LineStyleGeometryModifier_2DTransform(LineStyleGeometryModifier,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -77727,7 +77727,7 @@ class LineStyleGeometryModifier_BackboneStretcher(
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -77738,7 +77738,7 @@ class LineStyleGeometryModifier_BackboneStretcher(
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -77784,7 +77784,7 @@ class LineStyleGeometryModifier_BezierCurve(LineStyleGeometryModifier,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -77795,7 +77795,7 @@ class LineStyleGeometryModifier_BezierCurve(LineStyleGeometryModifier,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -77871,7 +77871,7 @@ class LineStyleGeometryModifier_Blueprint(LineStyleGeometryModifier,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -77882,7 +77882,7 @@ class LineStyleGeometryModifier_Blueprint(LineStyleGeometryModifier,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -77928,7 +77928,7 @@ class LineStyleGeometryModifier_GuidingLines(LineStyleGeometryModifier,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -77939,7 +77939,7 @@ class LineStyleGeometryModifier_GuidingLines(LineStyleGeometryModifier,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -78009,7 +78009,7 @@ class LineStyleGeometryModifier_PerlinNoise1D(LineStyleGeometryModifier,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -78020,7 +78020,7 @@ class LineStyleGeometryModifier_PerlinNoise1D(LineStyleGeometryModifier,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -78090,7 +78090,7 @@ class LineStyleGeometryModifier_PerlinNoise2D(LineStyleGeometryModifier,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -78101,7 +78101,7 @@ class LineStyleGeometryModifier_PerlinNoise2D(LineStyleGeometryModifier,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -78147,7 +78147,7 @@ class LineStyleGeometryModifier_Polygonalization(
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -78158,7 +78158,7 @@ class LineStyleGeometryModifier_Polygonalization(
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -78204,7 +78204,7 @@ class LineStyleGeometryModifier_Sampling(LineStyleGeometryModifier,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -78215,7 +78215,7 @@ class LineStyleGeometryModifier_Sampling(LineStyleGeometryModifier,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -78261,7 +78261,7 @@ class LineStyleGeometryModifier_Simplification(LineStyleGeometryModifier,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -78272,7 +78272,7 @@ class LineStyleGeometryModifier_Simplification(LineStyleGeometryModifier,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -78330,7 +78330,7 @@ class LineStyleGeometryModifier_SinusDisplacement(
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -78341,7 +78341,7 @@ class LineStyleGeometryModifier_SinusDisplacement(
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -78411,7 +78411,7 @@ class LineStyleGeometryModifier_SpatialNoise(LineStyleGeometryModifier,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -78422,7 +78422,7 @@ class LineStyleGeometryModifier_SpatialNoise(LineStyleGeometryModifier,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -78468,7 +78468,7 @@ class LineStyleGeometryModifier_TipRemover(LineStyleGeometryModifier,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -78479,7 +78479,7 @@ class LineStyleGeometryModifier_TipRemover(LineStyleGeometryModifier,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -78561,7 +78561,7 @@ class LineStyleThicknessModifier_AlongStroke(LineStyleThicknessModifier,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -78572,7 +78572,7 @@ class LineStyleThicknessModifier_AlongStroke(LineStyleThicknessModifier,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -78642,7 +78642,7 @@ class LineStyleThicknessModifier_Calligraphy(LineStyleThicknessModifier,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -78653,7 +78653,7 @@ class LineStyleThicknessModifier_Calligraphy(LineStyleThicknessModifier,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -78747,7 +78747,7 @@ class LineStyleThicknessModifier_CreaseAngle(LineStyleThicknessModifier,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -78758,7 +78758,7 @@ class LineStyleThicknessModifier_CreaseAngle(LineStyleThicknessModifier,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -78852,7 +78852,7 @@ class LineStyleThicknessModifier_Curvature_3D(LineStyleThicknessModifier,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -78863,7 +78863,7 @@ class LineStyleThicknessModifier_Curvature_3D(LineStyleThicknessModifier,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -78957,7 +78957,7 @@ class LineStyleThicknessModifier_DistanceFromCamera(
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -78968,7 +78968,7 @@ class LineStyleThicknessModifier_DistanceFromCamera(
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79068,7 +79068,7 @@ class LineStyleThicknessModifier_DistanceFromObject(
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79079,7 +79079,7 @@ class LineStyleThicknessModifier_DistanceFromObject(
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79167,7 +79167,7 @@ class LineStyleThicknessModifier_Material(LineStyleThicknessModifier,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79178,7 +79178,7 @@ class LineStyleThicknessModifier_Material(LineStyleThicknessModifier,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79254,7 +79254,7 @@ class LineStyleThicknessModifier_Noise(LineStyleThicknessModifier,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79265,7 +79265,7 @@ class LineStyleThicknessModifier_Noise(LineStyleThicknessModifier,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79347,7 +79347,7 @@ class LineStyleThicknessModifier_Tangent(LineStyleThicknessModifier,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79358,7 +79358,7 @@ class LineStyleThicknessModifier_Tangent(LineStyleThicknessModifier,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79375,14 +79375,14 @@ class CompositorNode(NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79393,7 +79393,7 @@ class CompositorNode(NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79405,7 +79405,7 @@ class CompositorNode(NodeInternal, Node, bpy_struct):
 class FunctionNode(NodeInternal, Node, bpy_struct):
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79416,7 +79416,7 @@ class FunctionNode(NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79428,7 +79428,7 @@ class FunctionNode(NodeInternal, Node, bpy_struct):
 class GeometryNode(NodeInternal, Node, bpy_struct):
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79439,7 +79439,7 @@ class GeometryNode(NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79462,7 +79462,7 @@ class NodeFrame(NodeInternal, Node, bpy_struct):
     '''
 
     text: 'Text' = None
-    ''' 
+    '''
 
     :type: 'Text'
     '''
@@ -79500,7 +79500,7 @@ class NodeFrame(NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79511,7 +79511,7 @@ class NodeFrame(NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79528,7 +79528,7 @@ class NodeGroup(NodeInternal, Node, bpy_struct):
     '''
 
     node_tree: 'NodeTree' = None
-    ''' 
+    '''
 
     :type: 'NodeTree'
     '''
@@ -79566,7 +79566,7 @@ class NodeGroup(NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79577,7 +79577,7 @@ class NodeGroup(NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79626,7 +79626,7 @@ class NodeGroupInput(NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79637,7 +79637,7 @@ class NodeGroupInput(NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79692,7 +79692,7 @@ class NodeGroupOutput(NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79703,7 +79703,7 @@ class NodeGroupOutput(NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79746,7 +79746,7 @@ class NodeReroute(NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79757,7 +79757,7 @@ class NodeReroute(NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79772,7 +79772,7 @@ class ShaderNode(NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79783,7 +79783,7 @@ class ShaderNode(NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79795,7 +79795,7 @@ class ShaderNode(NodeInternal, Node, bpy_struct):
 class TextureNode(NodeInternal, Node, bpy_struct):
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79806,7 +79806,7 @@ class TextureNode(NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79830,7 +79830,7 @@ class NodeSocketBool(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79841,7 +79841,7 @@ class NodeSocketBool(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79865,7 +79865,7 @@ class NodeSocketCollection(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79876,7 +79876,7 @@ class NodeSocketCollection(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79900,7 +79900,7 @@ class NodeSocketColor(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79911,7 +79911,7 @@ class NodeSocketColor(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79935,7 +79935,7 @@ class NodeSocketFloat(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79946,7 +79946,7 @@ class NodeSocketFloat(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79970,7 +79970,7 @@ class NodeSocketFloatAngle(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -79981,7 +79981,7 @@ class NodeSocketFloatAngle(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80005,7 +80005,7 @@ class NodeSocketFloatDistance(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80016,7 +80016,7 @@ class NodeSocketFloatDistance(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80040,7 +80040,7 @@ class NodeSocketFloatFactor(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80051,7 +80051,7 @@ class NodeSocketFloatFactor(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80075,7 +80075,7 @@ class NodeSocketFloatPercentage(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80086,7 +80086,7 @@ class NodeSocketFloatPercentage(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80110,7 +80110,7 @@ class NodeSocketFloatTime(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80121,7 +80121,7 @@ class NodeSocketFloatTime(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80145,7 +80145,7 @@ class NodeSocketFloatUnsigned(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80156,7 +80156,7 @@ class NodeSocketFloatUnsigned(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80174,7 +80174,7 @@ class NodeSocketGeometry(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80185,7 +80185,7 @@ class NodeSocketGeometry(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80209,7 +80209,7 @@ class NodeSocketImage(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80220,7 +80220,7 @@ class NodeSocketImage(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80244,7 +80244,7 @@ class NodeSocketInt(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80255,7 +80255,7 @@ class NodeSocketInt(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80279,7 +80279,7 @@ class NodeSocketIntFactor(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80290,7 +80290,7 @@ class NodeSocketIntFactor(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80314,7 +80314,7 @@ class NodeSocketIntPercentage(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80325,7 +80325,7 @@ class NodeSocketIntPercentage(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80349,7 +80349,7 @@ class NodeSocketIntUnsigned(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80360,7 +80360,7 @@ class NodeSocketIntUnsigned(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80384,7 +80384,7 @@ class NodeSocketObject(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80395,7 +80395,7 @@ class NodeSocketObject(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80413,7 +80413,7 @@ class NodeSocketShader(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80424,7 +80424,7 @@ class NodeSocketShader(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80448,7 +80448,7 @@ class NodeSocketString(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80459,7 +80459,7 @@ class NodeSocketString(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80483,7 +80483,7 @@ class NodeSocketVector(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80494,7 +80494,7 @@ class NodeSocketVector(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80518,7 +80518,7 @@ class NodeSocketVectorAcceleration(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80529,7 +80529,7 @@ class NodeSocketVectorAcceleration(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80553,7 +80553,7 @@ class NodeSocketVectorDirection(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80564,7 +80564,7 @@ class NodeSocketVectorDirection(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80588,7 +80588,7 @@ class NodeSocketVectorEuler(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80599,7 +80599,7 @@ class NodeSocketVectorEuler(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80623,7 +80623,7 @@ class NodeSocketVectorTranslation(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80634,7 +80634,7 @@ class NodeSocketVectorTranslation(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80658,7 +80658,7 @@ class NodeSocketVectorVelocity(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80669,7 +80669,7 @@ class NodeSocketVectorVelocity(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80693,7 +80693,7 @@ class NodeSocketVectorXYZ(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80704,7 +80704,7 @@ class NodeSocketVectorXYZ(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80722,7 +80722,7 @@ class NodeSocketVirtual(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80733,7 +80733,7 @@ class NodeSocketVirtual(NodeSocketStandard, NodeSocket, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80755,7 +80755,7 @@ class NodeSocketInterfaceBool(NodeSocketInterfaceStandard, NodeSocketInterface,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80766,7 +80766,7 @@ class NodeSocketInterfaceBool(NodeSocketInterfaceStandard, NodeSocketInterface,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80788,7 +80788,7 @@ class NodeSocketInterfaceCollection(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80799,7 +80799,7 @@ class NodeSocketInterfaceCollection(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80821,7 +80821,7 @@ class NodeSocketInterfaceColor(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80832,7 +80832,7 @@ class NodeSocketInterfaceColor(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80866,7 +80866,7 @@ class NodeSocketInterfaceFloat(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80877,7 +80877,7 @@ class NodeSocketInterfaceFloat(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80911,7 +80911,7 @@ class NodeSocketInterfaceFloatAngle(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80922,7 +80922,7 @@ class NodeSocketInterfaceFloatAngle(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80956,7 +80956,7 @@ class NodeSocketInterfaceFloatDistance(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -80967,7 +80967,7 @@ class NodeSocketInterfaceFloatDistance(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81001,7 +81001,7 @@ class NodeSocketInterfaceFloatFactor(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81012,7 +81012,7 @@ class NodeSocketInterfaceFloatFactor(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81046,7 +81046,7 @@ class NodeSocketInterfaceFloatPercentage(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81057,7 +81057,7 @@ class NodeSocketInterfaceFloatPercentage(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81091,7 +81091,7 @@ class NodeSocketInterfaceFloatTime(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81102,7 +81102,7 @@ class NodeSocketInterfaceFloatTime(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81136,7 +81136,7 @@ class NodeSocketInterfaceFloatUnsigned(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81147,7 +81147,7 @@ class NodeSocketInterfaceFloatUnsigned(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81163,7 +81163,7 @@ class NodeSocketInterfaceGeometry(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81174,7 +81174,7 @@ class NodeSocketInterfaceGeometry(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81196,7 +81196,7 @@ class NodeSocketInterfaceImage(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81207,7 +81207,7 @@ class NodeSocketInterfaceImage(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81241,7 +81241,7 @@ class NodeSocketInterfaceInt(NodeSocketInterfaceStandard, NodeSocketInterface,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81252,7 +81252,7 @@ class NodeSocketInterfaceInt(NodeSocketInterfaceStandard, NodeSocketInterface,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81286,7 +81286,7 @@ class NodeSocketInterfaceIntFactor(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81297,7 +81297,7 @@ class NodeSocketInterfaceIntFactor(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81331,7 +81331,7 @@ class NodeSocketInterfaceIntPercentage(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81342,7 +81342,7 @@ class NodeSocketInterfaceIntPercentage(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81376,7 +81376,7 @@ class NodeSocketInterfaceIntUnsigned(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81387,7 +81387,7 @@ class NodeSocketInterfaceIntUnsigned(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81409,7 +81409,7 @@ class NodeSocketInterfaceObject(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81420,7 +81420,7 @@ class NodeSocketInterfaceObject(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81436,7 +81436,7 @@ class NodeSocketInterfaceShader(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81447,7 +81447,7 @@ class NodeSocketInterfaceShader(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81469,7 +81469,7 @@ class NodeSocketInterfaceString(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81480,7 +81480,7 @@ class NodeSocketInterfaceString(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81514,7 +81514,7 @@ class NodeSocketInterfaceVector(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81525,7 +81525,7 @@ class NodeSocketInterfaceVector(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81559,7 +81559,7 @@ class NodeSocketInterfaceVectorAcceleration(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81570,7 +81570,7 @@ class NodeSocketInterfaceVectorAcceleration(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81604,7 +81604,7 @@ class NodeSocketInterfaceVectorDirection(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81615,7 +81615,7 @@ class NodeSocketInterfaceVectorDirection(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81649,7 +81649,7 @@ class NodeSocketInterfaceVectorEuler(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81660,7 +81660,7 @@ class NodeSocketInterfaceVectorEuler(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81694,7 +81694,7 @@ class NodeSocketInterfaceVectorTranslation(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81705,7 +81705,7 @@ class NodeSocketInterfaceVectorTranslation(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81739,7 +81739,7 @@ class NodeSocketInterfaceVectorVelocity(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81750,7 +81750,7 @@ class NodeSocketInterfaceVectorVelocity(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81784,7 +81784,7 @@ class NodeSocketInterfaceVectorXYZ(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81795,7 +81795,7 @@ class NodeSocketInterfaceVectorXYZ(NodeSocketInterfaceStandard,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81821,14 +81821,14 @@ class AddSequence(EffectSequence, Sequence, bpy_struct):
     '''
 
     input_count: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81839,7 +81839,7 @@ class AddSequence(EffectSequence, Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81865,14 +81865,14 @@ class AdjustmentSequence(EffectSequence, Sequence, bpy_struct):
     '''
 
     input_count: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81883,7 +81883,7 @@ class AdjustmentSequence(EffectSequence, Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81909,14 +81909,14 @@ class AlphaOverSequence(EffectSequence, Sequence, bpy_struct):
     '''
 
     input_count: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81927,7 +81927,7 @@ class AlphaOverSequence(EffectSequence, Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81953,14 +81953,14 @@ class AlphaUnderSequence(EffectSequence, Sequence, bpy_struct):
     '''
 
     input_count: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -81971,7 +81971,7 @@ class AlphaUnderSequence(EffectSequence, Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -82009,14 +82009,14 @@ class ColorMixSequence(EffectSequence, Sequence, bpy_struct):
     '''
 
     input_count: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -82027,7 +82027,7 @@ class ColorMixSequence(EffectSequence, Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -82047,14 +82047,14 @@ class ColorSequence(EffectSequence, Sequence, bpy_struct):
     '''
 
     input_count: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -82065,7 +82065,7 @@ class ColorSequence(EffectSequence, Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -82091,14 +82091,14 @@ class CrossSequence(EffectSequence, Sequence, bpy_struct):
     '''
 
     input_count: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -82109,7 +82109,7 @@ class CrossSequence(EffectSequence, Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -82135,14 +82135,14 @@ class GammaCrossSequence(EffectSequence, Sequence, bpy_struct):
     '''
 
     input_count: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -82153,7 +82153,7 @@ class GammaCrossSequence(EffectSequence, Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -82173,7 +82173,7 @@ class GaussianBlurSequence(EffectSequence, Sequence, bpy_struct):
     '''
 
     input_count: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -82192,7 +82192,7 @@ class GaussianBlurSequence(EffectSequence, Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -82203,7 +82203,7 @@ class GaussianBlurSequence(EffectSequence, Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -82241,7 +82241,7 @@ class GlowSequence(EffectSequence, Sequence, bpy_struct):
     '''
 
     input_count: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -82266,7 +82266,7 @@ class GlowSequence(EffectSequence, Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -82277,7 +82277,7 @@ class GlowSequence(EffectSequence, Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -82303,20 +82303,20 @@ class MulticamSequence(EffectSequence, Sequence, bpy_struct):
     '''
 
     input_count: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     multicam_source: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -82327,7 +82327,7 @@ class MulticamSequence(EffectSequence, Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -82353,14 +82353,14 @@ class MultiplySequence(EffectSequence, Sequence, bpy_struct):
     '''
 
     input_count: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -82371,7 +82371,7 @@ class MultiplySequence(EffectSequence, Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -82397,14 +82397,14 @@ class OverDropSequence(EffectSequence, Sequence, bpy_struct):
     '''
 
     input_count: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -82415,7 +82415,7 @@ class OverDropSequence(EffectSequence, Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -82435,7 +82435,7 @@ class SpeedControlSequence(EffectSequence, Sequence, bpy_struct):
     '''
 
     input_count: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -82466,7 +82466,7 @@ class SpeedControlSequence(EffectSequence, Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -82477,7 +82477,7 @@ class SpeedControlSequence(EffectSequence, Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -82503,14 +82503,14 @@ class SubtractSequence(EffectSequence, Sequence, bpy_struct):
     '''
 
     input_count: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -82521,7 +82521,7 @@ class SubtractSequence(EffectSequence, Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -82547,7 +82547,7 @@ class TextSequence(EffectSequence, Sequence, bpy_struct):
     '''
 
     box_color: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -82577,7 +82577,7 @@ class TextSequence(EffectSequence, Sequence, bpy_struct):
     '''
 
     input_count: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -82589,7 +82589,7 @@ class TextSequence(EffectSequence, Sequence, bpy_struct):
     '''
 
     shadow_color: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -82632,7 +82632,7 @@ class TextSequence(EffectSequence, Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -82643,7 +82643,7 @@ class TextSequence(EffectSequence, Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -82663,7 +82663,7 @@ class TransformSequence(EffectSequence, Sequence, bpy_struct):
     '''
 
     input_count: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -82718,7 +82718,7 @@ class TransformSequence(EffectSequence, Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -82729,7 +82729,7 @@ class TransformSequence(EffectSequence, Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -82773,20 +82773,20 @@ class WipeSequence(EffectSequence, Sequence, bpy_struct):
     '''
 
     input_count: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     transition_type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -82797,7 +82797,7 @@ class WipeSequence(EffectSequence, Sequence, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -82814,7 +82814,7 @@ class CompositorNodeAlphaOver(CompositorNode, NodeInternal, Node, bpy_struct):
     '''
 
     use_premultiply: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -82851,14 +82851,14 @@ class CompositorNodeAlphaOver(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -82869,7 +82869,7 @@ class CompositorNodeAlphaOver(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -82930,14 +82930,14 @@ class CompositorNodeAntiAliasing(CompositorNode, NodeInternal, Node,
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -82948,7 +82948,7 @@ class CompositorNodeAntiAliasing(CompositorNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -82960,19 +82960,19 @@ class CompositorNodeAntiAliasing(CompositorNode, NodeInternal, Node,
 class CompositorNodeBilateralblur(CompositorNode, NodeInternal, Node,
                                   bpy_struct):
     iterations: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     sigma_color: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     sigma_space: float = None
-    ''' 
+    '''
 
     :type: float
     '''
@@ -83009,14 +83009,14 @@ class CompositorNodeBilateralblur(CompositorNode, NodeInternal, Node,
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -83027,7 +83027,7 @@ class CompositorNodeBilateralblur(CompositorNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -83044,37 +83044,37 @@ class CompositorNodeBlur(CompositorNode, NodeInternal, Node, bpy_struct):
     '''
 
     factor: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     factor_x: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     factor_y: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     filter_type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     size_x: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     size_y: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -83141,14 +83141,14 @@ class CompositorNodeBlur(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -83159,7 +83159,7 @@ class CompositorNodeBlur(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -83219,14 +83219,14 @@ class CompositorNodeBokehBlur(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -83237,7 +83237,7 @@ class CompositorNodeBokehBlur(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -83309,14 +83309,14 @@ class CompositorNodeBokehImage(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -83327,7 +83327,7 @@ class CompositorNodeBokehImage(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -83344,7 +83344,7 @@ class CompositorNodeBoxMask(CompositorNode, NodeInternal, Node, bpy_struct):
     '''
 
     mask_type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -83405,14 +83405,14 @@ class CompositorNodeBoxMask(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -83423,7 +83423,7 @@ class CompositorNodeBoxMask(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -83472,14 +83472,14 @@ class CompositorNodeBrightContrast(CompositorNode, NodeInternal, Node,
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -83490,7 +83490,7 @@ class CompositorNodeBrightContrast(CompositorNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -83569,14 +83569,14 @@ class CompositorNodeChannelMatte(CompositorNode, NodeInternal, Node,
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -83587,7 +83587,7 @@ class CompositorNodeChannelMatte(CompositorNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -83660,14 +83660,14 @@ class CompositorNodeChromaMatte(CompositorNode, NodeInternal, Node,
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -83678,7 +83678,7 @@ class CompositorNodeChromaMatte(CompositorNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -83769,14 +83769,14 @@ class CompositorNodeColorBalance(CompositorNode, NodeInternal, Node,
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -83787,7 +83787,7 @@ class CompositorNodeColorBalance(CompositorNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -83980,14 +83980,14 @@ class CompositorNodeColorCorrection(CompositorNode, NodeInternal, Node,
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -83998,7 +83998,7 @@ class CompositorNodeColorCorrection(CompositorNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -84058,14 +84058,14 @@ class CompositorNodeColorMatte(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -84076,7 +84076,7 @@ class CompositorNodeColorMatte(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -84166,14 +84166,14 @@ class CompositorNodeColorSpill(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -84184,7 +84184,7 @@ class CompositorNodeColorSpill(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -84226,14 +84226,14 @@ class CompositorNodeCombHSVA(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -84244,7 +84244,7 @@ class CompositorNodeCombHSVA(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -84286,14 +84286,14 @@ class CompositorNodeCombRGBA(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -84304,7 +84304,7 @@ class CompositorNodeCombRGBA(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -84315,7 +84315,7 @@ class CompositorNodeCombRGBA(CompositorNode, NodeInternal, Node, bpy_struct):
 
 class CompositorNodeCombYCCA(CompositorNode, NodeInternal, Node, bpy_struct):
     mode: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -84352,14 +84352,14 @@ class CompositorNodeCombYCCA(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -84370,7 +84370,7 @@ class CompositorNodeCombYCCA(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -84412,14 +84412,14 @@ class CompositorNodeCombYUVA(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -84430,7 +84430,7 @@ class CompositorNodeCombYUVA(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -84478,14 +84478,14 @@ class CompositorNodeComposite(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -84496,7 +84496,7 @@ class CompositorNodeComposite(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -84538,14 +84538,14 @@ class CompositorNodeCornerPin(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -84556,7 +84556,7 @@ class CompositorNodeCornerPin(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -84567,49 +84567,49 @@ class CompositorNodeCornerPin(CompositorNode, NodeInternal, Node, bpy_struct):
 
 class CompositorNodeCrop(CompositorNode, NodeInternal, Node, bpy_struct):
     max_x: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     max_y: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     min_x: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     min_y: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     rel_max_x: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     rel_max_y: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     rel_min_x: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     rel_min_y: float = None
-    ''' 
+    '''
 
     :type: float
     '''
@@ -84658,14 +84658,14 @@ class CompositorNodeCrop(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -84676,7 +84676,7 @@ class CompositorNodeCrop(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -84737,14 +84737,14 @@ class CompositorNodeCryptomatte(CompositorNode, NodeInternal, Node,
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -84755,7 +84755,7 @@ class CompositorNodeCryptomatte(CompositorNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -84775,7 +84775,7 @@ class CompositorNodeCryptomatteV2(CompositorNode, NodeInternal, Node,
     entries: typing.Union[typing.Dict[str, 'CryptomatteEntry'], typing.
                           List['CryptomatteEntry'],
                           'bpy_prop_collection'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'CryptomatteEntry'], typing.List['CryptomatteEntry'], 'bpy_prop_collection']
     '''
@@ -84811,13 +84811,13 @@ class CompositorNodeCryptomatteV2(CompositorNode, NodeInternal, Node,
     '''
 
     image: 'Image' = None
-    ''' 
+    '''
 
     :type: 'Image'
     '''
 
     layer: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -84841,7 +84841,7 @@ class CompositorNodeCryptomatteV2(CompositorNode, NodeInternal, Node,
     '''
 
     scene: 'Scene' = None
-    ''' 
+    '''
 
     :type: 'Scene'
     '''
@@ -84865,7 +84865,7 @@ class CompositorNodeCryptomatteV2(CompositorNode, NodeInternal, Node,
     '''
 
     view: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -84902,14 +84902,14 @@ class CompositorNodeCryptomatteV2(CompositorNode, NodeInternal, Node,
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -84920,7 +84920,7 @@ class CompositorNodeCryptomatteV2(CompositorNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -84931,7 +84931,7 @@ class CompositorNodeCryptomatteV2(CompositorNode, NodeInternal, Node,
 
 class CompositorNodeCurveRGB(CompositorNode, NodeInternal, Node, bpy_struct):
     mapping: 'CurveMapping' = None
-    ''' 
+    '''
 
     :type: 'CurveMapping'
     '''
@@ -84968,14 +84968,14 @@ class CompositorNodeCurveRGB(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -84986,7 +84986,7 @@ class CompositorNodeCurveRGB(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -84997,7 +84997,7 @@ class CompositorNodeCurveRGB(CompositorNode, NodeInternal, Node, bpy_struct):
 
 class CompositorNodeCurveVec(CompositorNode, NodeInternal, Node, bpy_struct):
     mapping: 'CurveMapping' = None
-    ''' 
+    '''
 
     :type: 'CurveMapping'
     '''
@@ -85034,14 +85034,14 @@ class CompositorNodeCurveVec(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -85052,7 +85052,7 @@ class CompositorNodeCurveVec(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -85073,20 +85073,20 @@ class CompositorNodeCustomGroup(CompositorNode, NodeInternal, Node,
     '''
 
     node_tree: 'NodeTree' = None
-    ''' 
+    '''
 
     :type: 'NodeTree'
     '''
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -85097,7 +85097,7 @@ class CompositorNodeCustomGroup(CompositorNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -85108,49 +85108,49 @@ class CompositorNodeCustomGroup(CompositorNode, NodeInternal, Node,
 
 class CompositorNodeDBlur(CompositorNode, NodeInternal, Node, bpy_struct):
     angle: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     center_x: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     center_y: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     distance: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     iterations: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     spin: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     use_wrap: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     zoom: float = None
-    ''' 
+    '''
 
     :type: float
     '''
@@ -85187,14 +85187,14 @@ class CompositorNodeDBlur(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -85205,7 +85205,7 @@ class CompositorNodeDBlur(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -85307,14 +85307,14 @@ class CompositorNodeDefocus(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -85325,7 +85325,7 @@ class CompositorNodeDefocus(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -85373,14 +85373,14 @@ class CompositorNodeDenoise(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -85391,7 +85391,7 @@ class CompositorNodeDenoise(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -85445,14 +85445,14 @@ class CompositorNodeDespeckle(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -85463,7 +85463,7 @@ class CompositorNodeDespeckle(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -85517,14 +85517,14 @@ class CompositorNodeDiffMatte(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -85535,7 +85535,7 @@ class CompositorNodeDiffMatte(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -85602,14 +85602,14 @@ class CompositorNodeDilateErode(CompositorNode, NodeInternal, Node,
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -85620,7 +85620,7 @@ class CompositorNodeDilateErode(CompositorNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -85662,14 +85662,14 @@ class CompositorNodeDisplace(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -85680,7 +85680,7 @@ class CompositorNodeDisplace(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -85741,14 +85741,14 @@ class CompositorNodeDistanceMatte(CompositorNode, NodeInternal, Node,
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -85759,7 +85759,7 @@ class CompositorNodeDistanceMatte(CompositorNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -85814,14 +85814,14 @@ class CompositorNodeDoubleEdgeMask(CompositorNode, NodeInternal, Node,
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -85832,7 +85832,7 @@ class CompositorNodeDoubleEdgeMask(CompositorNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -85850,7 +85850,7 @@ class CompositorNodeEllipseMask(CompositorNode, NodeInternal, Node,
     '''
 
     mask_type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -85911,14 +85911,14 @@ class CompositorNodeEllipseMask(CompositorNode, NodeInternal, Node,
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -85929,7 +85929,7 @@ class CompositorNodeEllipseMask(CompositorNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -85971,14 +85971,14 @@ class CompositorNodeExposure(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -85989,7 +85989,7 @@ class CompositorNodeExposure(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -86000,7 +86000,7 @@ class CompositorNodeExposure(CompositorNode, NodeInternal, Node, bpy_struct):
 
 class CompositorNodeFilter(CompositorNode, NodeInternal, Node, bpy_struct):
     filter_type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -86037,14 +86037,14 @@ class CompositorNodeFilter(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -86055,7 +86055,7 @@ class CompositorNodeFilter(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -86066,7 +86066,7 @@ class CompositorNodeFilter(CompositorNode, NodeInternal, Node, bpy_struct):
 
 class CompositorNodeFlip(CompositorNode, NodeInternal, Node, bpy_struct):
     axis: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -86103,14 +86103,14 @@ class CompositorNodeFlip(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -86121,7 +86121,7 @@ class CompositorNodeFlip(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -86163,14 +86163,14 @@ class CompositorNodeGamma(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -86181,7 +86181,7 @@ class CompositorNodeGamma(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -86210,13 +86210,13 @@ class CompositorNodeGlare(CompositorNode, NodeInternal, Node, bpy_struct):
     '''
 
     glare_type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     iterations: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -86289,14 +86289,14 @@ class CompositorNodeGlare(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -86307,7 +86307,7 @@ class CompositorNodeGlare(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -86324,7 +86324,7 @@ class CompositorNodeGroup(CompositorNode, NodeInternal, Node, bpy_struct):
     '''
 
     node_tree: 'NodeTree' = None
-    ''' 
+    '''
 
     :type: 'NodeTree'
     '''
@@ -86361,14 +86361,14 @@ class CompositorNodeGroup(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -86379,7 +86379,7 @@ class CompositorNodeGroup(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -86390,7 +86390,7 @@ class CompositorNodeGroup(CompositorNode, NodeInternal, Node, bpy_struct):
 
 class CompositorNodeHueCorrect(CompositorNode, NodeInternal, Node, bpy_struct):
     mapping: 'CurveMapping' = None
-    ''' 
+    '''
 
     :type: 'CurveMapping'
     '''
@@ -86427,14 +86427,14 @@ class CompositorNodeHueCorrect(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -86445,7 +86445,7 @@ class CompositorNodeHueCorrect(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -86487,14 +86487,14 @@ class CompositorNodeHueSat(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -86505,7 +86505,7 @@ class CompositorNodeHueSat(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -86559,14 +86559,14 @@ class CompositorNodeIDMask(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -86577,7 +86577,7 @@ class CompositorNodeIDMask(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -86618,13 +86618,13 @@ class CompositorNodeImage(CompositorNode, NodeInternal, Node, bpy_struct):
     '''
 
     image: 'Image' = None
-    ''' 
+    '''
 
     :type: 'Image'
     '''
 
     layer: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -86648,7 +86648,7 @@ class CompositorNodeImage(CompositorNode, NodeInternal, Node, bpy_struct):
     '''
 
     view: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -86685,14 +86685,14 @@ class CompositorNodeImage(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -86703,7 +86703,7 @@ class CompositorNodeImage(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -86751,14 +86751,14 @@ class CompositorNodeInpaint(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -86769,7 +86769,7 @@ class CompositorNodeInpaint(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -86780,13 +86780,13 @@ class CompositorNodeInpaint(CompositorNode, NodeInternal, Node, bpy_struct):
 
 class CompositorNodeInvert(CompositorNode, NodeInternal, Node, bpy_struct):
     invert_alpha: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     invert_rgb: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -86823,14 +86823,14 @@ class CompositorNodeInvert(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -86841,7 +86841,7 @@ class CompositorNodeInvert(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -86955,14 +86955,14 @@ class CompositorNodeKeying(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -86973,7 +86973,7 @@ class CompositorNodeKeying(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -86985,13 +86985,13 @@ class CompositorNodeKeying(CompositorNode, NodeInternal, Node, bpy_struct):
 class CompositorNodeKeyingScreen(CompositorNode, NodeInternal, Node,
                                  bpy_struct):
     clip: 'MovieClip' = None
-    ''' 
+    '''
 
     :type: 'MovieClip'
     '''
 
     tracking_object: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -87028,14 +87028,14 @@ class CompositorNodeKeyingScreen(CompositorNode, NodeInternal, Node,
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -87046,7 +87046,7 @@ class CompositorNodeKeyingScreen(CompositorNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -87106,14 +87106,14 @@ class CompositorNodeLensdist(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -87124,7 +87124,7 @@ class CompositorNodeLensdist(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -87172,14 +87172,14 @@ class CompositorNodeLevels(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -87190,7 +87190,7 @@ class CompositorNodeLevels(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -87244,14 +87244,14 @@ class CompositorNodeLumaMatte(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -87262,7 +87262,7 @@ class CompositorNodeLumaMatte(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -87310,14 +87310,14 @@ class CompositorNodeMapRange(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -87328,7 +87328,7 @@ class CompositorNodeMapRange(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -87339,7 +87339,7 @@ class CompositorNodeMapRange(CompositorNode, NodeInternal, Node, bpy_struct):
 
 class CompositorNodeMapUV(CompositorNode, NodeInternal, Node, bpy_struct):
     alpha: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -87376,14 +87376,14 @@ class CompositorNodeMapUV(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -87394,7 +87394,7 @@ class CompositorNodeMapUV(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -87405,37 +87405,37 @@ class CompositorNodeMapUV(CompositorNode, NodeInternal, Node, bpy_struct):
 
 class CompositorNodeMapValue(CompositorNode, NodeInternal, Node, bpy_struct):
     max: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     min: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     offset: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     size: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
 
     use_max: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
 
     use_min: bool = None
-    ''' 
+    '''
 
     :type: bool
     '''
@@ -87472,14 +87472,14 @@ class CompositorNodeMapValue(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -87490,7 +87490,7 @@ class CompositorNodeMapValue(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -87501,7 +87501,7 @@ class CompositorNodeMapValue(CompositorNode, NodeInternal, Node, bpy_struct):
 
 class CompositorNodeMask(CompositorNode, NodeInternal, Node, bpy_struct):
     mask: 'Mask' = None
-    ''' 
+    '''
 
     :type: 'Mask'
     '''
@@ -87525,13 +87525,13 @@ class CompositorNodeMask(CompositorNode, NodeInternal, Node, bpy_struct):
     '''
 
     size_x: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     size_y: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -87580,14 +87580,14 @@ class CompositorNodeMask(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -87598,7 +87598,7 @@ class CompositorNodeMask(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -87652,14 +87652,14 @@ class CompositorNodeMath(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -87670,7 +87670,7 @@ class CompositorNodeMath(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -87681,7 +87681,7 @@ class CompositorNodeMath(CompositorNode, NodeInternal, Node, bpy_struct):
 
 class CompositorNodeMixRGB(CompositorNode, NodeInternal, Node, bpy_struct):
     blend_type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -87730,14 +87730,14 @@ class CompositorNodeMixRGB(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -87748,7 +87748,7 @@ class CompositorNodeMixRGB(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -87759,7 +87759,7 @@ class CompositorNodeMixRGB(CompositorNode, NodeInternal, Node, bpy_struct):
 
 class CompositorNodeMovieClip(CompositorNode, NodeInternal, Node, bpy_struct):
     clip: 'MovieClip' = None
-    ''' 
+    '''
 
     :type: 'MovieClip'
     '''
@@ -87796,14 +87796,14 @@ class CompositorNodeMovieClip(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -87814,7 +87814,7 @@ class CompositorNodeMovieClip(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -87826,7 +87826,7 @@ class CompositorNodeMovieClip(CompositorNode, NodeInternal, Node, bpy_struct):
 class CompositorNodeMovieDistortion(CompositorNode, NodeInternal, Node,
                                     bpy_struct):
     clip: 'MovieClip' = None
-    ''' 
+    '''
 
     :type: 'MovieClip'
     '''
@@ -87869,14 +87869,14 @@ class CompositorNodeMovieDistortion(CompositorNode, NodeInternal, Node,
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -87887,7 +87887,7 @@ class CompositorNodeMovieDistortion(CompositorNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -87929,14 +87929,14 @@ class CompositorNodeNormal(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -87947,7 +87947,7 @@ class CompositorNodeNormal(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -87989,14 +87989,14 @@ class CompositorNodeNormalize(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -88007,7 +88007,7 @@ class CompositorNodeNormalize(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -88033,13 +88033,13 @@ class CompositorNodeOutputFile(CompositorNode, NodeInternal, Node, bpy_struct):
         typing.Dict[str, 'NodeOutputFileSlotFile'], typing.
         List['NodeOutputFileSlotFile'], 'bpy_prop_collection',
         'CompositorNodeOutputFileFileSlots'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'NodeOutputFileSlotFile'], typing.List['NodeOutputFileSlotFile'], 'bpy_prop_collection', 'CompositorNodeOutputFileFileSlots']
     '''
 
     format: 'ImageFormatSettings' = None
-    ''' 
+    '''
 
     :type: 'ImageFormatSettings'
     '''
@@ -88048,7 +88048,7 @@ class CompositorNodeOutputFile(CompositorNode, NodeInternal, Node, bpy_struct):
         typing.Dict[str, 'NodeOutputFileSlotLayer'], typing.
         List['NodeOutputFileSlotLayer'], 'bpy_prop_collection',
         'CompositorNodeOutputFileLayerSlots'] = None
-    ''' 
+    '''
 
     :type: typing.Union[typing.Dict[str, 'NodeOutputFileSlotLayer'], typing.List['NodeOutputFileSlotLayer'], 'bpy_prop_collection', 'CompositorNodeOutputFileLayerSlots']
     '''
@@ -88085,14 +88085,14 @@ class CompositorNodeOutputFile(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -88103,7 +88103,7 @@ class CompositorNodeOutputFile(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -88145,14 +88145,14 @@ class CompositorNodePixelate(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -88163,7 +88163,7 @@ class CompositorNodePixelate(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -88175,7 +88175,7 @@ class CompositorNodePixelate(CompositorNode, NodeInternal, Node, bpy_struct):
 class CompositorNodePlaneTrackDeform(CompositorNode, NodeInternal, Node,
                                      bpy_struct):
     clip: 'MovieClip' = None
-    ''' 
+    '''
 
     :type: 'MovieClip'
     '''
@@ -88193,13 +88193,13 @@ class CompositorNodePlaneTrackDeform(CompositorNode, NodeInternal, Node,
     '''
 
     plane_track_name: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     tracking_object: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -88242,14 +88242,14 @@ class CompositorNodePlaneTrackDeform(CompositorNode, NodeInternal, Node,
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -88260,7 +88260,7 @@ class CompositorNodePlaneTrackDeform(CompositorNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -88308,14 +88308,14 @@ class CompositorNodePremulKey(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -88326,7 +88326,7 @@ class CompositorNodePremulKey(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -88368,14 +88368,14 @@ class CompositorNodeRGB(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -88386,7 +88386,7 @@ class CompositorNodeRGB(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -88428,14 +88428,14 @@ class CompositorNodeRGBToBW(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -88446,7 +88446,7 @@ class CompositorNodeRGBToBW(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -88457,13 +88457,13 @@ class CompositorNodeRGBToBW(CompositorNode, NodeInternal, Node, bpy_struct):
 
 class CompositorNodeRLayers(CompositorNode, NodeInternal, Node, bpy_struct):
     layer: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     scene: 'Scene' = None
-    ''' 
+    '''
 
     :type: 'Scene'
     '''
@@ -88500,14 +88500,14 @@ class CompositorNodeRLayers(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -88518,7 +88518,7 @@ class CompositorNodeRLayers(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -88566,14 +88566,14 @@ class CompositorNodeRotate(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -88584,7 +88584,7 @@ class CompositorNodeRotate(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -88650,14 +88650,14 @@ class CompositorNodeScale(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -88668,7 +88668,7 @@ class CompositorNodeScale(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -88710,14 +88710,14 @@ class CompositorNodeSepHSVA(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -88728,7 +88728,7 @@ class CompositorNodeSepHSVA(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -88770,14 +88770,14 @@ class CompositorNodeSepRGBA(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -88788,7 +88788,7 @@ class CompositorNodeSepRGBA(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -88799,7 +88799,7 @@ class CompositorNodeSepRGBA(CompositorNode, NodeInternal, Node, bpy_struct):
 
 class CompositorNodeSepYCCA(CompositorNode, NodeInternal, Node, bpy_struct):
     mode: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -88836,14 +88836,14 @@ class CompositorNodeSepYCCA(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -88854,7 +88854,7 @@ class CompositorNodeSepYCCA(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -88896,14 +88896,14 @@ class CompositorNodeSepYUVA(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -88914,7 +88914,7 @@ class CompositorNodeSepYUVA(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -88962,14 +88962,14 @@ class CompositorNodeSetAlpha(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -88980,7 +88980,7 @@ class CompositorNodeSetAlpha(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -88992,13 +88992,13 @@ class CompositorNodeSetAlpha(CompositorNode, NodeInternal, Node, bpy_struct):
 class CompositorNodeSplitViewer(CompositorNode, NodeInternal, Node,
                                 bpy_struct):
     axis: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     factor: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -89035,14 +89035,14 @@ class CompositorNodeSplitViewer(CompositorNode, NodeInternal, Node,
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -89053,7 +89053,7 @@ class CompositorNodeSplitViewer(CompositorNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -89064,7 +89064,7 @@ class CompositorNodeSplitViewer(CompositorNode, NodeInternal, Node,
 
 class CompositorNodeStabilize(CompositorNode, NodeInternal, Node, bpy_struct):
     clip: 'MovieClip' = None
-    ''' 
+    '''
 
     :type: 'MovieClip'
     '''
@@ -89113,14 +89113,14 @@ class CompositorNodeStabilize(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -89131,7 +89131,7 @@ class CompositorNodeStabilize(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -89185,14 +89185,14 @@ class CompositorNodeSunBeams(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -89203,7 +89203,7 @@ class CompositorNodeSunBeams(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -89251,14 +89251,14 @@ class CompositorNodeSwitch(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -89269,7 +89269,7 @@ class CompositorNodeSwitch(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -89311,14 +89311,14 @@ class CompositorNodeSwitchView(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -89329,7 +89329,7 @@ class CompositorNodeSwitchView(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -89346,7 +89346,7 @@ class CompositorNodeTexture(CompositorNode, NodeInternal, Node, bpy_struct):
     '''
 
     texture: 'Texture' = None
-    ''' 
+    '''
 
     :type: 'Texture'
     '''
@@ -89383,14 +89383,14 @@ class CompositorNodeTexture(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -89401,7 +89401,7 @@ class CompositorNodeTexture(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -89412,19 +89412,19 @@ class CompositorNodeTexture(CompositorNode, NodeInternal, Node, bpy_struct):
 
 class CompositorNodeTime(CompositorNode, NodeInternal, Node, bpy_struct):
     curve: 'CurveMapping' = None
-    ''' 
+    '''
 
     :type: 'CurveMapping'
     '''
 
     frame_end: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     frame_start: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -89461,14 +89461,14 @@ class CompositorNodeTime(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -89479,7 +89479,7 @@ class CompositorNodeTime(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -89532,7 +89532,7 @@ class CompositorNodeTonemap(CompositorNode, NodeInternal, Node, bpy_struct):
     '''
 
     tonemap_type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -89569,14 +89569,14 @@ class CompositorNodeTonemap(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -89587,7 +89587,7 @@ class CompositorNodeTonemap(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -89598,7 +89598,7 @@ class CompositorNodeTonemap(CompositorNode, NodeInternal, Node, bpy_struct):
 
 class CompositorNodeTrackPos(CompositorNode, NodeInternal, Node, bpy_struct):
     clip: 'MovieClip' = None
-    ''' 
+    '''
 
     :type: 'MovieClip'
     '''
@@ -89616,13 +89616,13 @@ class CompositorNodeTrackPos(CompositorNode, NodeInternal, Node, bpy_struct):
     '''
 
     track_name: str = None
-    ''' 
+    '''
 
     :type: str
     '''
 
     tracking_object: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -89659,14 +89659,14 @@ class CompositorNodeTrackPos(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -89677,7 +89677,7 @@ class CompositorNodeTrackPos(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -89725,14 +89725,14 @@ class CompositorNodeTransform(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -89743,7 +89743,7 @@ class CompositorNodeTransform(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -89797,14 +89797,14 @@ class CompositorNodeTranslate(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -89815,7 +89815,7 @@ class CompositorNodeTranslate(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -89826,7 +89826,7 @@ class CompositorNodeTranslate(CompositorNode, NodeInternal, Node, bpy_struct):
 
 class CompositorNodeValToRGB(CompositorNode, NodeInternal, Node, bpy_struct):
     color_ramp: 'ColorRamp' = None
-    ''' 
+    '''
 
     :type: 'ColorRamp'
     '''
@@ -89863,14 +89863,14 @@ class CompositorNodeValToRGB(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -89881,7 +89881,7 @@ class CompositorNodeValToRGB(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -89923,14 +89923,14 @@ class CompositorNodeValue(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -89941,7 +89941,7 @@ class CompositorNodeValue(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -89958,7 +89958,7 @@ class CompositorNodeVecBlur(CompositorNode, NodeInternal, Node, bpy_struct):
     '''
 
     samples: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -90013,14 +90013,14 @@ class CompositorNodeVecBlur(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -90031,7 +90031,7 @@ class CompositorNodeVecBlur(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -90042,13 +90042,13 @@ class CompositorNodeVecBlur(CompositorNode, NodeInternal, Node, bpy_struct):
 
 class CompositorNodeViewer(CompositorNode, NodeInternal, Node, bpy_struct):
     center_x: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     center_y: float = None
-    ''' 
+    '''
 
     :type: float
     '''
@@ -90097,14 +90097,14 @@ class CompositorNodeViewer(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -90115,7 +90115,7 @@ class CompositorNodeViewer(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -90169,14 +90169,14 @@ class CompositorNodeZcombine(CompositorNode, NodeInternal, Node, bpy_struct):
         pass
 
     def update(self):
-        ''' 
+        '''
 
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -90187,7 +90187,7 @@ class CompositorNodeZcombine(CompositorNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -90236,7 +90236,7 @@ class FunctionNodeBooleanMath(FunctionNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -90247,7 +90247,7 @@ class FunctionNodeBooleanMath(FunctionNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -90296,7 +90296,7 @@ class FunctionNodeFloatCompare(FunctionNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -90307,7 +90307,7 @@ class FunctionNodeFloatCompare(FunctionNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -90318,7 +90318,7 @@ class FunctionNodeFloatCompare(FunctionNode, NodeInternal, Node, bpy_struct):
 
 class FunctionNodeInputString(FunctionNode, NodeInternal, Node, bpy_struct):
     string: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -90356,7 +90356,7 @@ class FunctionNodeInputString(FunctionNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -90367,7 +90367,7 @@ class FunctionNodeInputString(FunctionNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -90378,7 +90378,7 @@ class FunctionNodeInputString(FunctionNode, NodeInternal, Node, bpy_struct):
 
 class FunctionNodeInputVector(FunctionNode, NodeInternal, Node, bpy_struct):
     vector: typing.List[float] = None
-    ''' 
+    '''
 
     :type: typing.List[float]
     '''
@@ -90416,7 +90416,7 @@ class FunctionNodeInputVector(FunctionNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -90427,7 +90427,7 @@ class FunctionNodeInputVector(FunctionNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -90470,7 +90470,7 @@ class FunctionNodeRandomFloat(FunctionNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -90481,7 +90481,7 @@ class FunctionNodeRandomFloat(FunctionNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -90499,13 +90499,13 @@ class GeometryNodeAlignRotationToVector(GeometryNode, NodeInternal, Node,
     '''
 
     input_type_factor: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     input_type_vector: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -90549,7 +90549,7 @@ class GeometryNodeAlignRotationToVector(GeometryNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -90560,7 +90560,7 @@ class GeometryNodeAlignRotationToVector(GeometryNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -90615,7 +90615,7 @@ class GeometryNodeAttributeClamp(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -90626,7 +90626,7 @@ class GeometryNodeAttributeClamp(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -90638,7 +90638,7 @@ class GeometryNodeAttributeClamp(GeometryNode, NodeInternal, Node, bpy_struct):
 class GeometryNodeAttributeColorRamp(GeometryNode, NodeInternal, Node,
                                      bpy_struct):
     color_ramp: 'ColorRamp' = None
-    ''' 
+    '''
 
     :type: 'ColorRamp'
     '''
@@ -90676,7 +90676,7 @@ class GeometryNodeAttributeColorRamp(GeometryNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -90687,7 +90687,7 @@ class GeometryNodeAttributeColorRamp(GeometryNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -90699,19 +90699,19 @@ class GeometryNodeAttributeColorRamp(GeometryNode, NodeInternal, Node,
 class GeometryNodeAttributeCombineXYZ(GeometryNode, NodeInternal, Node,
                                       bpy_struct):
     input_type_x: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     input_type_y: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     input_type_z: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -90749,7 +90749,7 @@ class GeometryNodeAttributeCombineXYZ(GeometryNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -90760,7 +90760,7 @@ class GeometryNodeAttributeCombineXYZ(GeometryNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -90772,13 +90772,13 @@ class GeometryNodeAttributeCombineXYZ(GeometryNode, NodeInternal, Node,
 class GeometryNodeAttributeCompare(GeometryNode, NodeInternal, Node,
                                    bpy_struct):
     input_type_a: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     input_type_b: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -90822,7 +90822,7 @@ class GeometryNodeAttributeCompare(GeometryNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -90833,7 +90833,7 @@ class GeometryNodeAttributeCompare(GeometryNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -90889,7 +90889,7 @@ class GeometryNodeAttributeConvert(GeometryNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -90900,7 +90900,7 @@ class GeometryNodeAttributeConvert(GeometryNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -90955,7 +90955,7 @@ class GeometryNodeAttributeFill(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -90966,7 +90966,7 @@ class GeometryNodeAttributeFill(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -91022,7 +91022,7 @@ class GeometryNodeAttributeMapRange(GeometryNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -91033,7 +91033,7 @@ class GeometryNodeAttributeMapRange(GeometryNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -91044,19 +91044,19 @@ class GeometryNodeAttributeMapRange(GeometryNode, NodeInternal, Node,
 
 class GeometryNodeAttributeMath(GeometryNode, NodeInternal, Node, bpy_struct):
     input_type_a: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     input_type_b: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     input_type_c: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -91100,7 +91100,7 @@ class GeometryNodeAttributeMath(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -91111,7 +91111,7 @@ class GeometryNodeAttributeMath(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -91122,25 +91122,25 @@ class GeometryNodeAttributeMath(GeometryNode, NodeInternal, Node, bpy_struct):
 
 class GeometryNodeAttributeMix(GeometryNode, NodeInternal, Node, bpy_struct):
     blend_type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     input_type_a: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     input_type_b: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     input_type_factor: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -91178,7 +91178,7 @@ class GeometryNodeAttributeMix(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -91189,7 +91189,7 @@ class GeometryNodeAttributeMix(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -91239,7 +91239,7 @@ class GeometryNodeAttributeProximity(GeometryNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -91250,7 +91250,7 @@ class GeometryNodeAttributeProximity(GeometryNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -91306,7 +91306,7 @@ class GeometryNodeAttributeRandomize(GeometryNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -91317,7 +91317,7 @@ class GeometryNodeAttributeRandomize(GeometryNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -91361,7 +91361,7 @@ class GeometryNodeAttributeRemove(GeometryNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -91372,7 +91372,7 @@ class GeometryNodeAttributeRemove(GeometryNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -91422,7 +91422,7 @@ class GeometryNodeAttributeSampleTexture(GeometryNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -91433,7 +91433,7 @@ class GeometryNodeAttributeSampleTexture(GeometryNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -91445,7 +91445,7 @@ class GeometryNodeAttributeSampleTexture(GeometryNode, NodeInternal, Node,
 class GeometryNodeAttributeSeparateXYZ(GeometryNode, NodeInternal, Node,
                                        bpy_struct):
     input_type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -91483,7 +91483,7 @@ class GeometryNodeAttributeSeparateXYZ(GeometryNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -91494,7 +91494,7 @@ class GeometryNodeAttributeSeparateXYZ(GeometryNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -91506,19 +91506,19 @@ class GeometryNodeAttributeSeparateXYZ(GeometryNode, NodeInternal, Node,
 class GeometryNodeAttributeVectorMath(GeometryNode, NodeInternal, Node,
                                       bpy_struct):
     input_type_a: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     input_type_b: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     input_type_c: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -91562,7 +91562,7 @@ class GeometryNodeAttributeVectorMath(GeometryNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -91573,7 +91573,7 @@ class GeometryNodeAttributeVectorMath(GeometryNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -91622,7 +91622,7 @@ class GeometryNodeBoolean(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -91633,7 +91633,7 @@ class GeometryNodeBoolean(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -91676,7 +91676,7 @@ class GeometryNodeBoundBox(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -91687,7 +91687,7 @@ class GeometryNodeBoundBox(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -91736,7 +91736,7 @@ class GeometryNodeCollectionInfo(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -91747,7 +91747,7 @@ class GeometryNodeCollectionInfo(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -91767,14 +91767,14 @@ class GeometryNodeCustomGroup(GeometryNode, NodeInternal, Node, bpy_struct):
     '''
 
     node_tree: 'NodeTree' = None
-    ''' 
+    '''
 
     :type: 'NodeTree'
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -91785,7 +91785,7 @@ class GeometryNodeCustomGroup(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -91828,7 +91828,7 @@ class GeometryNodeEdgeSplit(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -91839,7 +91839,7 @@ class GeometryNodeEdgeSplit(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -91856,7 +91856,7 @@ class GeometryNodeGroup(GeometryNode, NodeInternal, Node, bpy_struct):
     '''
 
     node_tree: 'NodeTree' = None
-    ''' 
+    '''
 
     :type: 'NodeTree'
     '''
@@ -91894,7 +91894,7 @@ class GeometryNodeGroup(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -91905,7 +91905,7 @@ class GeometryNodeGroup(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -91948,7 +91948,7 @@ class GeometryNodeIsViewport(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -91959,7 +91959,7 @@ class GeometryNodeIsViewport(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -92002,7 +92002,7 @@ class GeometryNodeJoinGeometry(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -92013,7 +92013,7 @@ class GeometryNodeJoinGeometry(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -92024,7 +92024,7 @@ class GeometryNodeJoinGeometry(GeometryNode, NodeInternal, Node, bpy_struct):
 
 class GeometryNodeMeshCircle(GeometryNode, NodeInternal, Node, bpy_struct):
     fill_type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -92062,7 +92062,7 @@ class GeometryNodeMeshCircle(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -92073,7 +92073,7 @@ class GeometryNodeMeshCircle(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -92084,7 +92084,7 @@ class GeometryNodeMeshCircle(GeometryNode, NodeInternal, Node, bpy_struct):
 
 class GeometryNodeMeshCone(GeometryNode, NodeInternal, Node, bpy_struct):
     fill_type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -92122,7 +92122,7 @@ class GeometryNodeMeshCone(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -92133,7 +92133,7 @@ class GeometryNodeMeshCone(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -92176,7 +92176,7 @@ class GeometryNodeMeshCube(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -92187,7 +92187,7 @@ class GeometryNodeMeshCube(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -92198,7 +92198,7 @@ class GeometryNodeMeshCube(GeometryNode, NodeInternal, Node, bpy_struct):
 
 class GeometryNodeMeshCylinder(GeometryNode, NodeInternal, Node, bpy_struct):
     fill_type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -92236,7 +92236,7 @@ class GeometryNodeMeshCylinder(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -92247,7 +92247,7 @@ class GeometryNodeMeshCylinder(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -92290,7 +92290,7 @@ class GeometryNodeMeshGrid(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -92301,7 +92301,7 @@ class GeometryNodeMeshGrid(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -92344,7 +92344,7 @@ class GeometryNodeMeshIcoSphere(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -92355,7 +92355,7 @@ class GeometryNodeMeshIcoSphere(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -92410,7 +92410,7 @@ class GeometryNodeMeshLine(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -92421,7 +92421,7 @@ class GeometryNodeMeshLine(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -92464,7 +92464,7 @@ class GeometryNodeMeshUVSphere(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -92475,7 +92475,7 @@ class GeometryNodeMeshUVSphere(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -92524,7 +92524,7 @@ class GeometryNodeObjectInfo(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -92535,7 +92535,7 @@ class GeometryNodeObjectInfo(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -92585,7 +92585,7 @@ class GeometryNodePointDistribute(GeometryNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -92596,7 +92596,7 @@ class GeometryNodePointDistribute(GeometryNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -92651,7 +92651,7 @@ class GeometryNodePointInstance(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -92662,7 +92662,7 @@ class GeometryNodePointInstance(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -92673,7 +92673,7 @@ class GeometryNodePointInstance(GeometryNode, NodeInternal, Node, bpy_struct):
 
 class GeometryNodePointScale(GeometryNode, NodeInternal, Node, bpy_struct):
     input_type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -92711,7 +92711,7 @@ class GeometryNodePointScale(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -92722,7 +92722,7 @@ class GeometryNodePointScale(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -92765,7 +92765,7 @@ class GeometryNodePointSeparate(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -92776,7 +92776,7 @@ class GeometryNodePointSeparate(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -92787,7 +92787,7 @@ class GeometryNodePointSeparate(GeometryNode, NodeInternal, Node, bpy_struct):
 
 class GeometryNodePointTranslate(GeometryNode, NodeInternal, Node, bpy_struct):
     input_type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -92825,7 +92825,7 @@ class GeometryNodePointTranslate(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -92836,7 +92836,7 @@ class GeometryNodePointTranslate(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -92847,7 +92847,7 @@ class GeometryNodePointTranslate(GeometryNode, NodeInternal, Node, bpy_struct):
 
 class GeometryNodePointsToVolume(GeometryNode, NodeInternal, Node, bpy_struct):
     input_type_radius: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -92891,7 +92891,7 @@ class GeometryNodePointsToVolume(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -92902,7 +92902,7 @@ class GeometryNodePointsToVolume(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -92913,19 +92913,19 @@ class GeometryNodePointsToVolume(GeometryNode, NodeInternal, Node, bpy_struct):
 
 class GeometryNodeRotatePoints(GeometryNode, NodeInternal, Node, bpy_struct):
     input_type_angle: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     input_type_axis: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
 
     input_type_rotation: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -92975,7 +92975,7 @@ class GeometryNodeRotatePoints(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -92986,7 +92986,7 @@ class GeometryNodeRotatePoints(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -93029,7 +93029,7 @@ class GeometryNodeSubdivide(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -93040,7 +93040,7 @@ class GeometryNodeSubdivide(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -93084,7 +93084,7 @@ class GeometryNodeSubdivisionSurface(GeometryNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -93095,7 +93095,7 @@ class GeometryNodeSubdivisionSurface(GeometryNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -93138,7 +93138,7 @@ class GeometryNodeTransform(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -93149,7 +93149,7 @@ class GeometryNodeTransform(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -93204,7 +93204,7 @@ class GeometryNodeTriangulate(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -93215,7 +93215,7 @@ class GeometryNodeTriangulate(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -93264,7 +93264,7 @@ class GeometryNodeVolumeToMesh(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -93275,7 +93275,7 @@ class GeometryNodeVolumeToMesh(GeometryNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -93318,7 +93318,7 @@ class ShaderNodeAddShader(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -93329,7 +93329,7 @@ class ShaderNodeAddShader(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -93390,7 +93390,7 @@ class ShaderNodeAmbientOcclusion(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -93401,7 +93401,7 @@ class ShaderNodeAmbientOcclusion(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -93412,7 +93412,7 @@ class ShaderNodeAmbientOcclusion(ShaderNode, NodeInternal, Node, bpy_struct):
 
 class ShaderNodeAttribute(ShaderNode, NodeInternal, Node, bpy_struct):
     attribute_name: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -93456,7 +93456,7 @@ class ShaderNodeAttribute(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -93467,7 +93467,7 @@ class ShaderNodeAttribute(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -93510,7 +93510,7 @@ class ShaderNodeBackground(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -93521,7 +93521,7 @@ class ShaderNodeBackground(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -93570,7 +93570,7 @@ class ShaderNodeBevel(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -93581,7 +93581,7 @@ class ShaderNodeBevel(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -93624,7 +93624,7 @@ class ShaderNodeBlackbody(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -93635,7 +93635,7 @@ class ShaderNodeBlackbody(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -93678,7 +93678,7 @@ class ShaderNodeBrightContrast(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -93689,7 +93689,7 @@ class ShaderNodeBrightContrast(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -93700,7 +93700,7 @@ class ShaderNodeBrightContrast(ShaderNode, NodeInternal, Node, bpy_struct):
 
 class ShaderNodeBsdfAnisotropic(ShaderNode, NodeInternal, Node, bpy_struct):
     distribution: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -93738,7 +93738,7 @@ class ShaderNodeBsdfAnisotropic(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -93749,7 +93749,7 @@ class ShaderNodeBsdfAnisotropic(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -93792,7 +93792,7 @@ class ShaderNodeBsdfDiffuse(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -93803,7 +93803,7 @@ class ShaderNodeBsdfDiffuse(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -93814,7 +93814,7 @@ class ShaderNodeBsdfDiffuse(ShaderNode, NodeInternal, Node, bpy_struct):
 
 class ShaderNodeBsdfGlass(ShaderNode, NodeInternal, Node, bpy_struct):
     distribution: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -93852,7 +93852,7 @@ class ShaderNodeBsdfGlass(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -93863,7 +93863,7 @@ class ShaderNodeBsdfGlass(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -93874,7 +93874,7 @@ class ShaderNodeBsdfGlass(ShaderNode, NodeInternal, Node, bpy_struct):
 
 class ShaderNodeBsdfGlossy(ShaderNode, NodeInternal, Node, bpy_struct):
     distribution: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -93912,7 +93912,7 @@ class ShaderNodeBsdfGlossy(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -93923,7 +93923,7 @@ class ShaderNodeBsdfGlossy(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -93934,7 +93934,7 @@ class ShaderNodeBsdfGlossy(ShaderNode, NodeInternal, Node, bpy_struct):
 
 class ShaderNodeBsdfHair(ShaderNode, NodeInternal, Node, bpy_struct):
     component: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -93972,7 +93972,7 @@ class ShaderNodeBsdfHair(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -93983,7 +93983,7 @@ class ShaderNodeBsdfHair(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94032,7 +94032,7 @@ class ShaderNodeBsdfHairPrincipled(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94043,7 +94043,7 @@ class ShaderNodeBsdfHairPrincipled(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94054,7 +94054,7 @@ class ShaderNodeBsdfHairPrincipled(ShaderNode, NodeInternal, Node, bpy_struct):
 
 class ShaderNodeBsdfPrincipled(ShaderNode, NodeInternal, Node, bpy_struct):
     distribution: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -94098,7 +94098,7 @@ class ShaderNodeBsdfPrincipled(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94109,7 +94109,7 @@ class ShaderNodeBsdfPrincipled(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94120,7 +94120,7 @@ class ShaderNodeBsdfPrincipled(ShaderNode, NodeInternal, Node, bpy_struct):
 
 class ShaderNodeBsdfRefraction(ShaderNode, NodeInternal, Node, bpy_struct):
     distribution: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -94158,7 +94158,7 @@ class ShaderNodeBsdfRefraction(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94169,7 +94169,7 @@ class ShaderNodeBsdfRefraction(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94180,7 +94180,7 @@ class ShaderNodeBsdfRefraction(ShaderNode, NodeInternal, Node, bpy_struct):
 
 class ShaderNodeBsdfToon(ShaderNode, NodeInternal, Node, bpy_struct):
     component: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -94218,7 +94218,7 @@ class ShaderNodeBsdfToon(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94229,7 +94229,7 @@ class ShaderNodeBsdfToon(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94272,7 +94272,7 @@ class ShaderNodeBsdfTranslucent(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94283,7 +94283,7 @@ class ShaderNodeBsdfTranslucent(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94326,7 +94326,7 @@ class ShaderNodeBsdfTransparent(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94337,7 +94337,7 @@ class ShaderNodeBsdfTransparent(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94380,7 +94380,7 @@ class ShaderNodeBsdfVelvet(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94391,7 +94391,7 @@ class ShaderNodeBsdfVelvet(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94440,7 +94440,7 @@ class ShaderNodeBump(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94451,7 +94451,7 @@ class ShaderNodeBump(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94494,7 +94494,7 @@ class ShaderNodeCameraData(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94505,7 +94505,7 @@ class ShaderNodeCameraData(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94554,7 +94554,7 @@ class ShaderNodeClamp(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94565,7 +94565,7 @@ class ShaderNodeClamp(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94608,7 +94608,7 @@ class ShaderNodeCombineHSV(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94619,7 +94619,7 @@ class ShaderNodeCombineHSV(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94662,7 +94662,7 @@ class ShaderNodeCombineRGB(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94673,7 +94673,7 @@ class ShaderNodeCombineRGB(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94716,7 +94716,7 @@ class ShaderNodeCombineXYZ(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94727,7 +94727,7 @@ class ShaderNodeCombineXYZ(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94747,14 +94747,14 @@ class ShaderNodeCustomGroup(ShaderNode, NodeInternal, Node, bpy_struct):
     '''
 
     node_tree: 'NodeTree' = None
-    ''' 
+    '''
 
     :type: 'NodeTree'
     '''
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94765,7 +94765,7 @@ class ShaderNodeCustomGroup(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94814,7 +94814,7 @@ class ShaderNodeDisplacement(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94825,7 +94825,7 @@ class ShaderNodeDisplacement(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94868,7 +94868,7 @@ class ShaderNodeEeveeSpecular(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94879,7 +94879,7 @@ class ShaderNodeEeveeSpecular(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94922,7 +94922,7 @@ class ShaderNodeEmission(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94933,7 +94933,7 @@ class ShaderNodeEmission(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94976,7 +94976,7 @@ class ShaderNodeFresnel(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -94987,7 +94987,7 @@ class ShaderNodeFresnel(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -95030,7 +95030,7 @@ class ShaderNodeGamma(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -95041,7 +95041,7 @@ class ShaderNodeGamma(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -95058,7 +95058,7 @@ class ShaderNodeGroup(ShaderNode, NodeInternal, Node, bpy_struct):
     '''
 
     node_tree: 'NodeTree' = None
-    ''' 
+    '''
 
     :type: 'NodeTree'
     '''
@@ -95096,7 +95096,7 @@ class ShaderNodeGroup(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -95107,7 +95107,7 @@ class ShaderNodeGroup(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -95150,7 +95150,7 @@ class ShaderNodeHairInfo(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -95161,7 +95161,7 @@ class ShaderNodeHairInfo(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -95204,7 +95204,7 @@ class ShaderNodeHoldout(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -95215,7 +95215,7 @@ class ShaderNodeHoldout(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -95258,7 +95258,7 @@ class ShaderNodeHueSaturation(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -95269,7 +95269,7 @@ class ShaderNodeHueSaturation(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -95312,7 +95312,7 @@ class ShaderNodeInvert(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -95323,7 +95323,7 @@ class ShaderNodeInvert(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -95366,7 +95366,7 @@ class ShaderNodeLayerWeight(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -95377,7 +95377,7 @@ class ShaderNodeLayerWeight(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -95420,7 +95420,7 @@ class ShaderNodeLightFalloff(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -95431,7 +95431,7 @@ class ShaderNodeLightFalloff(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -95474,7 +95474,7 @@ class ShaderNodeLightPath(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -95485,7 +95485,7 @@ class ShaderNodeLightPath(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -95540,7 +95540,7 @@ class ShaderNodeMapRange(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -95551,7 +95551,7 @@ class ShaderNodeMapRange(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -95600,7 +95600,7 @@ class ShaderNodeMapping(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -95611,7 +95611,7 @@ class ShaderNodeMapping(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -95666,7 +95666,7 @@ class ShaderNodeMath(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -95677,7 +95677,7 @@ class ShaderNodeMath(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -95688,7 +95688,7 @@ class ShaderNodeMath(ShaderNode, NodeInternal, Node, bpy_struct):
 
 class ShaderNodeMixRGB(ShaderNode, NodeInternal, Node, bpy_struct):
     blend_type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -95738,7 +95738,7 @@ class ShaderNodeMixRGB(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -95749,7 +95749,7 @@ class ShaderNodeMixRGB(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -95792,7 +95792,7 @@ class ShaderNodeMixShader(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -95803,7 +95803,7 @@ class ShaderNodeMixShader(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -95846,7 +95846,7 @@ class ShaderNodeNewGeometry(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -95857,7 +95857,7 @@ class ShaderNodeNewGeometry(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -95900,7 +95900,7 @@ class ShaderNodeNormal(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -95911,7 +95911,7 @@ class ShaderNodeNormal(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -95966,7 +95966,7 @@ class ShaderNodeNormalMap(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -95977,7 +95977,7 @@ class ShaderNodeNormalMap(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -96020,7 +96020,7 @@ class ShaderNodeObjectInfo(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -96031,7 +96031,7 @@ class ShaderNodeObjectInfo(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -96080,7 +96080,7 @@ class ShaderNodeOutputAOV(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -96091,7 +96091,7 @@ class ShaderNodeOutputAOV(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -96146,7 +96146,7 @@ class ShaderNodeOutputLight(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -96157,7 +96157,7 @@ class ShaderNodeOutputLight(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -96168,7 +96168,7 @@ class ShaderNodeOutputLight(ShaderNode, NodeInternal, Node, bpy_struct):
 
 class ShaderNodeOutputLineStyle(ShaderNode, NodeInternal, Node, bpy_struct):
     blend_type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -96230,7 +96230,7 @@ class ShaderNodeOutputLineStyle(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -96241,7 +96241,7 @@ class ShaderNodeOutputLineStyle(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -96296,7 +96296,7 @@ class ShaderNodeOutputMaterial(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -96307,7 +96307,7 @@ class ShaderNodeOutputMaterial(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -96362,7 +96362,7 @@ class ShaderNodeOutputWorld(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -96373,7 +96373,7 @@ class ShaderNodeOutputWorld(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -96416,7 +96416,7 @@ class ShaderNodeParticleInfo(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -96427,7 +96427,7 @@ class ShaderNodeParticleInfo(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -96470,7 +96470,7 @@ class ShaderNodeRGB(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -96481,7 +96481,7 @@ class ShaderNodeRGB(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -96492,7 +96492,7 @@ class ShaderNodeRGB(ShaderNode, NodeInternal, Node, bpy_struct):
 
 class ShaderNodeRGBCurve(ShaderNode, NodeInternal, Node, bpy_struct):
     mapping: 'CurveMapping' = None
-    ''' 
+    '''
 
     :type: 'CurveMapping'
     '''
@@ -96530,7 +96530,7 @@ class ShaderNodeRGBCurve(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -96541,7 +96541,7 @@ class ShaderNodeRGBCurve(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -96584,7 +96584,7 @@ class ShaderNodeRGBToBW(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -96595,7 +96595,7 @@ class ShaderNodeRGBToBW(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -96674,7 +96674,7 @@ class ShaderNodeScript(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -96685,7 +96685,7 @@ class ShaderNodeScript(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -96728,7 +96728,7 @@ class ShaderNodeSeparateHSV(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -96739,7 +96739,7 @@ class ShaderNodeSeparateHSV(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -96782,7 +96782,7 @@ class ShaderNodeSeparateRGB(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -96793,7 +96793,7 @@ class ShaderNodeSeparateRGB(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -96836,7 +96836,7 @@ class ShaderNodeSeparateXYZ(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -96847,7 +96847,7 @@ class ShaderNodeSeparateXYZ(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -96890,7 +96890,7 @@ class ShaderNodeShaderToRGB(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -96901,7 +96901,7 @@ class ShaderNodeShaderToRGB(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -96944,7 +96944,7 @@ class ShaderNodeSqueeze(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -96955,7 +96955,7 @@ class ShaderNodeSqueeze(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -97005,7 +97005,7 @@ class ShaderNodeSubsurfaceScattering(ShaderNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -97016,7 +97016,7 @@ class ShaderNodeSubsurfaceScattering(ShaderNode, NodeInternal, Node,
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -97077,7 +97077,7 @@ class ShaderNodeTangent(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -97088,7 +97088,7 @@ class ShaderNodeTangent(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -97105,25 +97105,25 @@ class ShaderNodeTexBrick(ShaderNode, NodeInternal, Node, bpy_struct):
     '''
 
     offset: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     offset_frequency: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     squash: float = None
-    ''' 
+    '''
 
     :type: float
     '''
 
     squash_frequency: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -97167,7 +97167,7 @@ class ShaderNodeTexBrick(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -97178,7 +97178,7 @@ class ShaderNodeTexBrick(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -97233,7 +97233,7 @@ class ShaderNodeTexChecker(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -97244,7 +97244,7 @@ class ShaderNodeTexChecker(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -97299,7 +97299,7 @@ class ShaderNodeTexCoord(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -97310,7 +97310,7 @@ class ShaderNodeTexCoord(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -97327,7 +97327,7 @@ class ShaderNodeTexEnvironment(ShaderNode, NodeInternal, Node, bpy_struct):
     '''
 
     image: 'Image' = None
-    ''' 
+    '''
 
     :type: 'Image'
     '''
@@ -97389,7 +97389,7 @@ class ShaderNodeTexEnvironment(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -97400,7 +97400,7 @@ class ShaderNodeTexEnvironment(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -97461,7 +97461,7 @@ class ShaderNodeTexGradient(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -97472,7 +97472,7 @@ class ShaderNodeTexGradient(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -97533,7 +97533,7 @@ class ShaderNodeTexIES(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -97544,7 +97544,7 @@ class ShaderNodeTexIES(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -97567,7 +97567,7 @@ class ShaderNodeTexImage(ShaderNode, NodeInternal, Node, bpy_struct):
     '''
 
     image: 'Image' = None
-    ''' 
+    '''
 
     :type: 'Image'
     '''
@@ -97635,7 +97635,7 @@ class ShaderNodeTexImage(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -97646,7 +97646,7 @@ class ShaderNodeTexImage(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -97707,7 +97707,7 @@ class ShaderNodeTexMagic(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -97718,7 +97718,7 @@ class ShaderNodeTexMagic(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -97741,7 +97741,7 @@ class ShaderNodeTexMusgrave(ShaderNode, NodeInternal, Node, bpy_struct):
     '''
 
     musgrave_type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -97785,7 +97785,7 @@ class ShaderNodeTexMusgrave(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -97796,7 +97796,7 @@ class ShaderNodeTexMusgrave(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -97857,7 +97857,7 @@ class ShaderNodeTexNoise(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -97868,7 +97868,7 @@ class ShaderNodeTexNoise(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -97972,7 +97972,7 @@ class ShaderNodeTexPointDensity(ShaderNode, NodeInternal, Node, bpy_struct):
     def cache_point_density(self, depsgraph: 'Depsgraph' = None):
         ''' Cache point density data for later calculation
 
-        :param depsgraph: 
+        :param depsgraph:
         :type depsgraph: 'Depsgraph'
         '''
         pass
@@ -97981,7 +97981,7 @@ class ShaderNodeTexPointDensity(ShaderNode, NodeInternal, Node, bpy_struct):
             self, depsgraph: 'Depsgraph' = None) -> typing.List[float]:
         ''' Calculate point density
 
-        :param depsgraph: 
+        :param depsgraph:
         :type depsgraph: 'Depsgraph'
         :rtype: typing.List[float]
         :return: RGBA Values
@@ -97991,14 +97991,14 @@ class ShaderNodeTexPointDensity(ShaderNode, NodeInternal, Node, bpy_struct):
     def calc_point_density_minmax(self, depsgraph: 'Depsgraph' = None):
         ''' Calculate point density
 
-        :param depsgraph: 
+        :param depsgraph:
         :type depsgraph: 'Depsgraph'
         '''
         pass
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -98009,7 +98009,7 @@ class ShaderNodeTexPointDensity(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -98142,7 +98142,7 @@ class ShaderNodeTexSky(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -98153,7 +98153,7 @@ class ShaderNodeTexSky(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -98226,7 +98226,7 @@ class ShaderNodeTexVoronoi(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -98237,7 +98237,7 @@ class ShaderNodeTexVoronoi(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -98316,7 +98316,7 @@ class ShaderNodeTexWave(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -98327,7 +98327,7 @@ class ShaderNodeTexWave(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -98376,7 +98376,7 @@ class ShaderNodeTexWhiteNoise(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -98387,7 +98387,7 @@ class ShaderNodeTexWhiteNoise(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -98436,7 +98436,7 @@ class ShaderNodeUVAlongStroke(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -98447,7 +98447,7 @@ class ShaderNodeUVAlongStroke(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -98502,7 +98502,7 @@ class ShaderNodeUVMap(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -98513,7 +98513,7 @@ class ShaderNodeUVMap(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -98524,7 +98524,7 @@ class ShaderNodeUVMap(ShaderNode, NodeInternal, Node, bpy_struct):
 
 class ShaderNodeValToRGB(ShaderNode, NodeInternal, Node, bpy_struct):
     color_ramp: 'ColorRamp' = None
-    ''' 
+    '''
 
     :type: 'ColorRamp'
     '''
@@ -98562,7 +98562,7 @@ class ShaderNodeValToRGB(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -98573,7 +98573,7 @@ class ShaderNodeValToRGB(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -98616,7 +98616,7 @@ class ShaderNodeValue(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -98627,7 +98627,7 @@ class ShaderNodeValue(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -98638,7 +98638,7 @@ class ShaderNodeValue(ShaderNode, NodeInternal, Node, bpy_struct):
 
 class ShaderNodeVectorCurve(ShaderNode, NodeInternal, Node, bpy_struct):
     mapping: 'CurveMapping' = None
-    ''' 
+    '''
 
     :type: 'CurveMapping'
     '''
@@ -98676,7 +98676,7 @@ class ShaderNodeVectorCurve(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -98687,7 +98687,7 @@ class ShaderNodeVectorCurve(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -98736,7 +98736,7 @@ class ShaderNodeVectorDisplacement(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -98747,7 +98747,7 @@ class ShaderNodeVectorDisplacement(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -98796,7 +98796,7 @@ class ShaderNodeVectorMath(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -98807,7 +98807,7 @@ class ShaderNodeVectorMath(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -98862,7 +98862,7 @@ class ShaderNodeVectorRotate(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -98873,7 +98873,7 @@ class ShaderNodeVectorRotate(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -98934,7 +98934,7 @@ class ShaderNodeVectorTransform(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -98945,7 +98945,7 @@ class ShaderNodeVectorTransform(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -98994,7 +98994,7 @@ class ShaderNodeVertexColor(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -99005,7 +99005,7 @@ class ShaderNodeVertexColor(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -99048,7 +99048,7 @@ class ShaderNodeVolumeAbsorption(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -99059,7 +99059,7 @@ class ShaderNodeVolumeAbsorption(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -99102,7 +99102,7 @@ class ShaderNodeVolumeInfo(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -99113,7 +99113,7 @@ class ShaderNodeVolumeInfo(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -99156,7 +99156,7 @@ class ShaderNodeVolumePrincipled(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -99167,7 +99167,7 @@ class ShaderNodeVolumePrincipled(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -99210,7 +99210,7 @@ class ShaderNodeVolumeScatter(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -99221,7 +99221,7 @@ class ShaderNodeVolumeScatter(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -99264,7 +99264,7 @@ class ShaderNodeWavelength(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -99275,7 +99275,7 @@ class ShaderNodeWavelength(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -99324,7 +99324,7 @@ class ShaderNodeWireframe(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -99335,7 +99335,7 @@ class ShaderNodeWireframe(ShaderNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -99378,7 +99378,7 @@ class TextureNodeAt(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -99389,7 +99389,7 @@ class TextureNodeAt(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -99400,7 +99400,7 @@ class TextureNodeAt(TextureNode, NodeInternal, Node, bpy_struct):
 
 class TextureNodeBricks(TextureNode, NodeInternal, Node, bpy_struct):
     offset: float = None
-    ''' 
+    '''
 
     :type: float
     '''
@@ -99412,7 +99412,7 @@ class TextureNodeBricks(TextureNode, NodeInternal, Node, bpy_struct):
     '''
 
     squash: float = None
-    ''' 
+    '''
 
     :type: float
     '''
@@ -99456,7 +99456,7 @@ class TextureNodeBricks(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -99467,7 +99467,7 @@ class TextureNodeBricks(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -99510,7 +99510,7 @@ class TextureNodeChecker(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -99521,7 +99521,7 @@ class TextureNodeChecker(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -99564,7 +99564,7 @@ class TextureNodeCompose(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -99575,7 +99575,7 @@ class TextureNodeCompose(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -99618,7 +99618,7 @@ class TextureNodeCoordinates(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -99629,7 +99629,7 @@ class TextureNodeCoordinates(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -99640,7 +99640,7 @@ class TextureNodeCoordinates(TextureNode, NodeInternal, Node, bpy_struct):
 
 class TextureNodeCurveRGB(TextureNode, NodeInternal, Node, bpy_struct):
     mapping: 'CurveMapping' = None
-    ''' 
+    '''
 
     :type: 'CurveMapping'
     '''
@@ -99678,7 +99678,7 @@ class TextureNodeCurveRGB(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -99689,7 +99689,7 @@ class TextureNodeCurveRGB(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -99700,19 +99700,19 @@ class TextureNodeCurveRGB(TextureNode, NodeInternal, Node, bpy_struct):
 
 class TextureNodeCurveTime(TextureNode, NodeInternal, Node, bpy_struct):
     curve: 'CurveMapping' = None
-    ''' 
+    '''
 
     :type: 'CurveMapping'
     '''
 
     frame_end: int = None
-    ''' 
+    '''
 
     :type: int
     '''
 
     frame_start: int = None
-    ''' 
+    '''
 
     :type: int
     '''
@@ -99750,7 +99750,7 @@ class TextureNodeCurveTime(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -99761,7 +99761,7 @@ class TextureNodeCurveTime(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -99804,7 +99804,7 @@ class TextureNodeDecompose(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -99815,7 +99815,7 @@ class TextureNodeDecompose(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -99858,7 +99858,7 @@ class TextureNodeDistance(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -99869,7 +99869,7 @@ class TextureNodeDistance(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -99886,7 +99886,7 @@ class TextureNodeGroup(TextureNode, NodeInternal, Node, bpy_struct):
     '''
 
     node_tree: 'NodeTree' = None
-    ''' 
+    '''
 
     :type: 'NodeTree'
     '''
@@ -99924,7 +99924,7 @@ class TextureNodeGroup(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -99935,7 +99935,7 @@ class TextureNodeGroup(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -99978,7 +99978,7 @@ class TextureNodeHueSaturation(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -99989,7 +99989,7 @@ class TextureNodeHueSaturation(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -100000,7 +100000,7 @@ class TextureNodeHueSaturation(TextureNode, NodeInternal, Node, bpy_struct):
 
 class TextureNodeImage(TextureNode, NodeInternal, Node, bpy_struct):
     image: 'Image' = None
-    ''' 
+    '''
 
     :type: 'Image'
     '''
@@ -100044,7 +100044,7 @@ class TextureNodeImage(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -100055,7 +100055,7 @@ class TextureNodeImage(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -100098,7 +100098,7 @@ class TextureNodeInvert(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -100109,7 +100109,7 @@ class TextureNodeInvert(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -100164,7 +100164,7 @@ class TextureNodeMath(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -100175,7 +100175,7 @@ class TextureNodeMath(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -100186,7 +100186,7 @@ class TextureNodeMath(TextureNode, NodeInternal, Node, bpy_struct):
 
 class TextureNodeMixRGB(TextureNode, NodeInternal, Node, bpy_struct):
     blend_type: typing.Union[str, int] = None
-    ''' 
+    '''
 
     :type: typing.Union[str, int]
     '''
@@ -100236,7 +100236,7 @@ class TextureNodeMixRGB(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -100247,7 +100247,7 @@ class TextureNodeMixRGB(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -100258,7 +100258,7 @@ class TextureNodeMixRGB(TextureNode, NodeInternal, Node, bpy_struct):
 
 class TextureNodeOutput(TextureNode, NodeInternal, Node, bpy_struct):
     filepath: str = None
-    ''' 
+    '''
 
     :type: str
     '''
@@ -100296,7 +100296,7 @@ class TextureNodeOutput(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -100307,7 +100307,7 @@ class TextureNodeOutput(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -100350,7 +100350,7 @@ class TextureNodeRGBToBW(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -100361,7 +100361,7 @@ class TextureNodeRGBToBW(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -100404,7 +100404,7 @@ class TextureNodeRotate(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -100415,7 +100415,7 @@ class TextureNodeRotate(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -100458,7 +100458,7 @@ class TextureNodeScale(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -100469,7 +100469,7 @@ class TextureNodeScale(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -100512,7 +100512,7 @@ class TextureNodeTexBlend(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -100523,7 +100523,7 @@ class TextureNodeTexBlend(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -100566,7 +100566,7 @@ class TextureNodeTexClouds(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -100577,7 +100577,7 @@ class TextureNodeTexClouds(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -100620,7 +100620,7 @@ class TextureNodeTexDistNoise(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -100631,7 +100631,7 @@ class TextureNodeTexDistNoise(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -100674,7 +100674,7 @@ class TextureNodeTexMagic(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -100685,7 +100685,7 @@ class TextureNodeTexMagic(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -100728,7 +100728,7 @@ class TextureNodeTexMarble(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -100739,7 +100739,7 @@ class TextureNodeTexMarble(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -100782,7 +100782,7 @@ class TextureNodeTexMusgrave(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -100793,7 +100793,7 @@ class TextureNodeTexMusgrave(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -100836,7 +100836,7 @@ class TextureNodeTexNoise(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -100847,7 +100847,7 @@ class TextureNodeTexNoise(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -100890,7 +100890,7 @@ class TextureNodeTexStucci(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -100901,7 +100901,7 @@ class TextureNodeTexStucci(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -100944,7 +100944,7 @@ class TextureNodeTexVoronoi(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -100955,7 +100955,7 @@ class TextureNodeTexVoronoi(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -100998,7 +100998,7 @@ class TextureNodeTexWood(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -101009,7 +101009,7 @@ class TextureNodeTexWood(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -101026,7 +101026,7 @@ class TextureNodeTexture(TextureNode, NodeInternal, Node, bpy_struct):
     '''
 
     texture: 'Texture' = None
-    ''' 
+    '''
 
     :type: 'Texture'
     '''
@@ -101064,7 +101064,7 @@ class TextureNodeTexture(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -101075,7 +101075,7 @@ class TextureNodeTexture(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -101118,7 +101118,7 @@ class TextureNodeTranslate(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -101129,7 +101129,7 @@ class TextureNodeTranslate(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -101172,7 +101172,7 @@ class TextureNodeValToNor(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -101183,7 +101183,7 @@ class TextureNodeValToNor(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -101194,7 +101194,7 @@ class TextureNodeValToNor(TextureNode, NodeInternal, Node, bpy_struct):
 
 class TextureNodeValToRGB(TextureNode, NodeInternal, Node, bpy_struct):
     color_ramp: 'ColorRamp' = None
-    ''' 
+    '''
 
     :type: 'ColorRamp'
     '''
@@ -101232,7 +101232,7 @@ class TextureNodeValToRGB(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -101243,7 +101243,7 @@ class TextureNodeValToRGB(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -101286,7 +101286,7 @@ class TextureNodeViewer(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass(cls, id: str, default=None) -> 'Struct':
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str
@@ -101297,7 +101297,7 @@ class TextureNodeViewer(TextureNode, NodeInternal, Node, bpy_struct):
 
     @classmethod
     def bl_rna_get_subclass_py(cls, id: str, default=None):
-        ''' 
+        '''
 
         :param id: The RNA type identifier.
         :type id: str

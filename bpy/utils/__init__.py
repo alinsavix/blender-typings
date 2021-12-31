@@ -59,7 +59,7 @@ def execfile(filepath: str, mod=None):
 
 
 def is_path_builtin(path):
-    ''' 
+    '''
 
     '''
 
@@ -67,7 +67,7 @@ def is_path_builtin(path):
 
 
 def keyconfig_init():
-    ''' 
+    '''
 
     '''
 
@@ -75,7 +75,7 @@ def keyconfig_init():
 
 
 def keyconfig_set(filepath, report=None):
-    ''' 
+    '''
 
     '''
 
@@ -110,7 +110,7 @@ def make_rna_paths(struct_name: str, prop_name: str, enum_name: str) -> tuple:
 
 
 def manual_map():
-    ''' 
+    '''
 
     '''
 
@@ -131,7 +131,7 @@ def modules_from_path(path: str, loaded_modules: set) -> list:
 
 
 def preset_find(name, preset_path, display_name=False, ext='.py'):
-    ''' 
+    '''
 
     '''
 
@@ -175,7 +175,7 @@ def register_classes_factory(classes):
 
 
 def register_manual_map(manual_hook):
-    ''' 
+    '''
 
     '''
 
@@ -293,7 +293,7 @@ def smpte_from_seconds(time: typing.Union[float, int], fps=None,
 
 
 def time_from_frame(frame, fps, fps_base):
-    ''' 
+    '''
 
     '''
 
@@ -301,7 +301,7 @@ def time_from_frame(frame, fps, fps_base):
 
 
 def time_to_frame(time, fps, fps_base):
-    ''' 
+    '''
 
     '''
 
@@ -328,7 +328,7 @@ def unregister_class(cls):
 
 
 def unregister_manual_map(manual_hook):
-    ''' 
+    '''
 
     '''
 
@@ -336,7 +336,7 @@ def unregister_manual_map(manual_hook):
 
 
 def unregister_tool(tool_cls):
-    ''' 
+    '''
 
     '''
 

@@ -73,13 +73,13 @@ class pyChainSilhouetteGenericIterator:
         pass
 
     def init(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def traverse(self, iter):
-        ''' 
+        '''
 
         '''
         pass
@@ -90,13 +90,13 @@ class pyChainSilhouetteIterator:
     '''
 
     def init(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def traverse(self, iter):
-        ''' 
+        '''
 
         '''
         pass
@@ -107,19 +107,19 @@ class pyExternalContourChainingIterator:
     '''
 
     def checkViewEdge(self, ve, orientation):
-        ''' 
+        '''
 
         '''
         pass
 
     def init(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def traverse(self, iter):
-        ''' 
+        '''
 
         '''
         pass
@@ -140,13 +140,13 @@ class pyFillOcclusionsAbsoluteAndRelativeChainingIterator:
         pass
 
     def init(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def traverse(self, iter):
-        ''' 
+        '''
 
         '''
         pass
@@ -165,13 +165,13 @@ class pyFillOcclusionsAbsoluteChainingIterator:
         pass
 
     def init(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def traverse(self, iter):
-        ''' 
+        '''
 
         '''
         pass
@@ -190,13 +190,13 @@ class pyFillOcclusionsRelativeChainingIterator:
         pass
 
     def init(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def traverse(self, iter):
-        ''' 
+        '''
 
         '''
         pass
@@ -217,13 +217,13 @@ class pyFillQi0AbsoluteAndRelativeChainingIterator:
         pass
 
     def init(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def traverse(self, iter):
-        ''' 
+        '''
 
         '''
         pass
@@ -242,13 +242,13 @@ class pyNoIdChainSilhouetteIterator:
         pass
 
     def init(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def traverse(self, iter):
-        ''' 
+        '''
 
         '''
         pass
@@ -269,7 +269,7 @@ class pySketchyChainSilhouetteIterator:
         pass
 
     def init(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -281,7 +281,7 @@ class pySketchyChainSilhouetteIterator:
         pass
 
     def traverse(self, iter):
-        ''' 
+        '''
 
         '''
         pass
@@ -292,13 +292,13 @@ class pySketchyChainingIterator:
     '''
 
     def init(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def traverse(self, iter):
-        ''' 
+        '''
 
         '''
         pass

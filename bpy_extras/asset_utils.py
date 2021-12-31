@@ -7,7 +7,7 @@ class AssetBrowserPanel:
     ''' '''
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
@@ -21,7 +21,7 @@ class AssetMetaDataPanel:
     ''' '''
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass

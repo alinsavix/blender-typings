@@ -8,7 +8,7 @@ class BoneConstraintPanel:
     ''' '''
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
@@ -28,205 +28,205 @@ class ConstraintButtonsPanel:
     ''' '''
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
@@ -246,49 +246,49 @@ class ConstraintButtonsSubPanel:
     ''' '''
 
     def draw_action_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action_target(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature_bones(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik_chain_scaling(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik_fitting(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_from(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
@@ -299,7 +299,7 @@ class ObjectConstraintPanel:
     ''' '''
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
@@ -329,163 +329,163 @@ class BONE_PT_constraints(BoneConstraintPanel, bpy_types.Panel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -515,367 +515,367 @@ class BONE_PT_bActionConstraint(ConstraintButtonsPanel, BoneConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -905,367 +905,367 @@ class BONE_PT_bArmatureConstraint(ConstraintButtonsPanel, BoneConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -1296,367 +1296,367 @@ class BONE_PT_bCameraSolverConstraint(ConstraintButtonsPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -1686,367 +1686,367 @@ class BONE_PT_bChildOfConstraint(ConstraintButtonsPanel, BoneConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -2076,367 +2076,367 @@ class BONE_PT_bClampToConstraint(ConstraintButtonsPanel, BoneConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -2466,367 +2466,367 @@ class BONE_PT_bDampTrackConstraint(ConstraintButtonsPanel, BoneConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -2856,367 +2856,367 @@ class BONE_PT_bDistLimitConstraint(ConstraintButtonsPanel, BoneConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -3247,367 +3247,367 @@ class BONE_PT_bFollowPathConstraint(ConstraintButtonsPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -3638,367 +3638,367 @@ class BONE_PT_bFollowTrackConstraint(ConstraintButtonsPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -4028,367 +4028,367 @@ class BONE_PT_bKinematicConstraint(ConstraintButtonsPanel, BoneConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -4418,367 +4418,367 @@ class BONE_PT_bLocLimitConstraint(ConstraintButtonsPanel, BoneConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -4809,367 +4809,367 @@ class BONE_PT_bLocateLikeConstraint(ConstraintButtonsPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -5199,367 +5199,367 @@ class BONE_PT_bLockTrackConstraint(ConstraintButtonsPanel, BoneConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -5589,367 +5589,367 @@ class BONE_PT_bMinMaxConstraint(ConstraintButtonsPanel, BoneConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -5980,367 +5980,367 @@ class BONE_PT_bObjectSolverConstraint(ConstraintButtonsPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -6370,367 +6370,367 @@ class BONE_PT_bPivotConstraint(ConstraintButtonsPanel, BoneConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -6760,367 +6760,367 @@ class BONE_PT_bPythonConstraint(ConstraintButtonsPanel, BoneConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -7150,367 +7150,367 @@ class BONE_PT_bRotLimitConstraint(ConstraintButtonsPanel, BoneConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -7541,367 +7541,367 @@ class BONE_PT_bRotateLikeConstraint(ConstraintButtonsPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -7932,367 +7932,367 @@ class BONE_PT_bSameVolumeConstraint(ConstraintButtonsPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -8323,367 +8323,367 @@ class BONE_PT_bShrinkwrapConstraint(ConstraintButtonsPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -8713,367 +8713,367 @@ class BONE_PT_bSizeLikeConstraint(ConstraintButtonsPanel, BoneConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -9103,367 +9103,367 @@ class BONE_PT_bSizeLimitConstraint(ConstraintButtonsPanel, BoneConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -9493,367 +9493,367 @@ class BONE_PT_bSplineIKConstraint(ConstraintButtonsPanel, BoneConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -9883,367 +9883,367 @@ class BONE_PT_bStretchToConstraint(ConstraintButtonsPanel, BoneConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -10273,367 +10273,367 @@ class BONE_PT_bTrackToConstraint(ConstraintButtonsPanel, BoneConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -10663,367 +10663,367 @@ class BONE_PT_bTransLikeConstraint(ConstraintButtonsPanel, BoneConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -11054,367 +11054,367 @@ class BONE_PT_bTransformCacheConstraint(ConstraintButtonsPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -11444,367 +11444,367 @@ class BONE_PT_bTransformConstraint(ConstraintButtonsPanel, BoneConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -11838,211 +11838,211 @@ class BONE_PT_bActionConstraint_action(ConstraintButtonsSubPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action_target(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature_bones(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik_chain_scaling(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik_fitting(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_from(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -12076,211 +12076,211 @@ class BONE_PT_bActionConstraint_target(ConstraintButtonsSubPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action_target(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature_bones(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik_chain_scaling(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik_fitting(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_from(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -12314,211 +12314,211 @@ class BONE_PT_bArmatureConstraint_bones(ConstraintButtonsSubPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action_target(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature_bones(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik_chain_scaling(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik_fitting(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_from(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -12552,211 +12552,211 @@ class BONE_PT_bSplineIKConstraint_chain_scaling(
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action_target(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature_bones(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik_chain_scaling(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik_fitting(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_from(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -12790,211 +12790,211 @@ class BONE_PT_bSplineIKConstraint_fitting(ConstraintButtonsSubPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action_target(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature_bones(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik_chain_scaling(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik_fitting(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_from(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -13028,211 +13028,211 @@ class BONE_PT_bTransformConstraint_from(ConstraintButtonsSubPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action_target(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature_bones(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik_chain_scaling(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik_fitting(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_from(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -13266,211 +13266,211 @@ class BONE_PT_bTransformConstraint_to(ConstraintButtonsSubPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action_target(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature_bones(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik_chain_scaling(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik_fitting(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_from(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -13501,367 +13501,367 @@ class OBJECT_PT_bActionConstraint(ObjectConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -13895,211 +13895,211 @@ class OBJECT_PT_bActionConstraint_action(
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action_target(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature_bones(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik_chain_scaling(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik_fitting(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_from(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -14133,211 +14133,211 @@ class OBJECT_PT_bActionConstraint_target(
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action_target(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature_bones(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik_chain_scaling(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik_fitting(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_from(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -14368,367 +14368,367 @@ class OBJECT_PT_bArmatureConstraint(ObjectConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -14762,211 +14762,211 @@ class OBJECT_PT_bArmatureConstraint_bones(
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action_target(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature_bones(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik_chain_scaling(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik_fitting(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_from(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -14997,367 +14997,367 @@ class OBJECT_PT_bCameraSolverConstraint(ObjectConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -15388,367 +15388,367 @@ class OBJECT_PT_bChildOfConstraint(ObjectConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -15779,367 +15779,367 @@ class OBJECT_PT_bClampToConstraint(ObjectConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -16170,367 +16170,367 @@ class OBJECT_PT_bDampTrackConstraint(ObjectConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -16561,367 +16561,367 @@ class OBJECT_PT_bDistLimitConstraint(ObjectConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -16952,367 +16952,367 @@ class OBJECT_PT_bFollowPathConstraint(ObjectConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -17343,367 +17343,367 @@ class OBJECT_PT_bFollowTrackConstraint(ObjectConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -17734,367 +17734,367 @@ class OBJECT_PT_bKinematicConstraint(ObjectConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -18125,367 +18125,367 @@ class OBJECT_PT_bLocLimitConstraint(ObjectConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -18516,367 +18516,367 @@ class OBJECT_PT_bLocateLikeConstraint(ObjectConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -18907,367 +18907,367 @@ class OBJECT_PT_bLockTrackConstraint(ObjectConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -19298,367 +19298,367 @@ class OBJECT_PT_bMinMaxConstraint(ObjectConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -19689,367 +19689,367 @@ class OBJECT_PT_bObjectSolverConstraint(ObjectConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -20079,367 +20079,367 @@ class OBJECT_PT_bPivotConstraint(ObjectConstraintPanel, ConstraintButtonsPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -20470,367 +20470,367 @@ class OBJECT_PT_bPythonConstraint(ObjectConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -20861,367 +20861,367 @@ class OBJECT_PT_bRotLimitConstraint(ObjectConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -21252,367 +21252,367 @@ class OBJECT_PT_bRotateLikeConstraint(ObjectConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -21643,367 +21643,367 @@ class OBJECT_PT_bSameVolumeConstraint(ObjectConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -22034,367 +22034,367 @@ class OBJECT_PT_bShrinkwrapConstraint(ObjectConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -22425,367 +22425,367 @@ class OBJECT_PT_bSizeLikeConstraint(ObjectConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -22816,367 +22816,367 @@ class OBJECT_PT_bSizeLimitConstraint(ObjectConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -23207,367 +23207,367 @@ class OBJECT_PT_bStretchToConstraint(ObjectConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -23598,367 +23598,367 @@ class OBJECT_PT_bTrackToConstraint(ObjectConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -23989,367 +23989,367 @@ class OBJECT_PT_bTransLikeConstraint(ObjectConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -24380,367 +24380,367 @@ class OBJECT_PT_bTransformCacheConstraint(
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -24771,367 +24771,367 @@ class OBJECT_PT_bTransformConstraint(ObjectConstraintPanel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_camera_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_childof(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_clamp_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_damp_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_dist_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_path(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_follow_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_header(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_influence(self, layout, con):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_kinematic(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_loc_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_locate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_lock_track(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_min_max(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_object_solver(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_pivot(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_python_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rot_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_rotate_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_same_volume(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_shrinkwrap(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_size_limit(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_stretch_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trackto(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_trans_like(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_cache(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def space_template(self, layout, con, target, owner, separator):
-        ''' 
+        '''
 
         '''
         pass
 
     def target_template(self, layout, con, subtargets):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -25165,211 +25165,211 @@ class OBJECT_PT_bTransformConstraint_destination(
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action_target(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature_bones(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik_chain_scaling(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik_fitting(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_from(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -25403,211 +25403,211 @@ class OBJECT_PT_bTransformConstraint_source(
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action_action(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_action_target(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_armature_bones(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik_chain_scaling(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_spline_ik_fitting(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_from(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw_transform_to(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get_constraint(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
@@ -25637,163 +25637,163 @@ class OBJECT_PT_constraints(ObjectConstraintPanel, bpy_types.Panel,
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def draw(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def poll(self, context):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass

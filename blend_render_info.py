@@ -3,7 +3,7 @@ import typing
 
 
 def main():
-    ''' 
+    '''
 
     '''
 
@@ -11,7 +11,7 @@ def main():
 
 
 def read_blend_rend_chunk(path):
-    ''' 
+    '''
 
     '''
 

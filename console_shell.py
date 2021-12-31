@@ -3,7 +3,7 @@ import typing
 
 
 def add_scrollback(text, text_type):
-    ''' 
+    '''
 
     '''
 
@@ -11,7 +11,7 @@ def add_scrollback(text, text_type):
 
 
 def autocomplete(_context):
-    ''' 
+    '''
 
     '''
 
@@ -19,7 +19,7 @@ def autocomplete(_context):
 
 
 def banner(context):
-    ''' 
+    '''
 
     '''
 
@@ -27,7 +27,7 @@ def banner(context):
 
 
 def execute(context, _is_interactive):
-    ''' 
+    '''
 
     '''
 
@@ -35,7 +35,7 @@ def execute(context, _is_interactive):
 
 
 def shell_run(text):
-    ''' 
+    '''
 
     '''
 

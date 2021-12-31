@@ -78,177 +78,177 @@ class UI_UL_list(bpy_types.UIList, bpy_types._GenericUI):
     ''' '''
 
     def append(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def as_pointer(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def bl_rna_get_subclass_py(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_add(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def driver_remove(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def filter_items_by_name(self, pattern, bitflag, items, propname, flags,
                              reverse):
-        ''' 
+        '''
 
         '''
         pass
 
     def get(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_extended(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_hidden(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_overridable_library(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_readonly(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def is_property_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def items(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_delete(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keyframe_insert(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def keys(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_from_id(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def path_resolve(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def pop(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def prepend(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_overridable_library_set(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def property_unset(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def remove(self, draw_func):
-        ''' 
+        '''
 
         '''
         pass
 
     def sort_items_by_name(self, items, propname):
-        ''' 
+        '''
 
         '''
         pass
 
     def sort_items_helper(self, sort_data, key, reverse):
-        ''' 
+        '''
 
         '''
         pass
 
     def type_recast(self):
-        ''' 
+        '''
 
         '''
         pass
 
     def values(self):
-        ''' 
+        '''
 
         '''
         pass
 
 
 def register():
-    ''' 
+    '''
 
     '''
 
@@ -256,7 +256,7 @@ def register():
 
 
 def unregister():
-    ''' 
+    '''
 
     '''
 

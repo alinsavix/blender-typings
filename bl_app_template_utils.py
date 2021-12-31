@@ -3,7 +3,7 @@ import typing
 
 
 def activate(template_id):
-    ''' 
+    '''
 
     '''
 
@@ -11,7 +11,7 @@ def activate(template_id):
 
 
 def import_from_id(template_id, ignore_not_found):
-    ''' 
+    '''
 
     '''
 
@@ -19,7 +19,7 @@ def import_from_id(template_id, ignore_not_found):
 
 
 def import_from_path(path, ignore_not_found):
-    ''' 
+    '''
 
     '''
 
@@ -27,7 +27,7 @@ def import_from_path(path, ignore_not_found):
 
 
 def reset(reload_scripts):
-    ''' 
+    '''
 
     '''
 

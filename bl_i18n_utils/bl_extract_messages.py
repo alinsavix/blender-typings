@@ -3,7 +3,7 @@ import typing
 
 
 def check(check_ctxt, msgs, key, msgsrc, settings):
-    ''' 
+    '''
 
     '''
 
@@ -11,7 +11,7 @@ def check(check_ctxt, msgs, key, msgsrc, settings):
 
 
 def dump_addon_messages(module_name, do_checks, settings):
-    ''' 
+    '''
 
     '''
 
@@ -19,7 +19,7 @@ def dump_addon_messages(module_name, do_checks, settings):
 
 
 def dump_messages(do_messages, do_checks, settings):
-    ''' 
+    '''
 
     '''
 
@@ -27,7 +27,7 @@ def dump_messages(do_messages, do_checks, settings):
 
 
 def dump_py_messages(msgs, reports, addons, settings, addons_only):
-    ''' 
+    '''
 
     '''
 
@@ -35,7 +35,7 @@ def dump_py_messages(msgs, reports, addons, settings, addons_only):
 
 
 def dump_py_messages_from_files(msgs, reports, files, settings):
-    ''' 
+    '''
 
     '''
 
@@ -43,7 +43,7 @@ def dump_py_messages_from_files(msgs, reports, files, settings):
 
 
 def dump_rna_messages(msgs, reports, settings, verbose):
-    ''' 
+    '''
 
     '''
 
@@ -51,7 +51,7 @@ def dump_rna_messages(msgs, reports, settings, verbose):
 
 
 def dump_src_messages(msgs, reports, settings):
-    ''' 
+    '''
 
     '''
 
@@ -59,7 +59,7 @@ def dump_src_messages(msgs, reports, settings):
 
 
 def init_spell_check(settings, lang):
-    ''' 
+    '''
 
     '''
 
@@ -67,7 +67,7 @@ def init_spell_check(settings, lang):
 
 
 def main():
-    ''' 
+    '''
 
     '''
 
@@ -75,7 +75,7 @@ def main():
 
 
 def print_info(reports, pot):
-    ''' 
+    '''
 
     '''
 
@@ -83,7 +83,7 @@ def print_info(reports, pot):
 
 
 def process_msg(msgs, msgctxt, msgid, msgsrc, reports, check_ctxt, settings):
-    ''' 
+    '''
 
     '''
 

@@ -6,13 +6,13 @@ import bpy.context
 
 class ExportHelper:
     def check(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def invoke(self, context, _event):
-        ''' 
+        '''
 
         '''
         pass
@@ -20,13 +20,13 @@ class ExportHelper:
 
 class ImportHelper:
     def check(self, _context):
-        ''' 
+        '''
 
         '''
         pass
 
     def invoke(self, context, _event):
-        ''' 
+        '''
 
         '''
         pass
@@ -57,7 +57,7 @@ def axis_conversion_ensure(operator: 'bpy.types.Operator', forward_attr: str,
 
 
 def create_derived_objects(scene, ob):
-    ''' 
+    '''
 
     '''
 
@@ -65,7 +65,7 @@ def create_derived_objects(scene, ob):
 
 
 def free_derived_objects(ob):
-    ''' 
+    '''
 
     '''
 
@@ -143,7 +143,7 @@ def unique_name(key: 'bpy.context.object',
 
 
 def unpack_face_list(list_of_tuples):
-    ''' 
+    '''
 
     '''
 
@@ -151,7 +151,7 @@ def unpack_face_list(list_of_tuples):
 
 
 def unpack_list(list_of_tuples):
-    ''' 
+    '''
 
     '''
 

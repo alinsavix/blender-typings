@@ -357,11 +357,11 @@ class Sequence:
         :param sound: The sound this entry should play.
         :type sound: 'bpy.types.Sound'
         :param begin: The start time.
-        :type begin: 
+        :type begin:
         :param end: The end time or a negative value if determined by the sound.
-        :type end: 
+        :type end:
         :param skip: How much seconds should be skipped at the beginning.
-        :type skip: 
+        :type skip:
         :rtype: 'SequenceEntry'
         :return: The entry added.
         '''
@@ -434,11 +434,11 @@ class SequenceEntry:
         ''' Moves the entry.
 
         :param begin: The new start time.
-        :type begin: 
+        :type begin:
         :param end: The new end time or a negative value if unknown.
-        :type end: 
+        :type end:
         :param skip: How many seconds to skip at the beginning.
-        :type skip: 
+        :type skip:
         '''
         pass
 
@@ -473,9 +473,9 @@ class Sound:
         ''' Creates a sound from a data buffer.
 
         :param data: The data as two dimensional numpy array.
-        :type data: 
+        :type data:
         :param rate: The sample rate.
-        :type rate: 
+        :type rate:
         :rtype: 'bpy.types.Sound'
         :return: Sound object.
         '''
@@ -590,10 +590,10 @@ class Sound:
     def accumulate(cls, additive=False) -> 'bpy.types.Sound':
         ''' Accumulates a sound by summing over positive input differences thus generating a monotonic sigal. If additivity is set to true negative input differences get added too, but positive ones with a factor of two. Note that with additivity the signal is not monotonic anymore.
 
-        :param time: 
+        :param time:
         :type time: bool
-        :param additive: 
-        :type additive: 
+        :param additive:
+        :type additive:
         :rtype: 'bpy.types.Sound'
         :return: Sound object.
         '''
@@ -735,7 +735,7 @@ class Sound:
         ''' Loops a sound.
 
         :param count: How often the sound should be looped. Negative values mean endlessly.
-        :type count: 
+        :type count:
         :rtype: 'bpy.types.Sound'
         :return: Sound object.
         '''
@@ -821,7 +821,7 @@ class Sound:
         ''' Resamples the sound.
 
         :param rate: The new sample rate.
-        :type rate: 
+        :type rate:
         :param high_quality: When true use a higher quality but slower resampler.
         :type high_quality: bool
         :rtype: 'bpy.types.Sound'

@@ -135,7 +135,7 @@ def scale(scale: list):
 
 
 def scale_uniform(scale: float):
-    ''' 
+    '''
 
     :param scale: Scale the current stack matrix.
     :type scale: float

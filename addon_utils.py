@@ -3,7 +3,7 @@ import typing
 
 
 def check(module_name):
-    ''' 
+    '''
 
     '''
 
@@ -11,7 +11,7 @@ def check(module_name):
 
 
 def disable(module_name, default_set, handle_error):
-    ''' 
+    '''
 
     '''
 
@@ -19,7 +19,7 @@ def disable(module_name, default_set, handle_error):
 
 
 def disable_all():
-    ''' 
+    '''
 
     '''
 
@@ -27,7 +27,7 @@ def disable_all():
 
 
 def enable(module_name, default_set, persistent, handle_error):
-    ''' 
+    '''
 
     '''
 
@@ -35,7 +35,7 @@ def enable(module_name, default_set, persistent, handle_error):
 
 
 def module_bl_info(mod, info_basis):
-    ''' 
+    '''
 
     '''
 
@@ -43,7 +43,7 @@ def module_bl_info(mod, info_basis):
 
 
 def modules(module_cache, refresh):
-    ''' 
+    '''
 
     '''
 
@@ -51,7 +51,7 @@ def modules(module_cache, refresh):
 
 
 def modules_refresh(module_cache):
-    ''' 
+    '''
 
     '''
 
@@ -59,7 +59,7 @@ def modules_refresh(module_cache):
 
 
 def paths():
-    ''' 
+    '''
 
     '''
 
@@ -67,7 +67,7 @@ def paths():
 
 
 def reset_all(reload_scripts):
-    ''' 
+    '''
 
     '''
 

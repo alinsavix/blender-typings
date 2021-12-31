@@ -3,7 +3,7 @@ import typing
 
 
 def main():
-    ''' 
+    '''
 
     '''
 

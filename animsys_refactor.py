@@ -7,14 +7,14 @@ class DataPathBuilder:
     ''' '''
 
     def resolve(self, real_base, rna_update_from_map, fcurve, log):
-        ''' 
+        '''
 
         '''
         pass
 
 
 def anim_data_actions(anim_data):
-    ''' 
+    '''
 
     '''
 
@@ -22,7 +22,7 @@ def anim_data_actions(anim_data):
 
 
 def classes_recursive(base_type, clss):
-    ''' 
+    '''
 
     '''
 
@@ -30,7 +30,7 @@ def classes_recursive(base_type, clss):
 
 
 def find_path_new(id_data, data_path, rna_update_from_map, fcurve, log):
-    ''' 
+    '''
 
     '''
 
@@ -38,7 +38,7 @@ def find_path_new(id_data, data_path, rna_update_from_map, fcurve, log):
 
 
 def id_iter():
-    ''' 
+    '''
 
     '''
 
@@ -46,7 +46,7 @@ def id_iter():
 
 
 def update_data_paths(rna_update, log):
-    ''' 
+    '''
 
     '''
 
