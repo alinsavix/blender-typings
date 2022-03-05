@@ -128,7 +128,7 @@ class bpy_prop_collection(typing.Generic[K, T]):
         '''
         pass
 
-    def get(self, key: str, default: typing.Optional[T]=None) -> T:
+    def get(self, key: str, default: typing.Optional[T] = None) -> T:
         ''' Returns the value of the item assigned to key or default when not found (matches Python's dictionary function of the same name).
 
         :param key: The identifier for the collection member.
@@ -664,13 +664,21 @@ class AnimData(bpy_struct):
     '''
 
     action_blend_type: typing.Union[str, int] = None
-    ''' Method used for combining Active Action's result with result of NLA stack * REPLACE Replace, The strip values replace the accumulated results by amount specified by influence. * COMBINE Combine, The strip values are combined with accumulated results by appropriately using addition, multiplication, or quaternion math, based on channel type. * ADD Add, Weighted result of strip is added to the accumulated results. * SUBTRACT Subtract, Weighted result of strip is removed from the accumulated results. * MULTIPLY Multiply, Weighted result of strip is multiplied with the accumulated results.
+    ''' Method used for combining Active Action's result with result of NLA stack
+      * REPLACE Replace, The strip values replace the accumulated results by amount specified by influence.
+      * COMBINE Combine, The strip values are combined with accumulated results by appropriately using addition, multiplication, or quaternion math, based on channel type.
+      * ADD Add, Weighted result of strip is added to the accumulated results.
+      * SUBTRACT Subtract, Weighted result of strip is removed from the accumulated results.
+      * MULTIPLY Multiply, Weighted result of strip is multiplied with the accumulated results.
 
     :type: typing.Union[str, int]
     '''
 
     action_extrapolation: typing.Union[str, int] = None
-    ''' Action to take for gaps past the Active Action's range (when evaluating with NLA) * NOTHING Nothing, Strip has no influence past its extents. * HOLD Hold, Hold the first frame if no previous strips in track, and always hold last frame. * HOLD_FORWARD Hold Forward, Only hold last frame.
+    ''' Action to take for gaps past the Active Action's range (when evaluating with NLA)
+      * NOTHING Nothing, Strip has no influence past its extents.
+      * HOLD Hold, Hold the first frame if no previous strips in track, and always hold last frame.
+      * HOLD_FORWARD Hold Forward, Only hold last frame.
 
     :type: typing.Union[str, int]
     '''
@@ -742,7 +750,7 @@ class AnimDataDrivers(bpy_struct):
         :rtype: 'FCurve'
         :return: Newly Driver F-Curve
         '''
-        pass
+        ...
 
     def remove(self, driver: 'FCurve'):
         ''' remove
@@ -750,7 +758,7 @@ class AnimDataDrivers(bpy_struct):
         :param driver:
         :type driver: 'FCurve'
         '''
-        pass
+        ...
 
     def from_existing(self, src_driver: 'FCurve' = None) -> 'FCurve':
         ''' Add a new driver given an existing one
@@ -760,7 +768,7 @@ class AnimDataDrivers(bpy_struct):
         :rtype: 'FCurve'
         :return: New Driver F-Curve
         '''
-        pass
+        ...
 
     def find(self, data_path: str, index: int = 0) -> 'FCurve':
         ''' Find a driver F-Curve. Note that this function performs a linear scan of all driver F-Curves.
@@ -772,7 +780,7 @@ class AnimDataDrivers(bpy_struct):
         :rtype: 'FCurve'
         :return: The found F-Curve, or None if it doesn't exist
         '''
-        pass
+        ...
 
 
 class AnimViz(bpy_struct):
@@ -900,7 +908,26 @@ class Area(bpy_struct):
     '''
 
     type: typing.Union[str, int] = None
-    ''' Current editor type for this area * EMPTY Empty. * VIEW_3D 3D Viewport, Manipulate objects in a 3D environment. * IMAGE_EDITOR UV/Image Editor, View and edit images and UV Maps. * NODE_EDITOR Node Editor, Editor for node-based shading and compositing tools. * SEQUENCE_EDITOR Video Sequencer, Video editing tools. * CLIP_EDITOR Movie Clip Editor, Motion tracking tools. * DOPESHEET_EDITOR Dope Sheet, Adjust timing of keyframes. * GRAPH_EDITOR Graph Editor, Edit drivers and keyframe interpolation. * NLA_EDITOR Nonlinear Animation, Combine and layer Actions. * TEXT_EDITOR Text Editor, Edit scripts and in-file documentation. * CONSOLE Python Console, Interactive programmatic console for advanced editing and script development. * INFO Info, Log of operations, warnings and error messages. * TOPBAR Top Bar, Global bar at the top of the screen for global per-window settings. * STATUSBAR Status Bar, Global bar at the bottom of the screen for general status information. * OUTLINER Outliner, Overview of scene graph and all available data-blocks. * PROPERTIES Properties, Edit properties of active object and related data-blocks. * FILE_BROWSER File Browser, Browse for files and assets. * SPREADSHEET Spreadsheet, Explore geometry data in a table. * PREFERENCES Preferences, Edit persistent configuration settings.
+    ''' Current editor type for this area
+      * EMPTY Empty.
+      * VIEW_3D 3D Viewport, Manipulate objects in a 3D environment.
+      * IMAGE_EDITOR UV/Image Editor, View and edit images and UV Maps.
+      * NODE_EDITOR Node Editor, Editor for node-based shading and compositing tools.
+      * SEQUENCE_EDITOR Video Sequencer, Video editing tools.
+      * CLIP_EDITOR Movie Clip Editor, Motion tracking tools.
+      * DOPESHEET_EDITOR Dope Sheet, Adjust timing of keyframes.
+      * GRAPH_EDITOR Graph Editor, Edit drivers and keyframe interpolation.
+      * NLA_EDITOR Nonlinear Animation, Combine and layer Actions.
+      * TEXT_EDITOR Text Editor, Edit scripts and in-file documentation.
+      * CONSOLE Python Console, Interactive programmatic console for advanced editing and script development.
+      * INFO Info, Log of operations, warnings and error messages.
+      * TOPBAR Top Bar, Global bar at the top of the screen for global per-window settings.
+      * STATUSBAR Status Bar, Global bar at the bottom of the screen for general status information.
+      * OUTLINER Outliner, Overview of scene graph and all available data-blocks.
+      * PROPERTIES Properties, Edit properties of active object and related data-blocks.
+      * FILE_BROWSER File Browser, Browse for files and assets.
+      * SPREADSHEET Spreadsheet, Explore geometry data in a table.
+      * PREFERENCES Preferences, Edit persistent configuration settings.
 
     :type: typing.Union[str, int]
     '''
@@ -976,7 +1003,7 @@ class ArmatureConstraintTargets(bpy_struct):
         :rtype: 'ConstraintTargetBone'
         :return: New target bone
         '''
-        pass
+        ...
 
     def remove(self, target: 'ConstraintTargetBone'):
         ''' Delete target from the constraint
@@ -984,13 +1011,13 @@ class ArmatureConstraintTargets(bpy_struct):
         :param target: Target to remove
         :type target: 'ConstraintTargetBone'
         '''
-        pass
+        ...
 
     def clear(self):
         ''' Delete all targets from object
 
         '''
-        pass
+        ...
 
 
 class ArmatureEditBones(bpy_struct):
@@ -1057,7 +1084,7 @@ class AssetTag(bpy_struct):
     '''
 
 
-class AssetTags(bpy_struct):
+class AssetTags(bpy_struct, bpy_prop_collection[typing.Union[int, str], 'AssetTag']):
     ''' Collection of custom asset tags
     '''
 
@@ -1071,7 +1098,7 @@ class AssetTags(bpy_struct):
         :rtype: 'AssetTag'
         :return: New tag
         '''
-        pass
+        ...
 
     def remove(self, tag: 'AssetTag'):
         ''' Remove an existing tag from this asset
@@ -1079,7 +1106,7 @@ class AssetTags(bpy_struct):
         :param tag: Removed tag
         :type tag: 'AssetTag'
         '''
-        pass
+        ...
 
 
 class Attribute(bpy_struct):
@@ -18695,6 +18722,9 @@ class NodeInputs(bpy_struct):
     def __getitem__(self, key) -> 'NodeSocket':
         pass
 
+    def __contains__(self, key: str) -> bool:
+        pass
+
     def __iter__(self) -> typing.Iterator['NodeSocket']:
         pass
 
@@ -18907,6 +18937,9 @@ class NodeOutputs(bpy_struct):
         pass
 
     def __getitem__(self, key) -> 'NodeSocket':
+        pass
+
+    def __contains__(self, key: str) -> bool:
         pass
 
     def __iter__(self) -> typing.Iterator['NodeSocket']:

@@ -49,7 +49,7 @@ class BMEdge:
     ''' The BMesh edge connecting 2 verts
     '''
 
-    hide: bool = None
+    hide: bool
     ''' Hidden state of this element.
 
     :type: bool
